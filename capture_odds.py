@@ -3,9 +3,11 @@ Match Engine — Odds API capture (two-pull cadence).
 
 Runs on a schedule (GitHub Actions). Every run:
   1. lists upcoming fixtures via the FREE /events endpoint
-  2. SLATE pull: once per match; triggered when a match is <= 24h15m away and
-     batched with every other un-pulled match kicking off within 36h
-  3. LATE pull:  once per match, when kickoff is 10-70 min away (after team news)
+  2. WEEKLY pull: once per week per league, on the first run after Monday
+     15:00 UTC (8am Pacific in summer, 7am in winter); covers every match in
+     the next 7 days in a single call (DraftKings' early lines)
+  3. LATE pull:  once per match, when kickoff is 10-70 min away (after team
+     news) - DraftKings' near-closing line, used for CLV
   4. saves raw JSON + flat rows to data/odds/, records what was pulled in
      state/pulled.json, and logs remaining credits to data/odds/quota.csv
 
@@ -18,6 +20,7 @@ secret). It is never written to any file or log.
 
 Modes:
   python capture_odds.py            normal scheduled run
+  python capture_odds.py weekly     force this week's weekly pull now (manual)
   python capture_odds.py probe      ONE-TIME test: which markets the bookmaker
                                     offers per league (at most 3 credits each)
   python capture_odds.py check      free: validate key + sport keys, show quota
@@ -49,9 +52,9 @@ BOOKMAKERS = os.environ.get("ODDS_BOOKMAKERS", "draftkings").strip()
 REGIONS = os.environ.get("ODDS_REGIONS", "us")
 MARKETS = os.environ.get("ODDS_MARKETS", "h2h,totals,spreads")
 CREDIT_RESERVE = int(os.environ.get("CREDIT_RESERVE", "40"))  # never go below
-SLATE_MAX_MIN = 24 * 60 + 15     # a slate pull is TRIGGERED by a match this close...
-SLATE_BATCH_MIN = 36 * 60        # ...and then covers every un-pulled match within 36h
-SLATE_MIN_MIN = 90
+WEEKLY_WEEKDAY = 0               # Monday
+WEEKLY_HOUR_UTC = 15             # 15:00 UTC = 8am PDT / 7am PST
+WEEKLY_WINDOW_MIN = 7 * 24 * 60  # the weekly pull covers the next 7 days
 LATE_MAX_MIN = 70
 LATE_MIN_MIN = 10
 # Optional per-league team filter, JSON: {"LaLiga": ["Real Madrid", "Sevilla"]}.
@@ -160,21 +163,30 @@ def minutes_to(ts, now):
     return (datetime.fromisoformat(ts.replace("Z", "+00:00")) - now).total_seconds() / 60
 
 
-def due(events, state, now):
-    """Late pulls: one per kickoff slot (they must follow team news).
-    Slate pulls: batched - once any match is within 24h15m, every match not yet
-    slate-pulled that kicks off within 36h rides along in the same call."""
-    late, slate_trigger, slate_pool = [], False, []
-    for ev in events:
-        m = minutes_to(ev["commence_time"], now)
-        k = state.get(ev["id"], {})
-        if not k.get("slate") and SLATE_MIN_MIN < m <= SLATE_BATCH_MIN:
-            slate_pool.append(ev)
-            if m <= SLATE_MAX_MIN:
-                slate_trigger = True
-        if not k.get("late") and LATE_MIN_MIN < m <= LATE_MAX_MIN:
-            late.append(ev)
-    return (slate_pool if slate_trigger else []), late
+def week_key(now):
+    """Weeks start Monday 15:00 UTC; returns an ISO-week label for that week."""
+    shifted = now - timedelta(days=WEEKLY_WEEKDAY, hours=WEEKLY_HOUR_UTC)
+    y, w, _ = shifted.isocalendar()
+    return f"{y}-W{w:02d}"
+
+
+def weekly_done(state, label, now):
+    return state.get("_meta", {}).get(f"weekly:{label}") == week_key(now)
+
+
+def mark_weekly(state, label, now):
+    state.setdefault("_meta", {})[f"weekly:{label}"] = week_key(now)
+
+
+def due_weekly(events, now):
+    return [ev for ev in events if LATE_MIN_MIN < minutes_to(ev["commence_time"], now) <= WEEKLY_WINDOW_MIN]
+
+
+def due_late(events, state, now):
+    """One late pull per kickoff slot - it has to come after team news."""
+    return [ev for ev in events
+            if not state.get(ev["id"], {}).get("late")
+            and LATE_MIN_MIN < minutes_to(ev["commence_time"], now) <= LATE_MAX_MIN]
 
 
 def book_params():
@@ -190,11 +202,12 @@ def max_cost():
 
 
 def pull(sport, label, evs, kind, state, now, remaining):
+    """Returns (remaining, pulled?)."""
     cost = max_cost()   # upper bound: markets a book doesn't offer are not billed
     # unknown balance (first ever pull) -> allow; the response header sets it
     if remaining is not None and remaining - cost < CREDIT_RESERVE:
         print(f"SKIP {label} {kind}: {remaining} credits left, reserve {CREDIT_RESERVE}")
-        return remaining
+        return remaining, False
     ids = ",".join(e["id"] for e in evs)
     body, hdr = get(f"/sports/{sport}/odds", markets=MARKETS, oddsFormat="decimal",
                     dateFormat="iso", eventIds=ids, **book_params())
@@ -210,10 +223,10 @@ def pull(sport, label, evs, kind, state, now, remaining):
     print(f"PULLED {label} {kind}: {len(evs)} matches, {len(body)} returned, "
           f"cost {hdr.get('x-requests-last')}, left {hdr.get('x-requests-remaining')}")
     rem = hdr.get("x-requests-remaining")
-    return int(float(rem)) if rem is not None else remaining
+    return (int(float(rem)) if rem is not None else remaining), True
 
 
-def run():
+def run(force_weekly=False):
     now = datetime.now(timezone.utc)
     comps = dict(SPORTS, **(CUPS if INCLUDE_CUPS else {}))
     state = load_state()
@@ -229,12 +242,21 @@ def run():
         if hdr.get("x-requests-remaining") is not None:
             remaining = int(float(hdr["x-requests-remaining"]))
         events = [e for e in events if keep_event(e, label)]
-        slate, late = due(events, state, now)
-        if slate:
-            remaining = pull(sport, label, slate, "slate", state, now, remaining)
+        did = False
+        if force_weekly or not weekly_done(state, label, now):
+            wk = due_weekly(events, now)
+            if wk:
+                remaining, ok = pull(sport, label, wk, "weekly", state, now, remaining)
+                if ok:
+                    mark_weekly(state, label, now)
+                did = True
+            else:
+                mark_weekly(state, label, now)   # nothing scheduled this week
+        late = due_late(events, state, now)
         if late:
-            remaining = pull(sport, label, late, "late", state, now, remaining)
-        if not slate and not late:
+            remaining, _ = pull(sport, label, late, "late", state, now, remaining)
+            did = True
+        if not did:
             print(f"{label}: nothing due ({len(events)} upcoming)")
     save_state(state)
 
@@ -278,4 +300,5 @@ def probe():
 
 if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else "run"
-    {"run": run, "check": check, "probe": probe}[mode]()
+    {"run": run, "weekly": lambda: run(force_weekly=True),
+     "check": check, "probe": probe}[mode]()
