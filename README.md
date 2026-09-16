@@ -15,3 +15,5 @@ Nothing in this repo contains it.
 Settings (Settings → Secrets and variables → Actions → Variables):
 - `ODDS_BOOKMAKERS` — default `draftkings` (only DraftKings is pulled)
 - `INCLUDE_CUPS` — `true` to add FA Cup and Conference League
+- `ODDS_TEAM_FILTER` — optional JSON, e.g. `{"LaLiga": ["Real Madrid", "Barcelona"]}`;
+  only matches involving a listed team are pulled for that league
