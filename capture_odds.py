@@ -9,15 +9,16 @@ Runs on a schedule (GitHub Actions). Every run:
      state/pulled.json, and logs remaining credits to data/odds/quota.csv
 
 Credits are spent only in steps 2-3: one call per competition per pull type,
-covering every due match at once. Cost per call = markets x regions.
+covering every due match at once. Only DraftKings is requested (ODDS_BOOKMAKERS);
+cost per call = markets returned x 1 (up to 10 bookmakers bill as one region).
 
 The API key is read from the ODDS_API_KEY environment variable (a GitHub
 secret). It is never written to any file or log.
 
 Modes:
   python capture_odds.py            normal scheduled run
-  python capture_odds.py probe      ONE-TIME test: which regions return soccer
-                                    totals/spreads (costs up to 9 credits)
+  python capture_odds.py probe      ONE-TIME test: which markets the bookmaker
+                                    offers per league (at most 3 credits each)
   python capture_odds.py check      free: validate key + sport keys, show quota
 """
 from __future__ import annotations
@@ -41,7 +42,10 @@ CUPS = {                        # predictions-only; OFF until decided
     "soccer_uefa_europa_conference_league": "UECL",
 }
 INCLUDE_CUPS = os.environ.get("INCLUDE_CUPS", "false").lower() == "true"
-REGIONS = os.environ.get("ODDS_REGIONS", "eu")          # set after the probe
+# Only these bookmakers are pulled. Up to 10 bookmakers bill as one region;
+# if BOOKMAKERS is empty, REGIONS is used instead.
+BOOKMAKERS = os.environ.get("ODDS_BOOKMAKERS", "draftkings").strip()
+REGIONS = os.environ.get("ODDS_REGIONS", "us")
 MARKETS = os.environ.get("ODDS_MARKETS", "h2h,totals,spreads")
 CREDIT_RESERVE = int(os.environ.get("CREDIT_RESERVE", "40"))  # never go below
 SLATE_MAX_MIN = 24 * 60 + 15
@@ -148,15 +152,27 @@ def due(events, state, now):
     return slate, late
 
 
+def book_params():
+    """Bookmakers take priority over regions in the API; send only one of them."""
+    return {"bookmakers": BOOKMAKERS} if BOOKMAKERS else {"regions": REGIONS}
+
+
+def max_cost():
+    n_markets = len(MARKETS.split(","))
+    if BOOKMAKERS:
+        return n_markets * -(-len(BOOKMAKERS.split(",")) // 10)
+    return n_markets * len(REGIONS.split(","))
+
+
 def pull(sport, label, evs, kind, state, now, remaining):
-    cost = len(MARKETS.split(",")) * len(REGIONS.split(","))
+    cost = max_cost()   # upper bound: markets a book doesn't offer are not billed
     # unknown balance (first ever pull) -> allow; the response header sets it
     if remaining is not None and remaining - cost < CREDIT_RESERVE:
         print(f"SKIP {label} {kind}: {remaining} credits left, reserve {CREDIT_RESERVE}")
         return remaining
     ids = ",".join(e["id"] for e in evs)
-    body, hdr = get(f"/sports/{sport}/odds", regions=REGIONS, markets=MARKETS,
-                    oddsFormat="decimal", dateFormat="iso", eventIds=ids)
+    body, hdr = get(f"/sports/{sport}/odds", markets=MARKETS, oddsFormat="decimal",
+                    dateFormat="iso", eventIds=ids, **book_params())
     stamp = now.strftime("%Y%m%dT%H%M%SZ")
     d = OUT / "raw" / now.strftime("%Y/%m/%d"); d.mkdir(parents=True, exist_ok=True)
     (d / f"{label}_{kind}_{stamp}.json").write_text(json.dumps(body))
@@ -210,22 +226,26 @@ def check():
 
 
 def probe():
-    """One-time: which regions carry soccer totals/spreads. Up to 9 credits."""
-    events, _ = get("/sports/soccer_epl/events", dateFormat="iso")
-    if not events:
-        sys.exit("No upcoming PL events to probe right now.")
-    ev = events[0]["id"]
+    """One-time: which markets the configured bookmaker(s) offer for one upcoming
+    match in each league. At most 3 credits per league; markets not offered
+    are not billed."""
     report = {}
-    for region in ("us", "uk", "eu"):
-        body, hdr = get("/sports/soccer_epl/odds", regions=region, markets="h2h,totals,spreads",
-                        oddsFormat="decimal", eventIds=ev)
-        log_quota(hdr, f"probe {region}")
+    for sport, label in SPORTS.items():
+        events, _ = get(f"/sports/{sport}/events", dateFormat="iso")
+        if not events:
+            report[label] = "no upcoming events"; continue
+        ev = events[0]
+        body, hdr = get(f"/sports/{sport}/odds", markets=MARKETS, oddsFormat="decimal",
+                        eventIds=ev["id"], **book_params())
+        log_quota(hdr, f"probe {label}")
         books = body[0]["bookmakers"] if body else []
-        report[region] = {m: sorted({b["key"] for b in books for mk in b["markets"] if mk["key"] == m})
-                          for m in ("h2h", "totals", "spreads")}
-        report[region]["cost"] = hdr.get("x-requests-last")
+        report[label] = {
+            "match": f'{ev["home_team"]} v {ev["away_team"]} {ev["commence_time"]}',
+            "books": {b["key"]: {mk["key"]: [(o["name"], o.get("point"), o["price"]) for o in mk["outcomes"]]
+                                 for mk in b["markets"]} for b in books},
+            "cost": hdr.get("x-requests-last"), "remaining": hdr.get("x-requests-remaining")}
     OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / "probe_regions.json").write_text(json.dumps(report, indent=1))
+    (OUT / "probe_bookmaker.json").write_text(json.dumps(report, indent=1))
     print(json.dumps(report, indent=1))
 
 
