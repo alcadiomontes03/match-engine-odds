@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "run | check (free) | probe (one-time, up to 9 credits)"
+        description: "run | check (free) | probe (one-time, up to 9 credits, DraftKings only)"
         default: "check"
         required: true
 
@@ -29,7 +29,7 @@ jobs:
       - name: Capture
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-          ODDS_REGIONS: ${{ vars.ODDS_REGIONS || 'eu' }}
+          ODDS_BOOKMAKERS: ${{ vars.ODDS_BOOKMAKERS || 'draftkings' }}
           INCLUDE_CUPS: ${{ vars.INCLUDE_CUPS || 'false' }}
         run: python capture_odds.py ${{ github.event.inputs.mode || 'run' }}
       - name: Commit captured odds
