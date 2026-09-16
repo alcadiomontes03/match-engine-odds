@@ -13,5 +13,5 @@ The API key lives only in the repository secret `ODDS_API_KEY`.
 Nothing in this repo contains it.
 
 Settings (Settings → Secrets and variables → Actions → Variables):
-- `ODDS_REGIONS` — default `eu`; set from the probe result
+- `ODDS_BOOKMAKERS` — default `draftkings` (only DraftKings is pulled)
 - `INCLUDE_CUPS` — `true` to add FA Cup and Conference League
