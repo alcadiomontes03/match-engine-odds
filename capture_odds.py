@@ -86,6 +86,17 @@ def log_quota(hdr, note):
                     hdr.get("x-requests-last")])
 
 
+def last_logged_remaining():
+    f = OUT / "quota.csv"
+    if not f.exists():
+        return None
+    rows = list(csv.DictReader(f.open()))
+    for r in reversed(rows):
+        if r.get("remaining") not in (None, "", "None"):
+            return int(float(r["remaining"]))
+    return None
+
+
 def load_state():
     return json.loads(STATE.read_text()) if STATE.exists() else {}
 
@@ -139,7 +150,8 @@ def due(events, state, now):
 
 def pull(sport, label, evs, kind, state, now, remaining):
     cost = len(MARKETS.split(",")) * len(REGIONS.split(","))
-    if remaining is None or remaining - cost < CREDIT_RESERVE:
+    # unknown balance (first ever pull) -> allow; the response header sets it
+    if remaining is not None and remaining - cost < CREDIT_RESERVE:
         print(f"SKIP {label} {kind}: {remaining} credits left, reserve {CREDIT_RESERVE}")
         return remaining
     ids = ",".join(e["id"] for e in evs)
@@ -164,14 +176,17 @@ def run():
     now = datetime.now(timezone.utc)
     comps = dict(SPORTS, **(CUPS if INCLUDE_CUPS else {}))
     state = load_state()
-    _, hdr = get("/sports")                       # free; tells us the balance up front
-    rem = hdr.get("x-requests-remaining")
-    remaining = int(float(rem)) if rem is not None else None
+    # Balance: last value logged after a paid call. Scheduled runs never call
+    # /sports, so polling every 15 min cannot consume credits even if that
+    # endpoint were ever billed.
+    remaining = last_logged_remaining()
     for sport, label in comps.items():
         try:
             events, hdr = get(f"/sports/{sport}/events", dateFormat="iso")   # free
         except RuntimeError as e:
             print(f"WARN {label}: {e}"); continue
+        if hdr.get("x-requests-remaining") is not None:
+            remaining = int(float(hdr["x-requests-remaining"]))
         slate, late = due(events, state, now)
         if slate:
             remaining = pull(sport, label, slate, "slate", state, now, remaining)
@@ -183,14 +198,15 @@ def run():
 
 
 def check():
-    sports, hdr = get("/sports", all="true")        # free
+    sports, hdr = get("/sports", all="true")        # free per docs; manual use only
     keys = {s["key"]: s for s in sports}
     for k, label in dict(SPORTS, **CUPS).items():
         s = keys.get(k)
         print(f"{label:13s} {k:40s} " + ("MISSING" if not s else
               f"found, active={s['active']}"))
     print("credits remaining:", hdr.get("x-requests-remaining"),
-          "| used:", hdr.get("x-requests-used"))
+          "| used:", hdr.get("x-requests-used"), "| this call cost:", hdr.get("x-requests-last"))
+    log_quota(hdr, "check")
 
 
 def probe():
