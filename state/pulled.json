@@ -1,0 +1,44 @@
+{
+ "32e9c1d63aed0abb71f90e02f91f4e10": {
+  "away": "CA Osasuna",
+  "commence": "2026-09-16T17:00:00Z",
+  "comp": "LaLiga",
+  "home": "Atl\u00e9tico Madrid",
+  "slate": "2026-09-16T08:51:32+00:00"
+ },
+ "4a3400b0763bcc367171537f40b27a4f": {
+  "away": "Real Racing Club de Santander",
+  "commence": "2026-09-16T19:30:00Z",
+  "comp": "LaLiga",
+  "home": "Barcelona",
+  "slate": "2026-09-16T08:51:32+00:00"
+ },
+ "4ef67376b662c2859f73bde7f7210388": {
+  "away": "Athletic Bilbao",
+  "commence": "2026-09-16T19:30:00Z",
+  "comp": "LaLiga",
+  "home": "Levante",
+  "slate": "2026-09-16T08:51:32+00:00"
+ },
+ "56c5e4d30fc27dedb3ae48a80b81346d": {
+  "away": "Villarreal",
+  "commence": "2026-09-17T19:30:00Z",
+  "comp": "LaLiga",
+  "home": "M\u00e1laga",
+  "slate": "2026-09-16T08:51:32+00:00"
+ },
+ "7f644eca099054612d9a7e7e5d8787da": {
+  "away": "Getafe",
+  "commence": "2026-09-17T17:00:00Z",
+  "comp": "LaLiga",
+  "home": "Real Betis",
+  "slate": "2026-09-16T08:51:32+00:00"
+ },
+ "e8d1b34cb3e1f52f67538ad554811b56": {
+  "away": "Sevilla",
+  "commence": "2026-09-16T17:00:00Z",
+  "comp": "LaLiga",
+  "home": "Deportivo La Coru\u00f1a",
+  "slate": "2026-09-16T08:51:32+00:00"
+ }
+}
