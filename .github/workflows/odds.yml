@@ -2,11 +2,11 @@ name: odds-capture
 
 on:
   schedule:
-    - cron: "*/15 * * * *"      # every 15 min; only spends credits when a pull is due
+    - cron: "*/15 * * * *"      # every 15 min; spends credits only for the Monday weekly pull and pre-kickoff pulls
   workflow_dispatch:
     inputs:
       mode:
-        description: "run | check (free) | probe (one-time, up to 9 credits, DraftKings only)"
+        description: "run | weekly (force this week's pull) | check (free) | probe (up to 9 credits)"
         default: "check"
         required: true
 
