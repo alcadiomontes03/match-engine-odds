@@ -31,6 +31,7 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_BOOKMAKERS: ${{ vars.ODDS_BOOKMAKERS || 'draftkings' }}
           INCLUDE_CUPS: ${{ vars.INCLUDE_CUPS || 'false' }}
+          ODDS_TEAM_FILTER: ${{ vars.ODDS_TEAM_FILTER || '' }}
         run: python capture_odds.py ${{ github.event.inputs.mode || 'run' }}
       - name: Commit captured odds
         run: |
