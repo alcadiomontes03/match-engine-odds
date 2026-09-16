@@ -3,7 +3,8 @@ Match Engine — Odds API capture (two-pull cadence).
 
 Runs on a schedule (GitHub Actions). Every run:
   1. lists upcoming fixtures via the FREE /events endpoint
-  2. SLATE pull: once per match, when kickoff is <= 24h15m away
+  2. SLATE pull: once per match; triggered when a match is <= 24h15m away and
+     batched with every other un-pulled match kicking off within 36h
   3. LATE pull:  once per match, when kickoff is 10-70 min away (after team news)
   4. saves raw JSON + flat rows to data/odds/, records what was pulled in
      state/pulled.json, and logs remaining credits to data/odds/quota.csv
@@ -48,11 +49,30 @@ BOOKMAKERS = os.environ.get("ODDS_BOOKMAKERS", "draftkings").strip()
 REGIONS = os.environ.get("ODDS_REGIONS", "us")
 MARKETS = os.environ.get("ODDS_MARKETS", "h2h,totals,spreads")
 CREDIT_RESERVE = int(os.environ.get("CREDIT_RESERVE", "40"))  # never go below
-SLATE_MAX_MIN = 24 * 60 + 15
+SLATE_MAX_MIN = 24 * 60 + 15     # a slate pull is TRIGGERED by a match this close...
+SLATE_BATCH_MIN = 36 * 60        # ...and then covers every un-pulled match within 36h
 SLATE_MIN_MIN = 90
 LATE_MAX_MIN = 70
 LATE_MIN_MIN = 10
+# Optional per-league team filter, JSON: {"LaLiga": ["Real Madrid", "Sevilla"]}.
+# A match is kept if EITHER side matches a listed name (accent/case-insensitive
+# substring). Leagues not listed are unfiltered.
+TEAM_FILTER = json.loads(os.environ.get("ODDS_TEAM_FILTER", "") or "{}")
 # --------------------------------------------------------------------------
+
+
+def _fold(x):
+    import unicodedata
+    return unicodedata.normalize("NFKD", x).encode("ascii", "ignore").decode().lower()
+
+
+def keep_event(ev, label):
+    teams = TEAM_FILTER.get(label)
+    if not teams:
+        return True
+    names = [_fold(t) for t in teams]
+    sides = (_fold(ev["home_team"]), _fold(ev["away_team"]))
+    return any(n in side for n in names for side in sides)
 
 
 def _key():
@@ -141,15 +161,20 @@ def minutes_to(ts, now):
 
 
 def due(events, state, now):
-    slate, late = [], []
+    """Late pulls: one per kickoff slot (they must follow team news).
+    Slate pulls: batched - once any match is within 24h15m, every match not yet
+    slate-pulled that kicks off within 36h rides along in the same call."""
+    late, slate_trigger, slate_pool = [], False, []
     for ev in events:
         m = minutes_to(ev["commence_time"], now)
         k = state.get(ev["id"], {})
-        if not k.get("slate") and SLATE_MIN_MIN < m <= SLATE_MAX_MIN:
-            slate.append(ev)
+        if not k.get("slate") and SLATE_MIN_MIN < m <= SLATE_BATCH_MIN:
+            slate_pool.append(ev)
+            if m <= SLATE_MAX_MIN:
+                slate_trigger = True
         if not k.get("late") and LATE_MIN_MIN < m <= LATE_MAX_MIN:
             late.append(ev)
-    return slate, late
+    return (slate_pool if slate_trigger else []), late
 
 
 def book_params():
@@ -203,6 +228,7 @@ def run():
             print(f"WARN {label}: {e}"); continue
         if hdr.get("x-requests-remaining") is not None:
             remaining = int(float(hdr["x-requests-remaining"]))
+        events = [e for e in events if keep_event(e, label)]
         slate, late = due(events, state, now)
         if slate:
             remaining = pull(sport, label, slate, "slate", state, now, remaining)
@@ -234,6 +260,7 @@ def probe():
         events, _ = get(f"/sports/{sport}/events", dateFormat="iso")
         if not events:
             report[label] = "no upcoming events"; continue
+        events = [e for e in events if keep_event(e, label)] or events
         ev = events[0]
         body, hdr = get(f"/sports/{sport}/odds", markets=MARKETS, oddsFormat="decimal",
                         eventIds=ev["id"], **book_params())
