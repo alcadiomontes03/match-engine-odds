@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "run | weekly (force this week's pull) | check (free) | probe (up to 9 credits)"
+        description: "run | weekly (force this week's pull) | check (free) | probe (up to 3 credits)"
         default: "check"
         required: true
 
@@ -30,6 +30,7 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_BOOKMAKERS: ${{ vars.ODDS_BOOKMAKERS || 'draftkings' }}
+          ODDS_MARKETS: ${{ vars.ODDS_MARKETS || 'h2h' }}
           INCLUDE_CUPS: ${{ vars.INCLUDE_CUPS || 'false' }}
           ODDS_TEAM_FILTER: ${{ vars.ODDS_TEAM_FILTER || '' }}
         run: python capture_odds.py ${{ github.event.inputs.mode || 'run' }}
