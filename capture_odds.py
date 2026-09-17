@@ -6,14 +6,16 @@ Runs on a schedule (GitHub Actions). Every run:
   2. WEEKLY pull: once per week per league, on the first run after Monday
      15:00 UTC (8am Pacific in summer, 7am in winter); covers every match in
      the next 7 days in a single call (DraftKings' early lines)
-  3. LATE pull:  once per match, when kickoff is 10-70 min away (after team
-     news) - DraftKings' near-closing line, used for CLV
+  3. LATE pull:  within 3h of kickoff, plus one refresh inside the last 65 min
+     (after team news) if the first pull came earlier - DraftKings'
+     near-closing line, used for CLV. The wide window exists because GitHub
+     runs "every 15 min" schedules only every ~2h in practice.
   4. saves raw JSON + flat rows to data/odds/, records what was pulled in
      state/pulled.json, and logs remaining credits to data/odds/quota.csv
 
 Credits are spent only in steps 2-3: one call per competition per pull type,
 covering every due match at once. Only DraftKings is requested (ODDS_BOOKMAKERS);
-cost per call = markets returned x 1 (up to 10 bookmakers bill as one region).
+cost per call = markets requested x 1 (up to 10 bookmakers bill as one region).
 
 The API key is read from the ODDS_API_KEY environment variable (a GitHub
 secret). It is never written to any file or log.
@@ -22,7 +24,7 @@ Modes:
   python capture_odds.py            normal scheduled run
   python capture_odds.py weekly     force this week's weekly pull now (manual)
   python capture_odds.py probe      ONE-TIME test: which markets the bookmaker
-                                    offers per league (at most 3 credits each)
+                                    offers per league (1 credit per market each)
   python capture_odds.py check      free: validate key + sport keys, show quota
 """
 from __future__ import annotations
@@ -50,13 +52,14 @@ INCLUDE_CUPS = os.environ.get("INCLUDE_CUPS", "false").lower() == "true"
 # if BOOKMAKERS is empty, REGIONS is used instead.
 BOOKMAKERS = os.environ.get("ODDS_BOOKMAKERS", "draftkings").strip()
 REGIONS = os.environ.get("ODDS_REGIONS", "us")
-MARKETS = os.environ.get("ODDS_MARKETS", "h2h,totals,spreads")
+MARKETS = os.environ.get("ODDS_MARKETS", "h2h")
 CREDIT_RESERVE = int(os.environ.get("CREDIT_RESERVE", "40"))  # never go below
 WEEKLY_WEEKDAY = 0               # Monday
 WEEKLY_HOUR_UTC = 15             # 15:00 UTC = 8am PDT / 7am PST
 WEEKLY_WINDOW_MIN = 7 * 24 * 60  # the weekly pull covers the next 7 days
-LATE_MAX_MIN = 70
-LATE_MIN_MIN = 10
+LATE_MAX_MIN = 180               # first late pull: any run within 3h of kickoff
+TEAM_NEWS_MIN = 65               # one refresh once inside this window
+LATE_MIN_MIN = 5
 # Optional per-league team filter, JSON: {"LaLiga": ["Real Madrid", "Sevilla"]}.
 # A match is kept if EITHER side matches a listed name (accent/case-insensitive
 # substring). Leagues not listed are unfiltered.
@@ -183,10 +186,19 @@ def due_weekly(events, now):
 
 
 def due_late(events, state, now):
-    """One late pull per kickoff slot - it has to come after team news."""
-    return [ev for ev in events
-            if not state.get(ev["id"], {}).get("late")
-            and LATE_MIN_MIN < minutes_to(ev["commence_time"], now) <= LATE_MAX_MIN]
+    """At most two late pulls per match: the first run inside 3h of kickoff,
+    and one refresh inside the team-news window if the first came earlier."""
+    out = []
+    for ev in events:
+        m = minutes_to(ev["commence_time"], now)
+        if not (LATE_MIN_MIN < m <= LATE_MAX_MIN):
+            continue
+        k = state.get(ev["id"], {})
+        if k.get("late_final"):
+            continue
+        if not k.get("late") or m <= TEAM_NEWS_MIN:
+            out.append(ev)
+    return out
 
 
 def book_params():
@@ -203,7 +215,7 @@ def max_cost():
 
 def pull(sport, label, evs, kind, state, now, remaining):
     """Returns (remaining, pulled?)."""
-    cost = max_cost()   # upper bound: markets a book doesn't offer are not billed
+    cost = max_cost()   # billed per market requested, even if the book offers none
     # unknown balance (first ever pull) -> allow; the response header sets it
     if remaining is not None and remaining - cost < CREDIT_RESERVE:
         print(f"SKIP {label} {kind}: {remaining} credits left, reserve {CREDIT_RESERVE}")
@@ -219,6 +231,8 @@ def pull(sport, label, evs, kind, state, now, remaining):
         s = state.setdefault(e["id"], {"commence": e["commence_time"], "comp": label,
                                        "home": e["home_team"], "away": e["away_team"]})
         s[kind] = now.isoformat(timespec="seconds")
+        if kind == "late" and minutes_to(e["commence_time"], now) <= TEAM_NEWS_MIN:
+            s["late_final"] = True
     log_quota(hdr, f"{label} {kind} x{len(evs)}")
     print(f"PULLED {label} {kind}: {len(evs)} matches, {len(body)} returned, "
           f"cost {hdr.get('x-requests-last')}, left {hdr.get('x-requests-remaining')}")
@@ -275,8 +289,8 @@ def check():
 
 def probe():
     """One-time: which markets the configured bookmaker(s) offer for one upcoming
-    match in each league. At most 3 credits per league; markets not offered
-    are not billed."""
+    match in each league. Costs 1 credit per market requested,
+    per league."""
     report = {}
     for sport, label in SPORTS.items():
         events, _ = get(f"/sports/{sport}/events", dateFormat="iso")
