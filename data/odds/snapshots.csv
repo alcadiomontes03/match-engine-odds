@@ -131,3 +131,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-09-16T09:46:16+00:00,weekly,Championship,69d67bcf95a3d12a18546c312d4b24b5,2026-09-20T12:30:00Z,Norwich City,Bolton Wanderers,draftkings,2026-09-16T09:45:59Z,h2h,Bolton Wanderers,,5.25
 2026-09-16T09:46:16+00:00,weekly,Championship,69d67bcf95a3d12a18546c312d4b24b5,2026-09-20T12:30:00Z,Norwich City,Bolton Wanderers,draftkings,2026-09-16T09:45:59Z,h2h,Norwich City,,1.56
 2026-09-16T09:46:16+00:00,weekly,Championship,69d67bcf95a3d12a18546c312d4b24b5,2026-09-20T12:30:00Z,Norwich City,Bolton Wanderers,draftkings,2026-09-16T09:45:59Z,h2h,Draw,,4.4
+2026-09-17T16:59:02+00:00,late,LaLiga,56c5e4d30fc27dedb3ae48a80b81346d,2026-09-17T19:30:00Z,Málaga,Villarreal,draftkings,2026-09-17T16:58:41Z,h2h,Málaga,,3.7
+2026-09-17T16:59:02+00:00,late,LaLiga,56c5e4d30fc27dedb3ae48a80b81346d,2026-09-17T19:30:00Z,Málaga,Villarreal,draftkings,2026-09-17T16:58:41Z,h2h,Villarreal,,1.95
+2026-09-17T16:59:02+00:00,late,LaLiga,56c5e4d30fc27dedb3ae48a80b81346d,2026-09-17T19:30:00Z,Málaga,Villarreal,draftkings,2026-09-17T16:58:41Z,h2h,Draw,,3.8
