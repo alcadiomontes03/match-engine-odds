@@ -1,6 +1,8 @@
 # Match Engine — odds capture
 
-Scheduled DraftKings odds capture from The Odds API (free tier, 500 credits/month).
+Scheduled DraftKings **moneyline** odds capture from The Odds API (free tier, 500 credits/month).
+Each pull costs 1 credit per league (billing is per market requested; DraftKings
+returned no soccer totals/spreads through this API in testing).
 
 Cadence (runs every 15 minutes, spends credits only when a pull is due):
 - **Weekly** - first run after Monday 15:00 UTC (8am Pacific in summer):
@@ -10,7 +12,7 @@ Cadence (runs every 15 minutes, spends credits only when a pull is due):
 - Sharp closing lines (Pinnacle / market average) come free from
   football-data.co.uk, so no credits are spent on them.
 
-Expected use: about 285 credits/month across PL, La Liga and Championship.
+Expected use: about 95 credits/month across PL, La Liga and Championship.
 
 - `capture_odds.py` — the script (standard-library Python only)
 - `.github/workflows/odds.yml` — runs it every 15 minutes
@@ -24,6 +26,7 @@ Nothing in this repo contains it.
 
 Settings (Settings → Secrets and variables → Actions → Variables):
 - `ODDS_BOOKMAKERS` — default `draftkings` (only DraftKings is pulled)
+- `ODDS_MARKETS` — default `h2h` (moneyline only); comma-separated to add markets
 - `INCLUDE_CUPS` — `true` to add FA Cup and Conference League
 - `ODDS_TEAM_FILTER` — optional JSON, e.g. `{"LaLiga": ["Real Madrid", "Barcelona"]}`;
   only matches involving a listed team are pulled for that league
