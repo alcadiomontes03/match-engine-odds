@@ -134,3 +134,12 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-09-17T16:59:02+00:00,late,LaLiga,56c5e4d30fc27dedb3ae48a80b81346d,2026-09-17T19:30:00Z,Málaga,Villarreal,draftkings,2026-09-17T16:58:41Z,h2h,Málaga,,3.7
 2026-09-17T16:59:02+00:00,late,LaLiga,56c5e4d30fc27dedb3ae48a80b81346d,2026-09-17T19:30:00Z,Málaga,Villarreal,draftkings,2026-09-17T16:58:41Z,h2h,Villarreal,,1.95
 2026-09-17T16:59:02+00:00,late,LaLiga,56c5e4d30fc27dedb3ae48a80b81346d,2026-09-17T19:30:00Z,Málaga,Villarreal,draftkings,2026-09-17T16:58:41Z,h2h,Draw,,3.8
+2026-09-18T17:53:22+00:00,late,PL,82d8b6a005d78bac0b1508abc17a7d39,2026-09-18T19:00:00Z,Brentford,Chelsea,draftkings,2026-09-18T17:53:17Z,h2h,Brentford,,2.65
+2026-09-18T17:53:22+00:00,late,PL,82d8b6a005d78bac0b1508abc17a7d39,2026-09-18T19:00:00Z,Brentford,Chelsea,draftkings,2026-09-18T17:53:17Z,h2h,Chelsea,,2.55
+2026-09-18T17:53:22+00:00,late,PL,82d8b6a005d78bac0b1508abc17a7d39,2026-09-18T19:00:00Z,Brentford,Chelsea,draftkings,2026-09-18T17:53:17Z,h2h,Draw,,3.65
+2026-09-18T17:53:22+00:00,late,LaLiga,da3d3fec3e0b6b939910427a76ecfb76,2026-09-18T19:00:00Z,Espanyol,Elche CF,draftkings,2026-09-18T17:53:22Z,h2h,Elche CF,,4.6
+2026-09-18T17:53:22+00:00,late,LaLiga,da3d3fec3e0b6b939910427a76ecfb76,2026-09-18T19:00:00Z,Espanyol,Elche CF,draftkings,2026-09-18T17:53:22Z,h2h,Espanyol,,1.8
+2026-09-18T17:53:22+00:00,late,LaLiga,da3d3fec3e0b6b939910427a76ecfb76,2026-09-18T19:00:00Z,Espanyol,Elche CF,draftkings,2026-09-18T17:53:22Z,h2h,Draw,,3.7
+2026-09-18T17:53:22+00:00,late,Championship,22907aefea43f3b3fc0e1718e8214a62,2026-09-18T19:00:00Z,Bristol City,Watford,draftkings,2026-09-18T17:53:19Z,h2h,Bristol City,,1.74
+2026-09-18T17:53:22+00:00,late,Championship,22907aefea43f3b3fc0e1718e8214a62,2026-09-18T19:00:00Z,Bristol City,Watford,draftkings,2026-09-18T17:53:19Z,h2h,Watford,,4.6
+2026-09-18T17:53:22+00:00,late,Championship,22907aefea43f3b3fc0e1718e8214a62,2026-09-18T19:00:00Z,Bristol City,Watford,draftkings,2026-09-18T17:53:19Z,h2h,Draw,,3.95
