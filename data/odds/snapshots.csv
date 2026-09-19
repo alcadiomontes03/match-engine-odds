@@ -188,3 +188,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-09-19T13:20:05+00:00,late,Championship,32723ef48cd60f2c36c1b0e4892df015,2026-09-19T14:00:00Z,Wrexham AFC,Southampton,draftkings,2026-09-19T13:19:39Z,h2h,Southampton,,2.45
 2026-09-19T13:20:05+00:00,late,Championship,32723ef48cd60f2c36c1b0e4892df015,2026-09-19T14:00:00Z,Wrexham AFC,Southampton,draftkings,2026-09-19T13:19:39Z,h2h,Wrexham AFC,,2.75
 2026-09-19T13:20:05+00:00,late,Championship,32723ef48cd60f2c36c1b0e4892df015,2026-09-19T14:00:00Z,Wrexham AFC,Southampton,draftkings,2026-09-19T13:19:39Z,h2h,Draw,,3.6
+2026-09-19T16:39:08+00:00,late,LaLiga,e4cd525660de25ecfee1099882ef00e4,2026-09-19T19:00:00Z,Sevilla,Barcelona,draftkings,2026-09-19T16:39:01Z,h2h,Barcelona,,1.27
+2026-09-19T16:39:08+00:00,late,LaLiga,e4cd525660de25ecfee1099882ef00e4,2026-09-19T19:00:00Z,Sevilla,Barcelona,draftkings,2026-09-19T16:39:01Z,h2h,Sevilla,,9.5
+2026-09-19T16:39:08+00:00,late,LaLiga,e4cd525660de25ecfee1099882ef00e4,2026-09-19T19:00:00Z,Sevilla,Barcelona,draftkings,2026-09-19T16:39:01Z,h2h,Draw,,6.5
