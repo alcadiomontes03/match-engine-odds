@@ -27,6 +27,8 @@
   "commence": "2026-09-19T14:00:00Z",
   "comp": "Championship",
   "home": "Wrexham AFC",
+  "late": "2026-09-19T13:20:05+00:00",
+  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "32e9c1d63aed0abb71f90e02f91f4e10": {
@@ -42,6 +44,8 @@
   "commence": "2026-09-19T14:00:00Z",
   "comp": "Championship",
   "home": "Birmingham City",
+  "late": "2026-09-19T13:20:05+00:00",
+  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "3f55c15c31fa4b4809fcdcad70826447": {
@@ -80,6 +84,8 @@
   "commence": "2026-09-19T14:00:00Z",
   "comp": "Championship",
   "home": "Lincoln City",
+  "late": "2026-09-19T13:20:05+00:00",
+  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "518b5e6173971b0e6aa5f1a79dda47f0": {
@@ -87,6 +93,8 @@
   "commence": "2026-09-19T14:00:00Z",
   "comp": "Championship",
   "home": "Queens Park Rangers",
+  "late": "2026-09-19T13:20:05+00:00",
+  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "5502f6f20eccc2f2ed0d3904712e4a2c": {
@@ -101,6 +109,8 @@
   "commence": "2026-09-19T14:00:00Z",
   "comp": "Championship",
   "home": "Burnley",
+  "late": "2026-09-19T13:20:05+00:00",
+  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "56c5e4d30fc27dedb3ae48a80b81346d": {
@@ -124,6 +134,8 @@
   "commence": "2026-09-19T14:00:00Z",
   "comp": "Championship",
   "home": "Portsmouth",
+  "late": "2026-09-19T13:20:05+00:00",
+  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "69d67bcf95a3d12a18546c312d4b24b5": {
@@ -168,6 +180,8 @@
   "commence": "2026-09-19T14:00:00Z",
   "comp": "PL",
   "home": "Everton",
+  "late": "2026-09-19T13:20:05+00:00",
+  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "9a70cbf505030f8bfe5c7864f5ac75b5": {
@@ -195,6 +209,8 @@
   "commence": "2026-09-19T14:15:00Z",
   "comp": "LaLiga",
   "home": "Athletic Bilbao",
+  "late": "2026-09-19T13:20:05+00:00",
+  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "b5b058d0a95f9742548f789d1c564a78": {
@@ -202,6 +218,8 @@
   "commence": "2026-09-19T14:00:00Z",
   "comp": "PL",
   "home": "Brighton and Hove Albion",
+  "late": "2026-09-19T13:20:05+00:00",
+  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "b63aef4291a066e32644e591c19a235a": {
@@ -276,6 +294,8 @@
   "commence": "2026-09-19T14:00:00Z",
   "comp": "PL",
   "home": "Newcastle United",
+  "late": "2026-09-19T13:20:05+00:00",
+  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "f923236e69ed946fdc55163494ee88db": {
