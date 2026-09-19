@@ -4,6 +4,7 @@
   "commence": "2026-09-19T11:30:00Z",
   "comp": "Championship",
   "home": "Cardiff City",
+  "late": "2026-09-19T09:30:14+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "182b81a9e220b2347235107c42802fd8": {
@@ -48,6 +49,7 @@
   "commence": "2026-09-19T11:30:00Z",
   "comp": "Championship",
   "home": "Millwall",
+  "late": "2026-09-19T09:30:14+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "4444a2944864eeb6e43274b448e39b22": {
@@ -173,6 +175,7 @@
   "commence": "2026-09-19T12:00:00Z",
   "comp": "LaLiga",
   "home": "CA Osasuna",
+  "late": "2026-09-19T09:30:14+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "_meta": {
@@ -213,6 +216,7 @@
   "commence": "2026-09-19T11:30:00Z",
   "comp": "PL",
   "home": "Tottenham Hotspur",
+  "late": "2026-09-19T09:30:14+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "d05fb9feb5722b2f2cedb8bbe7c33a1d": {
@@ -227,6 +231,7 @@
   "commence": "2026-09-19T11:30:00Z",
   "comp": "Championship",
   "home": "Stoke City",
+  "late": "2026-09-19T09:30:14+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "da3d3fec3e0b6b939910427a76ecfb76": {

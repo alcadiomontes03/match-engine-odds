@@ -143,3 +143,18 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-09-18T17:53:22+00:00,late,Championship,22907aefea43f3b3fc0e1718e8214a62,2026-09-18T19:00:00Z,Bristol City,Watford,draftkings,2026-09-18T17:53:19Z,h2h,Bristol City,,1.74
 2026-09-18T17:53:22+00:00,late,Championship,22907aefea43f3b3fc0e1718e8214a62,2026-09-18T19:00:00Z,Bristol City,Watford,draftkings,2026-09-18T17:53:19Z,h2h,Watford,,4.6
 2026-09-18T17:53:22+00:00,late,Championship,22907aefea43f3b3fc0e1718e8214a62,2026-09-18T19:00:00Z,Bristol City,Watford,draftkings,2026-09-18T17:53:19Z,h2h,Draw,,3.95
+2026-09-19T09:30:14+00:00,late,PL,d02ff636f652d5b5bb65f6b24330c4fe,2026-09-19T11:30:00Z,Tottenham Hotspur,Aston Villa,draftkings,2026-09-19T09:29:21Z,h2h,Aston Villa,,3.9
+2026-09-19T09:30:14+00:00,late,PL,d02ff636f652d5b5bb65f6b24330c4fe,2026-09-19T11:30:00Z,Tottenham Hotspur,Aston Villa,draftkings,2026-09-19T09:29:21Z,h2h,Tottenham Hotspur,,1.95
+2026-09-19T09:30:14+00:00,late,PL,d02ff636f652d5b5bb65f6b24330c4fe,2026-09-19T11:30:00Z,Tottenham Hotspur,Aston Villa,draftkings,2026-09-19T09:29:21Z,h2h,Draw,,3.6
+2026-09-19T09:30:14+00:00,late,LaLiga,9a70cbf505030f8bfe5c7864f5ac75b5,2026-09-19T12:00:00Z,CA Osasuna,Rayo Vallecano,draftkings,2026-09-19T09:30:13Z,h2h,CA Osasuna,,2.55
+2026-09-19T09:30:14+00:00,late,LaLiga,9a70cbf505030f8bfe5c7864f5ac75b5,2026-09-19T12:00:00Z,CA Osasuna,Rayo Vallecano,draftkings,2026-09-19T09:30:13Z,h2h,Rayo Vallecano,,2.8
+2026-09-19T09:30:14+00:00,late,LaLiga,9a70cbf505030f8bfe5c7864f5ac75b5,2026-09-19T12:00:00Z,CA Osasuna,Rayo Vallecano,draftkings,2026-09-19T09:30:13Z,h2h,Draw,,3.3
+2026-09-19T09:30:14+00:00,late,Championship,0c830736955911d3043cff8e1ae17440,2026-09-19T11:30:00Z,Cardiff City,Charlton Athletic,draftkings,2026-09-19T09:29:24Z,h2h,Cardiff City,,1.74
+2026-09-19T09:30:14+00:00,late,Championship,0c830736955911d3043cff8e1ae17440,2026-09-19T11:30:00Z,Cardiff City,Charlton Athletic,draftkings,2026-09-19T09:29:24Z,h2h,Charlton Athletic,,4.3
+2026-09-19T09:30:14+00:00,late,Championship,0c830736955911d3043cff8e1ae17440,2026-09-19T11:30:00Z,Cardiff City,Charlton Athletic,draftkings,2026-09-19T09:29:24Z,h2h,Draw,,4.1
+2026-09-19T09:30:14+00:00,late,Championship,3f55c15c31fa4b4809fcdcad70826447,2026-09-19T11:30:00Z,Millwall,West Ham United,draftkings,2026-09-19T09:29:24Z,h2h,Millwall,,4.9
+2026-09-19T09:30:14+00:00,late,Championship,3f55c15c31fa4b4809fcdcad70826447,2026-09-19T11:30:00Z,Millwall,West Ham United,draftkings,2026-09-19T09:29:24Z,h2h,West Ham United,,1.69
+2026-09-19T09:30:14+00:00,late,Championship,3f55c15c31fa4b4809fcdcad70826447,2026-09-19T11:30:00Z,Millwall,West Ham United,draftkings,2026-09-19T09:29:24Z,h2h,Draw,,4.0
+2026-09-19T09:30:14+00:00,late,Championship,d2255db9d78880de55406d02c4c94243,2026-09-19T11:30:00Z,Stoke City,Sheffield United,draftkings,2026-09-19T09:29:24Z,h2h,Sheffield United,,3.2
+2026-09-19T09:30:14+00:00,late,Championship,d2255db9d78880de55406d02c4c94243,2026-09-19T11:30:00Z,Stoke City,Sheffield United,draftkings,2026-09-19T09:29:24Z,h2h,Stoke City,,2.3
+2026-09-19T09:30:14+00:00,late,Championship,d2255db9d78880de55406d02c4c94243,2026-09-19T11:30:00Z,Stoke City,Sheffield United,draftkings,2026-09-19T09:29:24Z,h2h,Draw,,3.3
