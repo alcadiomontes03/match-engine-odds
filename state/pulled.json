@@ -12,6 +12,8 @@
   "commence": "2026-09-20T15:30:00Z",
   "comp": "PL",
   "home": "Fulham",
+  "late": "2026-09-20T15:22:55+00:00",
+  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "22907aefea43f3b3fc0e1718e8214a62": {
@@ -102,6 +104,7 @@
   "commence": "2026-09-20T16:30:00Z",
   "comp": "LaLiga",
   "home": "Villarreal",
+  "late": "2026-09-20T15:22:55+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "550e1217201e4b0bc35373c62b43f899": {
@@ -272,6 +275,7 @@
   "commence": "2026-09-20T16:30:00Z",
   "comp": "LaLiga",
   "home": "Deportivo La Coru\u00f1a",
+  "late": "2026-09-20T15:22:55+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "e4cd525660de25ecfee1099882ef00e4": {

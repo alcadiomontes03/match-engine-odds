@@ -209,3 +209,12 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-09-20T11:49:03+00:00,late,Championship,69d67bcf95a3d12a18546c312d4b24b5,2026-09-20T12:30:00Z,Norwich City,Bolton Wanderers,draftkings,2026-09-20T11:49:01Z,h2h,Bolton Wanderers,,6.5
 2026-09-20T11:49:03+00:00,late,Championship,69d67bcf95a3d12a18546c312d4b24b5,2026-09-20T12:30:00Z,Norwich City,Bolton Wanderers,draftkings,2026-09-20T11:49:01Z,h2h,Norwich City,,1.43
 2026-09-20T11:49:03+00:00,late,Championship,69d67bcf95a3d12a18546c312d4b24b5,2026-09-20T12:30:00Z,Norwich City,Bolton Wanderers,draftkings,2026-09-20T11:49:01Z,h2h,Draw,,5.0
+2026-09-20T15:22:55+00:00,late,PL,182b81a9e220b2347235107c42802fd8,2026-09-20T15:30:00Z,Fulham,Manchester United,draftkings,2026-09-20T15:22:36Z,h2h,Fulham,,3.6
+2026-09-20T15:22:55+00:00,late,PL,182b81a9e220b2347235107c42802fd8,2026-09-20T15:30:00Z,Fulham,Manchester United,draftkings,2026-09-20T15:22:36Z,h2h,Manchester United,,2.0
+2026-09-20T15:22:55+00:00,late,PL,182b81a9e220b2347235107c42802fd8,2026-09-20T15:30:00Z,Fulham,Manchester United,draftkings,2026-09-20T15:22:36Z,h2h,Draw,,3.8
+2026-09-20T15:22:55+00:00,late,LaLiga,ded5c2293009b93b7d8ee3c890b6617e,2026-09-20T16:30:00Z,Deportivo La Coruña,Real Betis,draftkings,2026-09-20T15:22:20Z,h2h,Deportivo La Coruña,,3.6
+2026-09-20T15:22:55+00:00,late,LaLiga,ded5c2293009b93b7d8ee3c890b6617e,2026-09-20T16:30:00Z,Deportivo La Coruña,Real Betis,draftkings,2026-09-20T15:22:20Z,h2h,Real Betis,,2.0
+2026-09-20T15:22:55+00:00,late,LaLiga,ded5c2293009b93b7d8ee3c890b6617e,2026-09-20T16:30:00Z,Deportivo La Coruña,Real Betis,draftkings,2026-09-20T15:22:20Z,h2h,Draw,,3.75
+2026-09-20T15:22:55+00:00,late,LaLiga,5502f6f20eccc2f2ed0d3904712e4a2c,2026-09-20T16:30:00Z,Villarreal,Levante,draftkings,2026-09-20T15:22:20Z,h2h,Levante,,5.25
+2026-09-20T15:22:55+00:00,late,LaLiga,5502f6f20eccc2f2ed0d3904712e4a2c,2026-09-20T16:30:00Z,Villarreal,Levante,draftkings,2026-09-20T15:22:20Z,h2h,Villarreal,,1.57
+2026-09-20T15:22:55+00:00,late,LaLiga,5502f6f20eccc2f2ed0d3904712e4a2c,2026-09-20T16:30:00Z,Villarreal,Levante,draftkings,2026-09-20T15:22:20Z,h2h,Draw,,4.6
