@@ -218,3 +218,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-09-20T15:22:55+00:00,late,LaLiga,5502f6f20eccc2f2ed0d3904712e4a2c,2026-09-20T16:30:00Z,Villarreal,Levante,draftkings,2026-09-20T15:22:20Z,h2h,Levante,,5.25
 2026-09-20T15:22:55+00:00,late,LaLiga,5502f6f20eccc2f2ed0d3904712e4a2c,2026-09-20T16:30:00Z,Villarreal,Levante,draftkings,2026-09-20T15:22:20Z,h2h,Villarreal,,1.57
 2026-09-20T15:22:55+00:00,late,LaLiga,5502f6f20eccc2f2ed0d3904712e4a2c,2026-09-20T16:30:00Z,Villarreal,Levante,draftkings,2026-09-20T15:22:20Z,h2h,Draw,,4.6
+2026-09-20T18:14:49+00:00,late,LaLiga,d05fb9feb5722b2f2cedb8bbe7c33a1d,2026-09-20T19:00:00Z,Valencia,Real Sociedad,draftkings,2026-09-20T18:14:39Z,h2h,Real Sociedad,,2.7
+2026-09-20T18:14:49+00:00,late,LaLiga,d05fb9feb5722b2f2cedb8bbe7c33a1d,2026-09-20T19:00:00Z,Valencia,Real Sociedad,draftkings,2026-09-20T18:14:39Z,h2h,Valencia,,2.65
+2026-09-20T18:14:49+00:00,late,LaLiga,d05fb9feb5722b2f2cedb8bbe7c33a1d,2026-09-20T19:00:00Z,Valencia,Real Sociedad,draftkings,2026-09-20T18:14:39Z,h2h,Draw,,3.35
