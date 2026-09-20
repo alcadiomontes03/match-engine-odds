@@ -191,3 +191,21 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-09-19T16:39:08+00:00,late,LaLiga,e4cd525660de25ecfee1099882ef00e4,2026-09-19T19:00:00Z,Sevilla,Barcelona,draftkings,2026-09-19T16:39:01Z,h2h,Barcelona,,1.27
 2026-09-19T16:39:08+00:00,late,LaLiga,e4cd525660de25ecfee1099882ef00e4,2026-09-19T19:00:00Z,Sevilla,Barcelona,draftkings,2026-09-19T16:39:01Z,h2h,Sevilla,,9.5
 2026-09-19T16:39:08+00:00,late,LaLiga,e4cd525660de25ecfee1099882ef00e4,2026-09-19T19:00:00Z,Sevilla,Barcelona,draftkings,2026-09-19T16:39:01Z,h2h,Draw,,6.5
+2026-09-20T11:49:03+00:00,late,PL,784f777f5181e1efdad7a6ecb2cfde15,2026-09-20T13:00:00Z,Bournemouth,Liverpool,draftkings,2026-09-20T11:48:19Z,h2h,Bournemouth,,3.05
+2026-09-20T11:49:03+00:00,late,PL,784f777f5181e1efdad7a6ecb2cfde15,2026-09-20T13:00:00Z,Bournemouth,Liverpool,draftkings,2026-09-20T11:48:19Z,h2h,Liverpool,,2.2
+2026-09-20T11:49:03+00:00,late,PL,784f777f5181e1efdad7a6ecb2cfde15,2026-09-20T13:00:00Z,Bournemouth,Liverpool,draftkings,2026-09-20T11:48:19Z,h2h,Draw,,3.8
+2026-09-20T11:49:03+00:00,late,PL,b63aef4291a066e32644e591c19a235a,2026-09-20T13:00:00Z,Leeds United,Crystal Palace,draftkings,2026-09-20T11:48:19Z,h2h,Crystal Palace,,4.8
+2026-09-20T11:49:03+00:00,late,PL,b63aef4291a066e32644e591c19a235a,2026-09-20T13:00:00Z,Leeds United,Crystal Palace,draftkings,2026-09-20T11:48:19Z,h2h,Leeds United,,1.71
+2026-09-20T11:49:03+00:00,late,PL,b63aef4291a066e32644e591c19a235a,2026-09-20T13:00:00Z,Leeds United,Crystal Palace,draftkings,2026-09-20T11:48:19Z,h2h,Draw,,4.0
+2026-09-20T11:49:03+00:00,late,PL,f923236e69ed946fdc55163494ee88db,2026-09-20T13:00:00Z,Manchester City,Sunderland,draftkings,2026-09-20T11:48:19Z,h2h,Manchester City,,1.33
+2026-09-20T11:49:03+00:00,late,PL,f923236e69ed946fdc55163494ee88db,2026-09-20T13:00:00Z,Manchester City,Sunderland,draftkings,2026-09-20T11:48:19Z,h2h,Sunderland,,9.0
+2026-09-20T11:49:03+00:00,late,PL,f923236e69ed946fdc55163494ee88db,2026-09-20T13:00:00Z,Manchester City,Sunderland,draftkings,2026-09-20T11:48:19Z,h2h,Draw,,5.25
+2026-09-20T11:49:03+00:00,late,LaLiga,a5b897588648ae4d05d17a370f2afae1,2026-09-20T12:00:00Z,Getafe,Málaga,draftkings,2026-09-20T11:49:03Z,h2h,Getafe,,1.91
+2026-09-20T11:49:03+00:00,late,LaLiga,a5b897588648ae4d05d17a370f2afae1,2026-09-20T12:00:00Z,Getafe,Málaga,draftkings,2026-09-20T11:49:03Z,h2h,Málaga,,4.7
+2026-09-20T11:49:03+00:00,late,LaLiga,a5b897588648ae4d05d17a370f2afae1,2026-09-20T12:00:00Z,Getafe,Málaga,draftkings,2026-09-20T11:49:03Z,h2h,Draw,,3.2
+2026-09-20T11:49:03+00:00,late,LaLiga,5866dae1e72b96ab74508039cd3dcca7,2026-09-20T14:15:00Z,Atlético Madrid,Real Madrid,draftkings,2026-09-20T11:49:03Z,h2h,Atlético Madrid,,3.4
+2026-09-20T11:49:03+00:00,late,LaLiga,5866dae1e72b96ab74508039cd3dcca7,2026-09-20T14:15:00Z,Atlético Madrid,Real Madrid,draftkings,2026-09-20T11:49:03Z,h2h,Real Madrid,,2.05
+2026-09-20T11:49:03+00:00,late,LaLiga,5866dae1e72b96ab74508039cd3dcca7,2026-09-20T14:15:00Z,Atlético Madrid,Real Madrid,draftkings,2026-09-20T11:49:03Z,h2h,Draw,,3.75
+2026-09-20T11:49:03+00:00,late,Championship,69d67bcf95a3d12a18546c312d4b24b5,2026-09-20T12:30:00Z,Norwich City,Bolton Wanderers,draftkings,2026-09-20T11:49:01Z,h2h,Bolton Wanderers,,6.5
+2026-09-20T11:49:03+00:00,late,Championship,69d67bcf95a3d12a18546c312d4b24b5,2026-09-20T12:30:00Z,Norwich City,Bolton Wanderers,draftkings,2026-09-20T11:49:01Z,h2h,Norwich City,,1.43
+2026-09-20T11:49:03+00:00,late,Championship,69d67bcf95a3d12a18546c312d4b24b5,2026-09-20T12:30:00Z,Norwich City,Bolton Wanderers,draftkings,2026-09-20T11:49:01Z,h2h,Draw,,5.0

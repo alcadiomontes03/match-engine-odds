@@ -127,6 +127,7 @@
   "commence": "2026-09-20T14:15:00Z",
   "comp": "LaLiga",
   "home": "Atl\u00e9tico Madrid",
+  "late": "2026-09-20T11:49:03+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "5a85e792cbedf0fcc4ec13d49ac03892": {
@@ -143,6 +144,8 @@
   "commence": "2026-09-20T12:30:00Z",
   "comp": "Championship",
   "home": "Norwich City",
+  "late": "2026-09-20T11:49:03+00:00",
+  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "75133fdcd4fc3067b303a8f166f974e4": {
@@ -157,6 +160,7 @@
   "commence": "2026-09-20T13:00:00Z",
   "comp": "PL",
   "home": "Bournemouth",
+  "late": "2026-09-20T11:49:03+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "7f644eca099054612d9a7e7e5d8787da": {
@@ -202,6 +206,8 @@
   "commence": "2026-09-20T12:00:00Z",
   "comp": "LaLiga",
   "home": "Getafe",
+  "late": "2026-09-20T11:49:03+00:00",
+  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "a995ad3266759e67c9f9b0617c184b71": {
@@ -227,6 +233,7 @@
   "commence": "2026-09-20T13:00:00Z",
   "comp": "PL",
   "home": "Leeds United",
+  "late": "2026-09-20T11:49:03+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "d02ff636f652d5b5bb65f6b24330c4fe": {
@@ -304,6 +311,7 @@
   "commence": "2026-09-20T13:00:00Z",
   "comp": "PL",
   "home": "Manchester City",
+  "late": "2026-09-20T11:49:03+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  }
 }
