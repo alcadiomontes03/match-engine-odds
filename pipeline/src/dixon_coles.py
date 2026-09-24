@@ -30,6 +30,17 @@ Backtest (2026-09-21, Premier League, fit on 39 matches through 2026-09-14,
 predicting the 10 real 2026-09-18/20 holdout matches): OLD rho=-1.42, 2/10
 correct (20%), 5/10 draw calls, mean Brier 1.078. NEW rho=-0.22, 5/10 correct
 (50%), 0/10 draw calls, mean Brier 0.672.
+
+--- v4.8 (2026-09-23): optional xG-blended goal target ---
+fit(..., goals_weight=w). When w is given and the frame has xG_H/xG_A columns,
+the Poisson part of the likelihood uses  y = w*goals + (1-w)*xG  for rows that
+have xG (rows without xG keep real goals). The tau low-score correction always
+uses the real scoreline. goals_weight=None (default) = exactly the v4.5 fit.
+Backtest (walk-forward, weekly refit, PL + La Liga 2024-25 and 2025-26, 1520
+matches): 3 seasons + xG on past seasons (w=0.3, xi=0.002) vs the old 2-season
+goals-only fit: 1X2 log loss -0.0044 (t=-2.35), O/U 2.5 log loss -0.0048
+(t=-2.50). Better in both seasons and both leagues. See project doc
+claude/backtest-3season-xg-2026-09-23.md.
 """
 from __future__ import annotations
 
@@ -79,7 +90,11 @@ def _tau(x, y, lam, mu, rho):
     return 1.0
 
 
-def _neg_log_likelihood(params, home_idx, away_idx, hg, ag, weights, n_teams, ridge=5.0):
+def _neg_log_likelihood(params, home_idx, away_idx, hg, ag, weights, n_teams, ridge=5.0,
+                        yh=None, ya=None):
+    # yh/ya: Poisson target (xG-blended goals, v4.8); hg/ag: real goals for tau.
+    if yh is None:
+        yh, ya = hg, ag
     attack = params[:n_teams]
     defense = params[n_teams:2 * n_teams]
     home_adv = params[2 * n_teams]
@@ -90,7 +105,7 @@ def _neg_log_likelihood(params, home_idx, away_idx, hg, ag, weights, n_teams, ri
     lam = np.exp(log_lam)
     mu = np.exp(log_mu)
 
-    ll = (hg * log_lam - lam - _gammaln(hg + 1)) + (ag * log_mu - mu - _gammaln(ag + 1))
+    ll = (yh * log_lam - lam - _gammaln(yh + 1)) + (ya * log_mu - mu - _gammaln(ya + 1))
 
     # low-score correction, vectorized over the small set of (0,0)/(0,1)/(1,0)/(1,1) cells
     tau = np.ones_like(lam)
@@ -120,12 +135,14 @@ def _gammaln(x):
 
 
 def fit(matches: pd.DataFrame, as_of: datetime, xi: float = 0.0018,
-        league: str = "", ridge: float = 5.0) -> Ratings:
+        league: str = "", ridge: float = 5.0,
+        goals_weight: float | None = None) -> Ratings:
     """
     matches: DataFrame with columns Date (datetime), HomeTeam, AwayTeam, FTHG, FTAG.
     as_of: reference date for the exponential time decay (usually "today").
     xi: decay rate per day. 0.0018/day ~ half-life of ~385 days (season-and-a-bit).
     ridge: L2 shrinkage strength on attack/defense ratings (see module docstring).
+    goals_weight: v4.8 xG blend (see module docstring). None = goals only.
     """
     df = matches.dropna(subset=["FTHG", "FTAG"]).copy()
     if len(df) < 20:
@@ -139,6 +156,14 @@ def fit(matches: pd.DataFrame, as_of: datetime, xi: float = 0.0018,
     away_idx = df.AwayTeam.map(idx).to_numpy()
     hg = df.FTHG.to_numpy(dtype=float)
     ag = df.FTAG.to_numpy(dtype=float)
+    yh, ya = hg, ag
+    if goals_weight is not None and {"xG_H", "xG_A"} <= set(df.columns):
+        xh = pd.to_numeric(df.xG_H, errors="coerce").to_numpy(dtype=float)
+        xa = pd.to_numeric(df.xG_A, errors="coerce").to_numpy(dtype=float)
+        has = ~(np.isnan(xh) | np.isnan(xa))
+        w = float(goals_weight)
+        yh = np.where(has, w * hg + (1 - w) * np.nan_to_num(xh), hg)
+        ya = np.where(has, w * ag + (1 - w) * np.nan_to_num(xa), ag)
 
     days_ago = (as_of - df.Date).dt.days.clip(lower=0).to_numpy()
     weights = np.exp(-xi * days_ago)
@@ -156,7 +181,7 @@ def fit(matches: pd.DataFrame, as_of: datetime, xi: float = 0.0018,
 
     res = minimize(
         _neg_log_likelihood, x0,
-        args=(home_idx, away_idx, hg, ag, weights, n_teams, ridge),
+        args=(home_idx, away_idx, hg, ag, weights, n_teams, ridge, yh, ya),
         method="L-BFGS-B",
         bounds=bounds,
         options={"maxiter": 500, "ftol": 1e-10},
