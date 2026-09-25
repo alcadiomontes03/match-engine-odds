@@ -27,6 +27,11 @@ STATE_PATH = Path(__file__).resolve().parent.parent / "state" / "state.json"
 # Now: gate closed -> 0 (pure market); gate open but model alone worse than the
 # market -> at most MAX_MODEL_WEIGHT_WHEN_WORSE model weight.
 MAX_MODEL_WEIGHT_WHEN_WORSE = 0.3
+# v4.9.1: a gate opened on a small sample can't hand the model a big weight.
+# Backtest vs closing odds (PL 2024-25 + 2025-26, 760 matches): model log loss
+# 1.0055 vs market-average close 0.9893, and blending never beat the close. So
+# until at least MIN_GATE_MATCHES out-of-sample matches back it, cap at 0.3.
+MIN_GATE_MATCHES = 100
 
 
 def choose_blend_weight(v: dict) -> tuple[float, str]:
@@ -36,6 +41,9 @@ def choose_blend_weight(v: dict) -> tuple[float, str]:
     mb, kb = v.get("model_brier_mean"), v.get("market_brier_mean")
     if mb is not None and kb is not None and mb > kb and w > MAX_MODEL_WEIGHT_WHEN_WORSE:
         return MAX_MODEL_WEIGHT_WHEN_WORSE, f"capped from {w:.2f}: model Brier worse than market"
+    n = int(v.get("n_gate_matches", 0) or 0)
+    if n < MIN_GATE_MATCHES and w > MAX_MODEL_WEIGHT_WHEN_WORSE:
+        return MAX_MODEL_WEIGHT_WHEN_WORSE, f"capped from {w:.2f}: only {n} gate matches (< {MIN_GATE_MATCHES})"
     return w, "best_blend_weight"
 
 
