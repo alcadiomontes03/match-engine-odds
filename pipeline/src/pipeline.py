@@ -59,13 +59,22 @@ def choose_blend_weight(v: dict) -> tuple[float, str]:
 LEAGUES = {
     "E0": {"name": "Premier League", "betting_universe": True, "xi": 0.0020, "goals_weight": 0.3},
     "SP1": {"name": "La Liga", "betting_universe": True, "xi": 0.0020, "goals_weight": 0.3},
-    "E1": {"name": "EFL Championship", "betting_universe": True, "xi": 0.0022},
+    # v4.10 (2026-09-24, Alcadio's decision): Bundesliga and Ligue 1 added, same
+    # settings. Walk-forward 2023-24..2025-26 (918 matches each): the xG blend
+    # beats goals-only on 1X2 (D1 0.9939 vs 0.9985, F1 1.0063 vs 1.0070), but the
+    # model still trails the closing market (D1 0.994 vs 0.961, F1 1.006 vs 0.982),
+    # so their blend weight is 0 like the others until a gate says otherwise.
+    "D1": {"name": "Bundesliga", "betting_universe": True, "xi": 0.0020, "goals_weight": 0.3},
+    "F1": {"name": "Ligue 1", "betting_universe": True, "xi": 0.0020, "goals_weight": 0.3},
 }
+# v4.9.3 (2026-09-24, Alcadio's decision): the EFL Championship (E1) is out of
+# scope and no longer fitted. Removing it cuts the Monday job's slowest fetches
+# (two seasons of monthly E1 chunks + the worldfootball supplement).
 
 
 def run():
     as_of = datetime.now(timezone.utc)
-    all_data = loader.load_all()
+    all_data = {code: loader.load_league(code) for code in LEAGUES}  # v4.10: E0/SP1/D1/F1
     state = {
         "generated_at": as_of.isoformat(),
         "leagues": {},
@@ -80,12 +89,6 @@ def run():
             "older season on first try and were discarded rather than trusted — "
             "worth re-checking periodically in case that was a transient glitch "
             "rather than a hard block.",
-            "EFL Championship freshness: RESOLVED 2026-09-15 with a "
-            "worldfootball.net results-only supplement (src/championship_supplement.py) "
-            "covering the days football-data.co.uk's ~11-day-lagged mirror hasn't "
-            "reached yet. Supplement matches have no odds, so they widen the "
-            "current ratings fit but are excluded from the market-comparison "
-            "backtest (n_with_market_odds stays smaller than n_evaluated for E1).",
             "No upcoming-fixture list wired up yet (only completed matches with "
             "closing odds) — dashboard shows fitted ratings and the walk-forward "
             "backtest, not next-matchweek prices, until a fixtures source is added.",
@@ -107,6 +110,14 @@ def run():
             "2023-26, 2,280 matches, model worse than the closing odds every "
             "season), both blend caps are 0.0: the model gets no weight unless a "
             "gate backed by 100+ out-of-sample matches shows it beating the market.",
+            "v4.9.3 (2026-09-24): the EFL Championship is out of scope and no "
+            "longer fitted; only the Premier League and La Liga are refit. The "
+            "Champions League is not modelled yet (results history for 2023-26 "
+            "is in the Drive historical folder).",
+            "v4.10 (2026-09-24): Bundesliga (D1) and Ligue 1 (F1) added with "
+            "2022-23..2025-26 history in Drive (xG from FBref/Opta, xglab for "
+            "2025-26). Market test 2023-26: the model trails the closing odds in "
+            "both, so blend weight is 0 (pure market) like PL and La Liga.",
         ],
     }
 
