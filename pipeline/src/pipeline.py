@@ -26,11 +26,16 @@ STATE_PATH = Path(__file__).resolve().parent.parent / "state" / "state.json"
 # least 70% model exactly when the model was worse than the market).
 # Now: gate closed -> 0 (pure market); gate open but model alone worse than the
 # market -> at most MAX_MODEL_WEIGHT_WHEN_WORSE model weight.
-MAX_MODEL_WEIGHT_WHEN_WORSE = 0.3
+MAX_MODEL_WEIGHT_WHEN_WORSE = 0.0
 # v4.9.1: a gate opened on a small sample can't hand the model a big weight.
-# Backtest vs closing odds (PL 2024-25 + 2025-26, 760 matches): model log loss
-# 1.0055 vs market-average close 0.9893, and blending never beat the close. So
-# until at least MIN_GATE_MATCHES out-of-sample matches back it, cap at 0.3.
+# v4.9.2 (2026-09-24, Alcadio's decision): both caps are now 0.0 (pure market).
+# Full market test vs closing odds, PL 2023-26 + La Liga 2023-26 (2,280 matches,
+# see claude/model-v4.9-handoff.md): the model was worse than the close in every
+# league and every season (PL 2023-24 0.950 vs 0.901, La Liga 0.976 vs 0.954),
+# blending at any weight never beat the close, and paper value bets at Bet365
+# opening odds lost 19-26%. So the model only gets weight once a gate backed by
+# at least MIN_GATE_MATCHES out-of-sample matches shows it beating the market.
+MAX_MODEL_WEIGHT_SMALL_SAMPLE = 0.0
 MIN_GATE_MATCHES = 100
 
 
@@ -42,8 +47,8 @@ def choose_blend_weight(v: dict) -> tuple[float, str]:
     if mb is not None and kb is not None and mb > kb and w > MAX_MODEL_WEIGHT_WHEN_WORSE:
         return MAX_MODEL_WEIGHT_WHEN_WORSE, f"capped from {w:.2f}: model Brier worse than market"
     n = int(v.get("n_gate_matches", 0) or 0)
-    if n < MIN_GATE_MATCHES and w > MAX_MODEL_WEIGHT_WHEN_WORSE:
-        return MAX_MODEL_WEIGHT_WHEN_WORSE, f"capped from {w:.2f}: only {n} gate matches (< {MIN_GATE_MATCHES})"
+    if n < MIN_GATE_MATCHES and w > MAX_MODEL_WEIGHT_SMALL_SAMPLE:
+        return MAX_MODEL_WEIGHT_SMALL_SAMPLE, f"capped from {w:.2f}: only {n} gate matches (< {MIN_GATE_MATCHES})"
     return w, "best_blend_weight"
 
 
@@ -98,6 +103,10 @@ def run():
             "its blend weight out-of-sample and benchmarks against closing odds "
             "when available; blend_weight is computed in code (gate closed = 0, "
             "model worse than market = at most 0.3 model).",
+            "v4.9.2 (2026-09-24): after the full market test (PL + La Liga "
+            "2023-26, 2,280 matches, model worse than the closing odds every "
+            "season), both blend caps are 0.0: the model gets no weight unless a "
+            "gate backed by 100+ out-of-sample matches shows it beating the market.",
         ],
     }
 
