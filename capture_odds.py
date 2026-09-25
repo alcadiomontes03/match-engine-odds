@@ -41,8 +41,10 @@ OUT = ROOT / "data" / "odds"
 SPORTS = {                      # betting universe
     "soccer_epl": "PL",
     "soccer_spain_la_liga": "LaLiga",
-    "soccer_efl_champ": "Championship",
+    "soccer_germany_bundesliga": "Bundesliga",   # added 2026-09-24 (model v4.10)
+    "soccer_france_ligue_one": "Ligue1",         # added 2026-09-24 (model v4.10)
 }
+# The EFL Championship was removed 2026-09-24 (out of scope; model v4.9.3).
 CUPS = {                        # predictions-only; OFF until decided
     "soccer_fa_cup": "FACup",
     "soccer_uefa_europa_conference_league": "UECL",
