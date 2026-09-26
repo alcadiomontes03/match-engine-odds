@@ -29,11 +29,21 @@ jobs:
       - name: Capture
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-          ODDS_BOOKMAKERS: ${{ vars.ODDS_BOOKMAKERS || 'draftkings' }}
-          ODDS_MARKETS: ${{ vars.ODDS_MARKETS || 'h2h' }}
+          ODDS_BOOKMAKERS: "draftkings"   # DraftKings only (decided 2026-09-25)
+          # v5 (2026-09-25): moneyline + spreads + totals in the bulk call; BTTS per event.
+          # Set here rather than as a repo variable so an old ODDS_MARKETS=h2h variable can't override it.
+          ODDS_MARKETS: "h2h,spreads,totals"
+          ODDS_BTTS: "true"
+          BTTS_RESERVE: "100"
           INCLUDE_CUPS: ${{ vars.INCLUDE_CUPS || 'false' }}
           ODDS_TEAM_FILTER: ${{ vars.ODDS_TEAM_FILTER || '' }}
         run: python capture_odds.py ${{ github.event.inputs.mode || 'run' }}
+      - name: v5 paper picks (only when new odds arrived)
+        run: |
+          if ! git diff --quiet -- data/odds/snapshots.csv; then
+            pip install -q numpy scipy pandas
+            python pipeline/v5/paper_picks.py
+          fi
       - name: Commit captured odds
         run: |
           git config user.name "odds-bot"
@@ -42,5 +52,5 @@ jobs:
           git add -A data state
           if ! git diff --cached --quiet; then
             git commit -m "odds $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
           fi

@@ -147,3 +147,33 @@ def market_frame(df: pd.DataFrame) -> pd.DataFrame:
         r["mkt_lam"], r["mkt_mu"] = lam, mu
         recs.append(r)
     return pd.concat([df.reset_index(drop=True), pd.DataFrame(recs)], axis=1)
+
+
+# ---------------------------------------------------------------- EV at any line (quarter lines split)
+def _split(line: float):
+    """Quarter lines (x.25 / x.75) are half the stake on each neighbouring half/whole line."""
+    frac = round((line * 4) % 2)
+    return [(line - 0.25, 0.5), (line + 0.25, 0.5)] if frac == 1 else [(line, 1.0)]
+
+
+def _ev_on(margin_by_cell, G, odds):
+    """EV per unit stake where margin>0 wins, ==0 pushes, <0 loses."""
+    win = G[margin_by_cell > 1e-9].sum(); push = G[np.abs(margin_by_cell) <= 1e-9].sum()
+    return float(win * (odds - 1) - (1 - win - push))
+
+
+def ev_spread(G, home_line: float, odds: float, side: str = "home") -> float:
+    """side 'home' backs home at home_line; 'away' backs away at -home_line."""
+    diff = (_I - _J) if side == "home" else (_J - _I)
+    line = home_line if side == "home" else -home_line
+    return sum(w * _ev_on(diff + l, G, odds) for l, w in _split(line))
+
+
+def ev_total(G, line: float, odds: float, over: bool = True) -> float:
+    tot = _I + _J
+    return sum(w * _ev_on((tot - l) if over else (l - tot), G, odds) for l, w in _split(line))
+
+
+def ev_btts(G, odds: float, yes: bool = True) -> float:
+    p = float(G[1:, 1:].sum())
+    return (p if yes else 1 - p) * odds - 1

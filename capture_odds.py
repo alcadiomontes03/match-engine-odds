@@ -17,6 +17,13 @@ Credits are spent only in steps 2-3: one call per competition per pull type,
 covering every due match at once. Only DraftKings is requested (ODDS_BOOKMAKERS);
 cost per call = markets requested x 1 (up to 10 bookmakers bill as one region).
 
+v5 (2026-09-25): markets are moneyline (h2h), spreads and totals in the bulk call
+(3 credits per call). BTTS is an "additional market" that The Odds API only serves
+per event, so it is pulled once per match at its first late pull (1 credit per match),
+and only while more than BTTS_RESERVE credits remain, so the main markets never run
+dry. If DraftKings returns no BTTS for three matches in a row in a league, that
+league's BTTS is skipped for the rest of the week.
+
 The API key is read from the ODDS_API_KEY environment variable (a GitHub
 secret). It is never written to any file or log.
 
@@ -54,7 +61,9 @@ INCLUDE_CUPS = os.environ.get("INCLUDE_CUPS", "false").lower() == "true"
 # if BOOKMAKERS is empty, REGIONS is used instead.
 BOOKMAKERS = os.environ.get("ODDS_BOOKMAKERS", "draftkings").strip()
 REGIONS = os.environ.get("ODDS_REGIONS", "us")
-MARKETS = os.environ.get("ODDS_MARKETS", "h2h")
+MARKETS = os.environ.get("ODDS_MARKETS", "h2h,spreads,totals")
+BTTS = os.environ.get("ODDS_BTTS", "true").lower() == "true"
+BTTS_RESERVE = int(os.environ.get("BTTS_RESERVE", "100"))    # stop BTTS below this
 CREDIT_RESERVE = int(os.environ.get("CREDIT_RESERVE", "40"))  # never go below
 WEEKLY_WEEKDAY = 0               # Monday
 WEEKLY_HOUR_UTC = 15             # 15:00 UTC = 8am PDT / 7am PST
@@ -242,6 +251,45 @@ def pull(sport, label, evs, kind, state, now, remaining):
     return (int(float(rem)) if rem is not None else remaining), True
 
 
+def pull_btts(sport, label, evs, state, now, remaining):
+    """BTTS per event (additional market). Once per match; guarded by BTTS_RESERVE."""
+    meta = state.setdefault("_meta", {})
+    if not BTTS or meta.get(f"btts_none:{label}") == week_key(now):
+        return remaining
+    stamp = now.strftime("%Y%m%dT%H%M%SZ")
+    d = OUT / "raw" / now.strftime("%Y/%m/%d"); d.mkdir(parents=True, exist_ok=True)
+    for e in evs:
+        s = state.get(e["id"], {})
+        if s.get("btts"):
+            continue
+        if remaining is not None and remaining - 1 < max(CREDIT_RESERVE, BTTS_RESERVE):
+            print(f"SKIP {label} btts: {remaining} credits left, BTTS reserve {BTTS_RESERVE}")
+            return remaining
+        try:
+            body, hdr = get(f"/sports/{sport}/events/{e['id']}/odds", markets="btts",
+                            oddsFormat="decimal", dateFormat="iso", **book_params())
+        except RuntimeError as err:
+            print(f"WARN {label} btts: {err}")
+            return remaining
+        (d / f"{label}_btts_{e['id']}_{stamp}.json").write_text(json.dumps(body))
+        rows = flatten([body], "late", now.isoformat(timespec="seconds"), label)
+        append_rows(rows)
+        s["btts"] = now.isoformat(timespec="seconds")
+        log_quota(hdr, f"{label} btts x1")
+        rem = hdr.get("x-requests-remaining")
+        remaining = int(float(rem)) if rem is not None else remaining
+        # one empty reply can just mean DraftKings hasn't posted BTTS for that match;
+        # three in a row for a league means it doesn't offer it -> skip for the week
+        key = f"btts_empty:{label}"
+        meta[key] = 0 if rows else meta.get(key, 0) + 1
+        if meta[key] >= 3:
+            meta[f"btts_none:{label}"] = week_key(now)
+            meta[key] = 0
+            print(f"{label}: DraftKings returned no BTTS 3 times; skipping BTTS for this league this week")
+            return remaining
+    return remaining
+
+
 def run(force_weekly=False):
     now = datetime.now(timezone.utc)
     comps = dict(SPORTS, **(CUPS if INCLUDE_CUPS else {}))
@@ -270,7 +318,9 @@ def run(force_weekly=False):
                 mark_weekly(state, label, now)   # nothing scheduled this week
         late = due_late(events, state, now)
         if late:
-            remaining, _ = pull(sport, label, late, "late", state, now, remaining)
+            remaining, ok = pull(sport, label, late, "late", state, now, remaining)
+            if ok:
+                remaining = pull_btts(sport, label, late, state, now, remaining)
             did = True
         if not did:
             print(f"{label}: nothing due ({len(events)} upcoming)")

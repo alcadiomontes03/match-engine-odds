@@ -74,6 +74,22 @@ derivative markets DraftKings prices off its main line. To test that live:
 3. Log every `stake_plan()` candidate to the paper ledger, then score CLV against the
    closing snapshot. The gate uses the same rule.
 
+## DraftKings-only mode (decided 2026-09-25)
+
+No second book is added. The odds job now pulls DraftKings moneyline, spreads and
+totals in each bulk call (3 credits) and BTTS once per match at its first pre-kickoff
+pull (1 credit, skipped whenever credits fall to 100 or below). After every pull that
+brings new odds, `paper_picks.py` de-vigs DraftKings' own moneyline and 2.5 total,
+prices its spreads, other total lines and BTTS from the resulting goals grid, and logs
+any price >= 2% above fair to `data/v5/paper_picks.csv`, with CLV against DraftKings'
+last pre-kickoff price. `data/v5/summary.json` holds the running scorecard and uses the
+same gate rule. Because the reference line is DraftKings itself, this can only find
+DraftKings pricing its derivative markets out of line with its own main lines, not
+moneyline or 2.5-total edges.
+
+Credit estimate at the recent pull rate: about 300 a month for the three bulk markets
+plus about 150 for BTTS, against 500 free. The BTTS reserve keeps the main markets running.
+
 ## Known limitations
 
 - Rest days count league matches only. Midweek Champions League or cup games are not
