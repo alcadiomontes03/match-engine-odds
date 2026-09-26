@@ -1,0 +1,39 @@
+{
+ "utc": "2026-09-26T03:30:41+00:00",
+ "markets": "h2h,spreads,totals",
+ "bookmakers": "draftkings",
+ "leagues": {
+  "PL": {
+   "events_from_api": 20,
+   "after_team_filter": 20,
+   "team_filter": [],
+   "due_weekly": 0,
+   "weekly_done": true,
+   "due_late": 0
+  },
+  "LaLiga": {
+   "events_from_api": 20,
+   "after_team_filter": 20,
+   "team_filter": [],
+   "due_weekly": 0,
+   "weekly_done": true,
+   "due_late": 0
+  },
+  "Bundesliga": {
+   "events_from_api": 18,
+   "after_team_filter": 18,
+   "team_filter": [],
+   "due_weekly": 0,
+   "weekly_done": true,
+   "due_late": 0
+  },
+  "Ligue1": {
+   "events_from_api": 18,
+   "after_team_filter": 18,
+   "team_filter": [],
+   "due_weekly": 0,
+   "weekly_done": true,
+   "due_late": 0
+  }
+ }
+}
