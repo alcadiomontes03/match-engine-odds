@@ -1,2 +1,3 @@
 pipeline/v5/out/*.csv
 __pycache__/
+pipeline/v5/out/state_v5.json
