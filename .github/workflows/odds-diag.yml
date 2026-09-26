@@ -1,0 +1,39 @@
+name: odds-diag
+
+# FREE diagnostic (fixture lists only, no odds calls). Runs when this file or
+# capture_odds.py changes on main, or by hand; writes data/odds/diag.json.
+on:
+  push:
+    branches: [main]
+    paths: ["capture_odds.py", ".github/workflows/odds-diag.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Diagnose
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          ODDS_BOOKMAKERS: "draftkings"
+          ODDS_MARKETS: "h2h,spreads,totals"
+          INCLUDE_CUPS: ${{ vars.INCLUDE_CUPS || 'false' }}
+          ODDS_TEAM_FILTER: ${{ vars.ODDS_TEAM_FILTER || '' }}
+        run: python capture_odds.py diag
+      - name: Commit
+        run: |
+          git config user.name "odds-bot"
+          git config user.email "odds-bot@users.noreply.github.com"
+          git add data/odds/diag.json
+          if ! git diff --cached --quiet; then
+            git commit -m "odds diag $(date -u +%Y-%m-%dT%H:%MZ)"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          fi

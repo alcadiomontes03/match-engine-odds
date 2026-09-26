@@ -364,7 +364,31 @@ def probe():
     print(json.dumps(report, indent=1))
 
 
+def diag():
+    """FREE: what the scheduled run sees per league (fixtures only; no odds calls)."""
+    now = datetime.now(timezone.utc)
+    state = load_state()
+    rep = {"utc": now.isoformat(timespec="seconds"), "week_key": week_key(now),
+           "team_filter_set": bool(TEAM_FILTER), "team_filter_leagues": sorted(TEAM_FILTER),
+           "markets": MARKETS, "bookmakers": BOOKMAKERS, "leagues": {}}
+    for sport, label in dict(SPORTS, **(CUPS if INCLUDE_CUPS else {})).items():
+        try:
+            events, hdr = get(f"/sports/{sport}/events", dateFormat="iso")
+        except RuntimeError as e:
+            rep["leagues"][label] = {"error": str(e)}; continue
+        kept = [e for e in events if keep_event(e, label)]
+        rep["leagues"][label] = {
+            "events_returned": len(events), "after_team_filter": len(kept),
+            "due_weekly_now": len(due_weekly(kept, now)), "due_late_now": len(due_late(kept, state, now)),
+            "weekly_done_mark": state.get("_meta", {}).get(f"weekly:{label}"),
+            "next_kickoffs": sorted(e["commence_time"] for e in events)[:5],
+            "credits_remaining_header": hdr.get("x-requests-remaining")}
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "diag.json").write_text(json.dumps(rep, indent=1))
+    print(json.dumps(rep, indent=1))
+
+
 if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else "run"
     {"run": run, "weekly": lambda: run(force_weekly=True),
-     "check": check, "probe": probe}[mode]()
+     "check": check, "probe": probe, "diag": diag}[mode]()
