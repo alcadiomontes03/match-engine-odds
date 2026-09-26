@@ -2,11 +2,11 @@
 Pulsematch v5 — DraftKings paper picks (DraftKings-only mode).
 
 With DraftKings as the only book, the fair line comes from DraftKings itself: its
-moneyline and 2.5 total are de-vigged (Shin) and turned into expected goals, and that
+moneyline and main total line are de-vigged (Shin) and turned into expected goals, and that
 goals grid prices DraftKings' own spreads, other total lines and BTTS. A price that
 beats the grid by >= EDGE is logged as a paper pick. This tests whether DraftKings
 prices its derivative markets consistently with its own main lines; it cannot find
-edges on the moneyline or 2.5 total themselves (those are the reference).
+edges on the moneyline or main total themselves (those are the reference).
 
 CLV: each pick is compared with DraftKings' last pre-kickoff price for the same
 selection (two-way Shin de-vig of that market). Where that snapshot doesn't carry the

@@ -9,8 +9,8 @@ corrections to the market price:
 
 x are the gap features (features.py), standardised on the training set. Heavy L2
 shrinkage on b means that with no real signal the model returns the market price
-exactly; the penalty is picked on the most recent training season (time-ordered
-validation, never random folds).
+exactly; the penalty is picked on the two most recent training seasons with the
+one-standard-error rule (time-ordered validation, never random folds).
 """
 from __future__ import annotations
 from dataclasses import dataclass, field

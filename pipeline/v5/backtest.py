@@ -2,7 +2,8 @@
 Pulsematch v5 — walk-forward backtest against the closing line.
 
 For each test season S: train the adjustment model on every earlier season
-(penalty chosen on S-1), predict S, and score:
+(penalty chosen on the two seasons before S with the one-standard-error rule,
+see model.py), predict S, and score:
 
   * log loss: pre-match market (baseline) vs v5 adjusted vs closing market
   * share of the baseline->close gap the model closes
@@ -13,7 +14,7 @@ For each test season S: train the adjustment model on every earlier season
   * quarter-Kelly bankroll path with a per-match exposure cap
   * Monte Carlo: seasons re-simulated with the closing line as the true probability
 
-  python pipeline/v5/backtest.py   ->  pipeline/v5/out/backtest.json, backtest.md
+  python pipeline/v5/backtest.py   ->  pipeline/v5/out/backtest.json, bets.csv
 """
 from __future__ import annotations
 import json, sys

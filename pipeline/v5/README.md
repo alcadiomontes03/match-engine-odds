@@ -76,19 +76,33 @@ derivative markets DraftKings prices off its main line. To test that live:
 
 ## DraftKings-only mode (decided 2026-09-25)
 
-No second book is added. The odds job now pulls DraftKings moneyline, spreads and
-totals in each bulk call (3 credits) and BTTS once per match at its first pre-kickoff
-pull (1 credit, skipped whenever credits fall to 100 or below). After every pull that
-brings new odds, `paper_picks.py` de-vigs DraftKings' own moneyline and 2.5 total,
-prices its spreads, other total lines and BTTS from the resulting goals grid, and logs
-any price >= 2% above fair to `data/v5/paper_picks.csv`, with CLV against DraftKings'
-last pre-kickoff price. `data/v5/summary.json` holds the running scorecard and uses the
-same gate rule. Because the reference line is DraftKings itself, this can only find
-DraftKings pricing its derivative markets out of line with its own main lines, not
-moneyline or 2.5-total edges.
+No second book is added. The odds job pulls DraftKings moneyline, spreads and totals
+in each bulk call (3 credits) and BTTS once per match at its first pre-kickoff pull
+(1 credit, skipped whenever credits fall to 100 or below). After every pull that brings
+new odds, `paper_picks.py` de-vigs DraftKings' own moneyline and main total line (any
+half or whole line, whichever is closest to 50/50), prices its spreads, other total
+lines and BTTS from the resulting goals grid, and logs any price >= 2% above fair to
+`data/v5/paper_picks.csv`. CLV is scored against DraftKings' last pre-kickoff price for
+the same selection, or, when that snapshot doesn't carry it (BTTS, moved lines),
+against the closing snapshot's goals grid (`clv_basis` = "grid").
+`data/v5/summary.json` holds the running scorecard and uses the same gate rule.
+Because the reference line is DraftKings itself, this can only find DraftKings pricing
+its side markets out of line with its own main lines, not moneyline edges.
 
 Credit estimate at the recent pull rate: about 300 a month for the three bulk markets
 plus about 150 for BTTS, against 500 free. The BTTS reserve keeps the main markets running.
+
+## Dashboard and schedule
+
+- The dashboard has a **v5** page (sidebar / bottom bar) that reads one database
+  document, `state/v5`, built by `dashboard_doc.py`: gate status, the season table,
+  the pricing-engine check and the latest DraftKings paper picks.
+- The scheduled task **"Match Engine — v5 weekly"** runs Mondays 17:10 UTC (after the
+  v4 refit): clones this repo, runs build_dataset → backtest → checks → paper_picks →
+  dashboard_doc, and writes `state/v5`. It touches nothing else.
+- The `fd-history` GitHub Action refreshes `data/fd/` Mondays 14:17 UTC.
+- A copy of this folder is kept in Drive under "Match Engine — Pipeline Code/v5";
+  GitHub is what the v5 job runs.
 
 ## Known limitations
 
