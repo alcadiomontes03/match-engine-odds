@@ -32,8 +32,12 @@ def build() -> dict:
     picks_p = ROOT / "data" / "v5" / "paper_picks.csv"
     ps = json.loads(summ_p.read_text()) if summ_p.exists() else {"picks": 0}
     picks = []
-    if picks_p.exists() and picks_p.stat().st_size > 0:
-        df = pd.read_csv(picks_p).sort_values("pulled_at", ascending=False).head(40)
+    try:
+        df = pd.read_csv(picks_p) if picks_p.exists() else pd.DataFrame()
+    except pd.errors.EmptyDataError:              # an older run wrote a file with no header
+        df = pd.DataFrame()
+    if not df.empty:
+        df = df.sort_values("pulled_at", ascending=False).head(40)
         for r in df.itertuples():
             picks.append({"pulled_at": r.pulled_at, "comp": r.comp, "commence": r.commence, "home": r.home,
                           "away": r.away, "market": r.market, "selection": r.selection,

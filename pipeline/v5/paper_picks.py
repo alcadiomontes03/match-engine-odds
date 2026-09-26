@@ -32,6 +32,8 @@ SNAP = ROOT / "data" / "odds" / "snapshots.csv"
 OUT = ROOT / "data" / "v5"
 EDGE = 0.02
 BOOK = "draftkings"
+COLUMNS = ["pulled_at", "kind", "comp", "event_id", "commence", "home", "away", "market", "selection",
+           "point", "price", "ev", "exp_goals", "close_price", "clv", "clv_basis"]
 
 
 def _fair_grid(g: pd.DataFrame, home: str, away: str):
@@ -126,6 +128,8 @@ def run():
     snap = snap[snap.bookmaker == BOOK].copy()
     snap["point"] = pd.to_numeric(snap.point, errors="coerce")
     p = add_clv(picks_from(snap), snap)
+    if p.empty:                       # keep a header so readers never hit an empty file
+        p = pd.DataFrame(columns=COLUMNS)
     OUT.mkdir(parents=True, exist_ok=True)
     p.to_csv(OUT / "paper_picks.csv", index=False)
     c = p.clv.dropna() if not p.empty else pd.Series(dtype=float)
