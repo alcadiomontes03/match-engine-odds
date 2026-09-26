@@ -62,17 +62,12 @@ Log loss (lower is better). "Open" is the pre-match price v5 starts from; "close
 
 ## What this means for live use
 
-v5's only credible source of edge is DraftKings lagging the sharp line, especially on
-derivative markets DraftKings prices off its main line. To test that live:
-
-1. Add a sharp reference book to the odds capture. Up to 10 bookmakers bill as one
-   region in The Odds API, so this costs no extra credits. Which sharp book The Odds API
-   still carries needs checking with `capture_odds.py probe` (football-data lost
-   Pinnacle mid-2025-26).
-2. Pull DraftKings totals/spreads for the late (pre-kickoff) snapshot. This costs one
-   extra credit per market per call.
-3. Log every `stake_plan()` candidate to the paper ledger, then score CLV against the
-   closing snapshot. The gate uses the same rule.
+v5's only credible source of edge is a recreational book lagging the sharp line,
+especially on derivative markets it prices off its main line. Testing that directly
+would need a sharp reference book in the odds capture (free in The Odds API, since up to
+10 bookmakers bill as one region). That option was considered and **not adopted**: the
+capture stays DraftKings only (next section), so v5 tests the narrower question of
+whether DraftKings' side markets agree with its own main lines.
 
 ## DraftKings-only mode (decided 2026-09-25)
 
