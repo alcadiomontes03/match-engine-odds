@@ -272,7 +272,9 @@ def pull_btts(sport, label, evs, state, now, remaining):
             print(f"WARN {label} btts: {err}")
             return remaining
         (d / f"{label}_btts_{e['id']}_{stamp}.json").write_text(json.dumps(body))
-        rows = flatten([body], "late", now.isoformat(timespec="seconds"), label)
+        evs_body = body if isinstance(body, list) else [body] if isinstance(body, dict) else []
+        rows = flatten([b for b in evs_body if isinstance(b, dict) and "id" in b],
+                       "late", now.isoformat(timespec="seconds"), label)
         append_rows(rows)
         s["btts"] = now.isoformat(timespec="seconds")
         log_quota(hdr, f"{label} btts x1")
@@ -298,33 +300,51 @@ def run(force_weekly=False):
     # /sports, so polling every 15 min cannot consume credits even if that
     # endpoint were ever billed.
     remaining = last_logged_remaining()
+    diag = {}
     for sport, label in comps.items():
         try:
             events, hdr = get(f"/sports/{sport}/events", dateFormat="iso")   # free
         except RuntimeError as e:
-            print(f"WARN {label}: {e}"); continue
+            print(f"WARN {label}: {e}"); diag[label] = {"error": str(e)[:200]}; continue
         if hdr.get("x-requests-remaining") is not None:
             remaining = int(float(hdr["x-requests-remaining"]))
+        n_api = len(events)
         events = [e for e in events if keep_event(e, label)]
+        wk_due = due_weekly(events, now)
+        d = diag[label] = {"events_from_api": n_api, "after_team_filter": len(events),
+                           "team_filter": TEAM_FILTER.get(label, []),
+                           "due_weekly": len(wk_due), "weekly_done": weekly_done(state, label, now)}
         did = False
         if force_weekly or not weekly_done(state, label, now):
-            wk = due_weekly(events, now)
-            if wk:
-                remaining, ok = pull(sport, label, wk, "weekly", state, now, remaining)
+            if wk_due:
+                remaining, ok = pull(sport, label, wk_due, "weekly", state, now, remaining)
                 if ok:
                     mark_weekly(state, label, now)
                 did = True
-            else:
-                mark_weekly(state, label, now)   # nothing scheduled this week
+            elif n_api:
+                # the API listed fixtures but none fall in the next 7 days -> genuinely
+                # nothing this week. If the API listed NOTHING, don't mark: that is more
+                # likely a hiccup, and the next (free) run retries.
+                mark_weekly(state, label, now)
+                print(f"{label}: weekly marked done, nothing in the next 7 days "
+                      f"({n_api} listed, {len(events)} after team filter)")
         late = due_late(events, state, now)
+        d["due_late"] = len(late)
         if late:
             remaining, ok = pull(sport, label, late, "late", state, now, remaining)
             if ok:
                 remaining = pull_btts(sport, label, late, state, now, remaining)
             did = True
         if not did:
-            print(f"{label}: nothing due ({len(events)} upcoming)")
+            print(f"{label}: nothing due ({n_api} listed by the API, {len(events)} after team filter)")
     save_state(state)
+    # Diagnostics committed with the odds so a quiet week can be explained later.
+    # Written only when the counts change, so it doesn't create a commit every run.
+    f = ROOT / "state" / "last_run.json"
+    old = json.loads(f.read_text()) if f.exists() else {}
+    if old.get("leagues") != diag:
+        f.write_text(json.dumps({"utc": now.isoformat(timespec="seconds"), "markets": MARKETS,
+                                 "bookmakers": BOOKMAKERS, "leagues": diag}, indent=1))
 
 
 def check():

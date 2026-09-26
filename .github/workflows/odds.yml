@@ -1,6 +1,9 @@
 name: odds-capture
 
 on:
+  push:
+    branches: [main]
+    paths: ["capture_odds.py", ".github/workflows/odds.yml"]
   schedule:
     - cron: "*/15 * * * *"      # every 15 min; spends credits only for the Monday weekly pull and pre-kickoff pulls
   workflow_dispatch:
