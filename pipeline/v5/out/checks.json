@@ -1,0 +1,31 @@
+{
+  "soft_vs_sharp_all_seasons": {
+    "n": 7,
+    "mean_clv": -0.168,
+    "clv_t": -3.54,
+    "pct_beat_close": 0.143,
+    "roi": -0.75,
+    "roi_t": -3.0,
+    "matches_scanned": 12008,
+    "bets_per_100_matches": 0.06
+  },
+  "soft_vs_sharp_2324_on": {
+    "n": 6,
+    "mean_clv": -0.1788,
+    "clv_t": -3.27,
+    "pct_beat_close": 0.167,
+    "roi": -0.7083,
+    "roi_t": -2.43,
+    "matches_scanned": 3444,
+    "bets_per_100_matches": 0.17
+  },
+  "derivative_pricing_asian_handicap": {
+    "n": 2216,
+    "mean_abs_diff_vs_pinnacle": 0.0074,
+    "bias_vs_pinnacle": 0.0031,
+    "p90_abs_diff": 0.0174,
+    "brier_engine": 0.2499,
+    "brier_pinnacle": 0.2498,
+    "brier_diff_t": 0.67
+  }
+}

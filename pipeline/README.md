@@ -7,7 +7,7 @@ session so the two never drift.
 
 Everything here runs in **paper mode**. Nothing sizes or places a real stake.
 
-Last synced: 2026-09-23 (v4.7).
+Last synced: 2026-09-23 (v4.7). **v5 (2026-09-25) lives in `pipeline/v5/` — see `pipeline/v5/README.md`.** Note: Drive holds newer copies of `pipeline.py`, `loader.py`, `backtest.py` and `dixon_coles.py` (2026-09-24/25) than this mirror.
 
 ## Layout (`src/`)
 
