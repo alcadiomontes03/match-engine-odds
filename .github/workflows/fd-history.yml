@@ -1,0 +1,40 @@
+name: fd-history
+
+# Pulsematch v5: pulls football-data.co.uk results + Pinnacle/market closing odds
+# into data/fd/. Completed seasons are fetched once; the current season refreshes
+# every Monday before the weekly refit (16:00 UTC).
+on:
+  push:
+    branches: [main]
+    paths: ["fetch_fd.py", ".github/workflows/fd-history.yml"]
+  schedule:
+    - cron: "17 14 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-commit
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch football-data CSVs
+        run: python fetch_fd.py
+      - name: Commit
+        run: |
+          git config user.name "fd-bot"
+          git config user.email "fd-bot@users.noreply.github.com"
+          git add -A data/fd
+          if ! git diff --cached --quiet; then
+            git commit -m "football-data history $(date -u +%Y-%m-%dT%H:%MZ)"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          fi
