@@ -1,0 +1,70 @@
+{
+ "utc": "2026-09-26T03:28:26+00:00",
+ "week_key": "2026-W39",
+ "team_filter_set": false,
+ "team_filter_leagues": [],
+ "markets": "h2h,spreads,totals",
+ "bookmakers": "draftkings",
+ "leagues": {
+  "PL": {
+   "events_returned": 20,
+   "after_team_filter": 20,
+   "due_weekly_now": 0,
+   "due_late_now": 0,
+   "weekly_done_mark": "2026-W39",
+   "next_kickoffs": [
+    "2026-10-10T11:30:00Z",
+    "2026-10-10T14:00:00Z",
+    "2026-10-10T14:00:00Z",
+    "2026-10-10T14:00:00Z",
+    "2026-10-10T14:00:00Z"
+   ],
+   "credits_remaining_header": "470"
+  },
+  "LaLiga": {
+   "events_returned": 20,
+   "after_team_filter": 20,
+   "due_weekly_now": 0,
+   "due_late_now": 0,
+   "weekly_done_mark": "2026-W39",
+   "next_kickoffs": [
+    "2026-10-09T19:00:00Z",
+    "2026-10-10T12:00:00Z",
+    "2026-10-10T14:15:00Z",
+    "2026-10-10T16:30:00Z",
+    "2026-10-10T19:00:00Z"
+   ],
+   "credits_remaining_header": "470"
+  },
+  "Bundesliga": {
+   "events_returned": 18,
+   "after_team_filter": 18,
+   "due_weekly_now": 0,
+   "due_late_now": 0,
+   "weekly_done_mark": "2026-W39",
+   "next_kickoffs": [
+    "2026-10-09T18:30:00Z",
+    "2026-10-10T13:30:00Z",
+    "2026-10-10T13:30:00Z",
+    "2026-10-10T13:30:00Z",
+    "2026-10-10T13:30:00Z"
+   ],
+   "credits_remaining_header": "470"
+  },
+  "Ligue1": {
+   "events_returned": 18,
+   "after_team_filter": 18,
+   "due_weekly_now": 0,
+   "due_late_now": 0,
+   "weekly_done_mark": "2026-W39",
+   "next_kickoffs": [
+    "2026-10-09T18:45:00Z",
+    "2026-10-10T15:15:00Z",
+    "2026-10-10T18:45:00Z",
+    "2026-10-10T18:45:00Z",
+    "2026-10-10T18:45:00Z"
+   ],
+   "credits_remaining_header": "470"
+  }
+ }
+}
