@@ -70,18 +70,31 @@ def grid_probs(G: np.ndarray) -> dict:
             "O25": float(G[t > 2.5].sum())}
 
 
+def p_over_line(G, line: float):
+    """Fair 'over' probability for a two-way total at a half or whole line, pushes
+    removed (a whole-line push refunds both sides, so the de-vigged price is
+    P(over) / (P(over) + P(under))). Quarter lines return None."""
+    if round((line * 4) % 2) == 1:
+        return None
+    tot = _I + _J
+    over, under = G[tot > line + 1e-9].sum(), G[tot < line - 1e-9].sum()
+    return float(over / (over + under))
+
+
 def implied_lambdas(pH: float, pD: float, pA: float, pO25: float | None,
-                    rho: float = RHO_MKT, tot_prior: float = 2.7):
+                    rho: float = RHO_MKT, tot_prior: float = 2.7, line: float = 2.5):
     """(lam, mu) whose Dixon-Coles grid best reproduces the fair market probabilities.
-    If the totals price is missing, a weak prior on total goals replaces it."""
+    pO25 is the fair 'over' probability at `line` (2.5 by default; any half or whole
+    line works, pushes excluded). If it is missing, a weak prior on total goals is used."""
     target = np.array([pH, pD, pA])
 
     def resid(x):
         lam, mu = np.exp(x)
-        p = grid_probs(grid(lam, mu, rho))
+        G = grid(lam, mu, rho)
+        p = grid_probs(G)
         r = [p["H"] - pH, p["D"] - pD, p["A"] - pA]
         if pO25 is not None and np.isfinite(pO25):
-            r.append(2.0 * (p["O25"] - pO25))
+            r.append(2.0 * (p_over_line(G, line) - pO25))
         else:
             r.append(0.05 * (np.log(lam + mu) - np.log(tot_prior)))
         return np.array(r)
