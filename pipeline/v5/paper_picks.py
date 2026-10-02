@@ -126,6 +126,7 @@ def add_clv(p: pd.DataFrame, snap: pd.DataFrame) -> pd.DataFrame:
 def run():
     snap = pd.read_csv(SNAP)
     snap = snap[snap.bookmaker == BOOK].copy()
+    snap = snap[snap.comp.isin(("PL", "LaLiga", "Bundesliga", "Ligue1"))].copy()   # four modelled leagues only (v5.5)
     snap["point"] = pd.to_numeric(snap.point, errors="coerce")
     p = add_clv(picks_from(snap), snap)
     if p.empty:                       # keep a header so readers never hit an empty file
