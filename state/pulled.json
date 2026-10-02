@@ -16,14 +16,6 @@
   "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
- "22907aefea43f3b3fc0e1718e8214a62": {
-  "away": "Watford",
-  "commence": "2026-09-18T19:00:00Z",
-  "comp": "Championship",
-  "home": "Bristol City",
-  "late": "2026-09-18T17:53:22+00:00",
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
  "32723ef48cd60f2c36c1b0e4892df015": {
   "away": "Southampton",
   "commence": "2026-09-19T14:00:00Z",
@@ -133,14 +125,6 @@
   "late": "2026-09-20T11:49:03+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
- "82d8b6a005d78bac0b1508abc17a7d39": {
-  "away": "Chelsea",
-  "commence": "2026-09-18T19:00:00Z",
-  "comp": "PL",
-  "home": "Brentford",
-  "late": "2026-09-18T17:53:22+00:00",
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
  "88519a51012811476c9b4724eafc96c5": {
   "away": "Ipswich Town",
   "commence": "2026-09-19T14:00:00Z",
@@ -223,14 +207,6 @@
   "comp": "Championship",
   "home": "Stoke City",
   "late": "2026-09-19T09:30:14+00:00",
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
- "da3d3fec3e0b6b939910427a76ecfb76": {
-  "away": "Elche CF",
-  "commence": "2026-09-18T19:00:00Z",
-  "comp": "LaLiga",
-  "home": "Espanyol",
-  "late": "2026-09-18T17:53:22+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "ded5c2293009b93b7d8ee3c890b6617e": {
