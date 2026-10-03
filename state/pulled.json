@@ -8,47 +8,11 @@
   "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
- "32723ef48cd60f2c36c1b0e4892df015": {
-  "away": "Southampton",
-  "commence": "2026-09-19T14:00:00Z",
-  "comp": "Championship",
-  "home": "Wrexham AFC",
-  "late": "2026-09-19T13:20:05+00:00",
-  "late_final": true,
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
- "3eb181720f5eb289efa94a42d7fccb52": {
-  "away": "Middlesbrough",
-  "commence": "2026-09-19T14:00:00Z",
-  "comp": "Championship",
-  "home": "Birmingham City",
-  "late": "2026-09-19T13:20:05+00:00",
-  "late_final": true,
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
  "4444a2944864eeb6e43274b448e39b22": {
   "away": "West Bromwich Albion",
   "commence": "2026-09-20T11:00:00Z",
   "comp": "Championship",
   "home": "Wolverhampton Wanderers",
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
- "4efd38d86cf243da2011f908b17de8c2": {
-  "away": "Swansea City",
-  "commence": "2026-09-19T14:00:00Z",
-  "comp": "Championship",
-  "home": "Lincoln City",
-  "late": "2026-09-19T13:20:05+00:00",
-  "late_final": true,
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
- "518b5e6173971b0e6aa5f1a79dda47f0": {
-  "away": "Preston North End",
-  "commence": "2026-09-19T14:00:00Z",
-  "comp": "Championship",
-  "home": "Queens Park Rangers",
-  "late": "2026-09-19T13:20:05+00:00",
-  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "5502f6f20eccc2f2ed0d3904712e4a2c": {
@@ -59,30 +23,12 @@
   "late": "2026-09-20T15:22:55+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
- "550e1217201e4b0bc35373c62b43f899": {
-  "away": "Derby County",
-  "commence": "2026-09-19T14:00:00Z",
-  "comp": "Championship",
-  "home": "Burnley",
-  "late": "2026-09-19T13:20:05+00:00",
-  "late_final": true,
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
  "5866dae1e72b96ab74508039cd3dcca7": {
   "away": "Real Madrid",
   "commence": "2026-09-20T14:15:00Z",
   "comp": "LaLiga",
   "home": "Atl\u00e9tico Madrid",
   "late": "2026-09-20T11:49:03+00:00",
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
- "5a85e792cbedf0fcc4ec13d49ac03892": {
-  "away": "Blackburn Rovers",
-  "commence": "2026-09-19T14:00:00Z",
-  "comp": "Championship",
-  "home": "Portsmouth",
-  "late": "2026-09-19T13:20:05+00:00",
-  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "69d67bcf95a3d12a18546c312d4b24b5": {
@@ -94,28 +40,12 @@
   "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
- "75133fdcd4fc3067b303a8f166f974e4": {
-  "away": "Coventry City",
-  "commence": "2026-09-19T16:30:00Z",
-  "comp": "PL",
-  "home": "Nottingham Forest",
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
  "784f777f5181e1efdad7a6ecb2cfde15": {
   "away": "Liverpool",
   "commence": "2026-09-20T13:00:00Z",
   "comp": "PL",
   "home": "Bournemouth",
   "late": "2026-09-20T11:49:03+00:00",
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
- "88519a51012811476c9b4724eafc96c5": {
-  "away": "Ipswich Town",
-  "commence": "2026-09-19T14:00:00Z",
-  "comp": "PL",
-  "home": "Everton",
-  "late": "2026-09-19T13:20:05+00:00",
-  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "_meta": {
@@ -131,24 +61,6 @@
   "comp": "LaLiga",
   "home": "Getafe",
   "late": "2026-09-20T11:49:03+00:00",
-  "late_final": true,
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
- "a995ad3266759e67c9f9b0617c184b71": {
-  "away": "Alav\u00e9s",
-  "commence": "2026-09-19T14:15:00Z",
-  "comp": "LaLiga",
-  "home": "Athletic Bilbao",
-  "late": "2026-09-19T13:20:05+00:00",
-  "late_final": true,
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
- "b5b058d0a95f9742548f789d1c564a78": {
-  "away": "Arsenal",
-  "commence": "2026-09-19T14:00:00Z",
-  "comp": "PL",
-  "home": "Brighton and Hove Albion",
-  "late": "2026-09-19T13:20:05+00:00",
   "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
@@ -183,22 +95,6 @@
   "comp": "LaLiga",
   "home": "Sevilla",
   "late": "2026-09-19T16:39:08+00:00",
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
- "e6b36629bb3480a570ea0db2f47888dd": {
-  "away": "Real Racing Club de Santander",
-  "commence": "2026-09-19T16:30:00Z",
-  "comp": "LaLiga",
-  "home": "Celta Vigo",
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
- "f65c4eaf0f94a569f06d768f737dad2e": {
-  "away": "Hull City",
-  "commence": "2026-09-19T14:00:00Z",
-  "comp": "PL",
-  "home": "Newcastle United",
-  "late": "2026-09-19T13:20:05+00:00",
-  "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "f923236e69ed946fdc55163494ee88db": {

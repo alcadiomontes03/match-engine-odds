@@ -1,5 +1,5 @@
 {
- "utc": "2026-10-03T13:23:00+00:00",
+ "utc": "2026-10-03T17:29:46+00:00",
  "markets": "h2h,spreads,totals",
  "bookmakers": "draftkings",
  "leagues": {
@@ -7,7 +7,7 @@
    "events_from_api": 20,
    "after_team_filter": 20,
    "team_filter": [],
-   "due_weekly": 1,
+   "due_weekly": 6,
    "weekly_done": true,
    "due_late": 0
   },
@@ -15,7 +15,7 @@
    "events_from_api": 20,
    "after_team_filter": 20,
    "team_filter": [],
-   "due_weekly": 2,
+   "due_weekly": 4,
    "weekly_done": true,
    "due_late": 0
   },
@@ -23,7 +23,7 @@
    "events_from_api": 18,
    "after_team_filter": 18,
    "team_filter": [],
-   "due_weekly": 1,
+   "due_weekly": 7,
    "weekly_done": true,
    "due_late": 0
   },
@@ -31,7 +31,7 @@
    "events_from_api": 18,
    "after_team_filter": 18,
    "team_filter": [],
-   "due_weekly": 1,
+   "due_weekly": 2,
    "weekly_done": true,
    "due_late": 0
   }
