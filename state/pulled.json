@@ -1,12 +1,4 @@
 {
- "0c830736955911d3043cff8e1ae17440": {
-  "away": "Charlton Athletic",
-  "commence": "2026-09-19T11:30:00Z",
-  "comp": "Championship",
-  "home": "Cardiff City",
-  "late": "2026-09-19T09:30:14+00:00",
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
  "182b81a9e220b2347235107c42802fd8": {
   "away": "Manchester United",
   "commence": "2026-09-20T15:30:00Z",
@@ -32,14 +24,6 @@
   "home": "Birmingham City",
   "late": "2026-09-19T13:20:05+00:00",
   "late_final": true,
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
- "3f55c15c31fa4b4809fcdcad70826447": {
-  "away": "West Ham United",
-  "commence": "2026-09-19T11:30:00Z",
-  "comp": "Championship",
-  "home": "Millwall",
-  "late": "2026-09-19T09:30:14+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "4444a2944864eeb6e43274b448e39b22": {
@@ -134,14 +118,6 @@
   "late_final": true,
   "weekly": "2026-09-16T09:46:16+00:00"
  },
- "9a70cbf505030f8bfe5c7864f5ac75b5": {
-  "away": "Rayo Vallecano",
-  "commence": "2026-09-19T12:00:00Z",
-  "comp": "LaLiga",
-  "home": "CA Osasuna",
-  "late": "2026-09-19T09:30:14+00:00",
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
  "_meta": {
   "weekly:Bundesliga": "2026-W40",
   "weekly:Championship": "2026-W39",
@@ -184,14 +160,6 @@
   "late": "2026-09-20T11:49:03+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
- "d02ff636f652d5b5bb65f6b24330c4fe": {
-  "away": "Aston Villa",
-  "commence": "2026-09-19T11:30:00Z",
-  "comp": "PL",
-  "home": "Tottenham Hotspur",
-  "late": "2026-09-19T09:30:14+00:00",
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
  "d05fb9feb5722b2f2cedb8bbe7c33a1d": {
   "away": "Real Sociedad",
   "commence": "2026-09-20T19:00:00Z",
@@ -199,14 +167,6 @@
   "home": "Valencia",
   "late": "2026-09-20T18:14:49+00:00",
   "late_final": true,
-  "weekly": "2026-09-16T09:46:16+00:00"
- },
- "d2255db9d78880de55406d02c4c94243": {
-  "away": "Sheffield United",
-  "commence": "2026-09-19T11:30:00Z",
-  "comp": "Championship",
-  "home": "Stoke City",
-  "late": "2026-09-19T09:30:14+00:00",
   "weekly": "2026-09-16T09:46:16+00:00"
  },
  "ded5c2293009b93b7d8ee3c890b6617e": {
