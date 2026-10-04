@@ -5,14 +5,5 @@
   "weekly:LaLiga": "2026-W40",
   "weekly:Ligue1": "2026-W40",
   "weekly:PL": "2026-W40"
- },
- "d05fb9feb5722b2f2cedb8bbe7c33a1d": {
-  "away": "Real Sociedad",
-  "commence": "2026-09-20T19:00:00Z",
-  "comp": "LaLiga",
-  "home": "Valencia",
-  "late": "2026-09-20T18:14:49+00:00",
-  "late_final": true,
-  "weekly": "2026-09-16T09:46:16+00:00"
  }
 }

@@ -1,5 +1,5 @@
 {
- "utc": "2026-10-04T18:22:02+00:00",
+ "utc": "2026-10-04T21:44:38+00:00",
  "markets": "h2h,spreads,totals",
  "bookmakers": "draftkings",
  "leagues": {
@@ -15,7 +15,7 @@
    "events_from_api": 20,
    "after_team_filter": 20,
    "team_filter": [],
-   "due_weekly": 8,
+   "due_weekly": 9,
    "weekly_done": true,
    "due_late": 0
   },
@@ -31,7 +31,7 @@
    "events_from_api": 18,
    "after_team_filter": 18,
    "team_filter": [],
-   "due_weekly": 8,
+   "due_weekly": 9,
    "weekly_done": true,
    "due_late": 0
   }
