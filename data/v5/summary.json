@@ -1,0 +1,12 @@
+{
+  "generated": "2026-10-05T19:48:01+00:00",
+  "mode": "paper (DraftKings only)",
+  "edge_threshold": 0.02,
+  "picks": 0,
+  "picks_with_close": 0,
+  "mean_clv": null,
+  "clv_t": null,
+  "by_market": {},
+  "clv_basis": {},
+  "gate": "open only with >= 300 picks with a closing price, mean CLV > 0 and CLV t >= 2"
+}
