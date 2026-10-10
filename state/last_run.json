@@ -1,5 +1,5 @@
 {
- "utc": "2026-10-10T20:27:13+00:00",
+ "utc": "2026-10-10T23:44:18+00:00",
  "markets": "h2h,spreads,totals",
  "bookmakers": "draftkings",
  "leagues": {
@@ -12,8 +12,8 @@
    "due_late": 0
   },
   "LaLiga": {
-   "events_from_api": 16,
-   "after_team_filter": 16,
+   "events_from_api": 15,
+   "after_team_filter": 15,
    "team_filter": [],
    "due_weekly": 10,
    "weekly_done": true,
@@ -28,8 +28,8 @@
    "due_late": 0
   },
   "Ligue1": {
-   "events_from_api": 16,
-   "after_team_filter": 16,
+   "events_from_api": 12,
+   "after_team_filter": 12,
    "team_filter": [],
    "due_weekly": 7,
    "weekly_done": true,
