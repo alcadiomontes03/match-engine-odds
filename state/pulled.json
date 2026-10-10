@@ -1,9 +1,11 @@
 {
  "007dc2ff845c33e3e18f2bd2bc126304": {
   "away": "Angers",
+  "btts": "2026-10-10T16:54:51+00:00",
   "commence": "2026-10-10T18:45:00Z",
   "comp": "Ligue1",
   "home": "Brest",
+  "late": "2026-10-10T16:54:51+00:00",
   "weekly": "2026-10-06T03:36:23+00:00"
  },
  "01cb7a67c8ae71201ec27297455fc0e8": {
@@ -45,9 +47,11 @@
  },
  "2849460eb4d15adbb20ec15927a0fd4a": {
   "away": "Le Mans FC",
+  "btts": "2026-10-10T16:54:51+00:00",
   "commence": "2026-10-10T18:45:00Z",
   "comp": "Ligue1",
   "home": "Paris Saint Germain",
+  "late": "2026-10-10T16:54:51+00:00",
   "weekly": "2026-10-06T03:36:23+00:00"
  },
  "288b4ff00c79daa712c911c564fe1be7": {
@@ -119,9 +123,11 @@
  },
  "3aa72885e0aa107c62843749f7930a9a": {
   "away": "Paris FC",
+  "btts": "2026-10-10T16:54:51+00:00",
   "commence": "2026-10-10T18:45:00Z",
   "comp": "Ligue1",
   "home": "Lorient",
+  "late": "2026-10-10T16:54:51+00:00",
   "weekly": "2026-10-06T03:36:23+00:00"
  },
  "3b71160ad20dba786c4f92e33c987d80": {
@@ -174,9 +180,11 @@
  },
  "551f242223b1625f458d1a2ea212a0c3": {
   "away": "Villarreal",
+  "btts": "2026-10-10T16:54:51+00:00",
   "commence": "2026-10-10T19:00:00Z",
   "comp": "LaLiga",
   "home": "Real Madrid",
+  "late": "2026-10-10T16:54:51+00:00",
   "weekly": "2026-10-06T03:36:23+00:00"
  },
  "5d3606630a2d3a218a6340d082c1bdc6": {
@@ -233,6 +241,7 @@
  "_meta": {
   "btts_empty:Bundesliga": 0,
   "btts_empty:LaLiga": 0,
+  "btts_empty:Ligue1": 0,
   "btts_empty:PL": 0,
   "weekly:Bundesliga": "2026-W41",
   "weekly:Championship": "2026-W39",
@@ -263,9 +272,11 @@
  },
  "c2c64ebfc5810226f807c1920d580392": {
   "away": "Toulouse",
+  "btts": "2026-10-10T16:54:51+00:00",
   "commence": "2026-10-10T18:45:00Z",
   "comp": "Ligue1",
   "home": "AS Monaco",
+  "late": "2026-10-10T16:54:51+00:00",
   "weekly": "2026-10-06T03:36:23+00:00"
  },
  "cb7067ac191abf32ad49dad45e46f639": {

@@ -504,3 +504,28 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-10-10T11:51:34+00:00,late,Bundesliga,f03c08c0ae5fd66c2d2df2053115bb94,2026-10-10T13:30:00Z,TSG Hoffenheim,Hamburger SV,draftkings,,btts,No,,2.4
 2026-10-10T11:51:34+00:00,late,Bundesliga,9aade3e736c3d113dab19e641c43e272,2026-10-10T13:30:00Z,SC Paderborn,VfB Stuttgart,draftkings,,btts,Yes,,1.36
 2026-10-10T11:51:34+00:00,late,Bundesliga,9aade3e736c3d113dab19e641c43e272,2026-10-10T13:30:00Z,SC Paderborn,VfB Stuttgart,draftkings,,btts,No,,3.15
+2026-10-10T16:54:51+00:00,late,LaLiga,551f242223b1625f458d1a2ea212a0c3,2026-10-10T19:00:00Z,Real Madrid,Villarreal,draftkings,2026-10-10T16:54:06Z,h2h,Real Madrid,,1.36
+2026-10-10T16:54:51+00:00,late,LaLiga,551f242223b1625f458d1a2ea212a0c3,2026-10-10T19:00:00Z,Real Madrid,Villarreal,draftkings,2026-10-10T16:54:06Z,h2h,Villarreal,,7.0
+2026-10-10T16:54:51+00:00,late,LaLiga,551f242223b1625f458d1a2ea212a0c3,2026-10-10T19:00:00Z,Real Madrid,Villarreal,draftkings,2026-10-10T16:54:06Z,h2h,Draw,,5.75
+2026-10-10T16:54:51+00:00,late,LaLiga,551f242223b1625f458d1a2ea212a0c3,2026-10-10T19:00:00Z,Real Madrid,Villarreal,draftkings,,btts,Yes,,1.45
+2026-10-10T16:54:51+00:00,late,LaLiga,551f242223b1625f458d1a2ea212a0c3,2026-10-10T19:00:00Z,Real Madrid,Villarreal,draftkings,,btts,No,,2.7
+2026-10-10T16:54:51+00:00,late,Ligue1,c2c64ebfc5810226f807c1920d580392,2026-10-10T18:45:00Z,AS Monaco,Toulouse,draftkings,2026-10-10T16:54:21Z,h2h,AS Monaco,,1.62
+2026-10-10T16:54:51+00:00,late,Ligue1,c2c64ebfc5810226f807c1920d580392,2026-10-10T18:45:00Z,AS Monaco,Toulouse,draftkings,2026-10-10T16:54:21Z,h2h,Toulouse,,5.25
+2026-10-10T16:54:51+00:00,late,Ligue1,c2c64ebfc5810226f807c1920d580392,2026-10-10T18:45:00Z,AS Monaco,Toulouse,draftkings,2026-10-10T16:54:21Z,h2h,Draw,,4.3
+2026-10-10T16:54:51+00:00,late,Ligue1,007dc2ff845c33e3e18f2bd2bc126304,2026-10-10T18:45:00Z,Brest,Angers,draftkings,2026-10-10T16:54:21Z,h2h,Angers,,3.9
+2026-10-10T16:54:51+00:00,late,Ligue1,007dc2ff845c33e3e18f2bd2bc126304,2026-10-10T18:45:00Z,Brest,Angers,draftkings,2026-10-10T16:54:21Z,h2h,Brest,,1.91
+2026-10-10T16:54:51+00:00,late,Ligue1,007dc2ff845c33e3e18f2bd2bc126304,2026-10-10T18:45:00Z,Brest,Angers,draftkings,2026-10-10T16:54:21Z,h2h,Draw,,3.8
+2026-10-10T16:54:51+00:00,late,Ligue1,2849460eb4d15adbb20ec15927a0fd4a,2026-10-10T18:45:00Z,Paris Saint Germain,Le Mans FC,draftkings,2026-10-10T16:54:21Z,h2h,Le Mans FC,,17.0
+2026-10-10T16:54:51+00:00,late,Ligue1,2849460eb4d15adbb20ec15927a0fd4a,2026-10-10T18:45:00Z,Paris Saint Germain,Le Mans FC,draftkings,2026-10-10T16:54:21Z,h2h,Paris Saint Germain,,1.13
+2026-10-10T16:54:51+00:00,late,Ligue1,2849460eb4d15adbb20ec15927a0fd4a,2026-10-10T18:45:00Z,Paris Saint Germain,Le Mans FC,draftkings,2026-10-10T16:54:21Z,h2h,Draw,,10.0
+2026-10-10T16:54:51+00:00,late,Ligue1,3aa72885e0aa107c62843749f7930a9a,2026-10-10T18:45:00Z,Lorient,Paris FC,draftkings,2026-10-10T16:54:21Z,h2h,Lorient,,3.65
+2026-10-10T16:54:51+00:00,late,Ligue1,3aa72885e0aa107c62843749f7930a9a,2026-10-10T18:45:00Z,Lorient,Paris FC,draftkings,2026-10-10T16:54:21Z,h2h,Paris FC,,2.1
+2026-10-10T16:54:51+00:00,late,Ligue1,3aa72885e0aa107c62843749f7930a9a,2026-10-10T18:45:00Z,Lorient,Paris FC,draftkings,2026-10-10T16:54:21Z,h2h,Draw,,3.4
+2026-10-10T16:54:51+00:00,late,Ligue1,c2c64ebfc5810226f807c1920d580392,2026-10-10T18:45:00Z,AS Monaco,Toulouse,draftkings,,btts,Yes,,1.59
+2026-10-10T16:54:51+00:00,late,Ligue1,c2c64ebfc5810226f807c1920d580392,2026-10-10T18:45:00Z,AS Monaco,Toulouse,draftkings,,btts,No,,2.35
+2026-10-10T16:54:51+00:00,late,Ligue1,007dc2ff845c33e3e18f2bd2bc126304,2026-10-10T18:45:00Z,Brest,Angers,draftkings,,btts,Yes,,1.56
+2026-10-10T16:54:51+00:00,late,Ligue1,007dc2ff845c33e3e18f2bd2bc126304,2026-10-10T18:45:00Z,Brest,Angers,draftkings,,btts,No,,2.4
+2026-10-10T16:54:51+00:00,late,Ligue1,2849460eb4d15adbb20ec15927a0fd4a,2026-10-10T18:45:00Z,Paris Saint Germain,Le Mans FC,draftkings,,btts,Yes,,2.0
+2026-10-10T16:54:51+00:00,late,Ligue1,2849460eb4d15adbb20ec15927a0fd4a,2026-10-10T18:45:00Z,Paris Saint Germain,Le Mans FC,draftkings,,btts,No,,1.8
+2026-10-10T16:54:51+00:00,late,Ligue1,3aa72885e0aa107c62843749f7930a9a,2026-10-10T18:45:00Z,Lorient,Paris FC,draftkings,,btts,Yes,,1.71
+2026-10-10T16:54:51+00:00,late,Ligue1,3aa72885e0aa107c62843749f7930a9a,2026-10-10T18:45:00Z,Lorient,Paris FC,draftkings,,btts,No,,2.1
