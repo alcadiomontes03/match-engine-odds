@@ -529,3 +529,8 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-10-10T16:54:51+00:00,late,Ligue1,2849460eb4d15adbb20ec15927a0fd4a,2026-10-10T18:45:00Z,Paris Saint Germain,Le Mans FC,draftkings,,btts,No,,1.8
 2026-10-10T16:54:51+00:00,late,Ligue1,3aa72885e0aa107c62843749f7930a9a,2026-10-10T18:45:00Z,Lorient,Paris FC,draftkings,,btts,Yes,,1.71
 2026-10-10T16:54:51+00:00,late,Ligue1,3aa72885e0aa107c62843749f7930a9a,2026-10-10T18:45:00Z,Lorient,Paris FC,draftkings,,btts,No,,2.1
+2026-10-11T15:28:12+00:00,late,LaLiga,984691837d31fd0c59c088f377f55f75,2026-10-11T16:30:00Z,Real Betis,CA Osasuna,draftkings,2026-10-11T15:27:57Z,h2h,CA Osasuna,,6.5
+2026-10-11T15:28:12+00:00,late,LaLiga,984691837d31fd0c59c088f377f55f75,2026-10-11T16:30:00Z,Real Betis,CA Osasuna,draftkings,2026-10-11T15:27:57Z,h2h,Real Betis,,1.5
+2026-10-11T15:28:12+00:00,late,LaLiga,984691837d31fd0c59c088f377f55f75,2026-10-11T16:30:00Z,Real Betis,CA Osasuna,draftkings,2026-10-11T15:27:57Z,h2h,Draw,,4.5
+2026-10-11T15:28:12+00:00,late,LaLiga,984691837d31fd0c59c088f377f55f75,2026-10-11T16:30:00Z,Real Betis,CA Osasuna,draftkings,,btts,Yes,,1.8
+2026-10-11T15:28:12+00:00,late,LaLiga,984691837d31fd0c59c088f377f55f75,2026-10-11T16:30:00Z,Real Betis,CA Osasuna,draftkings,,btts,No,,2.0

@@ -224,9 +224,12 @@
  },
  "984691837d31fd0c59c088f377f55f75": {
   "away": "CA Osasuna",
+  "btts": "2026-10-11T15:28:12+00:00",
   "commence": "2026-10-11T16:30:00Z",
   "comp": "LaLiga",
   "home": "Real Betis",
+  "late": "2026-10-11T15:28:12+00:00",
+  "late_final": true,
   "weekly": "2026-10-06T03:36:23+00:00"
  },
  "9aade3e736c3d113dab19e641c43e272": {
