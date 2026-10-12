@@ -5,7 +5,9 @@ on:
     branches: [main]
     paths: ["capture_odds.py", ".github/workflows/odds.yml"]
   schedule:
-    - cron: "*/15 * * * *"      # every 15 min; spends credits only for the Monday weekly pull and pre-kickoff pulls
+    # Off the quarter-hours: GitHub drops many runs scheduled on :00/:15/:30/:45 under load
+    # (Oct 4-12 2026: about one run every 3-7 hours). Spends credits only when a pull is due.
+    - cron: "4,19,34,49 * * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -33,9 +35,10 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_BOOKMAKERS: "draftkings"   # DraftKings only (decided 2026-09-25)
-          # v5 (2026-09-25): moneyline + spreads + totals in the bulk call; BTTS per event.
-          # Set here rather than as a repo variable so an old ODDS_MARKETS=h2h variable can't override it.
-          ODDS_MARKETS: "h2h,spreads,totals"
+          # v6.1 (2026-10-12): moneyline only in the bulk call. DraftKings never returned spreads or
+          # totals there for these leagues, yet each was billed. BTTS, totals and spreads come per match
+          # from the event endpoint at the first late pull (see capture_odds.py event_markets()).
+          ODDS_MARKETS: "h2h"
           ODDS_BTTS: "true"
           BTTS_RESERVE: "100"
           INCLUDE_CUPS: ${{ vars.INCLUDE_CUPS || 'false' }}

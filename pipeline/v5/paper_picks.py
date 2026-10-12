@@ -128,6 +128,9 @@ def run():
     snap = snap[snap.bookmaker == BOOK].copy()
     snap = snap[snap.comp.isin(("PL", "LaLiga", "Bundesliga", "Ligue1"))].copy()   # four modelled leagues only (v5.5)
     snap["point"] = pd.to_numeric(snap.point, errors="coerce")
+    # v6.1: per-match pulls can carry DraftKings' alternate lines; they price like any other line
+    snap["market"] = snap.market.replace({"alternate_totals": "totals", "alternate_spreads": "spreads"})
+    snap = snap.drop_duplicates(["event_id", "pulled_at", "market", "outcome", "point"], keep="first")
     p = add_clv(picks_from(snap), snap)
     if p.empty:                       # keep a header so readers never hit an empty file
         p = pd.DataFrame(columns=COLUMNS)

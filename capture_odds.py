@@ -6,7 +6,7 @@ Runs on a schedule (GitHub Actions). Every run:
   2. WEEKLY pull: once per week per league, on the first run after Monday
      15:00 UTC (8am Pacific in summer, 7am in winter); covers every match in
      the next 7 days in a single call (DraftKings' early lines)
-  3. LATE pull:  within 3h of kickoff, plus one refresh inside the last 65 min
+  3. LATE pull:  within 8h of kickoff, plus one refresh inside the last 65 min
      (after team news) if the first pull came earlier - DraftKings'
      near-closing line, used for CLV. The wide window exists because GitHub
      runs "every 15 min" schedules only every ~2h in practice.
@@ -17,12 +17,13 @@ Credits are spent only in steps 2-3: one call per competition per pull type,
 covering every due match at once. Only DraftKings is requested (ODDS_BOOKMAKERS);
 cost per call = markets requested x 1 (up to 10 bookmakers bill as one region).
 
-v5 (2026-09-25): markets are moneyline (h2h), spreads and totals in the bulk call
-(3 credits per call). BTTS is an "additional market" that The Odds API only serves
-per event, so it is pulled once per match at its first late pull (1 credit per match),
-and only while more than BTTS_RESERVE credits remain, so the main markets never run
-dry. If DraftKings returns no BTTS for three matches in a row in a league, that
-league's BTTS is skipped for the rest of the week.
+v6.1 (2026-10-12): the bulk call is moneyline (h2h) only, 1 credit per call. DraftKings
+never returned spreads or totals there for these leagues. The side markets (BTTS, totals,
+spreads, and their alternate lines while credits allow) are pulled per event at the match's
+first late pull; the event endpoint bills one credit per market it returns. A market
+DraftKings returns nothing for three matches in a row in a league is skipped for that
+league for the rest of the week. Late window: first pull within 8h of kickoff, because
+GitHub runs the schedule only every few hours.
 
 The API key is read from the ODDS_API_KEY environment variable (a GitHub
 secret). It is never written to any file or log.
@@ -61,14 +62,26 @@ INCLUDE_CUPS = os.environ.get("INCLUDE_CUPS", "false").lower() == "true"
 # if BOOKMAKERS is empty, REGIONS is used instead.
 BOOKMAKERS = os.environ.get("ODDS_BOOKMAKERS", "draftkings").strip()
 REGIONS = os.environ.get("ODDS_REGIONS", "us")
-MARKETS = os.environ.get("ODDS_MARKETS", "h2h,spreads,totals")
+MARKETS = os.environ.get("ODDS_MARKETS", "h2h")
 BTTS = os.environ.get("ODDS_BTTS", "true").lower() == "true"
 BTTS_RESERVE = int(os.environ.get("BTTS_RESERVE", "100"))    # stop BTTS below this
+# v6.1 (2026-10-12): DraftKings never returned spreads or totals in the bulk call for these
+# leagues (every pull since 2026-09-25 came back h2h only, billed 3 credits). The side markets
+# are requested per match instead, at its first late pull, in tiers by credits left. The event
+# endpoint bills only the markets it returns, and a market DraftKings returns nothing for three
+# times in a row in a league is dropped for that league for the rest of the week.
+EVENT_MARKETS_FULL = os.environ.get("EVENT_MARKETS_FULL", "btts,totals,spreads,alternate_totals,alternate_spreads")
+EVENT_MARKETS_CORE = os.environ.get("EVENT_MARKETS_CORE", "btts,totals,spreads")
+FULL_RESERVE = int(os.environ.get("FULL_RESERVE", "250"))     # alternate lines only above this
+CORE_RESERVE = int(os.environ.get("CORE_RESERVE", "130"))     # totals/spreads only above this
 CREDIT_RESERVE = int(os.environ.get("CREDIT_RESERVE", "40"))  # never go below
 WEEKLY_WEEKDAY = 0               # Monday
 WEEKLY_HOUR_UTC = 15             # 15:00 UTC = 8am PDT / 7am PST
 WEEKLY_WINDOW_MIN = 7 * 24 * 60  # the weekly pull covers the next 7 days
-LATE_MAX_MIN = 180               # first late pull: any run within 3h of kickoff
+# v6.1: GitHub runs the "every 15 min" schedule only every 3-7 hours in practice (Oct 4-12:
+# 30 runs in 8 days), so a 3h window missed most Sunday matches entirely. The first late pull
+# now happens in any run within 8h of kickoff; the team-news refresh is unchanged.
+LATE_MAX_MIN = int(os.environ.get("LATE_MAX_MIN", "480"))
 TEAM_NEWS_MIN = 65               # one refresh once inside this window
 LATE_MIN_MIN = 5
 # Optional per-league team filter, JSON: {"LaLiga": ["Real Madrid", "Sevilla"]}.
@@ -251,44 +264,64 @@ def pull(sport, label, evs, kind, state, now, remaining):
     return (int(float(rem)) if rem is not None else remaining), True
 
 
+def event_markets(label, meta, now, remaining):
+    """Which per-match markets to ask for, by credits left; minus any market DraftKings
+    has returned nothing for three times in a row in this league this week."""
+    if remaining is None or remaining > FULL_RESERVE:
+        want = EVENT_MARKETS_FULL
+    elif remaining > CORE_RESERVE:
+        want = EVENT_MARKETS_CORE
+    else:
+        want = "btts"
+    wk = week_key(now)
+    out = [m for m in want.split(",") if m and meta.get(f"none:{m}:{label}") != wk]
+    if not BTTS or meta.get(f"btts_none:{label}") == wk:
+        out = [m for m in out if m != "btts"]
+    return out
+
+
 def pull_btts(sport, label, evs, state, now, remaining):
-    """BTTS per event (additional market). Once per match; guarded by BTTS_RESERVE."""
+    """Side markets per event (BTTS, totals, spreads and, while credits allow, their
+    alternate lines). Once per match, at its first late pull. The event endpoint bills
+    one credit per market it returns; guarded by BTTS_RESERVE overall."""
     meta = state.setdefault("_meta", {})
-    if not BTTS or meta.get(f"btts_none:{label}") == week_key(now):
-        return remaining
     stamp = now.strftime("%Y%m%dT%H%M%SZ")
     d = OUT / "raw" / now.strftime("%Y/%m/%d"); d.mkdir(parents=True, exist_ok=True)
     for e in evs:
         s = state.get(e["id"], {})
-        if s.get("btts"):
+        if s.get("btts") or s.get("side"):
             continue
-        if remaining is not None and remaining - 1 < max(CREDIT_RESERVE, BTTS_RESERVE):
-            print(f"SKIP {label} btts: {remaining} credits left, BTTS reserve {BTTS_RESERVE}")
+        mks = event_markets(label, meta, now, remaining)
+        if not mks:
+            return remaining
+        if remaining is not None and remaining - len(mks) < max(CREDIT_RESERVE, BTTS_RESERVE):
+            print(f"SKIP {label} side markets: {remaining} credits left, reserve {BTTS_RESERVE}")
             return remaining
         try:
-            body, hdr = get(f"/sports/{sport}/events/{e['id']}/odds", markets="btts",
+            body, hdr = get(f"/sports/{sport}/events/{e['id']}/odds", markets=",".join(mks),
                             oddsFormat="decimal", dateFormat="iso", **book_params())
         except RuntimeError as err:
-            print(f"WARN {label} btts: {err}")
+            print(f"WARN {label} side markets: {err}")
             return remaining
-        (d / f"{label}_btts_{e['id']}_{stamp}.json").write_text(json.dumps(body))
+        (d / f"{label}_side_{e['id']}_{stamp}.json").write_text(json.dumps(body))
         evs_body = body if isinstance(body, list) else [body] if isinstance(body, dict) else []
-        rows = flatten([b for b in evs_body if isinstance(b, dict) and "id" in b],
-                       "late", now.isoformat(timespec="seconds"), label)
+        evs_body = [b for b in evs_body if isinstance(b, dict) and "id" in b]
+        rows = flatten(evs_body, "late", now.isoformat(timespec="seconds"), label)
         append_rows(rows)
-        s["btts"] = now.isoformat(timespec="seconds")
-        log_quota(hdr, f"{label} btts x1")
+        s["side"] = now.isoformat(timespec="seconds")
+        got = {r[9] for r in rows}
+        log_quota(hdr, f"{label} side x1 {'+'.join(sorted(got)) or 'none'}")
         rem = hdr.get("x-requests-remaining")
         remaining = int(float(rem)) if rem is not None else remaining
-        # one empty reply can just mean DraftKings hasn't posted BTTS for that match;
-        # three in a row for a league means it doesn't offer it -> skip for the week
-        key = f"btts_empty:{label}"
-        meta[key] = 0 if rows else meta.get(key, 0) + 1
-        if meta[key] >= 3:
-            meta[f"btts_none:{label}"] = week_key(now)
-            meta[key] = 0
-            print(f"{label}: DraftKings returned no BTTS 3 times; skipping BTTS for this league this week")
-            return remaining
+        # one empty reply can just mean DraftKings hasn't posted a market for that match yet;
+        # three in a row in a league means it doesn't offer it -> skip it for the week
+        for m in mks:
+            key = f"empty:{m}:{label}"
+            meta[key] = 0 if m in got else meta.get(key, 0) + 1
+            if meta[key] >= 3:
+                meta[f"none:{m}:{label}"] = week_key(now)
+                meta[key] = 0
+                print(f"{label}: DraftKings returned no {m} 3 times; skipping it for this league this week")
     return remaining
 
 

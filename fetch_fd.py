@@ -20,7 +20,8 @@ KEEP = ["Div", "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "HS", "AS", "HST"
         "AvgH", "AvgD", "AvgA", "AvgCH", "AvgCD", "AvgCA",
         "P>2.5", "P<2.5", "PC>2.5", "PC<2.5",
         "Avg>2.5", "Avg<2.5", "AvgC>2.5", "AvgC<2.5",
-        "AHh", "AHCh", "PAHH", "PAHA", "PCAHH", "PCAHA"]
+        "AHh", "AHCh", "PAHH", "PAHA", "PCAHH", "PCAHA",
+        "HC", "AC"]                                   # corners (v6.1 corners model)
 OUT = Path(__file__).resolve().parent / "data" / "fd"
 
 
@@ -53,7 +54,11 @@ def main(only_current: bool = False):
         for season, is_current in season_codes(date.today()):
             path = OUT / f"{code}_{season}.csv"
             if path.exists() and not is_current and not only_current:
-                continue  # completed seasons never change
+                with path.open(newline="") as fh:
+                    have = next(csv.reader(fh), [])
+                if all(k in have for k in KEEP):
+                    continue  # completed seasons never change
+                # an older trim is missing a column added since (v6.1: corners) -> fetch again
             if only_current and not is_current:
                 continue
             url = f"https://www.football-data.co.uk/mmz4281/{season}/{code}.csv"
