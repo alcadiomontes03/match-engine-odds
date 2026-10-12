@@ -1,47 +1,47 @@
 {
- "utc": "2026-10-12T03:32:57+00:00",
- "week_key": "2026-W41",
+ "utc": "2026-10-12T23:33:49+00:00",
+ "week_key": "2026-W42",
  "team_filter_set": false,
  "team_filter_leagues": [],
  "markets": "h2h,spreads,totals",
  "bookmakers": "draftkings",
  "leagues": {
   "PL": {
+   "events_returned": 20,
+   "after_team_filter": 20,
+   "due_weekly_now": 10,
+   "due_late_now": 0,
+   "weekly_done_mark": "2026-W42",
+   "next_kickoffs": [
+    "2026-10-17T11:30:00Z",
+    "2026-10-17T14:00:00Z",
+    "2026-10-17T14:00:00Z",
+    "2026-10-17T14:00:00Z",
+    "2026-10-17T16:30:00Z"
+   ],
+   "credits_remaining_header": "429"
+  },
+  "LaLiga": {
    "events_returned": 21,
    "after_team_filter": 21,
    "due_weekly_now": 10,
    "due_late_now": 0,
-   "weekly_done_mark": "2026-W41",
+   "weekly_done_mark": "2026-W42",
    "next_kickoffs": [
-    "2026-10-12T19:00:00Z",
-    "2026-10-17T11:30:00Z",
-    "2026-10-17T14:00:00Z",
-    "2026-10-17T14:00:00Z",
-    "2026-10-17T14:00:00Z"
-   ],
-   "credits_remaining_header": "441"
-  },
-  "LaLiga": {
-   "events_returned": 22,
-   "after_team_filter": 22,
-   "due_weekly_now": 10,
-   "due_late_now": 0,
-   "weekly_done_mark": "2026-W41",
-   "next_kickoffs": [
-    "2026-10-12T19:00:00Z",
     "2026-10-16T19:00:00Z",
     "2026-10-17T12:00:00Z",
     "2026-10-17T14:15:00Z",
-    "2026-10-17T16:30:00Z"
+    "2026-10-17T16:30:00Z",
+    "2026-10-17T19:00:00Z"
    ],
-   "credits_remaining_header": "441"
+   "credits_remaining_header": "429"
   },
   "Bundesliga": {
    "events_returned": 18,
    "after_team_filter": 18,
    "due_weekly_now": 9,
    "due_late_now": 0,
-   "weekly_done_mark": "2026-W41",
+   "weekly_done_mark": "2026-W42",
    "next_kickoffs": [
     "2026-10-16T18:30:00Z",
     "2026-10-17T13:30:00Z",
@@ -49,14 +49,14 @@
     "2026-10-17T13:30:00Z",
     "2026-10-17T13:30:00Z"
    ],
-   "credits_remaining_header": "441"
+   "credits_remaining_header": "429"
   },
   "Ligue1": {
    "events_returned": 18,
    "after_team_filter": 18,
    "due_weekly_now": 9,
    "due_late_now": 0,
-   "weekly_done_mark": "2026-W41",
+   "weekly_done_mark": "2026-W42",
    "next_kickoffs": [
     "2026-10-16T18:45:00Z",
     "2026-10-17T15:15:00Z",
@@ -64,7 +64,7 @@
     "2026-10-17T18:45:00Z",
     "2026-10-18T13:00:00Z"
    ],
-   "credits_remaining_header": "441"
+   "credits_remaining_header": "429"
   }
  }
 }
