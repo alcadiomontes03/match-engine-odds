@@ -2,7 +2,7 @@
 
 Scheduled DraftKings odds capture from The Odds API (free tier, 500 credits a month) for the
 Premier League, La Liga, Bundesliga and Ligue 1. The model that uses these prices is described in
-[`docs/v6.md`](docs/v6.md) (current version) and [`pipeline/v5/README.md`](pipeline/v5/README.md).
+[`docs/v6.md`](docs/v6.md) (current version: Alpha Lines v6.1; Dixon-Coles ratings for all four leagues refit 2026-10-12 with a centred defence ridge, goals-only) and [`pipeline/v5/README.md`](pipeline/v5/README.md).
 
 Markets (v6.1): moneyline in one call per league per pull (1 credit). DraftKings never returned
 spreads or totals in that bulk call for these leagues, though each was billed, so BTTS, totals and

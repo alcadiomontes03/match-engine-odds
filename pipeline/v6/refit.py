@@ -1,5 +1,5 @@
 """
-Pulsematch v6.2 - Dixon-Coles refit with a centred defence ridge ("goal-rate fix").
+Alpha Lines v6.1 - Dixon-Coles refit with a centred defence ridge ("goal-rate fix").
 
 Why this exists
 ---------------
