@@ -107,6 +107,23 @@ def fit(df: pd.DataFrame, asof, xi: float = XI, ridge: float = RIDGE, center: bo
             "as_of": str(asof.date()), "xi": xi, "ridge": ridge, "center": center, "converged": bool(res.success)}
 
 
+def level_factor(df: pd.DataFrame, r: dict, half_life: float = 90.0, max_days: int = 400) -> float:
+    """Recent goal-level correction: time-weighted actual total goals / predicted total goals over the
+    last `max_days` of the fit window. Multiply both lambdas by it. Walk-forward 2023-27: halves the
+    remaining total-goals bias in all four leagues (La Liga -0.097 to -0.049) without touching ratings,
+    so 1X2 is unchanged. The 1,100-day window lags a league whose goal rate is rising; this is the lag.
+    Display and paper tracking only; not wired into any price (blend weight 0)."""
+    asof = pd.Timestamp(r["as_of"])
+    tr = df[(df.Date < asof) & (df.Date >= asof - pd.Timedelta(days=max_days))]
+    if tr.empty:
+        return 1.0
+    age = (asof - tr.Date).dt.days.to_numpy()
+    w = np.exp(-np.log(2) / half_life * age)
+    pt = np.array([sum(lambdas(r, h, a)) for h, a in zip(tr.HomeTeam, tr.AwayTeam)])
+    act = (tr.FTHG + tr.FTAG).to_numpy()
+    return float((w * act).sum() / (w * pt).sum())
+
+
 def lambdas(r: dict, home: str, away: str):
     a, dd = r["att"], r["def"]
     ma, md = float(np.mean(list(a.values()))), float(np.mean(list(dd.values())))
@@ -195,6 +212,7 @@ def main():
     df = load(a.league, extra)
     asof = a.asof or str((df.Date.max() + pd.Timedelta(days=1)).date())
     r = fit(df, asof)
+    r["goal_level_factor"] = round(level_factor(df, r), 4)
     txt = json.dumps(r, indent=1)
     Path(a.out).write_text(txt) if a.out else print(txt)
 
