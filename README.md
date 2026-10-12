@@ -4,16 +4,17 @@ Scheduled DraftKings odds capture from The Odds API (free tier, 500 credits a mo
 Premier League, La Liga, Bundesliga and Ligue 1. The model that uses these prices is described in
 [`docs/v6.md`](docs/v6.md) (current version) and [`pipeline/v5/README.md`](pipeline/v5/README.md).
 
-Markets: moneyline, spreads and totals in one call per league per pull, billed 3 credits a call
-(one per market requested). Both-teams-to-score is an "additional market" the API only serves per
-match, so it is pulled once per match at its first late pull (1 credit), and only while more than
-100 credits remain.
+Markets (v6.1): moneyline in one call per league per pull (1 credit). DraftKings never returned
+spreads or totals in that bulk call for these leagues, though each was billed, so BTTS, totals and
+spreads (plus alternate lines while more than 250 credits remain) are pulled per match from the event
+endpoint at its first late pull, billed one credit per market returned, and only while more than
+100 credits remain (totals and spreads only above 130).
 
 Cadence (the workflow runs every 15 minutes and spends credits only when a pull is due):
 - **Weekly** - first run after Monday 15:00 UTC (8am Pacific in summer, 7am in winter):
   one call per league covering every match in the next 7 days. GitHub often starts it late
   (it landed at 17:01 UTC on 2026-09-28), so the Monday jobs that read it wait for it.
-- **Late** - first run within 3 hours of kickoff, plus one refresh inside the last 65 minutes
+- **Late** - first run within 8 hours of kickoff (GitHub runs the schedule only every few hours), plus one refresh inside the last 65 minutes
   (after team news): DraftKings' near-closing line, used for CLV. At most two late pulls per
   match; one call covers every match in that league that is due in that run.
 - Sharp closing lines (Pinnacle / market average) come free from football-data.co.uk

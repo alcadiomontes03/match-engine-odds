@@ -1,0 +1,91 @@
+{
+ "n_matches": 1372,
+ "by_line": {
+  "7.5": {
+   "logloss_model": 0.5839,
+   "logloss_league_avg": 0.5911,
+   "avg_p": 0.736,
+   "hit": 0.724
+  },
+  "8.5": {
+   "logloss_model": 0.658,
+   "logloss_league_avg": 0.6641,
+   "avg_p": 0.621,
+   "hit": 0.62
+  },
+  "9.5": {
+   "logloss_model": 0.6879,
+   "logloss_league_avg": 0.6926,
+   "avg_p": 0.499,
+   "hit": 0.512
+  },
+  "10.5": {
+   "logloss_model": 0.6654,
+   "logloss_league_avg": 0.6703,
+   "avg_p": 0.382,
+   "hit": 0.393
+  },
+  "11.5": {
+   "logloss_model": 0.6042,
+   "logloss_league_avg": 0.6097,
+   "avg_p": 0.278,
+   "hit": 0.295
+  },
+  "12.5": {
+   "logloss_model": 0.5156,
+   "logloss_league_avg": 0.5233,
+   "avg_p": 0.193,
+   "hit": 0.213
+  }
+ },
+ "by_league": {
+  "D1": {
+   "logloss_model": 0.6894,
+   "logloss_league_avg": 0.6948,
+   "n": 306
+  },
+  "E0": {
+   "logloss_model": 0.6901,
+   "logloss_league_avg": 0.6885,
+   "n": 380
+  },
+  "F1": {
+   "logloss_model": 0.6939,
+   "logloss_league_avg": 0.6959,
+   "n": 306
+  },
+  "SP1": {
+   "logloss_model": 0.6798,
+   "logloss_league_avg": 0.6922,
+   "n": 380
+  }
+ },
+ "calibration_9.5": [
+  {
+   "bin": "(0.3, 0.4]",
+   "n": 55,
+   "said": 0.38,
+   "hit": 0.491
+  },
+  {
+   "bin": "(0.4, 0.5]",
+   "n": 663,
+   "said": 0.458,
+   "hit": 0.466
+  },
+  {
+   "bin": "(0.5, 0.6]",
+   "n": 583,
+   "said": 0.541,
+   "hit": 0.563
+  },
+  {
+   "bin": "(0.6, 0.7]",
+   "n": 71,
+   "said": 0.626,
+   "hit": 0.549
+  }
+ ],
+ "mae_total": 2.729,
+ "mae_league_avg": 2.757
+}
