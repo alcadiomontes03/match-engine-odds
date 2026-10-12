@@ -6,7 +6,7 @@ Premier League, La Liga, Bundesliga and Ligue 1. The model that uses these price
 
 Markets (v6.1): moneyline in one call per league per pull (1 credit). DraftKings never returned
 spreads or totals in that bulk call for these leagues, though each was billed, so BTTS, totals and
-spreads (plus alternate lines while more than 250 credits remain) are pulled per match from the event
+spreads, total corners (from 2026-10-13), plus alternate goal lines while more than 250 credits remain, are pulled per match from the event
 endpoint at its first late pull, billed one credit per market returned, and only while more than
 100 credits remain (totals and spreads only above 130).
 

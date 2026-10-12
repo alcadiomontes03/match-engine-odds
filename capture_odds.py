@@ -19,7 +19,7 @@ cost per call = markets requested x 1 (up to 10 bookmakers bill as one region).
 
 v6.1 (2026-10-12): the bulk call is moneyline (h2h) only, 1 credit per call. DraftKings
 never returned spreads or totals there for these leagues. The side markets (BTTS, totals,
-spreads, and their alternate lines while credits allow) are pulled per event at the match's
+spreads, total corners from week 7, and alternate goal lines while credits allow) are pulled per event at the match's
 first late pull; the event endpoint bills one credit per market it returns. A market
 DraftKings returns nothing for three matches in a row in a league is skipped for that
 league for the rest of the week. Late window: first pull within 8h of kickoff, because
@@ -70,8 +70,8 @@ BTTS_RESERVE = int(os.environ.get("BTTS_RESERVE", "100"))    # stop BTTS below t
 # are requested per match instead, at its first late pull, in tiers by credits left. The event
 # endpoint bills only the markets it returns, and a market DraftKings returns nothing for three
 # times in a row in a league is dropped for that league for the rest of the week.
-EVENT_MARKETS_FULL = os.environ.get("EVENT_MARKETS_FULL", "btts,totals,spreads,alternate_totals,alternate_spreads")
-EVENT_MARKETS_CORE = os.environ.get("EVENT_MARKETS_CORE", "btts,totals,spreads")
+EVENT_MARKETS_FULL = os.environ.get("EVENT_MARKETS_FULL", "btts,totals,spreads,alternate_totals_corners,alternate_totals,alternate_spreads")
+EVENT_MARKETS_CORE = os.environ.get("EVENT_MARKETS_CORE", "btts,totals,spreads,alternate_totals_corners")
 FULL_RESERVE = int(os.environ.get("FULL_RESERVE", "250"))     # alternate lines only above this
 CORE_RESERVE = int(os.environ.get("CORE_RESERVE", "130"))     # totals/spreads only above this
 CREDIT_RESERVE = int(os.environ.get("CREDIT_RESERVE", "40"))  # never go below

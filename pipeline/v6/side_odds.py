@@ -13,7 +13,8 @@ odds-sync job to merge into odds/<id> with ArtifactData "update".
 side = {pulled_at,
         btts:    {yes, no},
         totals:  {"2.5": {over, under}, ...},            # every line DraftKings posted
-        spreads: {"-0.5": {home, away}, ...}}             # keyed by the HOME line, like predictions
+        spreads: {"-0.5": {home, away}, ...},             # keyed by the HOME line, like predictions
+        corners: {"9.5": {over, under}, ...}}             # total match corners (from week 7, 2026-10-13)
 Decimal prices, exactly as captured. Alternate lines count as ordinary lines. Quarter lines
 (+0.25, 2.75) keep two decimals in the key; whole and half lines keep one. A market
 DraftKings didn't post is left out. Never invents a price.
@@ -26,7 +27,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SNAP = ROOT / "data" / "odds" / "snapshots.csv"
 SIDE_MARKETS = {"btts": "btts", "totals": "totals", "alternate_totals": "totals",
-                "spreads": "spreads", "alternate_spreads": "spreads"}
+                "spreads": "spreads", "alternate_spreads": "spreads",
+                "alternate_totals_corners": "corners", "totals_corners": "corners"}
 
 
 def _ts(x: str) -> datetime:
@@ -65,6 +67,9 @@ def build_side(rows: list[dict], home: str, away: str) -> dict | None:
         elif m == "totals" and r["outcome"] in ("Over", "Under") and r["point"] not in ("", None):
             k = _tline(float(r["point"]))
             out.setdefault("totals", {}).setdefault(k, {})[r["outcome"].lower()] = price
+        elif m == "corners" and r["outcome"] in ("Over", "Under") and r["point"] not in ("", None):
+            k = _tline(float(r["point"]))
+            out.setdefault("corners", {}).setdefault(k, {})[r["outcome"].lower()] = price
         elif m == "spreads" and r["point"] not in ("", None):
             pt = float(r["point"])
             if r["outcome"] == home:
@@ -74,7 +79,7 @@ def build_side(rows: list[dict], home: str, away: str) -> dict | None:
     # keep only complete two-way markets
     if "btts" in out and len(out["btts"]) < 2:
         del out["btts"]
-    for k in ("totals", "spreads"):
+    for k in ("totals", "spreads", "corners"):
         if k in out:
             out[k] = {L: v for L, v in out[k].items() if len(v) == 2}
             if not out[k]:
