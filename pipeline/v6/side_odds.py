@@ -14,7 +14,8 @@ side = {pulled_at,
         btts:    {yes, no},
         totals:  {"2.5": {over, under}, ...},            # every line DraftKings posted
         spreads: {"-0.5": {home, away}, ...}}             # keyed by the HOME line, like predictions
-Decimal prices, exactly as captured. Alternate lines count as ordinary lines. A market
+Decimal prices, exactly as captured. Alternate lines count as ordinary lines. Quarter lines
+(+0.25, 2.75) keep two decimals in the key; whole and half lines keep one. A market
 DraftKings didn't post is left out. Never invents a price.
 """
 from __future__ import annotations
@@ -32,9 +33,21 @@ def _ts(x: str) -> datetime:
     return datetime.fromisoformat(x.replace("Z", "+00:00"))
 
 
+def _is_half_step(x: float) -> bool:
+    """True for whole and half lines (-1.5, 0, 2.5); False for quarter lines (+0.25, 2.75)."""
+    return abs(x * 2 - round(x * 2)) < 1e-9
+
+
 def _line(x: float) -> str:
-    """Spread key in the predictions' format: '-1.5', '-0.5', '+0.5', '+1.5'."""
-    return f"{x:+.1f}"
+    """Spread key in the predictions' format: '-1.5', '-0.5', '+0.5', '+1.5'.
+    Quarter lines keep two decimals ('+0.25', '-0.75'); one decimal would round them onto the
+    wrong line ('+0.2', '-0.8'), which is how they were mislabelled before the 2026-10-12 fix."""
+    return f"{x:+.1f}" if _is_half_step(x) else f"{x:+.2f}"
+
+
+def _tline(x: float) -> str:
+    """Totals key: '2.5', '3.0'; quarter lines '2.25', '2.75'."""
+    return f"{x:.1f}" if _is_half_step(x) else f"{x:.2f}"
 
 
 def build_side(rows: list[dict], home: str, away: str) -> dict | None:
@@ -50,7 +63,7 @@ def build_side(rows: list[dict], home: str, away: str) -> dict | None:
         if m == "btts" and r["outcome"] in ("Yes", "No"):
             out.setdefault("btts", {})[r["outcome"].lower()] = price
         elif m == "totals" and r["outcome"] in ("Over", "Under") and r["point"] not in ("", None):
-            k = f"{float(r['point']):.1f}"
+            k = _tline(float(r["point"]))
             out.setdefault("totals", {}).setdefault(k, {})[r["outcome"].lower()] = price
         elif m == "spreads" and r["point"] not in ("", None):
             pt = float(r["point"])
