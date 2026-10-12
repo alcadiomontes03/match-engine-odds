@@ -534,3 +534,55 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-10-11T15:28:12+00:00,late,LaLiga,984691837d31fd0c59c088f377f55f75,2026-10-11T16:30:00Z,Real Betis,CA Osasuna,draftkings,2026-10-11T15:27:57Z,h2h,Draw,,4.5
 2026-10-11T15:28:12+00:00,late,LaLiga,984691837d31fd0c59c088f377f55f75,2026-10-11T16:30:00Z,Real Betis,CA Osasuna,draftkings,,btts,Yes,,1.8
 2026-10-11T15:28:12+00:00,late,LaLiga,984691837d31fd0c59c088f377f55f75,2026-10-11T16:30:00Z,Real Betis,CA Osasuna,draftkings,,btts,No,,2.0
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,2026-10-12T11:15:29Z,h2h,Coventry City,,3.3
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,2026-10-12T11:15:29Z,h2h,Newcastle United,,2.15
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,2026-10-12T11:15:29Z,h2h,Draw,,3.55
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_spreads,Coventry City,0.0,2.3
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_spreads,Coventry City,0.25,1.91
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_spreads,Coventry City,0.5,1.69
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_spreads,Coventry City,0.75,1.51
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_spreads,Newcastle United,0.0,1.54
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_spreads,Newcastle United,-0.25,1.8
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_spreads,Newcastle United,-0.5,2.05
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_spreads,Newcastle United,-0.75,2.4
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_totals,Over,0.5,1.03
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_totals,Over,1.5,1.22
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_totals,Over,2.5,1.67
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_totals,Over,3.5,2.7
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_totals,Over,4.5,5.0
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_totals,Over,5.5,9.5
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_totals,Over,6.5,18.0
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_totals,Under,0.5,12.0
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_totals,Under,1.5,4.3
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_totals,Under,2.5,2.2
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_totals,Under,3.5,1.47
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_totals,Under,4.5,1.17
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_totals,Under,5.5,1.06
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,alternate_totals,Under,6.5,1.0
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,btts,Yes,,1.56
+2026-10-12T11:16:48+00:00,late,PL,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,Newcastle United,draftkings,,btts,No,,2.4
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,2026-10-12T11:15:46Z,h2h,Levante,,2.7
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,2026-10-12T11:15:46Z,h2h,Sevilla,,2.75
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,2026-10-12T11:15:46Z,h2h,Draw,,3.15
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_spreads,Levante,-0.25,2.2
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_spreads,Levante,0.0,1.87
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_spreads,Levante,0.25,1.61
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_spreads,Levante,0.5,1.45
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_spreads,Sevilla,0.25,1.59
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_spreads,Sevilla,0.0,1.83
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_spreads,Sevilla,-0.25,2.2
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_spreads,Sevilla,-0.5,2.55
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_totals,Over,0.5,1.07
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_totals,Over,1.5,1.4
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_totals,Over,2.5,2.2
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_totals,Over,3.5,4.0
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_totals,Over,4.5,8.0
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_totals,Over,5.5,16.0
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_totals,Under,0.5,8.5
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_totals,Under,1.5,3.0
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_totals,Under,2.5,1.69
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_totals,Under,3.5,1.25
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_totals,Under,4.5,1.08
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,alternate_totals,Under,5.5,1.01
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,btts,Yes,,1.83
+2026-10-12T11:16:48+00:00,late,LaLiga,529fc26c7774d5b469932e275c668921,2026-10-12T19:00:00Z,Levante,Sevilla,draftkings,,btts,No,,1.95

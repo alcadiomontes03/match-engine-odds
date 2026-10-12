@@ -1,6 +1,6 @@
 {
- "utc": "2026-10-11T23:10:08+00:00",
- "markets": "h2h,spreads,totals",
+ "utc": "2026-10-12T11:16:48+00:00",
+ "markets": "h2h",
  "bookmakers": "draftkings",
  "leagues": {
   "PL": {
@@ -9,7 +9,7 @@
    "team_filter": [],
    "due_weekly": 10,
    "weekly_done": true,
-   "due_late": 0
+   "due_late": 1
   },
   "LaLiga": {
    "events_from_api": 22,
@@ -17,7 +17,7 @@
    "team_filter": [],
    "due_weekly": 10,
    "weekly_done": true,
-   "due_late": 0
+   "due_late": 1
   },
   "Bundesliga": {
    "events_from_api": 18,

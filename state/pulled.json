@@ -176,6 +176,8 @@
   "commence": "2026-10-12T19:00:00Z",
   "comp": "LaLiga",
   "home": "Levante",
+  "late": "2026-10-12T11:16:48+00:00",
+  "side": "2026-10-12T11:16:48+00:00",
   "weekly": "2026-10-06T03:36:23+00:00"
  },
  "551f242223b1625f458d1a2ea212a0c3": {
@@ -246,6 +248,16 @@
   "btts_empty:LaLiga": 0,
   "btts_empty:Ligue1": 0,
   "btts_empty:PL": 0,
+  "empty:alternate_spreads:LaLiga": 0,
+  "empty:alternate_spreads:PL": 0,
+  "empty:alternate_totals:LaLiga": 0,
+  "empty:alternate_totals:PL": 0,
+  "empty:btts:LaLiga": 0,
+  "empty:btts:PL": 0,
+  "empty:spreads:LaLiga": 1,
+  "empty:spreads:PL": 1,
+  "empty:totals:LaLiga": 1,
+  "empty:totals:PL": 1,
   "weekly:Bundesliga": "2026-W41",
   "weekly:Championship": "2026-W39",
   "weekly:LaLiga": "2026-W41",
@@ -264,6 +276,8 @@
   "commence": "2026-10-12T19:00:00Z",
   "comp": "PL",
   "home": "Coventry City",
+  "late": "2026-10-12T11:16:48+00:00",
+  "side": "2026-10-12T11:16:48+00:00",
   "weekly": "2026-10-06T03:36:23+00:00"
  },
  "b870dcfba5e5920d3f1551a3aa1ea435": {
