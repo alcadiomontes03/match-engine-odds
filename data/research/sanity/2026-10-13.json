@@ -1,0 +1,148 @@
+{
+ "run_at": "2026-10-13T04:05:29+00:00",
+ "code_version": "research-1 (2026-10-12)",
+ "status": "warn",
+ "checks": [
+  {
+   "check": "goal level D1 (ratings)",
+   "level": "ok",
+   "detail": "9 matches: predicted 3.00, actual 3.89 goals/game (diff +0.89, z +1.5)",
+   "items": []
+  },
+  {
+   "check": "goal level D1 (market grid)",
+   "level": "ok",
+   "detail": "9 matches: predicted 3.61, actual 3.89 goals/game (diff +0.28, z +0.4)",
+   "items": []
+  },
+  {
+   "check": "goal level E0 (ratings)",
+   "level": "ok",
+   "detail": "20 matches: predicted 2.62, actual 3.15 goals/game (diff +0.53, z +1.1)",
+   "items": []
+  },
+  {
+   "check": "goal level E0 (market grid)",
+   "level": "ok",
+   "detail": "20 matches: predicted 2.94, actual 3.15 goals/game (diff +0.21, z +0.5)",
+   "items": []
+  },
+  {
+   "check": "goal level F1 (ratings)",
+   "level": "ok",
+   "detail": "9 matches: predicted 2.86, actual 3.22 goals/game (diff +0.37, z +0.7)",
+   "items": []
+  },
+  {
+   "check": "goal level F1 (market grid)",
+   "level": "ok",
+   "detail": "9 matches: predicted 3.17, actual 3.22 goals/game (diff +0.05, z +0.1)",
+   "items": []
+  },
+  {
+   "check": "goal level SP1 (ratings)",
+   "level": "ok",
+   "detail": "21 matches: predicted 2.67, actual 3.14 goals/game (diff +0.48, z +1.1)",
+   "items": []
+  },
+  {
+   "check": "goal level SP1 (market grid)",
+   "level": "ok",
+   "detail": "21 matches: predicted 2.83, actual 3.14 goals/game (diff +0.31, z +0.7)",
+   "items": []
+  },
+  {
+   "check": "missing results (kicked off 6h+ ago)",
+   "level": "ok",
+   "detail": "0 fixtures",
+   "items": []
+  },
+  {
+   "check": "results without match stats (last 10 days)",
+   "level": "ok",
+   "detail": "0 results",
+   "items": []
+  },
+  {
+   "check": "duplicate fixtures",
+   "level": "ok",
+   "detail": "0 pairs",
+   "items": []
+  },
+  {
+   "check": "result letter matches the score",
+   "level": "ok",
+   "detail": "0 mismatches",
+   "items": []
+  },
+  {
+   "check": "prediction probabilities",
+   "level": "ok",
+   "detail": "0 problems",
+   "items": []
+  },
+  {
+   "check": "predictions carrying gate_open: true",
+   "level": "warn",
+   "detail": "32 predictions copy the league's old blend-validation flag from state/summary; blend weight is 0, so no price is affected, but the flag reads as if the CLV gate were open",
+   "items": [
+    "b870dcfba5e5920d3f1551a3aa1ea435",
+    "784f777f5181e1efdad7a6ecb2cfde15",
+    "45d4a466e32cd2b4ea535207923ceaf5",
+    "5502f6f20eccc2f2ed0d3904712e4a2c",
+    "5866dae1e72b96ab74508039cd3dcca7",
+    "da3d3fec3e0b6b939910427a76ecfb76",
+    "380b8f24ec5430fb545a7490c1017285",
+    "d05fb9feb5722b2f2cedb8bbe7c33a1d",
+    "b5b058d0a95f9742548f789d1c564a78",
+    "a995ad3266759e67c9f9b0617c184b71",
+    "22c9b2c43cbe1334381269550dab78e6",
+    "86effab5c6e7bfd58c8e88b1fb7c6ba9",
+    "75133fdcd4fc3067b303a8f166f974e4",
+    "b63aef4291a066e32644e591c19a235a",
+    "0bdae4d304810578e47386606bff7106",
+    "82d8b6a005d78bac0b1508abc17a7d39",
+    "02e6c0ccb11bb7ce78989ce49d67110b",
+    "e6b36629bb3480a570ea0db2f47888dd",
+    "7f644eca099054612d9a7e7e5d8787da",
+    "f923236e69ed946fdc55163494ee88db"
+   ]
+  },
+  {
+   "check": "odds overrounds in a sane range",
+   "level": "ok",
+   "detail": "0 prices",
+   "items": []
+  },
+  {
+   "check": "odds-feed names close to fixture names",
+   "level": "ok",
+   "detail": "0 weak matches (check by eye; abbreviations can be fine)",
+   "items": []
+  },
+  {
+   "check": "auto-picks with no fixture",
+   "level": "ok",
+   "detail": "0",
+   "items": []
+  },
+  {
+   "check": "close price timing",
+   "level": "warn",
+   "detail": "16 matches, median 110 min before kickoff, 1 within 65 min, max 143",
+   "items": []
+  },
+  {
+   "check": "side price timing",
+   "level": "warn",
+   "detail": "18 matches, median 110 min before kickoff, 1 within 65 min, max 463",
+   "items": []
+  },
+  {
+   "check": "odds API credits",
+   "level": "ok",
+   "detail": "429 left (side markets drop to BTTS only below 130)",
+   "items": []
+  }
+ ]
+}
