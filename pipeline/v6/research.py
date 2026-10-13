@@ -634,6 +634,14 @@ def main():
     (OUT / "reports").mkdir(parents=True, exist_ok=True)
     (OUT / "reports" / f"{today}.md").write_text(rep)
     flagged = [f"{c['level'].upper()} {c['check']}: {c['detail']}" for c in s["checks"] if c["level"] != "ok"]
+    try:   # market benchmark (free, football-data only); a failure here must never block the weekly job
+        import benchmark
+        benchmark.OUT.mkdir(parents=True, exist_ok=True)
+        _t = benchmark.clv_table()
+        _t.to_csv(benchmark.OUT / "dk_vs_reference.csv", index=False)
+        (benchmark.OUT / f"clv-{today}.md").write_text(benchmark.clv_report(_t))
+    except Exception as e:  # noqa: BLE001
+        flagged.append(f"WARN benchmark: {e}")
     print(json.dumps({"record": r, "sanity_status": s["status"], "flags": flagged,
                       "report": f"data/research/reports/{today}.md"}, indent=1))
 
