@@ -1,0 +1,73 @@
+{
+  "release": "v6.2-2026-10-13",
+  "created": "2026-10-13",
+  "status": "STAGED, not live: Drive upload, Code Vault re-seed and weekly-task table update not done yet",
+  "supersedes": "v5.5-2026-10-03",
+  "note": "Codex review fixes. Never edit or move files in this folder once uploaded.",
+  "agents": [
+    {
+      "name": "manifest.py",
+      "bytes": 7103,
+      "sha256": "c0215f1497d8acd41d168a04f45dba69100c2e9f1ddf8bc2afa188805d922b6b",
+      "previous_sha256": "d92ebe34da71fcd8852b9befc937cf055e5f2b18017c915f98a5b8a33ec74ba7",
+      "changed": true
+    },
+    {
+      "name": "collect.py",
+      "bytes": 14852,
+      "sha256": "2c7a3ef48d8231345c5942836138c67df7a0bc10995b4d892bf851c2adad0768",
+      "previous_sha256": "3ec4c57dd1939ccb25c7bee67d41d03f0b50a85f9c0ea63e83eeec450f803ab1",
+      "changed": true
+    },
+    {
+      "name": "pricer.py",
+      "bytes": 10504,
+      "sha256": "dc544beb79d931549e146c3c6ba06168c7a2ec33ce289e3af5051848765bf33a",
+      "previous_sha256": "f86385c2df197d412a06b0d0642bc180fa6d6efe519fa37904f92e9050342917",
+      "changed": true
+    },
+    {
+      "name": "runner.py",
+      "bytes": 13389,
+      "sha256": "15a781d0687ad06b91e45cdeb722285637658aa0bcf119736f4172ee5411eba5",
+      "previous_sha256": "399987caf7936635d20e1f5b73da884acb2244d7da5b3d4d286fe86eb31cf6ef",
+      "changed": true
+    },
+    {
+      "name": "banker.py",
+      "bytes": 21179,
+      "sha256": "b16676ccd4c4cbf253bf564bb8e78f57edfc5692ff45ed1c4e88098159f85386",
+      "previous_sha256": "9be0bd9d287b1e0d82cd62cc6bcc32de200ffc0e24ba158aabba821a792f4944",
+      "changed": true
+    },
+    {
+      "name": "checker.py",
+      "bytes": 38203,
+      "sha256": "4908fb992a81dbca557fc506d17cbf3f5bc31568976a8c49555e3dcaded8bc5a",
+      "previous_sha256": "1046b923f8801c50a1364c7a7271242fd218ca6e530dbc3ac04efcae467dfbca",
+      "changed": true
+    },
+    {
+      "name": "publish.py",
+      "bytes": 13261,
+      "sha256": "592557b70939d03fb06cc786e65d6869c5d45ca75d08f2fd10a464a8183c1398",
+      "previous_sha256": "aeaec67aab7c2d657ddb676a68b4b3ba3f43f4abe36a5bbdfdfa4a812ebe0428",
+      "changed": true
+    },
+    {
+      "name": "orchestrate.py",
+      "bytes": 14333,
+      "sha256": "e0d4737ea5fae33dcbef1b4212e9bf6fc586dda900516d126f66b853abcb064d",
+      "previous_sha256": "f0db867186064b46b1fff4ef19581c4efcd40f1d6f6be4960fe3ae2ebb47cd19",
+      "changed": true
+    }
+  ],
+  "other_files": [
+    {
+      "name": "test_v62.py",
+      "bytes": 25689,
+      "sha256": "fddb044812d54b3c7687d632ed79b9702614d0e4cb347d1326362f96d40e3a69"
+    }
+  ],
+  "tests": "test_v62.py: 48 passed incl. end-to-end on match-engine-odds@330df82. Original 6 suites: pending, not yet re-run."
+}
