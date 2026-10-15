@@ -691,3 +691,120 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-10-12T20:19:11+00:00,weekly,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,2026-10-12T20:18:39Z,h2h,Lyon,,1.67
 2026-10-12T20:19:11+00:00,weekly,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,2026-10-12T20:18:39Z,h2h,Nice,,4.5
 2026-10-12T20:19:11+00:00,weekly,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,2026-10-12T20:18:39Z,h2h,Draw,,4.0
+2026-10-15T04:46:07+00:00,weekly,PL,764e6513cb3f348881503df70ccb90e0,2026-10-17T11:30:00Z,Everton,Chelsea,draftkings,2026-10-15T04:45:58Z,h2h,Chelsea,,2.15
+2026-10-15T04:46:07+00:00,weekly,PL,764e6513cb3f348881503df70ccb90e0,2026-10-17T11:30:00Z,Everton,Chelsea,draftkings,2026-10-15T04:45:58Z,h2h,Everton,,3.15
+2026-10-15T04:46:07+00:00,weekly,PL,764e6513cb3f348881503df70ccb90e0,2026-10-17T11:30:00Z,Everton,Chelsea,draftkings,2026-10-15T04:45:58Z,h2h,Draw,,3.75
+2026-10-15T04:46:07+00:00,weekly,PL,8f1945e7272bc7e89016439f5ab321c7,2026-10-17T14:00:00Z,Brentford,Liverpool,draftkings,2026-10-15T04:45:58Z,h2h,Brentford,,2.35
+2026-10-15T04:46:07+00:00,weekly,PL,8f1945e7272bc7e89016439f5ab321c7,2026-10-17T14:00:00Z,Brentford,Liverpool,draftkings,2026-10-15T04:45:58Z,h2h,Liverpool,,2.9
+2026-10-15T04:46:07+00:00,weekly,PL,8f1945e7272bc7e89016439f5ab321c7,2026-10-17T14:00:00Z,Brentford,Liverpool,draftkings,2026-10-15T04:45:58Z,h2h,Draw,,3.6
+2026-10-15T04:46:07+00:00,weekly,PL,7895f97f2f9577f3b13287a3d086859d,2026-10-17T14:00:00Z,Fulham,Hull City,draftkings,2026-10-15T04:45:58Z,h2h,Fulham,,1.74
+2026-10-15T04:46:07+00:00,weekly,PL,7895f97f2f9577f3b13287a3d086859d,2026-10-17T14:00:00Z,Fulham,Hull City,draftkings,2026-10-15T04:45:58Z,h2h,Hull City,,4.6
+2026-10-15T04:46:07+00:00,weekly,PL,7895f97f2f9577f3b13287a3d086859d,2026-10-17T14:00:00Z,Fulham,Hull City,draftkings,2026-10-15T04:45:58Z,h2h,Draw,,3.95
+2026-10-15T04:46:07+00:00,weekly,PL,bf2142d1ca76ba2fc9e61afce80f86c0,2026-10-17T14:00:00Z,Manchester City,Ipswich Town,draftkings,2026-10-15T04:45:58Z,h2h,Ipswich Town,,11.0
+2026-10-15T04:46:07+00:00,weekly,PL,bf2142d1ca76ba2fc9e61afce80f86c0,2026-10-17T14:00:00Z,Manchester City,Ipswich Town,draftkings,2026-10-15T04:45:58Z,h2h,Manchester City,,1.22
+2026-10-15T04:46:07+00:00,weekly,PL,bf2142d1ca76ba2fc9e61afce80f86c0,2026-10-17T14:00:00Z,Manchester City,Ipswich Town,draftkings,2026-10-15T04:45:58Z,h2h,Draw,,7.0
+2026-10-15T04:46:07+00:00,weekly,PL,d1bbbdcd3d430e70091b518369b559cf,2026-10-17T16:30:00Z,Newcastle United,Aston Villa,draftkings,2026-10-15T04:45:58Z,h2h,Aston Villa,,3.0
+2026-10-15T04:46:07+00:00,weekly,PL,d1bbbdcd3d430e70091b518369b559cf,2026-10-17T16:30:00Z,Newcastle United,Aston Villa,draftkings,2026-10-15T04:45:58Z,h2h,Newcastle United,,2.25
+2026-10-15T04:46:07+00:00,weekly,PL,d1bbbdcd3d430e70091b518369b559cf,2026-10-17T16:30:00Z,Newcastle United,Aston Villa,draftkings,2026-10-15T04:45:58Z,h2h,Draw,,3.75
+2026-10-15T04:46:07+00:00,weekly,PL,dfd5d6648be46426e418801584d46a68,2026-10-18T13:00:00Z,Bournemouth,Sunderland,draftkings,2026-10-15T04:45:58Z,h2h,Bournemouth,,2.0
+2026-10-15T04:46:07+00:00,weekly,PL,dfd5d6648be46426e418801584d46a68,2026-10-18T13:00:00Z,Bournemouth,Sunderland,draftkings,2026-10-15T04:45:58Z,h2h,Sunderland,,3.55
+2026-10-15T04:46:07+00:00,weekly,PL,dfd5d6648be46426e418801584d46a68,2026-10-18T13:00:00Z,Bournemouth,Sunderland,draftkings,2026-10-15T04:45:58Z,h2h,Draw,,3.55
+2026-10-15T04:46:07+00:00,weekly,PL,9fc08b390a49c4434f7cf631a0bb88fb,2026-10-18T13:00:00Z,Brighton and Hove Albion,Crystal Palace,draftkings,2026-10-15T04:45:58Z,h2h,Brighton and Hove Albion,,1.56
+2026-10-15T04:46:07+00:00,weekly,PL,9fc08b390a49c4434f7cf631a0bb88fb,2026-10-18T13:00:00Z,Brighton and Hove Albion,Crystal Palace,draftkings,2026-10-15T04:45:58Z,h2h,Crystal Palace,,5.25
+2026-10-15T04:46:07+00:00,weekly,PL,9fc08b390a49c4434f7cf631a0bb88fb,2026-10-18T13:00:00Z,Brighton and Hove Albion,Crystal Palace,draftkings,2026-10-15T04:45:58Z,h2h,Draw,,4.5
+2026-10-15T04:46:07+00:00,weekly,PL,676b3b0b609e9cf565da450786618d26,2026-10-18T13:00:00Z,Leeds United,Manchester United,draftkings,2026-10-15T04:45:58Z,h2h,Leeds United,,2.35
+2026-10-15T04:46:07+00:00,weekly,PL,676b3b0b609e9cf565da450786618d26,2026-10-18T13:00:00Z,Leeds United,Manchester United,draftkings,2026-10-15T04:45:58Z,h2h,Manchester United,,2.85
+2026-10-15T04:46:07+00:00,weekly,PL,676b3b0b609e9cf565da450786618d26,2026-10-18T13:00:00Z,Leeds United,Manchester United,draftkings,2026-10-15T04:45:58Z,h2h,Draw,,3.55
+2026-10-15T04:46:07+00:00,weekly,PL,f696a248965373d9071dc0662e5c58a8,2026-10-18T15:30:00Z,Nottingham Forest,Arsenal,draftkings,2026-10-15T04:45:58Z,h2h,Arsenal,,1.59
+2026-10-15T04:46:07+00:00,weekly,PL,f696a248965373d9071dc0662e5c58a8,2026-10-18T15:30:00Z,Nottingham Forest,Arsenal,draftkings,2026-10-15T04:45:58Z,h2h,Nottingham Forest,,6.0
+2026-10-15T04:46:07+00:00,weekly,PL,f696a248965373d9071dc0662e5c58a8,2026-10-18T15:30:00Z,Nottingham Forest,Arsenal,draftkings,2026-10-15T04:45:58Z,h2h,Draw,,3.85
+2026-10-15T04:46:07+00:00,weekly,PL,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur,Coventry City,draftkings,2026-10-15T04:45:58Z,h2h,Coventry City,,6.0
+2026-10-15T04:46:07+00:00,weekly,PL,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur,Coventry City,draftkings,2026-10-15T04:45:58Z,h2h,Tottenham Hotspur,,1.48
+2026-10-15T04:46:07+00:00,weekly,PL,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur,Coventry City,draftkings,2026-10-15T04:45:58Z,h2h,Draw,,4.6
+2026-10-15T04:46:07+00:00,weekly,LaLiga,19ee731602634e5c9e3106630e087464,2026-10-16T19:00:00Z,Deportivo La Coruña,Levante,draftkings,2026-10-15T04:46:01Z,h2h,Deportivo La Coruña,,2.1
+2026-10-15T04:46:07+00:00,weekly,LaLiga,19ee731602634e5c9e3106630e087464,2026-10-16T19:00:00Z,Deportivo La Coruña,Levante,draftkings,2026-10-15T04:46:01Z,h2h,Levante,,3.45
+2026-10-15T04:46:07+00:00,weekly,LaLiga,19ee731602634e5c9e3106630e087464,2026-10-16T19:00:00Z,Deportivo La Coruña,Levante,draftkings,2026-10-15T04:46:01Z,h2h,Draw,,3.5
+2026-10-15T04:46:07+00:00,weekly,LaLiga,6436925dd15916d7041ba32b60000d48,2026-10-17T12:00:00Z,Espanyol,Atlético Madrid,draftkings,2026-10-15T04:46:01Z,h2h,Atlético Madrid,,1.74
+2026-10-15T04:46:07+00:00,weekly,LaLiga,6436925dd15916d7041ba32b60000d48,2026-10-17T12:00:00Z,Espanyol,Atlético Madrid,draftkings,2026-10-15T04:46:01Z,h2h,Espanyol,,4.6
+2026-10-15T04:46:07+00:00,weekly,LaLiga,6436925dd15916d7041ba32b60000d48,2026-10-17T12:00:00Z,Espanyol,Atlético Madrid,draftkings,2026-10-15T04:46:01Z,h2h,Draw,,3.9
+2026-10-15T04:46:07+00:00,weekly,LaLiga,aef660734585649651415961a9d177c6,2026-10-17T14:15:00Z,Villarreal,Elche CF,draftkings,2026-10-15T04:46:01Z,h2h,Elche CF,,6.5
+2026-10-15T04:46:07+00:00,weekly,LaLiga,aef660734585649651415961a9d177c6,2026-10-17T14:15:00Z,Villarreal,Elche CF,draftkings,2026-10-15T04:46:01Z,h2h,Villarreal,,1.44
+2026-10-15T04:46:07+00:00,weekly,LaLiga,aef660734585649651415961a9d177c6,2026-10-17T14:15:00Z,Villarreal,Elche CF,draftkings,2026-10-15T04:46:01Z,h2h,Draw,,5.0
+2026-10-15T04:46:07+00:00,weekly,LaLiga,846e496fc232b2fc20214754836727d0,2026-10-17T16:30:00Z,Real Betis,Barcelona,draftkings,2026-10-15T04:46:01Z,h2h,Barcelona,,1.43
+2026-10-15T04:46:07+00:00,weekly,LaLiga,846e496fc232b2fc20214754836727d0,2026-10-17T16:30:00Z,Real Betis,Barcelona,draftkings,2026-10-15T04:46:01Z,h2h,Real Betis,,6.0
+2026-10-15T04:46:07+00:00,weekly,LaLiga,846e496fc232b2fc20214754836727d0,2026-10-17T16:30:00Z,Real Betis,Barcelona,draftkings,2026-10-15T04:46:01Z,h2h,Draw,,5.5
+2026-10-15T04:46:07+00:00,weekly,LaLiga,f00cd1ea41fa39149729d14ebc07aa6c,2026-10-17T19:00:00Z,Valencia,Athletic Bilbao,draftkings,2026-10-15T04:46:01Z,h2h,Athletic Bilbao,,2.25
+2026-10-15T04:46:07+00:00,weekly,LaLiga,f00cd1ea41fa39149729d14ebc07aa6c,2026-10-17T19:00:00Z,Valencia,Athletic Bilbao,draftkings,2026-10-15T04:46:01Z,h2h,Valencia,,3.3
+2026-10-15T04:46:07+00:00,weekly,LaLiga,f00cd1ea41fa39149729d14ebc07aa6c,2026-10-17T19:00:00Z,Valencia,Athletic Bilbao,draftkings,2026-10-15T04:46:01Z,h2h,Draw,,3.35
+2026-10-15T04:46:07+00:00,weekly,LaLiga,1f566f17c50fe5162724ec2863d2207b,2026-10-18T12:00:00Z,CA Osasuna,Real Racing Club de Santander,draftkings,2026-10-15T04:46:01Z,h2h,CA Osasuna,,2.0
+2026-10-15T04:46:07+00:00,weekly,LaLiga,1f566f17c50fe5162724ec2863d2207b,2026-10-18T12:00:00Z,CA Osasuna,Real Racing Club de Santander,draftkings,2026-10-15T04:46:01Z,h2h,Real Racing Club de Santander,,3.55
+2026-10-15T04:46:07+00:00,weekly,LaLiga,1f566f17c50fe5162724ec2863d2207b,2026-10-18T12:00:00Z,CA Osasuna,Real Racing Club de Santander,draftkings,2026-10-15T04:46:01Z,h2h,Draw,,3.6
+2026-10-15T04:46:07+00:00,weekly,LaLiga,aabe899ecc4c19a1fafe5440151b62e4,2026-10-18T14:15:00Z,Celta Vigo,Alavés,draftkings,2026-10-15T04:46:01Z,h2h,Alavés,,3.6
+2026-10-15T04:46:07+00:00,weekly,LaLiga,aabe899ecc4c19a1fafe5440151b62e4,2026-10-18T14:15:00Z,Celta Vigo,Alavés,draftkings,2026-10-15T04:46:01Z,h2h,Celta Vigo,,2.1
+2026-10-15T04:46:07+00:00,weekly,LaLiga,aabe899ecc4c19a1fafe5440151b62e4,2026-10-18T14:15:00Z,Celta Vigo,Alavés,draftkings,2026-10-15T04:46:01Z,h2h,Draw,,3.25
+2026-10-15T04:46:07+00:00,weekly,LaLiga,1051298b4aca6f07113309bff598a5c1,2026-10-18T16:30:00Z,Málaga,Real Sociedad,draftkings,2026-10-15T04:46:01Z,h2h,Málaga,,3.25
+2026-10-15T04:46:07+00:00,weekly,LaLiga,1051298b4aca6f07113309bff598a5c1,2026-10-18T16:30:00Z,Málaga,Real Sociedad,draftkings,2026-10-15T04:46:01Z,h2h,Real Sociedad,,2.15
+2026-10-15T04:46:07+00:00,weekly,LaLiga,1051298b4aca6f07113309bff598a5c1,2026-10-18T16:30:00Z,Málaga,Real Sociedad,draftkings,2026-10-15T04:46:01Z,h2h,Draw,,3.5
+2026-10-15T04:46:07+00:00,weekly,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,2026-10-15T04:46:01Z,h2h,Real Madrid,,1.26
+2026-10-15T04:46:07+00:00,weekly,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,2026-10-15T04:46:01Z,h2h,Sevilla,,9.5
+2026-10-15T04:46:07+00:00,weekly,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,2026-10-15T04:46:01Z,h2h,Draw,,6.0
+2026-10-15T04:46:07+00:00,weekly,LaLiga,4a88bc4de574d43ef34677fd8d78722f,2026-10-19T19:00:00Z,Getafe,Rayo Vallecano,draftkings,2026-10-15T04:46:01Z,h2h,Getafe,,2.9
+2026-10-15T04:46:07+00:00,weekly,LaLiga,4a88bc4de574d43ef34677fd8d78722f,2026-10-19T19:00:00Z,Getafe,Rayo Vallecano,draftkings,2026-10-15T04:46:01Z,h2h,Rayo Vallecano,,2.65
+2026-10-15T04:46:07+00:00,weekly,LaLiga,4a88bc4de574d43ef34677fd8d78722f,2026-10-19T19:00:00Z,Getafe,Rayo Vallecano,draftkings,2026-10-15T04:46:01Z,h2h,Draw,,2.95
+2026-10-15T04:46:07+00:00,weekly,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,2026-10-15T04:46:01Z,h2h,Athletic Bilbao,,2.15
+2026-10-15T04:46:07+00:00,weekly,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,2026-10-15T04:46:01Z,h2h,Levante,,3.6
+2026-10-15T04:46:07+00:00,weekly,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,2026-10-15T04:46:01Z,h2h,Draw,,3.2
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,947bd5d924835af090d9cdc7bbdf10f6,2026-10-16T18:30:00Z,Eintracht Frankfurt,1. FC Köln,draftkings,2026-10-15T04:45:42Z,h2h,1. FC Köln,,3.2
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,947bd5d924835af090d9cdc7bbdf10f6,2026-10-16T18:30:00Z,Eintracht Frankfurt,1. FC Köln,draftkings,2026-10-15T04:45:42Z,h2h,Eintracht Frankfurt,,1.91
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,947bd5d924835af090d9cdc7bbdf10f6,2026-10-16T18:30:00Z,Eintracht Frankfurt,1. FC Köln,draftkings,2026-10-15T04:45:42Z,h2h,Draw,,3.95
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,0bf757f3bd903496ce2fa27bd0481869,2026-10-17T13:30:00Z,Elversberg,Augsburg,draftkings,2026-10-15T04:45:42Z,h2h,Augsburg,,2.55
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,0bf757f3bd903496ce2fa27bd0481869,2026-10-17T13:30:00Z,Elversberg,Augsburg,draftkings,2026-10-15T04:45:42Z,h2h,Elversberg,,2.4
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,0bf757f3bd903496ce2fa27bd0481869,2026-10-17T13:30:00Z,Elversberg,Augsburg,draftkings,2026-10-15T04:45:42Z,h2h,Draw,,3.6
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,d8eac776adb07b0e7f01d8736d097291,2026-10-17T13:30:00Z,Union Berlin,Borussia Dortmund,draftkings,2026-10-15T04:45:42Z,h2h,Borussia Dortmund,,1.59
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,d8eac776adb07b0e7f01d8736d097291,2026-10-17T13:30:00Z,Union Berlin,Borussia Dortmund,draftkings,2026-10-15T04:45:42Z,h2h,Union Berlin,,4.7
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,d8eac776adb07b0e7f01d8736d097291,2026-10-17T13:30:00Z,Union Berlin,Borussia Dortmund,draftkings,2026-10-15T04:45:42Z,h2h,Draw,,4.3
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,606d65d57a9a6d8f9b53faee1ad10009,2026-10-17T13:30:00Z,FC Schalke 04,FSV Mainz 05,draftkings,2026-10-15T04:45:42Z,h2h,FC Schalke 04,,2.95
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,606d65d57a9a6d8f9b53faee1ad10009,2026-10-17T13:30:00Z,FC Schalke 04,FSV Mainz 05,draftkings,2026-10-15T04:45:42Z,h2h,FSV Mainz 05,,2.2
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,606d65d57a9a6d8f9b53faee1ad10009,2026-10-17T13:30:00Z,FC Schalke 04,FSV Mainz 05,draftkings,2026-10-15T04:45:42Z,h2h,Draw,,3.45
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,221916b8b36706ec52aa655a64e5f1d2,2026-10-17T13:30:00Z,Hamburger SV,VfB Stuttgart,draftkings,2026-10-15T04:45:42Z,h2h,Hamburger SV,,3.85
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,221916b8b36706ec52aa655a64e5f1d2,2026-10-17T13:30:00Z,Hamburger SV,VfB Stuttgart,draftkings,2026-10-15T04:45:42Z,h2h,VfB Stuttgart,,1.77
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,221916b8b36706ec52aa655a64e5f1d2,2026-10-17T13:30:00Z,Hamburger SV,VfB Stuttgart,draftkings,2026-10-15T04:45:42Z,h2h,Draw,,3.9
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,9a422e1aad1053828eaf629a58d901de,2026-10-17T13:30:00Z,Werder Bremen,SC Paderborn,draftkings,2026-10-15T04:45:42Z,h2h,SC Paderborn,,3.8
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,9a422e1aad1053828eaf629a58d901de,2026-10-17T13:30:00Z,Werder Bremen,SC Paderborn,draftkings,2026-10-15T04:45:42Z,h2h,Werder Bremen,,1.77
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,9a422e1aad1053828eaf629a58d901de,2026-10-17T13:30:00Z,Werder Bremen,SC Paderborn,draftkings,2026-10-15T04:45:42Z,h2h,Draw,,4.0
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,9a64448205fdc4b95f45641bb946706c,2026-10-17T16:30:00Z,Bayern Munich,RB Leipzig,draftkings,2026-10-15T04:45:42Z,h2h,Bayern Munich,,1.21
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,9a64448205fdc4b95f45641bb946706c,2026-10-17T16:30:00Z,Bayern Munich,RB Leipzig,draftkings,2026-10-15T04:45:42Z,h2h,RB Leipzig,,8.5
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,9a64448205fdc4b95f45641bb946706c,2026-10-17T16:30:00Z,Bayern Munich,RB Leipzig,draftkings,2026-10-15T04:45:42Z,h2h,Draw,,7.0
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,096d800bcc95c547ef592cbef624d080,2026-10-18T13:30:00Z,Bayer Leverkusen,SC Freiburg,draftkings,2026-10-15T04:45:42Z,h2h,Bayer Leverkusen,,1.69
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,096d800bcc95c547ef592cbef624d080,2026-10-18T13:30:00Z,Bayer Leverkusen,SC Freiburg,draftkings,2026-10-15T04:45:42Z,h2h,SC Freiburg,,4.0
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,096d800bcc95c547ef592cbef624d080,2026-10-18T13:30:00Z,Bayer Leverkusen,SC Freiburg,draftkings,2026-10-15T04:45:42Z,h2h,Draw,,4.0
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,fd9b8c185737a15615aa0c9daaa3dfbf,2026-10-18T15:30:00Z,Borussia Monchengladbach,TSG Hoffenheim,draftkings,2026-10-15T04:45:42Z,h2h,Borussia Monchengladbach,,2.9
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,fd9b8c185737a15615aa0c9daaa3dfbf,2026-10-18T15:30:00Z,Borussia Monchengladbach,TSG Hoffenheim,draftkings,2026-10-15T04:45:42Z,h2h,TSG Hoffenheim,,2.05
+2026-10-15T04:46:07+00:00,weekly,Bundesliga,fd9b8c185737a15615aa0c9daaa3dfbf,2026-10-18T15:30:00Z,Borussia Monchengladbach,TSG Hoffenheim,draftkings,2026-10-15T04:45:42Z,h2h,Draw,,3.9
+2026-10-15T04:46:07+00:00,weekly,Ligue1,66c168c030f3faad3983fcadc3060009,2026-10-16T18:45:00Z,Le Mans FC,Toulouse,draftkings,2026-10-15T04:45:45Z,h2h,Le Mans FC,,2.95
+2026-10-15T04:46:07+00:00,weekly,Ligue1,66c168c030f3faad3983fcadc3060009,2026-10-16T18:45:00Z,Le Mans FC,Toulouse,draftkings,2026-10-15T04:45:45Z,h2h,Toulouse,,2.3
+2026-10-15T04:46:07+00:00,weekly,Ligue1,66c168c030f3faad3983fcadc3060009,2026-10-16T18:45:00Z,Le Mans FC,Toulouse,draftkings,2026-10-15T04:45:45Z,h2h,Draw,,3.6
+2026-10-15T04:46:07+00:00,weekly,Ligue1,f3034246520a2ee4ff0ac0d5074966f8,2026-10-17T15:15:00Z,Strasbourg,Paris Saint Germain,draftkings,2026-10-15T04:45:45Z,h2h,Paris Saint Germain,,1.43
+2026-10-15T04:46:07+00:00,weekly,Ligue1,f3034246520a2ee4ff0ac0d5074966f8,2026-10-17T15:15:00Z,Strasbourg,Paris Saint Germain,draftkings,2026-10-15T04:45:45Z,h2h,Strasbourg,,6.0
+2026-10-15T04:46:07+00:00,weekly,Ligue1,f3034246520a2ee4ff0ac0d5074966f8,2026-10-17T15:15:00Z,Strasbourg,Paris Saint Germain,draftkings,2026-10-15T04:45:45Z,h2h,Draw,,5.25
+2026-10-15T04:46:07+00:00,weekly,Ligue1,ad25a350c89b64715e15c59cde5653d3,2026-10-17T18:45:00Z,Lille,Brest,draftkings,2026-10-15T04:45:45Z,h2h,Brest,,4.1
+2026-10-15T04:46:07+00:00,weekly,Ligue1,ad25a350c89b64715e15c59cde5653d3,2026-10-17T18:45:00Z,Lille,Brest,draftkings,2026-10-15T04:45:45Z,h2h,Lille,,1.83
+2026-10-15T04:46:07+00:00,weekly,Ligue1,ad25a350c89b64715e15c59cde5653d3,2026-10-17T18:45:00Z,Lille,Brest,draftkings,2026-10-15T04:45:45Z,h2h,Draw,,3.95
+2026-10-15T04:46:07+00:00,weekly,Ligue1,b077aa049133c0358bcd643bfee48da3,2026-10-17T18:45:00Z,Troyes,RC Lens,draftkings,2026-10-15T04:45:45Z,h2h,RC Lens,,1.83
+2026-10-15T04:46:07+00:00,weekly,Ligue1,b077aa049133c0358bcd643bfee48da3,2026-10-17T18:45:00Z,Troyes,RC Lens,draftkings,2026-10-15T04:45:45Z,h2h,Troyes,,4.0
+2026-10-15T04:46:07+00:00,weekly,Ligue1,b077aa049133c0358bcd643bfee48da3,2026-10-17T18:45:00Z,Troyes,RC Lens,draftkings,2026-10-15T04:45:45Z,h2h,Draw,,4.0
+2026-10-15T04:46:07+00:00,weekly,Ligue1,c7a60aa94470fe959fbf6b0c68060fc1,2026-10-18T13:00:00Z,Angers,Marseille,draftkings,2026-10-15T04:45:45Z,h2h,Angers,,3.2
+2026-10-15T04:46:07+00:00,weekly,Ligue1,c7a60aa94470fe959fbf6b0c68060fc1,2026-10-18T13:00:00Z,Angers,Marseille,draftkings,2026-10-15T04:45:45Z,h2h,Marseille,,2.1
+2026-10-15T04:46:07+00:00,weekly,Ligue1,c7a60aa94470fe959fbf6b0c68060fc1,2026-10-18T13:00:00Z,Angers,Marseille,draftkings,2026-10-15T04:45:45Z,h2h,Draw,,3.7
+2026-10-15T04:46:07+00:00,weekly,Ligue1,53f5fe7ed0ba0fbf6345c73270e4cd00,2026-10-18T15:15:00Z,Lorient,AS Monaco,draftkings,2026-10-15T04:45:45Z,h2h,AS Monaco,,2.0
+2026-10-15T04:46:07+00:00,weekly,Ligue1,53f5fe7ed0ba0fbf6345c73270e4cd00,2026-10-18T15:15:00Z,Lorient,AS Monaco,draftkings,2026-10-15T04:45:45Z,h2h,Lorient,,3.7
+2026-10-15T04:46:07+00:00,weekly,Ligue1,53f5fe7ed0ba0fbf6345c73270e4cd00,2026-10-18T15:15:00Z,Lorient,AS Monaco,draftkings,2026-10-15T04:45:45Z,h2h,Draw,,3.4
+2026-10-15T04:46:07+00:00,weekly,Ligue1,d637845b9760bb02b55bbbaa32b5c21e,2026-10-18T15:15:00Z,Le Havre,Auxerre,draftkings,2026-10-15T04:45:45Z,h2h,Auxerre,,3.05
+2026-10-15T04:46:07+00:00,weekly,Ligue1,d637845b9760bb02b55bbbaa32b5c21e,2026-10-18T15:15:00Z,Le Havre,Auxerre,draftkings,2026-10-15T04:45:45Z,h2h,Le Havre,,2.3
+2026-10-15T04:46:07+00:00,weekly,Ligue1,d637845b9760bb02b55bbbaa32b5c21e,2026-10-18T15:15:00Z,Le Havre,Auxerre,draftkings,2026-10-15T04:45:45Z,h2h,Draw,,3.4
+2026-10-15T04:46:07+00:00,weekly,Ligue1,27f7222d2abde93fc6e8d17b5b05b272,2026-10-18T15:15:00Z,Paris FC,Rennes,draftkings,2026-10-15T04:45:45Z,h2h,Paris FC,,2.25
+2026-10-15T04:46:07+00:00,weekly,Ligue1,27f7222d2abde93fc6e8d17b5b05b272,2026-10-18T15:15:00Z,Paris FC,Rennes,draftkings,2026-10-15T04:45:45Z,h2h,Rennes,,3.15
+2026-10-15T04:46:07+00:00,weekly,Ligue1,27f7222d2abde93fc6e8d17b5b05b272,2026-10-18T15:15:00Z,Paris FC,Rennes,draftkings,2026-10-15T04:45:45Z,h2h,Draw,,3.35
+2026-10-15T04:46:07+00:00,weekly,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,2026-10-15T04:45:45Z,h2h,Lyon,,1.69
+2026-10-15T04:46:07+00:00,weekly,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,2026-10-15T04:45:45Z,h2h,Nice,,4.6
+2026-10-15T04:46:07+00:00,weekly,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,2026-10-15T04:45:45Z,h2h,Draw,,4.1
