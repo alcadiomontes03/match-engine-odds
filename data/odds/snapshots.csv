@@ -917,3 +917,12 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-10-16T14:37:34+00:00,late,Ligue1,66c168c030f3faad3983fcadc3060009,2026-10-16T18:45:00Z,Le Mans FC,Toulouse,draftkings,,alternate_totals_corners,Under,11.5,1.25
 2026-10-16T14:37:34+00:00,late,Ligue1,66c168c030f3faad3983fcadc3060009,2026-10-16T18:45:00Z,Le Mans FC,Toulouse,draftkings,,btts,Yes,,1.49
 2026-10-16T14:37:34+00:00,late,Ligue1,66c168c030f3faad3983fcadc3060009,2026-10-16T18:45:00Z,Le Mans FC,Toulouse,draftkings,,btts,No,,2.6
+2026-10-16T18:24:21+00:00,late,LaLiga,19ee731602634e5c9e3106630e087464,2026-10-16T19:00:00Z,Deportivo La Coruña,Levante,draftkings,2026-10-16T18:23:06Z,h2h,Deportivo La Coruña,,2.1
+2026-10-16T18:24:21+00:00,late,LaLiga,19ee731602634e5c9e3106630e087464,2026-10-16T19:00:00Z,Deportivo La Coruña,Levante,draftkings,2026-10-16T18:23:06Z,h2h,Levante,,3.55
+2026-10-16T18:24:21+00:00,late,LaLiga,19ee731602634e5c9e3106630e087464,2026-10-16T19:00:00Z,Deportivo La Coruña,Levante,draftkings,2026-10-16T18:23:06Z,h2h,Draw,,3.55
+2026-10-16T18:24:21+00:00,late,Bundesliga,947bd5d924835af090d9cdc7bbdf10f6,2026-10-16T18:30:00Z,Eintracht Frankfurt,1. FC Köln,draftkings,2026-10-16T18:23:30Z,h2h,1. FC Köln,,3.95
+2026-10-16T18:24:21+00:00,late,Bundesliga,947bd5d924835af090d9cdc7bbdf10f6,2026-10-16T18:30:00Z,Eintracht Frankfurt,1. FC Köln,draftkings,2026-10-16T18:23:30Z,h2h,Eintracht Frankfurt,,1.71
+2026-10-16T18:24:21+00:00,late,Bundesliga,947bd5d924835af090d9cdc7bbdf10f6,2026-10-16T18:30:00Z,Eintracht Frankfurt,1. FC Köln,draftkings,2026-10-16T18:23:30Z,h2h,Draw,,4.1
+2026-10-16T18:24:21+00:00,late,Ligue1,66c168c030f3faad3983fcadc3060009,2026-10-16T18:45:00Z,Le Mans FC,Toulouse,draftkings,2026-10-16T18:23:58Z,h2h,Le Mans FC,,3.35
+2026-10-16T18:24:21+00:00,late,Ligue1,66c168c030f3faad3983fcadc3060009,2026-10-16T18:45:00Z,Le Mans FC,Toulouse,draftkings,2026-10-16T18:23:58Z,h2h,Toulouse,,2.15
+2026-10-16T18:24:21+00:00,late,Ligue1,66c168c030f3faad3983fcadc3060009,2026-10-16T18:45:00Z,Le Mans FC,Toulouse,draftkings,2026-10-16T18:23:58Z,h2h,Draw,,3.55
