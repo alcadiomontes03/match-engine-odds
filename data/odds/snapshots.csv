@@ -1586,3 +1586,9 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-10-17T12:01:09+00:00,late,Ligue1,b077aa049133c0358bcd643bfee48da3,2026-10-17T18:45:00Z,Troyes,RC Lens,draftkings,,alternate_totals_corners,Under,11.5,1.29
 2026-10-17T12:01:09+00:00,late,Ligue1,b077aa049133c0358bcd643bfee48da3,2026-10-17T18:45:00Z,Troyes,RC Lens,draftkings,,btts,Yes,,1.59
 2026-10-17T12:01:09+00:00,late,Ligue1,b077aa049133c0358bcd643bfee48da3,2026-10-17T18:45:00Z,Troyes,RC Lens,draftkings,,btts,No,,2.35
+2026-10-17T17:54:22+00:00,late,Ligue1,ad25a350c89b64715e15c59cde5653d3,2026-10-17T18:45:00Z,Lille,Brest,draftkings,2026-10-17T17:53:44Z,h2h,Brest,,3.5
+2026-10-17T17:54:22+00:00,late,Ligue1,ad25a350c89b64715e15c59cde5653d3,2026-10-17T18:45:00Z,Lille,Brest,draftkings,2026-10-17T17:53:44Z,h2h,Lille,,2.05
+2026-10-17T17:54:22+00:00,late,Ligue1,ad25a350c89b64715e15c59cde5653d3,2026-10-17T18:45:00Z,Lille,Brest,draftkings,2026-10-17T17:53:44Z,h2h,Draw,,3.65
+2026-10-17T17:54:22+00:00,late,Ligue1,b077aa049133c0358bcd643bfee48da3,2026-10-17T18:45:00Z,Troyes,RC Lens,draftkings,2026-10-17T17:53:44Z,h2h,RC Lens,,1.83
+2026-10-17T17:54:22+00:00,late,Ligue1,b077aa049133c0358bcd643bfee48da3,2026-10-17T18:45:00Z,Troyes,RC Lens,draftkings,2026-10-17T17:53:44Z,h2h,Troyes,,4.1
+2026-10-17T17:54:22+00:00,late,Ligue1,b077aa049133c0358bcd643bfee48da3,2026-10-17T18:45:00Z,Troyes,RC Lens,draftkings,2026-10-17T17:53:44Z,h2h,Draw,,3.85
