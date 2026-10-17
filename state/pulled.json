@@ -352,6 +352,8 @@
   "commence": "2026-10-17T16:30:00Z",
   "comp": "LaLiga",
   "home": "Real Betis",
+  "late": "2026-10-17T12:01:09+00:00",
+  "side": "2026-10-17T12:01:09+00:00",
   "weekly": "2026-10-15T04:46:07+00:00"
  },
  "86effab5c6e7bfd58c8e88b1fb7c6ba9": {
@@ -404,6 +406,8 @@
   "commence": "2026-10-17T16:30:00Z",
   "comp": "Bundesliga",
   "home": "Bayern Munich",
+  "late": "2026-10-17T12:01:09+00:00",
+  "side": "2026-10-17T12:01:09+00:00",
   "weekly": "2026-10-15T04:46:07+00:00"
  },
  "9aade3e736c3d113dab19e641c43e272": {
@@ -452,17 +456,19 @@
   "empty:btts:PL": 0,
   "empty:spreads:Bundesliga": 0,
   "empty:spreads:LaLiga": 0,
-  "empty:spreads:Ligue1": 2,
+  "empty:spreads:Ligue1": 0,
   "empty:spreads:PL": 0,
   "empty:totals:Bundesliga": 0,
   "empty:totals:LaLiga": 0,
-  "empty:totals:Ligue1": 2,
+  "empty:totals:Ligue1": 0,
   "empty:totals:PL": 0,
   "none:spreads:Bundesliga": "2026-W42",
   "none:spreads:LaLiga": "2026-W42",
+  "none:spreads:Ligue1": "2026-W42",
   "none:spreads:PL": "2026-W42",
   "none:totals:Bundesliga": "2026-W42",
   "none:totals:LaLiga": "2026-W42",
+  "none:totals:Ligue1": "2026-W42",
   "none:totals:PL": "2026-W42",
   "weekly:Bundesliga": "2026-W42",
   "weekly:Championship": "2026-W39",
@@ -505,6 +511,8 @@
   "commence": "2026-10-17T18:45:00Z",
   "comp": "Ligue1",
   "home": "Lille",
+  "late": "2026-10-17T12:01:09+00:00",
+  "side": "2026-10-17T12:01:09+00:00",
   "weekly": "2026-10-15T04:46:07+00:00"
  },
  "aef660734585649651415961a9d177c6": {
@@ -521,6 +529,8 @@
   "commence": "2026-10-17T18:45:00Z",
   "comp": "Ligue1",
   "home": "Troyes",
+  "late": "2026-10-17T12:01:09+00:00",
+  "side": "2026-10-17T12:01:09+00:00",
   "weekly": "2026-10-15T04:46:07+00:00"
  },
  "b870dcfba5e5920d3f1551a3aa1ea435": {
@@ -567,6 +577,8 @@
   "commence": "2026-10-17T16:30:00Z",
   "comp": "PL",
   "home": "Newcastle United",
+  "late": "2026-10-17T12:01:09+00:00",
+  "side": "2026-10-17T12:01:09+00:00",
   "weekly": "2026-10-15T04:46:07+00:00"
  },
  "d637845b9760bb02b55bbbaa32b5c21e": {
@@ -618,6 +630,8 @@
   "commence": "2026-10-17T19:00:00Z",
   "comp": "LaLiga",
   "home": "Valencia",
+  "late": "2026-10-17T12:01:09+00:00",
+  "side": "2026-10-17T12:01:09+00:00",
   "weekly": "2026-10-15T04:46:07+00:00"
  },
  "f03c08c0ae5fd66c2d2df2053115bb94": {
