@@ -2059,3 +2059,83 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-10-18T09:07:28+00:00,late,Ligue1,27f7222d2abde93fc6e8d17b5b05b272,2026-10-18T15:15:00Z,Paris FC,Rennes,draftkings,,alternate_totals_corners,Under,11.5,1.32
 2026-10-18T09:07:28+00:00,late,Ligue1,27f7222d2abde93fc6e8d17b5b05b272,2026-10-18T15:15:00Z,Paris FC,Rennes,draftkings,,btts,Yes,,1.53
 2026-10-18T09:07:28+00:00,late,Ligue1,27f7222d2abde93fc6e8d17b5b05b272,2026-10-18T15:15:00Z,Paris FC,Rennes,draftkings,,btts,No,,2.5
+2026-10-18T13:18:57+00:00,late,LaLiga,aabe899ecc4c19a1fafe5440151b62e4,2026-10-18T14:15:00Z,Celta Vigo,Alavés,draftkings,2026-10-18T13:18:23Z,h2h,Alavés,,3.4
+2026-10-18T13:18:57+00:00,late,LaLiga,aabe899ecc4c19a1fafe5440151b62e4,2026-10-18T14:15:00Z,Celta Vigo,Alavés,draftkings,2026-10-18T13:18:23Z,h2h,Celta Vigo,,2.35
+2026-10-18T13:18:57+00:00,late,LaLiga,aabe899ecc4c19a1fafe5440151b62e4,2026-10-18T14:15:00Z,Celta Vigo,Alavés,draftkings,2026-10-18T13:18:23Z,h2h,Draw,,3.05
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,2026-10-18T13:18:23Z,h2h,Real Madrid,,1.24
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,2026-10-18T13:18:23Z,h2h,Sevilla,,11.0
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,2026-10-18T13:18:23Z,h2h,Draw,,6.5
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_spreads,Real Madrid,-2.25,2.2
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_spreads,Real Madrid,-2.0,1.95
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_spreads,Real Madrid,-1.75,1.77
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_spreads,Real Madrid,-1.5,1.62
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_spreads,Sevilla,2.25,1.59
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_spreads,Sevilla,2.0,1.74
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_spreads,Sevilla,1.75,1.95
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_spreads,Sevilla,1.5,2.15
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals,Over,0.5,1.0
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals,Over,1.5,1.12
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals,Over,2.5,1.41
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals,Over,3.5,2.05
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals,Over,4.5,3.3
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals,Over,5.5,6.0
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals,Over,6.5,11.0
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals,Under,0.5,18.0
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals,Under,1.5,6.0
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals,Under,2.5,2.95
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals,Under,3.5,1.77
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals,Under,4.5,1.34
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals,Under,5.5,1.13
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals,Under,6.5,1.04
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals_corners,Over,8.5,1.43
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals_corners,Over,9.5,1.71
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals_corners,Over,10.5,2.1
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals_corners,Over,11.5,2.7
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals_corners,Over,12.5,3.65
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals_corners,Under,8.5,2.6
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals_corners,Under,9.5,2.0
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals_corners,Under,10.5,1.67
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals_corners,Under,11.5,1.41
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,alternate_totals_corners,Under,12.5,1.24
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,btts,Yes,,1.87
+2026-10-18T13:18:57+00:00,late,LaLiga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,draftkings,,btts,No,,1.91
+2026-10-18T13:18:57+00:00,late,Bundesliga,096d800bcc95c547ef592cbef624d080,2026-10-18T13:30:00Z,Bayer Leverkusen,SC Freiburg,draftkings,2026-10-18T13:17:58Z,h2h,Bayer Leverkusen,,1.59
+2026-10-18T13:18:57+00:00,late,Bundesliga,096d800bcc95c547ef592cbef624d080,2026-10-18T13:30:00Z,Bayer Leverkusen,SC Freiburg,draftkings,2026-10-18T13:17:58Z,h2h,SC Freiburg,,4.6
+2026-10-18T13:18:57+00:00,late,Bundesliga,096d800bcc95c547ef592cbef624d080,2026-10-18T13:30:00Z,Bayer Leverkusen,SC Freiburg,draftkings,2026-10-18T13:17:58Z,h2h,Draw,,4.3
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,2026-10-18T13:18:03Z,h2h,Lyon,,1.87
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,2026-10-18T13:18:03Z,h2h,Nice,,3.9
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,2026-10-18T13:18:03Z,h2h,Draw,,3.9
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_spreads,Lyon,-1.0,2.45
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_spreads,Lyon,-0.75,2.0
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_spreads,Lyon,-0.5,1.77
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_spreads,Lyon,-0.25,1.59
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_spreads,Nice,1.0,1.49
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_spreads,Nice,0.75,1.71
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_spreads,Nice,0.5,1.91
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_spreads,Nice,0.25,2.25
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals,Over,0.5,1.02
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals,Over,1.5,1.22
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals,Over,2.5,1.67
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals,Over,3.5,2.7
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals,Over,4.5,4.9
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals,Over,5.5,9.5
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals,Over,6.5,16.0
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals,Under,0.5,12.0
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals,Under,1.5,4.3
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals,Under,2.5,2.15
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals,Under,3.5,1.47
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals,Under,4.5,1.17
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals,Under,5.5,1.06
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals,Under,6.5,1.0
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals_corners,Over,7.5,1.24
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals_corners,Over,8.5,1.43
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals_corners,Over,9.5,1.71
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals_corners,Over,10.5,2.15
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals_corners,Over,11.5,2.8
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals_corners,Under,7.5,3.75
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals_corners,Under,8.5,2.65
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals_corners,Under,9.5,2.0
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals_corners,Under,10.5,1.62
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,alternate_totals_corners,Under,11.5,1.39
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,btts,Yes,,1.59
+2026-10-18T13:18:57+00:00,late,Ligue1,471f891b1f6516a864ad94c8eb649f5e,2026-10-18T18:45:00Z,Lyon,Nice,draftkings,,btts,No,,2.35
