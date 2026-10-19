@@ -127,3 +127,7 @@ utc,note,remaining,used,last_cost
 2026-10-19T13:59:15+00:00,PL side x1 alternate_spreads+alternate_totals+alternate_totals_corners+btts,253,247,4
 2026-10-19T13:59:16+00:00,LaLiga late x1,252,248,1
 2026-10-19T13:59:16+00:00,LaLiga side x1 alternate_spreads+alternate_totals+alternate_totals_corners+btts,248,252,4
+2026-10-19T19:41:41+00:00,PL weekly x10,247,253,1
+2026-10-19T19:41:41+00:00,LaLiga weekly x10,246,254,1
+2026-10-19T19:41:41+00:00,Bundesliga weekly x9,245,255,1
+2026-10-19T19:41:41+00:00,Ligue1 weekly x9,244,256,1
