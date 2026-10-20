@@ -179,15 +179,61 @@ def summarise(bt: pd.DataFrame) -> dict:
     return out
 
 
+def score(db: Path, out: Path) -> str:
+    """Score every committed shadow file against settled results: v7 candidate vs v6.1 (the locked dashboard
+    prediction's x1x2) vs DraftKings (Shin de-vig of the latest pre-kickoff moneyline), same matches only."""
+    sys.path.insert(0, str(ROOT / "pipeline"))
+    from v5 import market as M
+    rows = []
+    for f in sorted(out.glob("shadow_*.csv")):
+        for r in pd.read_csv(f).to_dict("records"):
+            rp, pp, op = (db / c / f"{r['fixture_id']}.json" for c in ("results", "predictions", "odds"))
+            if not rp.exists():
+                continue
+            res = json.loads(rp.read_text())
+            if "home_score" not in res:
+                continue
+            hg, ag = int(res["home_score"]), int(res["away_score"])
+            y = "home" if hg > ag else ("draw" if hg == ag else "away")
+            v7 = {"home": r["p_home"], "draw": r["p_draw"], "away": r["p_away"]}
+            v61 = json.loads(pp.read_text()).get("x1x2") if pp.exists() else None
+            od = json.loads(op.read_text()) if op.exists() else {}
+            px = od.get("latest") or od.get("open") or {}
+            dk = None
+            if all((px.get(k) or 0) > 1 for k in ("home", "draw", "away")):
+                dk = dict(zip(("home", "draw", "away"), M.shin([px["home"], px["draw"], px["away"]])))
+            o25 = int(hg + ag > 2); bt = int(hg > 0 and ag > 0)
+            rows.append({"file": f.name, "league": r["league"], "fixture_id": r["fixture_id"],
+                         "ll_v7": -np.log(v7[y]), "ll_v61": None if not v61 else -np.log(v61[y]),
+                         "ll_dk": None if not dk else -np.log(dk[y]),
+                         "ll_o25_v7": float(R._ll(np.array([r["p_o25"]]), np.array([o25]))[0]),
+                         "ll_btts_v7": float(R._ll(np.array([r["p_btts"]]), np.array([bt]))[0])})
+    d = pd.DataFrame(rows)
+    lines = ["# v7 shadow scorecard", "", "1X2 log loss on the same settled matches (lower is better).", "",
+             "| Shadow file | Matches | v7 candidate | v6.1 | DraftKings |", "|---|---|---|---|---|"]
+    if len(d):
+        q = d.dropna(subset=["ll_v61", "ll_dk"])
+        for fn, g in list(q.groupby("file")) + [("all", q)]:
+            lines.append(f"| {fn} | {len(g)} | {g.ll_v7.mean():.4f} | {g.ll_v61.mean():.4f} | {g.ll_dk.mean():.4f} |")
+    else:
+        lines.append("| (nothing settled yet) | | | | |")
+    txt = "\n".join(lines) + "\n"
+    (out / "scorecard.md").write_text(txt)
+    return txt
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["backtest", "shadow"])
+    ap.add_argument("cmd", choices=["backtest", "shadow", "score"])
     ap.add_argument("--db", help="shadow: ArtifactData out_dir with fixtures/ and results/")
     ap.add_argument("--asof", help="shadow: date, YYYY-MM-DD")
     ap.add_argument("--leagues", default=",".join(LEAGUES))
     ap.add_argument("--out", default=str(ROOT / "pipeline" / "v7" / "out" / "backtest.json"))
     ap.add_argument("--round", type=int, default=1)
     a = ap.parse_args()
+    if a.cmd == "score":
+        print(score(Path(a.db), ROOT / "pipeline" / "v7" / "out"))
+        return
     if a.cmd == "shadow":
         recs, _ = shadow(Path(a.db), a.asof, ROOT / "pipeline" / "v7" / "out")
         print(f"{len(recs)} shadow predictions")
@@ -227,6 +273,10 @@ def extras_from_db(db: Path, code: str, after: pd.Timestamp) -> pd.DataFrame:
 def shadow(db: Path, asof: str, out: Path):
     asof_ts = pd.Timestamp(asof)
     recs, fits = [], {}
+    done = set()   # a fixture is predicted once: the first shadow file that saw it before kickoff
+    for prev in out.glob("shadow_*.csv"):
+        if prev.name != f"shadow_{asof}.csv":
+            done |= set(pd.read_csv(prev).fixture_id)
     for code in LEAGUES:
         df = load(code)
         ex = extras_from_db(db, code, df.Date.max())
@@ -240,7 +290,7 @@ def shadow(db: Path, asof: str, out: Path):
             fx = json.loads(f.read_text())
             if fx.get("league") != code or pd.Timestamp(fx["kickoff"]).tz_localize(None) <= asof_ts:
                 continue
-            if (db / "results" / f.name).exists():
+            if (db / "results" / f.name).exists() or fx["id"] in done:
                 continue
             unknown = [t for t in (fx["home"], fx["away"]) if t not in r["att"]]
             lam, mu = R.lambdas(r, fx["home"], fx["away"]); lam, mu = lam * k, mu * k
