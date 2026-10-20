@@ -1,0 +1,206 @@
+{
+ "E0": {
+  "ok": true,
+  "checks": [
+   {
+    "check": "converged",
+    "ok": true,
+    "detail": "True"
+   },
+   {
+    "check": "home advantage 0 to 0.5",
+    "ok": true,
+    "detail": "0.173"
+   },
+   {
+    "check": "rho inside bounds",
+    "ok": true,
+    "detail": "-0.091"
+   },
+   {
+    "check": "goal-level factor 0.85 to 1.20",
+    "ok": true,
+    "detail": "1.017"
+   },
+   {
+    "check": "ratings magnitude below 1.5",
+    "ok": true,
+    "detail": "0.682"
+   },
+   {
+    "check": "every upcoming team rated",
+    "ok": true,
+    "detail": "all rated"
+   },
+   {
+    "check": "largest weekly change in team strength below 0.35",
+    "ok": true,
+    "detail": "0.000 over 27 teams"
+   },
+   {
+    "check": "recent goals: predicted within 0.6 of actual",
+    "ok": true,
+    "detail": "predicted 2.86, actual 2.93 over 71 matches (in-sample)"
+   }
+  ],
+  "level_factor": 1.0169571476598773,
+  "home_adv": 0.17341950220729146,
+  "rho": -0.0907001954902498,
+  "n_matches": 1131,
+  "n_extra": 11,
+  "fd_last": "2026-10-12"
+ },
+ "SP1": {
+  "ok": true,
+  "checks": [
+   {
+    "check": "converged",
+    "ok": true,
+    "detail": "True"
+   },
+   {
+    "check": "home advantage 0 to 0.5",
+    "ok": true,
+    "detail": "0.283"
+   },
+   {
+    "check": "rho inside bounds",
+    "ok": true,
+    "detail": "-0.038"
+   },
+   {
+    "check": "goal-level factor 0.85 to 1.20",
+    "ok": true,
+    "detail": "1.065"
+   },
+   {
+    "check": "ratings magnitude below 1.5",
+    "ok": true,
+    "detail": "0.727"
+   },
+   {
+    "check": "every upcoming team rated",
+    "ok": true,
+    "detail": "all rated"
+   },
+   {
+    "check": "largest weekly change in team strength below 0.35",
+    "ok": true,
+    "detail": "0.000 over 29 teams"
+   },
+   {
+    "check": "recent goals: predicted within 0.6 of actual",
+    "ok": true,
+    "detail": "predicted 3.04, actual 3.12 over 83 matches (in-sample)"
+   }
+  ],
+  "level_factor": 1.0649975035797516,
+  "home_adv": 0.283114136045928,
+  "rho": -0.03779458578898187,
+  "n_matches": 1140,
+  "n_extra": 11,
+  "fd_last": "2026-10-12"
+ },
+ "D1": {
+  "ok": true,
+  "checks": [
+   {
+    "check": "converged",
+    "ok": true,
+    "detail": "True"
+   },
+   {
+    "check": "home advantage 0 to 0.5",
+    "ok": true,
+    "detail": "0.234"
+   },
+   {
+    "check": "rho inside bounds",
+    "ok": true,
+    "detail": "-0.057"
+   },
+   {
+    "check": "goal-level factor 0.85 to 1.20",
+    "ok": true,
+    "detail": "1.079"
+   },
+   {
+    "check": "ratings magnitude below 1.5",
+    "ok": true,
+    "detail": "0.743"
+   },
+   {
+    "check": "every upcoming team rated",
+    "ok": true,
+    "detail": "all rated"
+   },
+   {
+    "check": "largest weekly change in team strength below 0.35",
+    "ok": true,
+    "detail": "0.000 over 24 teams"
+   },
+   {
+    "check": "recent goals: predicted within 0.6 of actual",
+    "ok": true,
+    "detail": "predicted 3.45, actual 3.66 over 56 matches (in-sample)"
+   }
+  ],
+  "level_factor": 1.079294717659009,
+  "home_adv": 0.23373864163400404,
+  "rho": -0.05703065363418563,
+  "n_matches": 911,
+  "n_extra": 11,
+  "fd_last": "2026-10-11"
+ },
+ "F1": {
+  "ok": true,
+  "checks": [
+   {
+    "check": "converged",
+    "ok": true,
+    "detail": "True"
+   },
+   {
+    "check": "home advantage 0 to 0.5",
+    "ok": true,
+    "detail": "0.196"
+   },
+   {
+    "check": "rho inside bounds",
+    "ok": true,
+    "detail": "-0.028"
+   },
+   {
+    "check": "goal-level factor 0.85 to 1.20",
+    "ok": true,
+    "detail": "1.043"
+   },
+   {
+    "check": "ratings magnitude below 1.5",
+    "ok": true,
+    "detail": "0.553"
+   },
+   {
+    "check": "every upcoming team rated",
+    "ok": true,
+    "detail": "all rated"
+   },
+   {
+    "check": "largest weekly change in team strength below 0.35",
+    "ok": true,
+    "detail": "0.000 over 24 teams"
+   },
+   {
+    "check": "recent goals: predicted within 0.6 of actual",
+    "ok": true,
+    "detail": "predicted 3.01, actual 3.06 over 66 matches (in-sample)"
+   }
+  ],
+  "level_factor": 1.0427907695494527,
+  "home_adv": 0.1960957362070557,
+  "rho": -0.028108792185274106,
+  "n_matches": 913,
+  "n_extra": 12,
+  "fd_last": "2026-10-11"
+ }
+}

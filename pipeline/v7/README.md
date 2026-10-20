@@ -27,3 +27,25 @@ likelihood of the proxy.
 
 **Live shadow test:** `out/shadow_<date>.csv` is written and committed before kickoff each week, so the candidate
 is scored out of sample against v6.1 and DraftKings without any chance of revision.
+
+## Live from 2026-10-20 (Alcadio's decision)
+
+v7 replaced the v6.1 ratings in the dashboard state (`state/summary` v13, `state/detail_<code>`), and the 38
+unplayed week 8 predictions were regenerated with v7 (each keeps `created_at` and gets `regenerated_at` and
+`previous_model`). **Prices are unchanged:** blend weight is still 0 everywhere, so every bet price is DraftKings'
+own, and the edge plan's primary tests (which use the market-anchored grid) are unaffected. The exploratory
+Dixon-Coles-vs-DraftKings comparison starts a new period on 2026-10-20.
+
+- The goal-level factor is folded into attack (attack = fitted attack + ln k), so the Monday fixtures job builds
+  v7 predictions from `state/detail_<code>` with its usual formula; no job change was needed.
+- Backups: `backup_v61_2026-10-20/` (v6.1 state, week 8 predictions and fixtures). Go-live fit and checks:
+  `out/refit_2026-10-20/`. Restoring v6.1 = ArtifactData update of those state docs from the backup.
+- `live.py refit` runs every Monday at 12:37 PT ("Alpha Lines — v7 weekly refit"), after grading and before the
+  fixtures job. It writes a league only if every guard check passes (converged, home advantage 0-0.5, goal-level
+  factor 0.85-1.20, ratings below 1.5, every upcoming team rated, no team strength moving more than 0.35 in a week,
+  recent goals within 0.6 of actual); a failed league keeps last week's ratings.
+- `live.py shadow` + `score` run Mondays at 15:37 PT ("Alpha Lines — v7 vs v6.1 scorecard"): v7 and a v6.1 shadow
+  (the old method refit the same way) are committed before kickoff and scored in `out/scorecard.md`. Week 8's
+  v6.1 file is the locked v6.1 dashboard predictions (Oct 12 ratings), not a refit.
+- Week 7 retro (fit before Oct 13): 1X2 v7 0.913, v6.1 0.935, DraftKings 0.885; over 2.5 and BTTS were worse for
+  v7 that week (0.720 vs 0.694, 0.748 vs 0.727). One week; the 2023-26 walk-forward favours v7 on all three.
