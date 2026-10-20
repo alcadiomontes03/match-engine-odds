@@ -36,7 +36,7 @@ sys.path.insert(0, str(ROOT / "pipeline"))
 from v5 import market as M  # noqa: E402
 
 OUT = ROOT / "data" / "research"
-CODE_VERSION = "research-1 (2026-10-12)"
+CODE_VERSION = "research-2 (2026-10-20)"
 V61_START = "2026-10-12T04:00:00Z"   # auto-picks logged after this use the v6.1 best-pick rule
 LINE_COLS = ["key", "fixture_id", "league", "kickoff", "home", "away", "market", "line", "sel_a", "sel_b",
              "dk_a", "dk_b", "dk_overround", "dk_shin_a", "side_pulled_at", "side_mins_to_ko",
@@ -334,6 +334,38 @@ def _ci(lo, hi, fmt="+.4f"):
     return "n/a (one match)" if not (np.isfinite(lo) and np.isfinite(hi)) else f"{lo:{fmt}} to {hi:{fmt}}"
 
 
+_PICK_TO_LINE = {"tot": "total", "sp": "spread", "btts": "btts", "cor": "corners"}
+
+
+def price_picks(P: pd.DataFrame, L: pd.DataFrame) -> pd.DataFrame:
+    """research-2 (2026-10-20): auto-picks are logged Monday night, before DraftKings posts side markets,
+    so their own dk_price is empty. Price each graded pick at the DraftKings side price recorded for the
+    same fixture, market, line and selection in lines.csv (the first late pull, always before kickoff).
+    Read-only: picks.csv and lines.csv are never changed. Returns the graded picks that found a price,
+    with dk_side_price and flat_pnl_side (1 unit; push or void = 0)."""
+    if not len(P) or not len(L):
+        return pd.DataFrame()
+    q = P[P.result.isin(["W", "L", "P", "V"]) & P.market.isin(list(_PICK_TO_LINE))].copy()
+    Lk = L[(L.side_mins_to_ko != "") & (pd.to_numeric(L.side_mins_to_ko, errors="coerce") > 0)].copy()
+    Lk["lkey"] = Lk.fixture_id + "|" + Lk.market + "|" + Lk.line.map(lambda x: "" if x == "" else f"{float(x):+.2f}")
+    idx = {k: r for k, r in zip(Lk.lkey, Lk.to_dict("records"))}
+    prices = []
+    for r in q.to_dict("records"):
+        mk = _PICK_TO_LINE[r["market"]]
+        k = r["fixture_id"] + "|" + mk + "|" + ("" if r["line"] == "" else f"{float(r['line']):+.2f}")
+        row = idx.get(k)
+        if row is None:
+            prices.append(None)
+            continue
+        prices.append(float(row["dk_a"]) if r["side"] == row["sel_a"] else
+                      float(row["dk_b"]) if r["side"] == row["sel_b"] else None)
+    q["dk_side_price"] = prices
+    q = q[q.dk_side_price.notna()].copy()
+    q["flat_pnl_side"] = [round(pr - 1, 4) if g == "W" else (-1.0 if g == "L" else 0.0)
+                          for pr, g in zip(q.dk_side_price, q.result)]
+    return q
+
+
 def report(today: str) -> str:
     L = _read_csv(OUT / "lines.csv", LINE_COLS)
     P = _read_csv(OUT / "picks.csv", PICK_COLS)
@@ -409,6 +441,25 @@ def report(today: str) -> str:
         for (rule, mk), s in q.groupby(["rule", "market"]):
             e, lo, hi = cluster_boot(s.flat_pnl.astype(float), s.fixture_id.values)
             out.append(f"| {rule} | {mk} | {len(s)} | {s.fixture_id.nunique()} | {e:+.3f} | {_ci(lo, hi, '+.3f')} |")
+        sp = price_picks(P, L)
+        out += ["", "### Auto-picks priced at DraftKings' pre-kickoff side price (research-2)", "",
+                "The picks are logged before DraftKings posts side markets, so each one is priced at the side price "
+                "recorded for the same line in lines.csv (the first late pull, before kickoff). Shot-attempt picks "
+                "have no DraftKings price and are left out.", "",
+                "| Rule | Market | Priced picks | Matches | Hit rate | ROI per bet | 95% interval |",
+                "|---|---|---|---|---|---|---|"]
+        if len(sp):
+            for (rule, mk), s in sp.groupby(["rule", "market"]):
+                e, lo, hi = cluster_boot(s.flat_pnl_side.astype(float).values, s.fixture_id.values)
+                hr = (s.result == "W").sum() / max(1, s.result.isin(["W", "L"]).sum())
+                out.append(f"| {rule} | {mk} | {len(s)} | {s.fixture_id.nunique()} | {hr:.0%} | {e:+.3f} | "
+                           f"{_ci(lo, hi, '+.3f')} |")
+            e, lo, hi = cluster_boot(sp.flat_pnl_side.astype(float).values, sp.fixture_id.values)
+            out.append(f"| all | all | {len(sp)} | {sp.fixture_id.nunique()} | "
+                       f"{(sp.result == 'W').sum() / max(1, sp.result.isin(['W', 'L']).sum()):.0%} | {e:+.3f} | "
+                       f"{_ci(lo, hi, '+.3f')} |")
+        else:
+            out.append("| (none yet) | | | | | | |")
         h = P[P.result.isin(["W", "L"])]
         out += ["", f"All graded auto-picks (priced or not): {len(h)}, hit rate {(h.result == 'W').mean():.1%}. "
                     "Hit rate without a price says nothing about value."]
