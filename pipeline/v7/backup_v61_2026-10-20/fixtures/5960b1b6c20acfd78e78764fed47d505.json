@@ -1,0 +1,17 @@
+{
+  "away": "Espanol",
+  "away_att": -0.080016,
+  "away_code": "ESP",
+  "away_def": -0.111781,
+  "home": "Santander",
+  "home_att": 0.14447,
+  "home_code": "RAC",
+  "home_def": -0.555196,
+  "id": "5960b1b6c20acfd78e78764fed47d505",
+  "kickoff": "2026-10-24T14:15:00+00:00",
+  "league": "SP1",
+  "league_name": "La Liga",
+  "odds_away_name": "Espanyol",
+  "odds_event_id": "5960b1b6c20acfd78e78764fed47d505",
+  "odds_home_name": "Real Racing Club de Santander"
+}

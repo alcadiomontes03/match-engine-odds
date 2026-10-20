@@ -1,0 +1,17 @@
+{
+  "away": "Brighton",
+  "away_att": 0.177135,
+  "away_code": "BHA",
+  "away_def": -0.128029,
+  "home": "Liverpool",
+  "home_att": 0.251888,
+  "home_code": "LIV",
+  "home_def": -0.120285,
+  "id": "290ba8cd3f3a2e9252effca673bf5549",
+  "kickoff": "2026-10-25T14:00:00+00:00",
+  "league": "E0",
+  "league_name": "Premier League",
+  "odds_away_name": "Brighton and Hove Albion",
+  "odds_event_id": "290ba8cd3f3a2e9252effca673bf5549",
+  "odds_home_name": "Liverpool"
+}

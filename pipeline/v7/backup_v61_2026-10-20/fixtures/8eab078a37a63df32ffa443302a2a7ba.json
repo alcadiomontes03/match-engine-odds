@@ -1,0 +1,17 @@
+{
+  "away": "Le Mans",
+  "away_att": 0.115938,
+  "away_code": "LMF",
+  "away_def": -0.316085,
+  "home": "Auxerre",
+  "home_att": -0.087444,
+  "home_code": "AUX",
+  "home_def": -0.248199,
+  "id": "8eab078a37a63df32ffa443302a2a7ba",
+  "kickoff": "2026-10-25T16:15:00+00:00",
+  "league": "F1",
+  "league_name": "Ligue 1",
+  "odds_away_name": "Le Mans FC",
+  "odds_event_id": "8eab078a37a63df32ffa443302a2a7ba",
+  "odds_home_name": "Auxerre"
+}

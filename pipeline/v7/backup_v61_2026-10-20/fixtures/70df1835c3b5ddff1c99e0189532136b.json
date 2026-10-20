@@ -1,0 +1,17 @@
+{
+  "away": "La Coruna",
+  "away_att": 0.071747,
+  "away_code": "RCD",
+  "away_def": -0.140252,
+  "home": "Ath Madrid",
+  "home_att": 0.30029,
+  "home_code": "ATM",
+  "home_def": 0.105238,
+  "id": "70df1835c3b5ddff1c99e0189532136b",
+  "kickoff": "2026-10-24T19:00:00+00:00",
+  "league": "SP1",
+  "league_name": "La Liga",
+  "odds_away_name": "Deportivo La Coruña",
+  "odds_event_id": "70df1835c3b5ddff1c99e0189532136b",
+  "odds_home_name": "Atlético Madrid"
+}

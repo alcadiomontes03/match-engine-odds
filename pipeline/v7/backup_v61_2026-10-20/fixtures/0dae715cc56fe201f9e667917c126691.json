@@ -1,0 +1,17 @@
+{
+  "away": "Villarreal",
+  "away_att": 0.337666,
+  "away_code": "VIL",
+  "away_def": -0.079911,
+  "home": "Valencia",
+  "home_att": -0.089743,
+  "home_code": "VAL",
+  "home_def": -0.12785,
+  "id": "0dae715cc56fe201f9e667917c126691",
+  "kickoff": "2026-10-24T16:30:00+00:00",
+  "league": "SP1",
+  "league_name": "La Liga",
+  "odds_away_name": "Villarreal",
+  "odds_event_id": "0dae715cc56fe201f9e667917c126691",
+  "odds_home_name": "Valencia"
+}

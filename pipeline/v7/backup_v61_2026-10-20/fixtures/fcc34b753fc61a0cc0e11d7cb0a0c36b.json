@@ -1,0 +1,17 @@
+{
+  "away": "Le Havre",
+  "away_att": -0.247599,
+  "away_code": "HAC",
+  "away_def": -0.22027,
+  "home": "Marseille",
+  "home_att": 0.260321,
+  "home_code": "MAR",
+  "home_def": -0.137184,
+  "id": "fcc34b753fc61a0cc0e11d7cb0a0c36b",
+  "kickoff": "2026-10-25T16:15:00+00:00",
+  "league": "F1",
+  "league_name": "Ligue 1",
+  "odds_away_name": "Le Havre",
+  "odds_event_id": "fcc34b753fc61a0cc0e11d7cb0a0c36b",
+  "odds_home_name": "Marseille"
+}

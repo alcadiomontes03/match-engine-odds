@@ -1,0 +1,17 @@
+{
+  "away": "Betis",
+  "away_att": 0.190153,
+  "away_code": "BET",
+  "away_def": -0.01365,
+  "home": "Celta",
+  "home_att": 0.058097,
+  "home_code": "CEL",
+  "home_def": -0.026377,
+  "id": "2013e3955186ebe5258e85eb741a7553",
+  "kickoff": "2026-10-25T15:15:00+00:00",
+  "league": "SP1",
+  "league_name": "La Liga",
+  "odds_away_name": "Real Betis",
+  "odds_event_id": "2013e3955186ebe5258e85eb741a7553",
+  "odds_home_name": "Celta Vigo"
+}

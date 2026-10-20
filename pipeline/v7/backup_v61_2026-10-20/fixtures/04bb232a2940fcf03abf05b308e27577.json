@@ -1,0 +1,17 @@
+{
+  "away": "Union Berlin",
+  "away_att": -0.206416,
+  "away_code": "UNB",
+  "away_def": -0.382782,
+  "home": "Augsburg",
+  "home_att": -0.047051,
+  "home_code": "AUG",
+  "home_def": -0.295843,
+  "id": "04bb232a2940fcf03abf05b308e27577",
+  "kickoff": "2026-10-24T13:30:00+00:00",
+  "league": "D1",
+  "league_name": "Bundesliga",
+  "odds_away_name": "Union Berlin",
+  "odds_event_id": "04bb232a2940fcf03abf05b308e27577",
+  "odds_home_name": "Augsburg"
+}

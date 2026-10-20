@@ -1,0 +1,17 @@
+{
+  "away": "Lyon",
+  "away_att": 0.211492,
+  "away_code": "LYO",
+  "away_def": -0.062367,
+  "home": "Paris SG",
+  "home_att": 0.46207,
+  "home_code": "PSG",
+  "home_def": 0.099603,
+  "id": "8664b2167f22c59026d86615421463b1",
+  "kickoff": "2026-10-25T19:45:00+00:00",
+  "league": "F1",
+  "league_name": "Ligue 1",
+  "odds_away_name": "Lyon",
+  "odds_event_id": "8664b2167f22c59026d86615421463b1",
+  "odds_home_name": "Paris Saint Germain"
+}

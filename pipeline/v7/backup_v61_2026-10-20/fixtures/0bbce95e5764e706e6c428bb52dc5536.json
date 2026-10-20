@@ -1,0 +1,17 @@
+{
+  "away": "Troyes",
+  "away_att": -0.210588,
+  "away_code": "TRO",
+  "away_def": -0.432966,
+  "home": "Toulouse",
+  "home_att": 0.021337,
+  "home_code": "TFC",
+  "home_def": -0.1819,
+  "id": "0bbce95e5764e706e6c428bb52dc5536",
+  "kickoff": "2026-10-24T15:15:00+00:00",
+  "league": "F1",
+  "league_name": "Ligue 1",
+  "odds_away_name": "Troyes",
+  "odds_event_id": "0bbce95e5764e706e6c428bb52dc5536",
+  "odds_home_name": "Toulouse"
+}

@@ -1,0 +1,17 @@
+{
+  "away": "Bayern Munich",
+  "away_att": 0.696712,
+  "away_code": "BAY",
+  "away_def": -0.00206,
+  "home": "Freiburg",
+  "home_att": 0.061233,
+  "home_code": "SCF",
+  "home_def": -0.269221,
+  "id": "f2bd909f25eea6b4ce42d2f52275e5c4",
+  "kickoff": "2026-10-25T16:30:00+00:00",
+  "league": "D1",
+  "league_name": "Bundesliga",
+  "odds_away_name": "Bayern Munich",
+  "odds_event_id": "f2bd909f25eea6b4ce42d2f52275e5c4",
+  "odds_home_name": "SC Freiburg"
+}

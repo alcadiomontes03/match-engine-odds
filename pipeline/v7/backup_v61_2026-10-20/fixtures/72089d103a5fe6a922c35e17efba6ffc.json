@@ -1,0 +1,17 @@
+{
+  "away": "Real Madrid",
+  "away_att": 0.451998,
+  "away_code": "RMA",
+  "away_def": 0.206159,
+  "home": "Barcelona",
+  "home_att": 0.703365,
+  "home_code": "BAR",
+  "home_def": 0.150025,
+  "id": "72089d103a5fe6a922c35e17efba6ffc",
+  "kickoff": "2026-10-25T20:00:00+00:00",
+  "league": "SP1",
+  "league_name": "La Liga",
+  "odds_away_name": "Real Madrid",
+  "odds_event_id": "72089d103a5fe6a922c35e17efba6ffc",
+  "odds_home_name": "Barcelona"
+}

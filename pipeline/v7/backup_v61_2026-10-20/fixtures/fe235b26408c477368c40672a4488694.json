@@ -1,0 +1,17 @@
+{
+  "away": "Newcastle",
+  "away_att": 0.171202,
+  "away_code": "NEW",
+  "away_def": -0.248471,
+  "home": "Crystal Palace",
+  "home_att": -0.034708,
+  "home_code": "CRY",
+  "home_def": -0.251384,
+  "id": "fe235b26408c477368c40672a4488694",
+  "kickoff": "2026-10-25T14:00:00+00:00",
+  "league": "E0",
+  "league_name": "Premier League",
+  "odds_away_name": "Newcastle United",
+  "odds_event_id": "fe235b26408c477368c40672a4488694",
+  "odds_home_name": "Crystal Palace"
+}

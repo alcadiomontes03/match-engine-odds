@@ -1,0 +1,17 @@
+{
+  "away": "Bournemouth",
+  "away_att": 0.087217,
+  "away_code": "BOU",
+  "away_def": -0.22061,
+  "home": "Man United",
+  "home_att": 0.140754,
+  "home_code": "MUN",
+  "home_def": -0.182854,
+  "id": "33fb7467b23c91d57dc976d9ab05ea97",
+  "kickoff": "2026-10-25T14:00:00+00:00",
+  "league": "E0",
+  "league_name": "Premier League",
+  "odds_away_name": "Bournemouth",
+  "odds_event_id": "33fb7467b23c91d57dc976d9ab05ea97",
+  "odds_home_name": "Manchester United"
+}

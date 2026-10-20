@@ -1,0 +1,17 @@
+{
+  "away": "Fulham",
+  "away_att": -0.06451,
+  "away_code": "FUL",
+  "away_def": -0.203606,
+  "home": "Coventry",
+  "home_att": -0.302173,
+  "home_code": "COV",
+  "home_def": -0.311395,
+  "id": "0fbb2626ed9534b9dcf21d16925f9bd7",
+  "kickoff": "2026-10-24T14:00:00+00:00",
+  "league": "E0",
+  "league_name": "Premier League",
+  "odds_away_name": "Fulham",
+  "odds_event_id": "0fbb2626ed9534b9dcf21d16925f9bd7",
+  "odds_home_name": "Coventry City"
+}

@@ -1,0 +1,17 @@
+{
+  "away": "Paris FC",
+  "away_att": 0.025119,
+  "away_code": "PFC",
+  "away_def": -0.083609,
+  "home": "Lens",
+  "home_att": 0.202848,
+  "home_code": "RCL",
+  "home_def": -0.028675,
+  "id": "fc6c50376190b578cfeb38c029db8487",
+  "kickoff": "2026-10-24T18:45:00+00:00",
+  "league": "F1",
+  "league_name": "Ligue 1",
+  "odds_away_name": "Paris FC",
+  "odds_event_id": "fc6c50376190b578cfeb38c029db8487",
+  "odds_home_name": "RC Lens"
+}

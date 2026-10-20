@@ -1,0 +1,17 @@
+{
+  "away": "Ath Bilbao",
+  "away_att": -0.009437,
+  "away_code": "ATH",
+  "away_def": 0.026343,
+  "home": "Levante",
+  "home_att": 0.026519,
+  "home_code": "LEV",
+  "home_def": -0.224125,
+  "id": "a362cccad837f1ffae61ff43a3536688",
+  "kickoff": "2026-10-21T18:00:00+00:00",
+  "league": "SP1",
+  "league_name": "La Liga",
+  "odds_away_name": "Athletic Bilbao",
+  "odds_event_id": "a362cccad837f1ffae61ff43a3536688",
+  "odds_home_name": "Levante"
+}

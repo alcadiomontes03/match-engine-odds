@@ -1,0 +1,17 @@
+{
+  "away": "Tottenham",
+  "away_att": -0.034061,
+  "away_code": "TOT",
+  "away_def": -0.311866,
+  "home": "Chelsea",
+  "home_att": 0.227572,
+  "home_code": "CHE",
+  "home_def": -0.240991,
+  "id": "0382a9faef0bb8df1bcc436536cffb05",
+  "kickoff": "2026-10-24T16:30:00+00:00",
+  "league": "E0",
+  "league_name": "Premier League",
+  "odds_away_name": "Tottenham Hotspur",
+  "odds_event_id": "0382a9faef0bb8df1bcc436536cffb05",
+  "odds_home_name": "Chelsea"
+}

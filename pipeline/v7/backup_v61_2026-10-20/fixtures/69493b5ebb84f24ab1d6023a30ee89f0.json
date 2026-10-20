@@ -1,0 +1,17 @@
+{
+  "away": "Brentford",
+  "away_att": 0.145443,
+  "away_code": "BRE",
+  "away_def": -0.190237,
+  "home": "Hull",
+  "home_att": 0.007068,
+  "home_code": "HUL",
+  "home_def": -0.107473,
+  "id": "69493b5ebb84f24ab1d6023a30ee89f0",
+  "kickoff": "2026-10-25T14:00:00+00:00",
+  "league": "E0",
+  "league_name": "Premier League",
+  "odds_away_name": "Brentford",
+  "odds_event_id": "69493b5ebb84f24ab1d6023a30ee89f0",
+  "odds_home_name": "Hull City"
+}

@@ -1,0 +1,17 @@
+{
+  "away": "Malaga",
+  "away_att": -0.301089,
+  "away_code": "MAL",
+  "away_def": -0.159134,
+  "home": "Alaves",
+  "home_att": -0.066851,
+  "home_code": "ALA",
+  "home_def": -0.055806,
+  "id": "903eb4941471ffe20d525b02dd3b77aa",
+  "kickoff": "2026-10-23T19:00:00+00:00",
+  "league": "SP1",
+  "league_name": "La Liga",
+  "odds_away_name": "Málaga",
+  "odds_event_id": "903eb4941471ffe20d525b02dd3b77aa",
+  "odds_home_name": "Alavés"
+}

@@ -1,0 +1,17 @@
+{
+  "away": "Leeds",
+  "away_att": -0.003106,
+  "away_code": "LEE",
+  "away_def": -0.135147,
+  "home": "Sunderland",
+  "home_att": -0.137952,
+  "home_code": "SUN",
+  "home_def": -0.198098,
+  "id": "e82f6b60fa41b82c8510f5b67ce61849",
+  "kickoff": "2026-10-25T16:30:00+00:00",
+  "league": "E0",
+  "league_name": "Premier League",
+  "odds_away_name": "Leeds United",
+  "odds_event_id": "e82f6b60fa41b82c8510f5b67ce61849",
+  "odds_home_name": "Sunderland"
+}

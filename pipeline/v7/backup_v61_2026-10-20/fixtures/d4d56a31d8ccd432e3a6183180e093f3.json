@@ -1,0 +1,17 @@
+{
+  "away": "M'gladbach",
+  "away_att": -0.053898,
+  "away_code": "BMG",
+  "away_def": -0.41353,
+  "home": "Stuttgart",
+  "home_att": 0.25225,
+  "home_code": "VFB",
+  "home_def": -0.201538,
+  "id": "d4d56a31d8ccd432e3a6183180e093f3",
+  "kickoff": "2026-10-23T18:30:00+00:00",
+  "league": "D1",
+  "league_name": "Bundesliga",
+  "odds_away_name": "Borussia Monchengladbach",
+  "odds_event_id": "d4d56a31d8ccd432e3a6183180e093f3",
+  "odds_home_name": "VfB Stuttgart"
+}

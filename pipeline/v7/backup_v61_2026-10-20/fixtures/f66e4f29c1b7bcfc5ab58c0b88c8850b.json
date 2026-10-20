@@ -1,0 +1,17 @@
+{
+  "away": "Everton",
+  "away_att": -0.102838,
+  "away_code": "EVE",
+  "away_def": -0.074744,
+  "home": "Arsenal",
+  "home_att": 0.274081,
+  "home_code": "ARS",
+  "home_def": 0.25463,
+  "id": "f66e4f29c1b7bcfc5ab58c0b88c8850b",
+  "kickoff": "2026-10-24T14:00:00+00:00",
+  "league": "E0",
+  "league_name": "Premier League",
+  "odds_away_name": "Everton",
+  "odds_event_id": "f66e4f29c1b7bcfc5ab58c0b88c8850b",
+  "odds_home_name": "Arsenal"
+}

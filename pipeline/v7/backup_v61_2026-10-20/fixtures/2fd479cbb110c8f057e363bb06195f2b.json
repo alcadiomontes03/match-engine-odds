@@ -1,0 +1,17 @@
+{
+  "away": "Leverkusen",
+  "away_att": 0.319077,
+  "away_code": "B04",
+  "away_def": -0.127736,
+  "home": "Hoffenheim",
+  "home_att": 0.130279,
+  "home_code": "HOF",
+  "home_def": -0.420009,
+  "id": "2fd479cbb110c8f057e363bb06195f2b",
+  "kickoff": "2026-10-25T14:30:00+00:00",
+  "league": "D1",
+  "league_name": "Bundesliga",
+  "odds_away_name": "Bayer Leverkusen",
+  "odds_event_id": "2fd479cbb110c8f057e363bb06195f2b",
+  "odds_home_name": "TSG Hoffenheim"
+}

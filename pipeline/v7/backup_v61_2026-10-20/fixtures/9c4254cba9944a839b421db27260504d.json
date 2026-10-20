@@ -1,0 +1,17 @@
+{
+  "away": "Getafe",
+  "away_att": -0.360675,
+  "away_code": "GET",
+  "away_def": 0.130566,
+  "home": "Ath Bilbao",
+  "home_att": -0.009437,
+  "home_code": "ATH",
+  "home_def": 0.026343,
+  "id": "9c4254cba9944a839b421db27260504d",
+  "kickoff": "2026-10-25T13:00:00+00:00",
+  "league": "SP1",
+  "league_name": "La Liga",
+  "odds_away_name": "Getafe",
+  "odds_event_id": "9c4254cba9944a839b421db27260504d",
+  "odds_home_name": "Athletic Bilbao"
+}

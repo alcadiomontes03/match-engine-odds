@@ -1,0 +1,17 @@
+{
+  "away": "Elche",
+  "away_att": 0.04185,
+  "away_code": "ELC",
+  "away_def": -0.225296,
+  "home": "Vallecano",
+  "home_att": -0.101653,
+  "home_code": "RAY",
+  "home_def": -0.037132,
+  "id": "734ad601156f5f4e6bc42317e5141516",
+  "kickoff": "2026-10-24T12:00:00+00:00",
+  "league": "SP1",
+  "league_name": "La Liga",
+  "odds_away_name": "Elche CF",
+  "odds_event_id": "734ad601156f5f4e6bc42317e5141516",
+  "odds_home_name": "Rayo Vallecano"
+}

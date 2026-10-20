@@ -1,0 +1,17 @@
+{
+  "away": "Hamburg",
+  "away_att": -0.174598,
+  "away_code": "HSV",
+  "away_def": -0.391757,
+  "home": "Paderborn",
+  "home_att": -0.251686,
+  "home_code": "PAD",
+  "home_def": -0.226286,
+  "id": "7630f897583f3acc0f483fa2d17d1ac5",
+  "kickoff": "2026-10-24T13:30:00+00:00",
+  "league": "D1",
+  "league_name": "Bundesliga",
+  "odds_away_name": "Hamburger SV",
+  "odds_event_id": "7630f897583f3acc0f483fa2d17d1ac5",
+  "odds_home_name": "SC Paderborn"
+}

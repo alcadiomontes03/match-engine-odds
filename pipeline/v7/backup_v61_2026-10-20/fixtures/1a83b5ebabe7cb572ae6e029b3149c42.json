@@ -1,0 +1,17 @@
+{
+  "away": "Lorient",
+  "away_att": -0.01533,
+  "away_code": "LOR",
+  "away_def": -0.184793,
+  "home": "Angers",
+  "home_att": -0.298022,
+  "home_code": "ANG",
+  "home_def": -0.236624,
+  "id": "1a83b5ebabe7cb572ae6e029b3149c42",
+  "kickoff": "2026-10-25T16:15:00+00:00",
+  "league": "F1",
+  "league_name": "Ligue 1",
+  "odds_away_name": "Lorient",
+  "odds_event_id": "1a83b5ebabe7cb572ae6e029b3149c42",
+  "odds_home_name": "Angers"
+}

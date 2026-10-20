@@ -1,0 +1,17 @@
+{
+  "away": "Levante",
+  "away_att": 0.026519,
+  "away_code": "LEV",
+  "away_def": -0.224125,
+  "home": "Sociedad",
+  "home_att": 0.087174,
+  "home_code": "RSO",
+  "home_def": -0.171039,
+  "id": "3cb8660cd2375b60e81144a7572cfb89",
+  "kickoff": "2026-10-25T17:30:00+00:00",
+  "league": "SP1",
+  "league_name": "La Liga",
+  "odds_away_name": "Levante",
+  "odds_event_id": "3cb8660cd2375b60e81144a7572cfb89",
+  "odds_home_name": "Real Sociedad"
+}

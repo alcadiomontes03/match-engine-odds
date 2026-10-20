@@ -1,0 +1,17 @@
+{
+  "away": "Ein Frankfurt",
+  "away_att": 0.159983,
+  "away_code": "SGE",
+  "away_def": -0.430778,
+  "home": "Dortmund",
+  "home_att": 0.269782,
+  "home_code": "DOR",
+  "home_def": -0.008706,
+  "id": "3ed4d1e775910625c50518a384e9c547",
+  "kickoff": "2026-10-24T16:30:00+00:00",
+  "league": "D1",
+  "league_name": "Bundesliga",
+  "odds_away_name": "Eintracht Frankfurt",
+  "odds_event_id": "3ed4d1e775910625c50518a384e9c547",
+  "odds_home_name": "Borussia Dortmund"
+}

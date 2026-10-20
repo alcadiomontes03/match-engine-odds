@@ -1,0 +1,17 @@
+{
+  "away": "Strasbourg",
+  "away_att": 0.193578,
+  "away_code": "STR",
+  "away_def": -0.215685,
+  "home": "Rennes",
+  "home_att": 0.215714,
+  "home_code": "REN",
+  "home_def": -0.23333,
+  "id": "31dcb6d13ed240fc4a5c7a696149967e",
+  "kickoff": "2026-10-25T16:15:00+00:00",
+  "league": "F1",
+  "league_name": "Ligue 1",
+  "odds_away_name": "Strasbourg",
+  "odds_event_id": "31dcb6d13ed240fc4a5c7a696149967e",
+  "odds_home_name": "Rennes"
+}

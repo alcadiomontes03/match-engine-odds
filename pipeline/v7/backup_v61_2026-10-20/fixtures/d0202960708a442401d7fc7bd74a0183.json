@@ -1,0 +1,17 @@
+{
+  "away": "Nott'm Forest",
+  "away_att": -0.031191,
+  "away_code": "NFO",
+  "away_def": -0.168105,
+  "home": "Ipswich",
+  "home_att": -0.117234,
+  "home_code": "IPS",
+  "home_def": -0.533498,
+  "id": "d0202960708a442401d7fc7bd74a0183",
+  "kickoff": "2026-10-23T19:00:00+00:00",
+  "league": "E0",
+  "league_name": "Premier League",
+  "odds_away_name": "Nottingham Forest",
+  "odds_event_id": "d0202960708a442401d7fc7bd74a0183",
+  "odds_home_name": "Ipswich Town"
+}

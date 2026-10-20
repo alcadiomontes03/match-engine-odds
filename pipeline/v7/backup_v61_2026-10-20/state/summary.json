@@ -1,0 +1,175 @@
+{
+  "generated_at": "2026-10-12T22:57:01+00:00",
+  "generated_at_previous": "2026-09-25T00:19:51.085935+00:00",
+  "known_gaps": [
+    "v6 (2026-10-03): the live model is v5, market-anchored. It starts from DraftKings' de-vigged price and adds shrunk corrections, which the backtest has set to zero so far. The Monday agent pipeline publishes it to the v5 page. Everything stays paper until the CLV gate opens (300 graded picks, mean CLV above 0, t of at least 2).",
+    "Alpha Lines v6.1 (2026-10-12): the Dixon-Coles ratings on this page were refit for all four leagues with the defence ridge centred on the league mean (goals-only target, results through Oct 11). The weekly refit was retired on 2026-10-03 because its Drive-based rebuild kept failing, so the ratings stay manual until a scheduled refit is rebuilt on the repo's football-data files. The old ridge pulled mean defence toward 0 and under-predicted goals by about 0.13 per game in the 4-league walk-forward; the fix cuts that to about 0.06. With blend weight 0 in every league, Dixon-Coles predictions price bets at the de-vigged market anyway.",
+    "Odds are DraftKings only, captured by the GitHub odds bot: one weekly pull from Monday 15:00 UTC (moneyline, spreads, totals, plus BTTS per match) and pulls within 3 hours of kickoff. GitHub can start the weekly pull late, so the Monday jobs wait for it.",
+    "Closing prices for CLV come from the bot's pulls within 3 hours of kickoff. The 2026-W38 picks were settled before that was wired in; the Monday grading job back-fills their CLV.",
+    "xG tables are display-only, never model inputs: Premier League from xgstat.com, La Liga and Ligue 1 from xglab.io, refreshed by the Monday grading job after a check against the league table. Bundesliga's came from understat.com, which blocks automated fetching, so it stays at its 2026-09-20 snapshot.",
+    "The shot-attempt model is frozen with the same fit and is predictions-only. It has never been checked against a bookmaker price, because no free shot-odds history exists.",
+    "Scope is the Premier League, La Liga, Bundesliga and Ligue 1 only. Cups and the Champions League are out, and the EFL Championship was dropped on 2026-09-24 (its old detail_E1 doc is kept for history).",
+    "Early-season samples are small, so validation readings, including the v4 'Gate open' badge on the Premier League card, are low-confidence and not a betting signal."
+  ],
+  "leagues": {
+    "D1": {
+      "blend_weight": 0,
+      "blend_weight_reason": "gate closed -> pure market",
+      "files_loaded": [
+        "hist/D1_2223.csv",
+        "hist/D1_2324.csv",
+        "hist/D1_2425.csv",
+        "hist/D1_2526.csv",
+        "D1_2627.csv"
+      ],
+      "fit_from": "2022-08-05",
+      "goals_weight": null,
+      "home_adv": 0.214524,
+      "n_history_matches": 1224,
+      "n_matches_fit": 903,
+      "n_oos_matches": 45,
+      "n_rows_with_xg": 1222,
+      "name": "Bundesliga",
+      "ratings_as_of": "2026-10-12",
+      "ratings_model": "alpha-lines-v6.1-dc-centred-ridge",
+      "rho": -0.070058,
+      "season": "2627",
+      "validation": {
+        "best_blend_brier_mean_in_sample": 0.5509385726153151,
+        "best_blend_weight": 1,
+        "blend_brier_oos": 0.5195214121594813,
+        "gate_method": "expanding-window (weight chosen only from earlier matches)",
+        "gate_open": false,
+        "market_brier_mean": 0.5709537852019483,
+        "market_brier_on_gate_matches": 0.5076334126533463,
+        "market_source": {
+          "closing": 36
+        },
+        "model_brier_mean": 0.5509385726153151,
+        "n_evaluated": 36,
+        "n_gate_matches": 16,
+        "n_with_market_odds": 36
+      },
+      "xi": 0.002
+    },
+    "E0": {
+      "blend_weight": 0,
+      "blend_weight_reason": "capped from 0.80: only 30 gate matches (< 100) — v4.9.2 cap is 0 after the full market test (model worse than closing odds every season)",
+      "files_loaded": [
+        "hist/E0_2223.csv",
+        "hist/E0_2324.csv",
+        "hist/E0_2425.csv",
+        "hist/E0_2526.csv",
+        "E0_2627.csv"
+      ],
+      "fit_from": "2022-08-05",
+      "home_adv": 0.168671,
+      "n_history_matches": 1520,
+      "n_matches_fit": 1123,
+      "n_oos_matches": 50,
+      "n_rows_with_xg": 1140,
+      "name": "Premier League",
+      "ratings_as_of": "2026-10-12",
+      "ratings_model": "alpha-lines-v6.1-dc-centred-ridge",
+      "rho": -0.104548,
+      "season": "2627",
+      "validation": {
+        "best_blend_brier_mean_in_sample": 0.6207494679379707,
+        "best_blend_weight": 0.8,
+        "blend_brier_oos": 0.6695006360394932,
+        "gate_method": "expanding-window (weight chosen only from earlier matches)",
+        "gate_open": true,
+        "market_brier_mean": 0.6356658018235176,
+        "market_brier_on_gate_matches": 0.6768370057382078,
+        "market_source": {
+          "closing": 50
+        },
+        "model_brier_mean": 0.6218202132669051,
+        "n_evaluated": 50,
+        "n_gate_matches": 30,
+        "n_with_market_odds": 50
+      },
+      "xi": 0.002
+    },
+    "F1": {
+      "blend_weight": 0,
+      "blend_weight_reason": "gate closed -> pure market",
+      "files_loaded": [
+        "hist/F1_2223.csv",
+        "hist/F1_2324.csv",
+        "hist/F1_2425.csv",
+        "hist/F1_2526.csv",
+        "F1_2627.csv"
+      ],
+      "fit_from": "2022-08-05",
+      "home_adv": 0.211189,
+      "n_history_matches": 1298,
+      "n_matches_fit": 906,
+      "n_oos_matches": 45,
+      "n_rows_with_xg": 1296,
+      "name": "Ligue 1",
+      "ratings_as_of": "2026-10-12",
+      "ratings_model": "alpha-lines-v6.1-dc-centred-ridge",
+      "rho": -0.036043,
+      "season": "2627",
+      "validation": {
+        "best_blend_brier_mean_in_sample": 0.6176148080224503,
+        "best_blend_weight": 0,
+        "blend_brier_oos": 0.6252484439143214,
+        "gate_method": "expanding-window (weight chosen only from earlier matches)",
+        "gate_open": false,
+        "market_brier_mean": 0.6176148080224503,
+        "market_brier_on_gate_matches": 0.6170583272964506,
+        "market_source": {
+          "closing": 45
+        },
+        "model_brier_mean": 0.6323681262847028,
+        "n_evaluated": 45,
+        "n_gate_matches": 25,
+        "n_with_market_odds": 45
+      },
+      "xi": 0.002
+    },
+    "SP1": {
+      "blend_weight": 0,
+      "blend_weight_reason": "gate closed -> pure market",
+      "files_loaded": [
+        "hist/SP1_2223.csv",
+        "hist/SP1_2324.csv",
+        "hist/SP1_2425.csv",
+        "hist/SP1_2526.csv",
+        "SP1_2627.csv"
+      ],
+      "fit_from": "2022-08-12",
+      "home_adv": 0.29654,
+      "n_history_matches": 1520,
+      "n_matches_fit": 1133,
+      "n_oos_matches": 69,
+      "n_rows_with_xg": 1140,
+      "name": "La Liga",
+      "ratings_as_of": "2026-10-12",
+      "ratings_model": "alpha-lines-v6.1-dc-centred-ridge",
+      "rho": -0.016474,
+      "season": "2627",
+      "validation": {
+        "best_blend_brier_mean_in_sample": 0.5509582721746682,
+        "best_blend_weight": 0,
+        "blend_brier_oos": 0.5480863284108258,
+        "gate_method": "expanding-window (weight chosen only from earlier matches)",
+        "gate_open": false,
+        "market_brier_mean": 0.5509582721746682,
+        "market_brier_on_gate_matches": 0.5454924411789187,
+        "market_source": {
+          "closing": 69
+        },
+        "model_brier_mean": 0.5758836763389693,
+        "n_evaluated": 69,
+        "n_gate_matches": 49,
+        "n_with_market_odds": 69
+      },
+      "xi": 0.002
+    }
+  },
+  "model_version": "Alpha Lines v6.1",
+  "refit_source": "manual centred-ridge refit by Claude on 2026-10-12 (builds 49-50), all four leagues, ratings as of 2026-10-12; generated_at corrected 2026-10-20 (it still showed the superseded 2026-09-25 v4.10 fit, so predictions' refit_at was mislabelled)"
+}

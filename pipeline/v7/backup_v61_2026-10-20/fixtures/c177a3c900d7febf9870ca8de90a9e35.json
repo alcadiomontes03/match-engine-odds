@@ -1,0 +1,17 @@
+{
+  "away": "Lille",
+  "away_att": 0.076293,
+  "away_code": "LIL",
+  "away_def": 0.09736,
+  "home": "Monaco",
+  "home_att": 0.255398,
+  "home_code": "ASM",
+  "home_def": -0.137682,
+  "id": "c177a3c900d7febf9870ca8de90a9e35",
+  "kickoff": "2026-10-25T14:00:00+00:00",
+  "league": "F1",
+  "league_name": "Ligue 1",
+  "odds_away_name": "Lille",
+  "odds_event_id": "c177a3c900d7febf9870ca8de90a9e35",
+  "odds_home_name": "AS Monaco"
+}

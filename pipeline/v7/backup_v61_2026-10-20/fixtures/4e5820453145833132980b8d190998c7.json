@@ -1,0 +1,17 @@
+{
+  "away": "Werder Bremen",
+  "away_att": -0.092953,
+  "away_code": "SVW",
+  "away_def": -0.326848,
+  "home": "Mainz",
+  "home_att": 0.014947,
+  "home_code": "M05",
+  "home_def": -0.234833,
+  "id": "4e5820453145833132980b8d190998c7",
+  "kickoff": "2026-10-24T13:30:00+00:00",
+  "league": "D1",
+  "league_name": "Bundesliga",
+  "odds_away_name": "Werder Bremen",
+  "odds_event_id": "4e5820453145833132980b8d190998c7",
+  "odds_home_name": "FSV Mainz 05"
+}

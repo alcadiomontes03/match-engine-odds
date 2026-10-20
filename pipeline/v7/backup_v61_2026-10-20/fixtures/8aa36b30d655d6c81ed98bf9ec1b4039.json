@@ -1,0 +1,17 @@
+{
+  "away": "Nice",
+  "away_att": -0.054872,
+  "away_code": "NIC",
+  "away_def": -0.209767,
+  "home": "Brest",
+  "home_att": 0.0804,
+  "home_code": "BRE",
+  "home_def": -0.283721,
+  "id": "8aa36b30d655d6c81ed98bf9ec1b4039",
+  "kickoff": "2026-10-23T18:45:00+00:00",
+  "league": "F1",
+  "league_name": "Ligue 1",
+  "odds_away_name": "Nice",
+  "odds_event_id": "8aa36b30d655d6c81ed98bf9ec1b4039",
+  "odds_home_name": "Brest"
+}

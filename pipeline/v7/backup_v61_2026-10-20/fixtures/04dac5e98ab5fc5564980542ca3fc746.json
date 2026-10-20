@@ -1,0 +1,17 @@
+{
+  "away": "Elversberg",
+  "away_att": 0.056163,
+  "away_code": "ELV",
+  "away_def": -0.255927,
+  "home": "RB Leipzig",
+  "home_att": 0.236751,
+  "home_code": "RBL",
+  "home_def": -0.155299,
+  "id": "04dac5e98ab5fc5564980542ca3fc746",
+  "kickoff": "2026-10-24T13:30:00+00:00",
+  "league": "D1",
+  "league_name": "Bundesliga",
+  "odds_away_name": "Elversberg",
+  "odds_event_id": "04dac5e98ab5fc5564980542ca3fc746",
+  "odds_home_name": "RB Leipzig"
+}

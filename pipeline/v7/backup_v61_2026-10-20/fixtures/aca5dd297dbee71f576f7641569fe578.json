@@ -1,0 +1,17 @@
+{
+  "away": "Man City",
+  "away_att": 0.397563,
+  "away_code": "MCI",
+  "away_def": 0.100537,
+  "home": "Aston Villa",
+  "home_att": 0.089502,
+  "home_code": "AVL",
+  "home_def": -0.203541,
+  "id": "aca5dd297dbee71f576f7641569fe578",
+  "kickoff": "2026-10-24T11:30:00+00:00",
+  "league": "E0",
+  "league_name": "Premier League",
+  "odds_away_name": "Manchester City",
+  "odds_event_id": "aca5dd297dbee71f576f7641569fe578",
+  "odds_home_name": "Aston Villa"
+}
