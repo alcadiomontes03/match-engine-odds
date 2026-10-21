@@ -2323,3 +2323,18 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-10-19T19:41:41+00:00,weekly,Ligue1,8664b2167f22c59026d86615421463b1,2026-10-25T19:45:00Z,Paris Saint Germain,Lyon,draftkings,2026-10-19T19:41:41Z,h2h,Lyon,,7.0
 2026-10-19T19:41:41+00:00,weekly,Ligue1,8664b2167f22c59026d86615421463b1,2026-10-25T19:45:00Z,Paris Saint Germain,Lyon,draftkings,2026-10-19T19:41:41Z,h2h,Paris Saint Germain,,1.36
 2026-10-19T19:41:41+00:00,weekly,Ligue1,8664b2167f22c59026d86615421463b1,2026-10-25T19:45:00Z,Paris Saint Germain,Lyon,draftkings,2026-10-19T19:41:41Z,h2h,Draw,,5.5
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,2026-10-21T13:03:15Z,h2h,Athletic Bilbao,,2.15
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,2026-10-21T13:03:15Z,h2h,Levante,,3.65
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,2026-10-21T13:03:15Z,h2h,Draw,,3.3
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,,alternate_totals_corners,Over,7.5,1.26
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,,alternate_totals_corners,Over,8.5,1.47
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,,alternate_totals_corners,Over,9.5,1.77
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,,alternate_totals_corners,Over,10.5,2.2
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,,alternate_totals_corners,Over,11.5,2.9
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,,alternate_totals_corners,Under,7.5,3.5
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,,alternate_totals_corners,Under,8.5,2.55
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,,alternate_totals_corners,Under,9.5,1.95
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,,alternate_totals_corners,Under,10.5,1.59
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,,alternate_totals_corners,Under,11.5,1.36
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,,btts,Yes,,1.74
+2026-10-21T13:05:04+00:00,late,LaLiga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,draftkings,,btts,No,,2.1

@@ -665,11 +665,11 @@
   "empty:btts:Ligue1": 0,
   "empty:btts:PL": 0,
   "empty:spreads:Bundesliga": 0,
-  "empty:spreads:LaLiga": 0,
+  "empty:spreads:LaLiga": 1,
   "empty:spreads:Ligue1": 0,
   "empty:spreads:PL": 0,
   "empty:totals:Bundesliga": 0,
-  "empty:totals:LaLiga": 0,
+  "empty:totals:LaLiga": 1,
   "empty:totals:Ligue1": 0,
   "empty:totals:PL": 0,
   "none:spreads:Bundesliga": "2026-W42",
@@ -691,6 +691,8 @@
   "commence": "2026-10-21T18:00:00Z",
   "comp": "LaLiga",
   "home": "Levante",
+  "late": "2026-10-21T13:05:04+00:00",
+  "side": "2026-10-21T13:05:04+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
  "a8801462cb97a43570956e4b3ef4aedf": {
