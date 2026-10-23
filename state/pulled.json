@@ -539,6 +539,8 @@
   "commence": "2026-10-23T18:45:00Z",
   "comp": "Ligue1",
   "home": "Brest",
+  "late": "2026-10-23T15:22:31+00:00",
+  "side": "2026-10-23T15:22:31+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
  "8eab078a37a63df32ffa443302a2a7ba": {
@@ -562,6 +564,8 @@
   "commence": "2026-10-23T19:00:00Z",
   "comp": "LaLiga",
   "home": "Alav\u00e9s",
+  "late": "2026-10-23T15:22:31+00:00",
+  "side": "2026-10-23T15:22:31+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
  "947bd5d924835af090d9cdc7bbdf10f6": {
@@ -664,14 +668,14 @@
   "empty:btts:LaLiga": 0,
   "empty:btts:Ligue1": 0,
   "empty:btts:PL": 0,
-  "empty:spreads:Bundesliga": 0,
-  "empty:spreads:LaLiga": 1,
-  "empty:spreads:Ligue1": 0,
-  "empty:spreads:PL": 0,
-  "empty:totals:Bundesliga": 0,
-  "empty:totals:LaLiga": 1,
-  "empty:totals:Ligue1": 0,
-  "empty:totals:PL": 0,
+  "empty:spreads:Bundesliga": 1,
+  "empty:spreads:LaLiga": 2,
+  "empty:spreads:Ligue1": 1,
+  "empty:spreads:PL": 1,
+  "empty:totals:Bundesliga": 1,
+  "empty:totals:LaLiga": 2,
+  "empty:totals:Ligue1": 1,
+  "empty:totals:PL": 1,
   "none:spreads:Bundesliga": "2026-W42",
   "none:spreads:LaLiga": "2026-W42",
   "none:spreads:Ligue1": "2026-W42",
@@ -810,6 +814,8 @@
   "commence": "2026-10-23T19:00:00Z",
   "comp": "PL",
   "home": "Ipswich Town",
+  "late": "2026-10-23T15:22:31+00:00",
+  "side": "2026-10-23T15:22:31+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
  "d1bbbdcd3d430e70091b518369b559cf": {
@@ -826,6 +832,8 @@
   "commence": "2026-10-23T18:30:00Z",
   "comp": "Bundesliga",
   "home": "VfB Stuttgart",
+  "late": "2026-10-23T15:22:31+00:00",
+  "side": "2026-10-23T15:22:31+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
  "d637845b9760bb02b55bbbaa32b5c21e": {
