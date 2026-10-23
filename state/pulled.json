@@ -101,13 +101,6 @@
   "side": "2026-10-18T09:07:28+00:00",
   "weekly": "2026-10-15T04:46:07+00:00"
  },
- "17694e68f399fdf9c5030021ec9bb595": {
-  "away": "Lyon",
-  "commence": "2026-10-09T18:45:00Z",
-  "comp": "Ligue1",
-  "home": "RC Lens",
-  "weekly": "2026-10-06T03:36:23+00:00"
- },
  "19ee731602634e5c9e3106630e087464": {
   "away": "Levante",
   "commence": "2026-10-16T19:00:00Z",
@@ -302,13 +295,6 @@
   "home": "Borussia Dortmund",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
- "3fb63658405d468954f57745cd115118": {
-  "away": "Werder Bremen",
-  "commence": "2026-10-09T18:30:00Z",
-  "comp": "Bundesliga",
-  "home": "Borussia Dortmund",
-  "weekly": "2026-10-06T03:36:23+00:00"
- },
  "418f8c26d46eaabd829f2e265673b855": {
   "away": "Bayer Leverkusen",
   "btts": "2026-10-10T11:51:34+00:00",
@@ -344,13 +330,6 @@
   "late": "2026-10-19T13:59:15+00:00",
   "side": "2026-10-19T13:59:15+00:00",
   "weekly": "2026-10-15T04:46:07+00:00"
- },
- "4e4c6763037ffc0e1dfe92ed16287b6d": {
-  "away": "Espanyol",
-  "commence": "2026-10-09T19:00:00Z",
-  "comp": "LaLiga",
-  "home": "M\u00e1laga",
-  "weekly": "2026-10-06T03:36:23+00:00"
  },
  "4e5820453145833132980b8d190998c7": {
   "away": "Werder Bremen",
