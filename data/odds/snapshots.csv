@@ -2593,3 +2593,42 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-10-24T09:43:47+00:00,late,Bundesliga,3ed4d1e775910625c50518a384e9c547,2026-10-24T16:30:00Z,Borussia Dortmund,Eintracht Frankfurt,draftkings,,alternate_totals_corners,Under,11.5,1.36
 2026-10-24T09:43:47+00:00,late,Bundesliga,3ed4d1e775910625c50518a384e9c547,2026-10-24T16:30:00Z,Borussia Dortmund,Eintracht Frankfurt,draftkings,,btts,Yes,,1.48
 2026-10-24T09:43:47+00:00,late,Bundesliga,3ed4d1e775910625c50518a384e9c547,2026-10-24T16:30:00Z,Borussia Dortmund,Eintracht Frankfurt,draftkings,,btts,No,,2.65
+2026-10-24T13:36:48+00:00,late,PL,f66e4f29c1b7bcfc5ab58c0b88c8850b,2026-10-24T14:00:00Z,Arsenal,Everton,draftkings,2026-10-24T13:36:30Z,h2h,Arsenal,,1.36
+2026-10-24T13:36:48+00:00,late,PL,f66e4f29c1b7bcfc5ab58c0b88c8850b,2026-10-24T14:00:00Z,Arsenal,Everton,draftkings,2026-10-24T13:36:30Z,h2h,Everton,,8.5
+2026-10-24T13:36:48+00:00,late,PL,f66e4f29c1b7bcfc5ab58c0b88c8850b,2026-10-24T14:00:00Z,Arsenal,Everton,draftkings,2026-10-24T13:36:30Z,h2h,Draw,,5.0
+2026-10-24T13:36:48+00:00,late,PL,0fbb2626ed9534b9dcf21d16925f9bd7,2026-10-24T14:00:00Z,Coventry City,Fulham,draftkings,2026-10-24T13:36:30Z,h2h,Coventry City,,3.2
+2026-10-24T13:36:48+00:00,late,PL,0fbb2626ed9534b9dcf21d16925f9bd7,2026-10-24T14:00:00Z,Coventry City,Fulham,draftkings,2026-10-24T13:36:30Z,h2h,Fulham,,2.2
+2026-10-24T13:36:48+00:00,late,PL,0fbb2626ed9534b9dcf21d16925f9bd7,2026-10-24T14:00:00Z,Coventry City,Fulham,draftkings,2026-10-24T13:36:30Z,h2h,Draw,,3.5
+2026-10-24T13:36:48+00:00,late,LaLiga,5960b1b6c20acfd78e78764fed47d505,2026-10-24T14:15:00Z,Real Racing Club de Santander,Espanyol,draftkings,2026-10-24T13:36:35Z,h2h,Espanyol,,2.95
+2026-10-24T13:36:48+00:00,late,LaLiga,5960b1b6c20acfd78e78764fed47d505,2026-10-24T14:15:00Z,Real Racing Club de Santander,Espanyol,draftkings,2026-10-24T13:36:35Z,h2h,Real Racing Club de Santander,,2.3
+2026-10-24T13:36:48+00:00,late,LaLiga,5960b1b6c20acfd78e78764fed47d505,2026-10-24T14:15:00Z,Real Racing Club de Santander,Espanyol,draftkings,2026-10-24T13:36:35Z,h2h,Draw,,3.65
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,2026-10-24T13:36:35Z,h2h,Atlético Madrid,,1.27
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,2026-10-24T13:36:35Z,h2h,Deportivo La Coruña,,10.5
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,2026-10-24T13:36:35Z,h2h,Draw,,6.0
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,,alternate_totals_corners,Over,8.5,1.41
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,,alternate_totals_corners,Over,9.5,1.67
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,,alternate_totals_corners,Over,10.5,2.1
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,,alternate_totals_corners,Over,11.5,2.7
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,,alternate_totals_corners,Over,12.5,3.55
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,,alternate_totals_corners,Under,8.5,2.7
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,,alternate_totals_corners,Under,9.5,2.05
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,,alternate_totals_corners,Under,10.5,1.67
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,,alternate_totals_corners,Under,11.5,1.42
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,,alternate_totals_corners,Under,12.5,1.26
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,,btts,Yes,,2.05
+2026-10-24T13:36:48+00:00,late,LaLiga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,draftkings,,btts,No,,1.77
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,2026-10-24T13:36:12Z,h2h,Paris FC,,2.6
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,2026-10-24T13:36:12Z,h2h,RC Lens,,2.65
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,2026-10-24T13:36:12Z,h2h,Draw,,3.6
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,,alternate_totals_corners,Over,7.5,1.31
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,,alternate_totals_corners,Over,8.5,1.56
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,,alternate_totals_corners,Over,9.5,1.91
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,,alternate_totals_corners,Over,10.5,2.45
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,,alternate_totals_corners,Over,11.5,3.25
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,,alternate_totals_corners,Under,7.5,3.15
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,,alternate_totals_corners,Under,8.5,2.3
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,,alternate_totals_corners,Under,9.5,1.8
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,,alternate_totals_corners,Under,10.5,1.49
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,,alternate_totals_corners,Under,11.5,1.29
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,,btts,Yes,,1.5
+2026-10-24T13:36:48+00:00,late,Ligue1,fc6c50376190b578cfeb38c029db8487,2026-10-24T18:45:00Z,RC Lens,Paris FC,draftkings,,btts,No,,2.55
