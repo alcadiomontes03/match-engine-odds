@@ -143,6 +143,8 @@
   "commence": "2026-10-25T14:00:00Z",
   "comp": "PL",
   "home": "Liverpool",
+  "late": "2026-10-25T06:54:42+00:00",
+  "side": "2026-10-25T06:54:42+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
  "2997b68cc93f62d8a1dee9f06bedbefd": {
@@ -157,6 +159,8 @@
   "commence": "2026-10-25T14:30:00Z",
   "comp": "Bundesliga",
   "home": "TSG Hoffenheim",
+  "late": "2026-10-25T06:54:42+00:00",
+  "side": "2026-10-25T06:54:42+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
  "31dcb6d13ed240fc4a5c7a696149967e": {
@@ -171,6 +175,8 @@
   "commence": "2026-10-25T14:00:00Z",
   "comp": "PL",
   "home": "Manchester United",
+  "late": "2026-10-25T06:54:42+00:00",
+  "side": "2026-10-25T06:54:42+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
  "34f584ab922e220dc4f3b81217959d6d": {
@@ -307,6 +313,8 @@
   "commence": "2026-10-25T14:00:00Z",
   "comp": "PL",
   "home": "Hull City",
+  "late": "2026-10-25T06:54:42+00:00",
+  "side": "2026-10-25T06:54:42+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
  "6dbab232dd8d2aed0cb1d6f7978fb7b1": {
@@ -493,6 +501,8 @@
   "commence": "2026-10-25T13:00:00Z",
   "comp": "LaLiga",
   "home": "Athletic Bilbao",
+  "late": "2026-10-25T06:54:42+00:00",
+  "side": "2026-10-25T06:54:42+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
  "9fc08b390a49c4434f7cf631a0bb88fb": {
@@ -527,19 +537,19 @@
   "empty:btts:PL": 0,
   "empty:spreads:Bundesliga": 0,
   "empty:spreads:LaLiga": 0,
-  "empty:spreads:Ligue1": 2,
+  "empty:spreads:Ligue1": 0,
   "empty:spreads:PL": 0,
   "empty:totals:Bundesliga": 0,
   "empty:totals:LaLiga": 0,
-  "empty:totals:Ligue1": 2,
+  "empty:totals:Ligue1": 0,
   "empty:totals:PL": 0,
   "none:spreads:Bundesliga": "2026-W43",
   "none:spreads:LaLiga": "2026-W43",
-  "none:spreads:Ligue1": "2026-W42",
+  "none:spreads:Ligue1": "2026-W43",
   "none:spreads:PL": "2026-W43",
   "none:totals:Bundesliga": "2026-W43",
   "none:totals:LaLiga": "2026-W43",
-  "none:totals:Ligue1": "2026-W42",
+  "none:totals:Ligue1": "2026-W43",
   "none:totals:PL": "2026-W43",
   "weekly:Bundesliga": "2026-W43",
   "weekly:Championship": "2026-W39",
@@ -634,6 +644,8 @@
   "commence": "2026-10-25T14:00:00Z",
   "comp": "Ligue1",
   "home": "AS Monaco",
+  "late": "2026-10-25T06:54:42+00:00",
+  "side": "2026-10-25T06:54:42+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
  "c7a60aa94470fe959fbf6b0c68060fc1": {
@@ -803,6 +815,8 @@
   "commence": "2026-10-25T14:00:00Z",
   "comp": "PL",
   "home": "Crystal Palace",
+  "late": "2026-10-25T06:54:42+00:00",
+  "side": "2026-10-25T06:54:42+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  }
 }
