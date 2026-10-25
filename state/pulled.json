@@ -271,13 +271,6 @@
   "side": "2026-10-17T07:58:57+00:00",
   "weekly": "2026-10-15T04:46:07+00:00"
  },
- "66a4f4201806b928c9007116727fdd61": {
-  "away": "Valencia",
-  "commence": "2026-10-11T19:00:00Z",
-  "comp": "LaLiga",
-  "home": "Real Racing Club de Santander",
-  "weekly": "2026-10-06T03:36:23+00:00"
- },
  "66c168c030f3faad3983fcadc3060009": {
   "away": "Toulouse",
   "commence": "2026-10-16T18:45:00Z",
@@ -320,7 +313,8 @@
   "commence": "2026-10-25T20:00:00Z",
   "comp": "LaLiga",
   "home": "Barcelona",
-  "late": "2026-10-25T12:23:24+00:00",
+  "late": "2026-10-25T19:16:53+00:00",
+  "late_final": true,
   "side": "2026-10-25T12:23:24+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
@@ -612,13 +606,6 @@
   "late": "2026-10-18T09:07:28+00:00",
   "side": "2026-10-18T09:07:28+00:00",
   "weekly": "2026-10-15T04:46:07+00:00"
- },
- "cb7067ac191abf32ad49dad45e46f639": {
-  "away": "Marseille",
-  "commence": "2026-10-11T18:45:00Z",
-  "comp": "Ligue1",
-  "home": "Troyes",
-  "weekly": "2026-10-06T03:36:23+00:00"
  },
  "d0202960708a442401d7fc7bd74a0183": {
   "away": "Nottingham Forest",
