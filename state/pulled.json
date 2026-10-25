@@ -43,13 +43,6 @@
   "home": "Toulouse",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
- "0bdae4d304810578e47386606bff7106": {
-  "away": "Everton",
-  "commence": "2026-10-11T13:00:00Z",
-  "comp": "PL",
-  "home": "Hull City",
-  "weekly": "2026-10-06T03:36:23+00:00"
- },
  "0bf757f3bd903496ce2fa27bd0481869": {
   "away": "Augsburg",
   "commence": "2026-10-17T13:30:00Z",
@@ -159,13 +152,6 @@
   "side": "2026-10-25T06:54:42+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
- "2997b68cc93f62d8a1dee9f06bedbefd": {
-  "away": "Deportivo La Coru\u00f1a",
-  "commence": "2026-10-11T14:15:00Z",
-  "comp": "LaLiga",
-  "home": "Real Sociedad",
-  "weekly": "2026-10-06T03:36:23+00:00"
- },
  "2fd479cbb110c8f057e363bb06195f2b": {
   "away": "Bayer Leverkusen",
   "commence": "2026-10-25T14:30:00Z",
@@ -193,19 +179,13 @@
   "side": "2026-10-25T06:54:42+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
- "34f584ab922e220dc4f3b81217959d6d": {
-  "away": "Auxerre",
-  "commence": "2026-10-11T15:15:00Z",
-  "comp": "Ligue1",
-  "home": "Rennes",
-  "weekly": "2026-10-06T03:36:23+00:00"
- },
  "3cb8660cd2375b60e81144a7572cfb89": {
   "away": "Levante",
   "commence": "2026-10-25T17:30:00Z",
   "comp": "LaLiga",
   "home": "Real Sociedad",
-  "late": "2026-10-25T12:23:24+00:00",
+  "late": "2026-10-25T16:41:44+00:00",
+  "late_final": true,
   "side": "2026-10-25T12:23:24+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
@@ -273,13 +253,6 @@
   "side": "2026-10-24T09:43:47+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
- "5d3606630a2d3a218a6340d082c1bdc6": {
-  "away": "Strasbourg",
-  "commence": "2026-10-11T13:00:00Z",
-  "comp": "Ligue1",
-  "home": "Nice",
-  "weekly": "2026-10-06T03:36:23+00:00"
- },
  "606d65d57a9a6d8f9b53faee1ad10009": {
   "away": "FSV Mainz 05",
   "commence": "2026-10-17T13:30:00Z",
@@ -332,13 +305,6 @@
   "late": "2026-10-25T06:54:42+00:00",
   "side": "2026-10-25T06:54:42+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
- },
- "6dbab232dd8d2aed0cb1d6f7978fb7b1": {
-  "away": "Manchester City",
-  "commence": "2026-10-11T15:30:00Z",
-  "comp": "PL",
-  "home": "Liverpool",
-  "weekly": "2026-10-06T03:36:23+00:00"
  },
  "70df1835c3b5ddff1c99e0189532136b": {
   "away": "Deportivo La Coru\u00f1a",
@@ -410,13 +376,6 @@
   "home": "Paris Saint Germain",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
- "86effab5c6e7bfd58c8e88b1fb7c6ba9": {
-  "away": "Nottingham Forest",
-  "commence": "2026-10-11T13:00:00Z",
-  "comp": "PL",
-  "home": "Crystal Palace",
-  "weekly": "2026-10-06T03:36:23+00:00"
- },
  "8aa36b30d655d6c81ed98bf9ec1b4039": {
   "away": "Nice",
   "commence": "2026-10-23T18:45:00Z",
@@ -471,16 +430,6 @@
   "late": "2026-10-24T09:43:47+00:00",
   "side": "2026-10-24T09:43:47+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
- },
- "984691837d31fd0c59c088f377f55f75": {
-  "away": "CA Osasuna",
-  "btts": "2026-10-11T15:28:12+00:00",
-  "commence": "2026-10-11T16:30:00Z",
-  "comp": "LaLiga",
-  "home": "Real Betis",
-  "late": "2026-10-11T15:28:12+00:00",
-  "late_final": true,
-  "weekly": "2026-10-06T03:36:23+00:00"
  },
  "9a422e1aad1053828eaf629a58d901de": {
   "away": "SC Paderborn",
@@ -579,13 +528,6 @@
   "late": "2026-10-21T13:05:04+00:00",
   "side": "2026-10-21T13:05:04+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
- },
- "a8801462cb97a43570956e4b3ef4aedf": {
-  "away": "Borussia Monchengladbach",
-  "commence": "2026-10-11T13:30:00Z",
-  "comp": "Bundesliga",
-  "home": "1. FC K\u00f6ln",
-  "weekly": "2026-10-06T03:36:23+00:00"
  },
  "aabe899ecc4c19a1fafe5440151b62e4": {
   "away": "Alav\u00e9s",
@@ -740,13 +682,6 @@
   "late": "2026-10-25T12:23:24+00:00",
   "side": "2026-10-25T12:23:24+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
- },
- "eaf509fb37413b7d055cd394667792b3": {
-  "away": "FC Schalke 04",
-  "commence": "2026-10-11T15:30:00Z",
-  "comp": "Bundesliga",
-  "home": "SC Freiburg",
-  "weekly": "2026-10-06T03:36:23+00:00"
  },
  "eccd63bf768e2f2a358b871d3f33a63d": {
   "away": "Sevilla",
