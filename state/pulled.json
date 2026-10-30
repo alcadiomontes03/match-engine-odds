@@ -111,16 +111,6 @@
   "late": "2026-10-25T12:23:24+00:00",
   "side": "2026-10-25T12:23:24+00:00"
  },
- "19ee731602634e5c9e3106630e087464": {
-  "away": "Levante",
-  "commence": "2026-10-16T19:00:00Z",
-  "comp": "LaLiga",
-  "home": "Deportivo La Coru\u00f1a",
-  "late": "2026-10-16T18:24:21+00:00",
-  "late_final": true,
-  "side": "2026-10-16T14:37:34+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
- },
  "1a83b5ebabe7cb572ae6e029b3149c42": {
   "away": "Lorient",
   "commence": "2026-10-25T16:15:00Z",
@@ -369,16 +359,6 @@
   "home": "Chelsea",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
- "66c168c030f3faad3983fcadc3060009": {
-  "away": "Toulouse",
-  "commence": "2026-10-16T18:45:00Z",
-  "comp": "Ligue1",
-  "home": "Le Mans FC",
-  "late": "2026-10-16T18:24:21+00:00",
-  "late_final": true,
-  "side": "2026-10-16T14:37:34+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
- },
  "676b3b0b609e9cf565da450786618d26": {
   "away": "Manchester United",
   "commence": "2026-10-18T13:00:00Z",
@@ -565,16 +545,6 @@
   "late": "2026-10-23T15:22:31+00:00",
   "side": "2026-10-23T15:22:31+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
- },
- "947bd5d924835af090d9cdc7bbdf10f6": {
-  "away": "1. FC K\u00f6ln",
-  "commence": "2026-10-16T18:30:00Z",
-  "comp": "Bundesliga",
-  "home": "Eintracht Frankfurt",
-  "late": "2026-10-16T18:24:21+00:00",
-  "late_final": true,
-  "side": "2026-10-16T14:37:34+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
  },
  "961df571fad52d969150e9ced52b16f7": {
   "away": "Angers",
