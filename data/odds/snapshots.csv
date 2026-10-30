@@ -3037,3 +3037,48 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-10-26T16:16:04+00:00,late,Ligue1,8664b2167f22c59026d86615421463b1,2026-10-26T19:30:00Z,Paris Saint Germain,Lyon,draftkings,,alternate_totals_corners,Under,11.5,1.37
 2026-10-26T16:16:04+00:00,late,Ligue1,8664b2167f22c59026d86615421463b1,2026-10-26T19:30:00Z,Paris Saint Germain,Lyon,draftkings,,btts,Yes,,1.62
 2026-10-26T16:16:04+00:00,late,Ligue1,8664b2167f22c59026d86615421463b1,2026-10-26T19:30:00Z,Paris Saint Germain,Lyon,draftkings,,btts,No,,2.25
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,2026-10-30T16:12:58Z,h2h,Espanyol,,7.0
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,2026-10-30T16:12:58Z,h2h,Villarreal,,1.41
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,2026-10-30T16:12:58Z,h2h,Draw,,5.0
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,,alternate_totals_corners,Over,8.5,1.41
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,,alternate_totals_corners,Over,9.5,1.67
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,,alternate_totals_corners,Over,10.5,2.1
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,,alternate_totals_corners,Over,11.5,2.75
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,,alternate_totals_corners,Over,12.5,3.5
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,,alternate_totals_corners,Under,8.5,2.7
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,,alternate_totals_corners,Under,9.5,2.05
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,,alternate_totals_corners,Under,10.5,1.65
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,,alternate_totals_corners,Under,11.5,1.4
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,,alternate_totals_corners,Under,12.5,1.26
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,,btts,Yes,,1.67
+2026-10-30T16:15:19+00:00,late,LaLiga,00b03cb40c27ed23e2ecb18f062a5122,2026-10-30T20:00:00Z,Villarreal,Espanyol,draftkings,,btts,No,,2.2
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,2026-10-30T16:14:51Z,h2h,Elversberg,,3.2
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,2026-10-30T16:14:51Z,h2h,FSV Mainz 05,,2.0
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,2026-10-30T16:14:51Z,h2h,Draw,,3.7
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,,alternate_totals_corners,Over,8.5,1.41
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,,alternate_totals_corners,Over,9.5,1.67
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,,alternate_totals_corners,Over,10.5,2.1
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,,alternate_totals_corners,Over,11.5,2.7
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,,alternate_totals_corners,Over,12.5,3.6
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,,alternate_totals_corners,Under,8.5,2.75
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,,alternate_totals_corners,Under,9.5,2.05
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,,alternate_totals_corners,Under,10.5,1.67
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,,alternate_totals_corners,Under,11.5,1.41
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,,alternate_totals_corners,Under,12.5,1.25
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,,btts,Yes,,1.48
+2026-10-30T16:15:19+00:00,late,Bundesliga,b275fe870ec88a9f0054c9220beb2673,2026-10-30T19:30:00Z,Elversberg,FSV Mainz 05,draftkings,,btts,No,,2.6
+2026-10-30T16:15:19+00:00,late,Ligue1,9a9f6c78276f74f15f42b013b033aa5d,2026-10-30T18:00:00Z,Le Havre,Paris Saint Germain,draftkings,2026-10-30T16:15:20Z,h2h,Le Havre,,9.0
+2026-10-30T16:15:19+00:00,late,Ligue1,9a9f6c78276f74f15f42b013b033aa5d,2026-10-30T18:00:00Z,Le Havre,Paris Saint Germain,draftkings,2026-10-30T16:15:20Z,h2h,Paris Saint Germain,,1.31
+2026-10-30T16:15:19+00:00,late,Ligue1,9a9f6c78276f74f15f42b013b033aa5d,2026-10-30T18:00:00Z,Le Havre,Paris Saint Germain,draftkings,2026-10-30T16:15:20Z,h2h,Draw,,5.75
+2026-10-30T16:15:19+00:00,late,Ligue1,a547720e6b4661d6319c4f11dbdf8e1f,2026-10-30T18:00:00Z,Nice,Rennes,draftkings,2026-10-30T16:15:20Z,h2h,Nice,,2.5
+2026-10-30T16:15:19+00:00,late,Ligue1,a547720e6b4661d6319c4f11dbdf8e1f,2026-10-30T18:00:00Z,Nice,Rennes,draftkings,2026-10-30T16:15:20Z,h2h,Rennes,,2.7
+2026-10-30T16:15:19+00:00,late,Ligue1,a547720e6b4661d6319c4f11dbdf8e1f,2026-10-30T18:00:00Z,Nice,Rennes,draftkings,2026-10-30T16:15:20Z,h2h,Draw,,3.6
+2026-10-30T16:15:19+00:00,late,Ligue1,7932d9a82dcdb164a3e4ef5e03694ee3,2026-10-30T20:05:00Z,Lille,RC Lens,draftkings,2026-10-30T16:15:20Z,h2h,Lille,,2.65
+2026-10-30T16:15:19+00:00,late,Ligue1,7932d9a82dcdb164a3e4ef5e03694ee3,2026-10-30T20:05:00Z,Lille,RC Lens,draftkings,2026-10-30T16:15:20Z,h2h,RC Lens,,2.7
+2026-10-30T16:15:19+00:00,late,Ligue1,7932d9a82dcdb164a3e4ef5e03694ee3,2026-10-30T20:05:00Z,Lille,RC Lens,draftkings,2026-10-30T16:15:20Z,h2h,Draw,,3.3
+2026-10-30T16:15:19+00:00,late,Ligue1,9a9f6c78276f74f15f42b013b033aa5d,2026-10-30T18:00:00Z,Le Havre,Paris Saint Germain,draftkings,,btts,Yes,,1.74
+2026-10-30T16:15:19+00:00,late,Ligue1,9a9f6c78276f74f15f42b013b033aa5d,2026-10-30T18:00:00Z,Le Havre,Paris Saint Germain,draftkings,,btts,No,,2.1
+2026-10-30T16:15:19+00:00,late,Ligue1,a547720e6b4661d6319c4f11dbdf8e1f,2026-10-30T18:00:00Z,Nice,Rennes,draftkings,,btts,Yes,,1.49
+2026-10-30T16:15:19+00:00,late,Ligue1,a547720e6b4661d6319c4f11dbdf8e1f,2026-10-30T18:00:00Z,Nice,Rennes,draftkings,,btts,No,,2.6
+2026-10-30T16:15:19+00:00,late,Ligue1,7932d9a82dcdb164a3e4ef5e03694ee3,2026-10-30T20:05:00Z,Lille,RC Lens,draftkings,,btts,Yes,,1.74
+2026-10-30T16:15:19+00:00,late,Ligue1,7932d9a82dcdb164a3e4ef5e03694ee3,2026-10-30T20:05:00Z,Lille,RC Lens,draftkings,,btts,No,,2.1

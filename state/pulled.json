@@ -11,6 +11,8 @@
   "commence": "2026-10-30T20:00:00Z",
   "comp": "LaLiga",
   "home": "Villarreal",
+  "late": "2026-10-30T16:15:19+00:00",
+  "side": "2026-10-30T16:15:19+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "01b17432a283eb27af86ae45602eb6dd": {
@@ -483,6 +485,8 @@
   "commence": "2026-10-30T20:05:00Z",
   "comp": "Ligue1",
   "home": "Lille",
+  "late": "2026-10-30T16:15:19+00:00",
+  "side": "2026-10-30T16:15:19+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "7df53f9af95d5a4e13b504882078dab8": {
@@ -611,6 +615,8 @@
   "commence": "2026-10-30T18:00:00Z",
   "comp": "Ligue1",
   "home": "Le Havre",
+  "late": "2026-10-30T16:15:19+00:00",
+  "side": "2026-10-30T16:15:19+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "9baaf4e48b041cfef04e70e42532502e": {
@@ -662,12 +668,12 @@
   "empty:btts:LaLiga": 0,
   "empty:btts:Ligue1": 0,
   "empty:btts:PL": 0,
-  "empty:spreads:Bundesliga": 0,
-  "empty:spreads:LaLiga": 1,
+  "empty:spreads:Bundesliga": 1,
+  "empty:spreads:LaLiga": 2,
   "empty:spreads:Ligue1": 1,
   "empty:spreads:PL": 0,
-  "empty:totals:Bundesliga": 0,
-  "empty:totals:LaLiga": 1,
+  "empty:totals:Bundesliga": 1,
+  "empty:totals:LaLiga": 2,
   "empty:totals:Ligue1": 1,
   "empty:totals:PL": 0,
   "none:spreads:Bundesliga": "2026-W43",
@@ -698,6 +704,8 @@
   "commence": "2026-10-31T16:15:00Z",
   "comp": "Ligue1",
   "home": "Nice",
+  "late": "2026-10-30T16:15:19+00:00",
+  "side": "2026-10-30T16:15:19+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "a6c06eabdf4e6710354b6098d39449e7": {
@@ -774,6 +782,8 @@
   "commence": "2026-10-30T19:30:00Z",
   "comp": "Bundesliga",
   "home": "Elversberg",
+  "late": "2026-10-30T16:15:19+00:00",
+  "side": "2026-10-30T16:15:19+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "b9254b648ca25ce7831988b53ed17c3c": {
