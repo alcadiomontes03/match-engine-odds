@@ -3510,3 +3510,78 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals_corners,Under,12.5,1.27
 2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,btts,Yes,,1.83
 2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,btts,No,,1.91
+2026-11-01T16:26:14+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,2026-11-01T16:25:41Z,h2h,Elche CF,,2.35
+2026-11-01T16:26:14+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,2026-11-01T16:25:41Z,h2h,Valencia,,3.15
+2026-11-01T16:26:14+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,2026-11-01T16:25:41Z,h2h,Draw,,3.3
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,2026-11-01T16:25:41Z,h2h,Athletic Bilbao,,2.0
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,2026-11-01T16:25:41Z,h2h,Real Sociedad,,3.7
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,2026-11-01T16:25:41Z,h2h,Draw,,3.6
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_spreads,Athletic Bilbao,-0.75,2.2
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_spreads,Athletic Bilbao,-0.5,1.91
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_spreads,Athletic Bilbao,-0.25,1.69
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_spreads,Athletic Bilbao,0.0,1.44
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_spreads,Real Sociedad,0.75,1.59
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_spreads,Real Sociedad,0.5,1.8
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_spreads,Real Sociedad,0.25,2.05
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_spreads,Real Sociedad,0.0,2.6
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals,Over,0.5,1.04
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals,Over,1.5,1.26
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals,Over,2.5,1.8
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals,Over,3.5,3.0
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals,Over,4.5,5.75
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals,Over,5.5,11.0
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals,Under,0.5,11.0
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals,Under,1.5,3.85
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals,Under,2.5,2.0
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals,Under,3.5,1.39
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals,Under,4.5,1.14
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals,Under,5.5,1.04
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals_corners,Over,7.5,1.24
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals_corners,Over,8.5,1.43
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals_corners,Over,9.5,1.71
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals_corners,Over,10.5,2.15
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals_corners,Over,11.5,2.8
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals_corners,Under,7.5,3.7
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals_corners,Under,8.5,2.65
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals_corners,Under,9.5,2.0
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals_corners,Under,10.5,1.62
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,alternate_totals_corners,Under,11.5,1.39
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,btts,Yes,,1.67
+2026-11-01T16:26:14+00:00,late,LaLiga,3757bcd765c7da1538cdf2785e784038,2026-11-01T20:00:00Z,Athletic Bilbao,Real Sociedad,draftkings,,btts,No,,2.15
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,2026-11-01T16:25:41Z,h2h,Marseille,,1.91
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,2026-11-01T16:25:41Z,h2h,Toulouse,,3.7
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,2026-11-01T16:25:41Z,h2h,Draw,,3.95
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_spreads,Marseille,-1.0,2.55
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_spreads,Marseille,-0.75,2.1
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_spreads,Marseille,-0.5,1.83
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_spreads,Marseille,-0.25,1.65
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_spreads,Toulouse,1.0,1.47
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_spreads,Toulouse,0.75,1.67
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_spreads,Toulouse,0.5,1.87
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_spreads,Toulouse,0.25,2.1
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals,Over,0.5,1.01
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals,Over,1.5,1.15
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals,Over,2.5,1.5
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals,Over,3.5,2.2
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals,Over,4.5,3.7
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals,Over,5.5,6.5
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals,Over,6.5,12.0
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals,Under,0.5,15.0
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals,Under,1.5,5.25
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals,Under,2.5,2.6
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals,Under,3.5,1.65
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals,Under,4.5,1.28
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals,Under,5.5,1.1
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals,Under,6.5,1.03
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals_corners,Over,7.5,1.36
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals_corners,Over,8.5,1.62
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals_corners,Over,9.5,2.05
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals_corners,Over,10.5,2.65
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals_corners,Over,11.5,3.55
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals_corners,Under,7.5,2.9
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals_corners,Under,8.5,2.15
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals_corners,Under,9.5,1.69
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals_corners,Under,10.5,1.43
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals_corners,Under,11.5,1.26
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,btts,Yes,,1.45
+2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,btts,No,,2.7

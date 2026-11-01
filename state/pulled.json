@@ -55,16 +55,6 @@
   "side": "2026-10-24T09:43:47+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
- "096d800bcc95c547ef592cbef624d080": {
-  "away": "SC Freiburg",
-  "commence": "2026-10-18T13:30:00Z",
-  "comp": "Bundesliga",
-  "home": "Bayer Leverkusen",
-  "late": "2026-10-18T13:18:57+00:00",
-  "late_final": true,
-  "side": "2026-10-18T09:07:28+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
- },
  "0bbce95e5764e706e6c428bb52dc5536": {
   "away": "Troyes",
   "commence": "2026-10-24T15:15:00Z",
@@ -135,15 +125,6 @@
   "side": "2026-10-31T12:32:17+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
- "1f566f17c50fe5162724ec2863d2207b": {
-  "away": "Real Racing Club de Santander",
-  "commence": "2026-10-18T12:00:00Z",
-  "comp": "LaLiga",
-  "home": "CA Osasuna",
-  "late": "2026-10-18T04:35:54+00:00",
-  "side": "2026-10-18T04:35:54+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
- },
  "2013e3955186ebe5258e85eb741a7553": {
   "away": "Real Betis",
   "commence": "2026-10-25T15:15:00Z",
@@ -161,15 +142,6 @@
   "late": "2026-10-31T12:32:17+00:00",
   "side": "2026-10-31T12:32:17+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
- },
- "27f7222d2abde93fc6e8d17b5b05b272": {
-  "away": "Rennes",
-  "commence": "2026-10-18T15:15:00Z",
-  "comp": "Ligue1",
-  "home": "Paris FC",
-  "late": "2026-10-18T09:07:28+00:00",
-  "side": "2026-10-18T09:07:28+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
  },
  "290ba8cd3f3a2e9252effca673bf5549": {
   "away": "Brighton and Hove Albion",
@@ -230,6 +202,8 @@
   "commence": "2026-11-01T20:00:00Z",
   "comp": "LaLiga",
   "home": "Athletic Bilbao",
+  "late": "2026-11-01T16:26:14+00:00",
+  "side": "2026-11-01T16:26:14+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "3966f2fe1c2f73bfa12e61db83bd0bf9": {
@@ -301,18 +275,10 @@
   "commence": "2026-11-01T17:30:00Z",
   "comp": "LaLiga",
   "home": "Elche CF",
-  "late": "2026-11-01T09:45:27+00:00",
+  "late": "2026-11-01T16:26:14+00:00",
+  "late_final": true,
   "side": "2026-11-01T09:45:27+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
- },
- "53f5fe7ed0ba0fbf6345c73270e4cd00": {
-  "away": "AS Monaco",
-  "commence": "2026-10-18T15:15:00Z",
-  "comp": "Ligue1",
-  "home": "Lorient",
-  "late": "2026-10-18T09:07:28+00:00",
-  "side": "2026-10-18T09:07:28+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
  },
  "5960b1b6c20acfd78e78764fed47d505": {
   "away": "Espanyol",
@@ -350,15 +316,6 @@
   "late": "2026-10-31T06:10:05+00:00",
   "side": "2026-10-31T06:10:05+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
- },
- "676b3b0b609e9cf565da450786618d26": {
-  "away": "Manchester United",
-  "commence": "2026-10-18T13:00:00Z",
-  "comp": "PL",
-  "home": "Leeds United",
-  "late": "2026-10-18T09:07:28+00:00",
-  "side": "2026-10-18T09:07:28+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
  },
  "69493b5ebb84f24ab1d6023a30ee89f0": {
   "away": "Brentford",
@@ -561,15 +518,6 @@
   "side": "2026-10-25T06:54:42+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
- "9fc08b390a49c4434f7cf631a0bb88fb": {
-  "away": "Crystal Palace",
-  "commence": "2026-10-18T13:00:00Z",
-  "comp": "PL",
-  "home": "Brighton and Hove Albion",
-  "late": "2026-10-18T09:07:28+00:00",
-  "side": "2026-10-18T09:07:28+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
- },
  "_meta": {
   "btts_empty:Bundesliga": 0,
   "btts_empty:LaLiga": 0,
@@ -649,16 +597,6 @@
   "side": "2026-10-31T12:32:17+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
- "aabe899ecc4c19a1fafe5440151b62e4": {
-  "away": "Alav\u00e9s",
-  "commence": "2026-10-18T14:15:00Z",
-  "comp": "LaLiga",
-  "home": "Celta Vigo",
-  "late": "2026-10-18T13:18:57+00:00",
-  "late_final": true,
-  "side": "2026-10-18T09:07:28+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
- },
  "aca5dd297dbee71f576f7641569fe578": {
   "away": "Manchester City",
   "commence": "2026-10-24T11:30:00Z",
@@ -721,15 +659,6 @@
   "home": "Lorient",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
- "c7a60aa94470fe959fbf6b0c68060fc1": {
-  "away": "Marseille",
-  "commence": "2026-10-18T13:00:00Z",
-  "comp": "Ligue1",
-  "home": "Angers",
-  "late": "2026-10-18T09:07:28+00:00",
-  "side": "2026-10-18T09:07:28+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
- },
  "cf3a2e2b4a4e9815d1d0be8dcef916da": {
   "away": "AS Monaco",
   "commence": "2026-11-01T16:15:00Z",
@@ -766,15 +695,6 @@
   "side": "2026-10-23T15:22:31+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
- "d637845b9760bb02b55bbbaa32b5c21e": {
-  "away": "Auxerre",
-  "commence": "2026-10-18T15:15:00Z",
-  "comp": "Ligue1",
-  "home": "Le Havre",
-  "late": "2026-10-18T09:07:28+00:00",
-  "side": "2026-10-18T09:07:28+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
- },
  "ddcc9a51a2d7368e055d1abefacdb74e": {
   "away": "Sevilla",
   "commence": "2026-11-01T13:00:00Z",
@@ -789,16 +709,9 @@
   "commence": "2026-11-01T19:45:00Z",
   "comp": "Ligue1",
   "home": "Marseille",
+  "late": "2026-11-01T16:26:14+00:00",
+  "side": "2026-11-01T16:26:14+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
- },
- "dfd5d6648be46426e418801584d46a68": {
-  "away": "Sunderland",
-  "commence": "2026-10-18T13:00:00Z",
-  "comp": "PL",
-  "home": "Bournemouth",
-  "late": "2026-10-18T09:07:28+00:00",
-  "side": "2026-10-18T09:07:28+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
  },
  "e82f6b60fa41b82c8510f5b67ce61849": {
   "away": "Leeds United",
@@ -837,15 +750,6 @@
   "side": "2026-10-24T09:43:47+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
- "f696a248965373d9071dc0662e5c58a8": {
-  "away": "Arsenal",
-  "commence": "2026-10-18T15:30:00Z",
-  "comp": "PL",
-  "home": "Nottingham Forest",
-  "late": "2026-10-18T09:07:28+00:00",
-  "side": "2026-10-18T09:07:28+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
- },
  "fc6c50376190b578cfeb38c029db8487": {
   "away": "Paris FC",
   "commence": "2026-10-24T18:45:00Z",
@@ -863,15 +767,6 @@
   "late": "2026-10-25T12:23:24+00:00",
   "side": "2026-10-25T12:23:24+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
- },
- "fd9b8c185737a15615aa0c9daaa3dfbf": {
-  "away": "TSG Hoffenheim",
-  "commence": "2026-10-18T15:30:00Z",
-  "comp": "Bundesliga",
-  "home": "Borussia Monchengladbach",
-  "late": "2026-10-18T09:07:28+00:00",
-  "side": "2026-10-18T09:07:28+00:00",
-  "weekly": "2026-10-15T04:46:07+00:00"
  },
  "fe235b26408c477368c40672a4488694": {
   "away": "Newcastle United",
