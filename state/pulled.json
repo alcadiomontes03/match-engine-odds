@@ -122,6 +122,8 @@
   "commence": "2026-11-01T16:30:00Z",
   "comp": "Bundesliga",
   "home": "Eintracht Frankfurt",
+  "late": "2026-11-01T09:45:27+00:00",
+  "side": "2026-11-01T09:45:27+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "1ec76c009147b63859f68c6b5a1dd77b": {
@@ -263,6 +265,8 @@
   "commence": "2026-11-01T14:00:00Z",
   "comp": "Ligue1",
   "home": "Strasbourg",
+  "late": "2026-11-01T09:45:27+00:00",
+  "side": "2026-11-01T09:45:27+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "471f891b1f6516a864ad94c8eb649f5e": {
@@ -297,6 +301,8 @@
   "commence": "2026-11-01T17:30:00Z",
   "comp": "LaLiga",
   "home": "Elche CF",
+  "late": "2026-11-01T09:45:27+00:00",
+  "side": "2026-11-01T09:45:27+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "53f5fe7ed0ba0fbf6345c73270e4cd00": {
@@ -323,6 +329,8 @@
   "commence": "2026-11-01T14:30:00Z",
   "comp": "Bundesliga",
   "home": "Union Berlin",
+  "late": "2026-11-01T09:45:27+00:00",
+  "side": "2026-11-01T09:45:27+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "640c52a86289f35698261b41987dd71e": {
@@ -366,6 +374,8 @@
   "commence": "2026-11-01T16:30:00Z",
   "comp": "PL",
   "home": "Liverpool",
+  "late": "2026-11-01T09:45:27+00:00",
+  "side": "2026-11-01T09:45:27+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "6c520ed959578ca3aebe351ee3765d53": {
@@ -373,6 +383,8 @@
   "commence": "2026-11-01T15:15:00Z",
   "comp": "LaLiga",
   "home": "Real Racing Club de Santander",
+  "late": "2026-11-01T09:45:27+00:00",
+  "side": "2026-11-01T09:45:27+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "70df1835c3b5ddff1c99e0189532136b": {
@@ -508,6 +520,8 @@
   "commence": "2026-10-31T19:45:00Z",
   "comp": "Ligue1",
   "home": "Lyon",
+  "late": "2026-11-01T09:45:27+00:00",
+  "side": "2026-11-01T09:45:27+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "983440c6e348b558c6a3e10e2061ba55": {
@@ -577,21 +591,21 @@
   "empty:btts:LaLiga": 0,
   "empty:btts:Ligue1": 0,
   "empty:btts:PL": 0,
-  "empty:spreads:Bundesliga": 1,
-  "empty:spreads:LaLiga": 2,
-  "empty:spreads:Ligue1": 1,
-  "empty:spreads:PL": 0,
-  "empty:totals:Bundesliga": 1,
-  "empty:totals:LaLiga": 2,
-  "empty:totals:Ligue1": 1,
-  "empty:totals:PL": 0,
-  "none:spreads:Bundesliga": "2026-W43",
-  "none:spreads:LaLiga": "2026-W43",
-  "none:spreads:Ligue1": "2026-W43",
+  "empty:spreads:Bundesliga": 0,
+  "empty:spreads:LaLiga": 0,
+  "empty:spreads:Ligue1": 0,
+  "empty:spreads:PL": 1,
+  "empty:totals:Bundesliga": 0,
+  "empty:totals:LaLiga": 0,
+  "empty:totals:Ligue1": 0,
+  "empty:totals:PL": 1,
+  "none:spreads:Bundesliga": "2026-W44",
+  "none:spreads:LaLiga": "2026-W44",
+  "none:spreads:Ligue1": "2026-W44",
   "none:spreads:PL": "2026-W43",
-  "none:totals:Bundesliga": "2026-W43",
-  "none:totals:LaLiga": "2026-W43",
-  "none:totals:Ligue1": "2026-W43",
+  "none:totals:Bundesliga": "2026-W44",
+  "none:totals:LaLiga": "2026-W44",
+  "none:totals:Ligue1": "2026-W44",
   "none:totals:PL": "2026-W43",
   "weekly:Bundesliga": "2026-W44",
   "weekly:Championship": "2026-W39",
@@ -721,6 +735,8 @@
   "commence": "2026-11-01T16:15:00Z",
   "comp": "Ligue1",
   "home": "Paris FC",
+  "late": "2026-11-01T09:45:27+00:00",
+  "side": "2026-11-01T09:45:27+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "d0202960708a442401d7fc7bd74a0183": {
@@ -764,6 +780,8 @@
   "commence": "2026-11-01T13:00:00Z",
   "comp": "LaLiga",
   "home": "Getafe",
+  "late": "2026-11-01T09:45:27+00:00",
+  "side": "2026-11-01T09:45:27+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
  "df1e1589c51bbcac432125567d1f7c58": {

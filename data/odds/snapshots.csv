@@ -3189,3 +3189,324 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-10-31T17:19:58+00:00,late,Bundesliga,bad7337b335a16859b1db6b8e6cf6ca5,2026-10-31T17:30:00Z,Bayern Munich,Borussia Dortmund,draftkings,2026-10-31T17:19:36Z,h2h,Bayern Munich,,1.32
 2026-10-31T17:19:58+00:00,late,Bundesliga,bad7337b335a16859b1db6b8e6cf6ca5,2026-10-31T17:30:00Z,Bayern Munich,Borussia Dortmund,draftkings,2026-10-31T17:19:36Z,h2h,Borussia Dortmund,,7.0
 2026-10-31T17:19:58+00:00,late,Bundesliga,bad7337b335a16859b1db6b8e6cf6ca5,2026-10-31T17:30:00Z,Bayern Munich,Borussia Dortmund,draftkings,2026-10-31T17:19:36Z,h2h,Draw,,5.5
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,2026-11-01T09:44:57Z,h2h,Arsenal,,2.55
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,2026-11-01T09:44:57Z,h2h,Liverpool,,2.85
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,2026-11-01T09:44:57Z,h2h,Draw,,3.3
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_spreads,Arsenal,0.25,1.54
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_spreads,Arsenal,0.0,1.77
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_spreads,Arsenal,-0.25,2.05
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_spreads,Arsenal,-0.5,2.4
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_spreads,Liverpool,-0.25,2.3
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_spreads,Liverpool,0.0,1.95
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_spreads,Liverpool,0.25,1.67
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_spreads,Liverpool,0.5,1.51
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals,Over,0.5,1.06
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals,Over,1.5,1.31
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals,Over,2.5,1.91
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals,Over,3.5,3.3
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals,Over,4.5,6.5
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals,Over,5.5,13.0
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals,Under,0.5,10.0
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals,Under,1.5,3.5
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals,Under,2.5,1.87
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals,Under,3.5,1.34
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals,Under,4.5,1.11
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals,Under,5.5,1.03
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals_corners,Over,7.5,1.25
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals_corners,Over,8.5,1.44
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals_corners,Over,9.5,1.74
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals_corners,Over,10.5,2.15
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals_corners,Over,11.5,2.85
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals_corners,Under,7.5,3.6
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals_corners,Under,8.5,2.6
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals_corners,Under,9.5,2.0
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals_corners,Under,10.5,1.62
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,alternate_totals_corners,Under,11.5,1.38
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,btts,Yes,,1.71
+2026-11-01T09:45:27+00:00,late,PL,6a3819cdbe2ba2fe5a3d8f9b4b459965,2026-11-01T16:30:00Z,Liverpool,Arsenal,draftkings,,btts,No,,2.1
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,2026-11-01T09:44:17Z,h2h,Getafe,,3.4
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,2026-11-01T09:44:17Z,h2h,Sevilla,,2.4
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,2026-11-01T09:44:17Z,h2h,Draw,,3.0
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,2026-11-01T09:44:17Z,h2h,Real Madrid,,1.22
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,2026-11-01T09:44:17Z,h2h,Real Racing Club de Santander,,10.5
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,2026-11-01T09:44:17Z,h2h,Draw,,7.5
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,2026-11-01T09:44:17Z,h2h,Elche CF,,2.35
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,2026-11-01T09:44:17Z,h2h,Valencia,,3.1
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,2026-11-01T09:44:17Z,h2h,Draw,,3.3
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_spreads,Getafe,-0.25,2.65
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_spreads,Getafe,0.0,2.2
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_spreads,Getafe,0.25,1.77
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_spreads,Getafe,0.5,1.57
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_spreads,Sevilla,0.25,1.42
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_spreads,Sevilla,0.0,1.59
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_spreads,Sevilla,-0.25,1.95
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_spreads,Sevilla,-0.5,2.25
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals,Over,0.5,1.11
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals,Over,1.5,1.54
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals,Over,2.5,2.65
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals,Over,3.5,5.0
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals,Over,4.5,10.5
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals,Under,0.5,6.5
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals,Under,1.5,2.45
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals,Under,2.5,1.49
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals,Under,3.5,1.17
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals,Under,4.5,1.04
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals_corners,Over,6.5,1.25
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals_corners,Over,7.5,1.45
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals_corners,Over,8.5,1.77
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals_corners,Over,9.5,2.3
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals_corners,Over,10.5,3.1
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals_corners,Under,6.5,3.65
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals_corners,Under,7.5,2.55
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals_corners,Under,8.5,1.91
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals_corners,Under,9.5,1.54
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,alternate_totals_corners,Under,10.5,1.32
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,btts,Yes,,2.1
+2026-11-01T09:45:27+00:00,late,LaLiga,ddcc9a51a2d7368e055d1abefacdb74e,2026-11-01T13:00:00Z,Getafe,Sevilla,draftkings,,btts,No,,1.71
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_spreads,Real Madrid,-1.75,1.69
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_spreads,Real Madrid,-2.0,1.83
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_spreads,Real Madrid,-2.25,2.05
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_spreads,Real Madrid,-2.5,2.25
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_spreads,Real Racing Club de Santander,1.75,2.05
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_spreads,Real Racing Club de Santander,2.0,1.87
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_spreads,Real Racing Club de Santander,2.25,1.69
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_spreads,Real Racing Club de Santander,2.5,1.57
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals,Over,1.5,1.06
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals,Over,2.5,1.21
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals,Over,3.5,1.57
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals,Over,4.5,2.25
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals,Over,5.5,3.6
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals,Over,6.5,6.0
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals,Over,7.5,11.0
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals,Under,1.5,9.5
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals,Under,2.5,4.4
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals,Under,3.5,2.4
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals,Under,4.5,1.65
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals,Under,5.5,1.29
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals,Under,6.5,1.12
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals,Under,7.5,1.04
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals_corners,Over,9.5,1.43
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals_corners,Over,10.5,1.69
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals_corners,Over,11.5,2.1
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals_corners,Over,12.5,2.65
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals_corners,Over,13.5,3.5
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals_corners,Under,9.5,2.65
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals_corners,Under,10.5,2.05
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals_corners,Under,11.5,1.67
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals_corners,Under,12.5,1.43
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,alternate_totals_corners,Under,13.5,1.26
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,btts,Yes,,1.53
+2026-11-01T09:45:27+00:00,late,LaLiga,6c520ed959578ca3aebe351ee3765d53,2026-11-01T15:15:00Z,Real Racing Club de Santander,Real Madrid,draftkings,,btts,No,,2.5
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_spreads,Elche CF,-0.5,2.2
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_spreads,Elche CF,-0.25,1.95
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_spreads,Elche CF,0.0,1.65
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_spreads,Elche CF,0.25,1.48
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_spreads,Valencia,0.5,1.59
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_spreads,Valencia,0.25,1.77
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_spreads,Valencia,0.0,2.1
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_spreads,Valencia,-0.25,2.5
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals,Over,0.5,1.06
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals,Over,1.5,1.32
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals,Over,2.5,1.95
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals,Over,3.5,3.4
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals,Over,4.5,6.5
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals,Over,5.5,13.0
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals,Under,0.5,9.5
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals,Under,1.5,3.4
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals,Under,2.5,1.87
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals,Under,3.5,1.32
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals,Under,4.5,1.11
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals,Under,5.5,1.03
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals_corners,Over,7.5,1.34
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals_corners,Over,8.5,1.61
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals_corners,Over,9.5,2.0
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals_corners,Over,10.5,2.65
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals_corners,Over,11.5,3.45
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals_corners,Under,7.5,3.0
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals_corners,Under,8.5,2.2
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals_corners,Under,9.5,1.74
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals_corners,Under,10.5,1.42
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,alternate_totals_corners,Under,11.5,1.27
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,btts,Yes,,1.71
+2026-11-01T09:45:27+00:00,late,LaLiga,5262991e389930615bec34b642428c93,2026-11-01T17:30:00Z,Elche CF,Valencia,draftkings,,btts,No,,2.1
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,2026-11-01T09:45:21Z,h2h,1. FC Köln,,2.5
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,2026-11-01T09:45:21Z,h2h,Union Berlin,,2.6
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,2026-11-01T09:45:21Z,h2h,Draw,,3.45
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,2026-11-01T09:45:21Z,h2h,Eintracht Frankfurt,,1.51
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,2026-11-01T09:45:21Z,h2h,Hamburger SV,,5.0
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,2026-11-01T09:45:21Z,h2h,Draw,,4.4
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_spreads,1. FC Köln,0.25,1.65
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_spreads,1. FC Köln,0.0,1.87
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_spreads,1. FC Köln,-0.25,2.2
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_spreads,1. FC Köln,-0.5,2.5
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_spreads,Union Berlin,-0.25,2.3
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_spreads,Union Berlin,0.0,1.95
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_spreads,Union Berlin,0.25,1.69
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_spreads,Union Berlin,0.5,1.54
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals,Over,0.5,1.03
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals,Over,1.5,1.22
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals,Over,2.5,1.69
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals,Over,3.5,2.65
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals,Over,4.5,4.9
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals,Over,5.5,9.0
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals,Over,6.5,16.0
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals,Under,0.5,12.0
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals,Under,1.5,4.2
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals,Under,2.5,2.15
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals,Under,3.5,1.47
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals,Under,4.5,1.17
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals,Under,5.5,1.06
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals,Under,6.5,1.0
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals_corners,Over,7.5,1.26
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals_corners,Over,8.5,1.47
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals_corners,Over,9.5,1.77
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals_corners,Over,10.5,2.25
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals_corners,Over,11.5,2.95
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals_corners,Under,7.5,3.5
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals_corners,Under,8.5,2.5
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals_corners,Under,9.5,1.95
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals_corners,Under,10.5,1.59
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,alternate_totals_corners,Under,11.5,1.36
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,btts,Yes,,1.56
+2026-11-01T09:45:27+00:00,late,Bundesliga,60eaeb599578cd5c951f917c4fef06ff,2026-11-01T14:30:00Z,Union Berlin,1. FC Köln,draftkings,,btts,No,,2.4
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_spreads,Eintracht Frankfurt,-1.5,2.35
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_spreads,Eintracht Frankfurt,-1.25,2.1
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_spreads,Eintracht Frankfurt,-1.0,1.83
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_spreads,Eintracht Frankfurt,-0.75,1.65
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_spreads,Hamburger SV,1.5,1.61
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_spreads,Hamburger SV,1.25,1.77
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_spreads,Hamburger SV,1.0,2.0
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_spreads,Hamburger SV,0.75,2.25
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals,Over,1.5,1.11
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals,Over,2.5,1.41
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals,Over,3.5,2.0
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals,Over,4.5,3.25
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals,Over,5.5,5.75
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals,Over,6.5,10.5
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals,Under,1.5,6.0
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals,Under,2.5,2.9
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals,Under,3.5,1.8
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals,Under,4.5,1.34
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals,Under,5.5,1.13
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals,Under,6.5,1.04
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals_corners,Over,7.5,1.26
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals_corners,Over,8.5,1.47
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals_corners,Over,9.5,1.74
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals_corners,Over,10.5,2.25
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals_corners,Over,11.5,2.85
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals_corners,Under,7.5,3.5
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals_corners,Under,8.5,2.5
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals_corners,Under,9.5,1.95
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals_corners,Under,10.5,1.57
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,alternate_totals_corners,Under,11.5,1.37
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,btts,Yes,,1.49
+2026-11-01T09:45:27+00:00,late,Bundesliga,1eb5e1a69ae9dd9edd92fde344308a4e,2026-11-01T16:30:00Z,Eintracht Frankfurt,Hamburger SV,draftkings,,btts,No,,2.6
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,2026-11-01T09:43:30Z,h2h,Auxerre,,3.95
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,2026-11-01T09:43:30Z,h2h,Strasbourg,,1.83
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,2026-11-01T09:43:30Z,h2h,Draw,,4.0
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,2026-11-01T09:43:30Z,h2h,AS Monaco,,2.8
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,2026-11-01T09:43:30Z,h2h,Paris FC,,2.45
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,2026-11-01T09:43:30Z,h2h,Draw,,3.5
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,2026-11-01T09:43:30Z,h2h,Angers,,7.0
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,2026-11-01T09:43:30Z,h2h,Lyon,,1.41
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,2026-11-01T09:43:30Z,h2h,Draw,,5.0
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_spreads,Auxerre,1.0,1.51
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_spreads,Auxerre,0.75,1.71
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_spreads,Auxerre,0.5,1.95
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_spreads,Auxerre,0.25,2.25
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_spreads,Strasbourg,-1.0,2.4
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_spreads,Strasbourg,-0.75,2.0
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_spreads,Strasbourg,-0.5,1.77
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_spreads,Strasbourg,-0.25,1.57
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals,Over,0.5,1.02
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals,Over,1.5,1.18
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals,Over,2.5,1.57
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals,Over,3.5,2.4
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals,Over,4.5,4.2
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals,Over,5.5,8.0
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals,Over,6.5,14.0
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals,Under,0.5,14.0
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals,Under,1.5,4.8
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals,Under,2.5,2.35
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals,Under,3.5,1.56
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals,Under,4.5,1.22
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals,Under,5.5,1.07
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals,Under,6.5,1.01
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals_corners,Over,7.5,1.29
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals_corners,Over,8.5,1.5
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals_corners,Over,9.5,1.83
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals_corners,Over,10.5,2.35
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals_corners,Over,11.5,3.1
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals_corners,Under,7.5,3.35
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals_corners,Under,8.5,2.4
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals_corners,Under,9.5,1.87
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals_corners,Under,10.5,1.53
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,alternate_totals_corners,Under,11.5,1.32
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,btts,Yes,,1.53
+2026-11-01T09:45:27+00:00,late,Ligue1,448a1083448ea9dff55bfebf15ff20b4,2026-11-01T14:00:00Z,Strasbourg,Auxerre,draftkings,,btts,No,,2.5
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_spreads,AS Monaco,0.5,1.54
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_spreads,AS Monaco,0.25,1.69
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_spreads,AS Monaco,0.0,1.95
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_spreads,AS Monaco,-0.25,2.3
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_spreads,Paris FC,-0.5,2.35
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_spreads,Paris FC,-0.25,2.05
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_spreads,Paris FC,0.0,1.77
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_spreads,Paris FC,0.25,1.56
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals,Over,0.5,1.03
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals,Over,1.5,1.26
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals,Over,2.5,1.77
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals,Over,3.5,2.9
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals,Over,4.5,5.5
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals,Over,5.5,10.5
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals,Under,0.5,11.0
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals,Under,1.5,3.9
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals,Under,2.5,2.05
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals,Under,3.5,1.41
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals,Under,4.5,1.14
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals,Under,5.5,1.04
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals_corners,Over,7.5,1.34
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals_corners,Over,8.5,1.61
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals_corners,Over,9.5,2.0
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals_corners,Over,10.5,2.6
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals_corners,Over,11.5,3.5
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals_corners,Under,7.5,3.0
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals_corners,Under,8.5,2.2
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals_corners,Under,9.5,1.71
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals_corners,Under,10.5,1.44
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,alternate_totals_corners,Under,11.5,1.26
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,btts,Yes,,1.62
+2026-11-01T09:45:27+00:00,late,Ligue1,cf3a2e2b4a4e9815d1d0be8dcef916da,2026-11-01T16:15:00Z,Paris FC,AS Monaco,draftkings,,btts,No,,2.25
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_spreads,Angers,1.75,1.51
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_spreads,Angers,1.5,1.69
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_spreads,Angers,1.25,1.87
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_spreads,Angers,1.0,2.2
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_spreads,Lyon,-1.75,2.4
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_spreads,Lyon,-1.5,2.05
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_spreads,Lyon,-1.25,1.83
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_spreads,Lyon,-1.0,1.59
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals,Over,0.5,1.02
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals,Over,1.5,1.2
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals,Over,2.5,1.62
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals,Over,3.5,2.55
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals,Over,4.5,4.6
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals,Over,5.5,8.5
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals,Over,6.5,16.0
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals,Under,0.5,14.0
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals,Under,1.5,4.5
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals,Under,2.5,2.25
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals,Under,3.5,1.5
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals,Under,4.5,1.19
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals,Under,5.5,1.06
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals,Under,6.5,1.01
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals_corners,Over,8.5,1.39
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals_corners,Over,9.5,1.65
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals_corners,Over,10.5,2.0
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals_corners,Over,11.5,2.6
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals_corners,Over,12.5,3.4
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals_corners,Under,8.5,2.8
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals_corners,Under,9.5,2.1
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals_corners,Under,10.5,1.71
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals_corners,Under,11.5,1.44
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,alternate_totals_corners,Under,12.5,1.27
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,btts,Yes,,1.83
+2026-11-01T09:45:27+00:00,late,Ligue1,961df571fad52d969150e9ced52b16f7,2026-11-01T16:15:00Z,Lyon,Angers,draftkings,,btts,No,,1.91

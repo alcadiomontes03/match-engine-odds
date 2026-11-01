@@ -235,3 +235,16 @@ utc,note,remaining,used,last_cost
 2026-10-31T17:19:58+00:00,PL late x1,101,399,1
 2026-10-31T17:19:58+00:00,LaLiga late x1,100,400,1
 2026-10-31T17:19:58+00:00,Bundesliga late x1,99,401,1
+2026-11-01T09:45:27+00:00,PL late x1,499,1,1
+2026-11-01T09:45:28+00:00,PL side x1 alternate_spreads+alternate_totals+alternate_totals_corners+btts,495,5,4
+2026-11-01T09:45:28+00:00,LaLiga late x3,494,6,1
+2026-11-01T09:45:28+00:00,LaLiga side x1 alternate_spreads+alternate_totals+alternate_totals_corners+btts,490,10,4
+2026-11-01T09:45:28+00:00,LaLiga side x1 alternate_spreads+alternate_totals+alternate_totals_corners+btts,486,14,4
+2026-11-01T09:45:28+00:00,LaLiga side x1 alternate_spreads+alternate_totals+alternate_totals_corners+btts,482,18,4
+2026-11-01T09:45:29+00:00,Bundesliga late x2,481,19,1
+2026-11-01T09:45:29+00:00,Bundesliga side x1 alternate_spreads+alternate_totals+alternate_totals_corners+btts,477,23,4
+2026-11-01T09:45:29+00:00,Bundesliga side x1 alternate_spreads+alternate_totals+alternate_totals_corners+btts,473,27,4
+2026-11-01T09:45:29+00:00,Ligue1 late x3,472,28,1
+2026-11-01T09:45:30+00:00,Ligue1 side x1 alternate_spreads+alternate_totals+alternate_totals_corners+btts,468,32,4
+2026-11-01T09:45:30+00:00,Ligue1 side x1 alternate_spreads+alternate_totals+alternate_totals_corners+btts,464,36,4
+2026-11-01T09:45:30+00:00,Ligue1 side x1 alternate_spreads+alternate_totals+alternate_totals_corners+btts,460,40,4
