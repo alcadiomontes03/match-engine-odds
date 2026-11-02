@@ -57,6 +57,44 @@ def fit_league(db: Path, code: str, asof: str, cfg: dict):
     return df, r, k, {"n_matches": n, "n_extra": int(len(ex)), "fd_last": str(fd_last.date())}
 
 
+LIVE_SINCE = "2026-10-09"   # first week the dashboard tracked all four leagues
+
+
+def live_validation(db, code):
+    """Live 1X2 Brier (sum over home/draw/away) on settled dashboard predictions since LIVE_SINCE: the
+    locked prediction's x1x2 vs its market_devig (DraftKings, de-vigged). Replaces the frozen early-season
+    validation block the dashboard tile read (2026-11-02). None if predictions weren't exported."""
+    import glob as _g, json as _j
+    from pathlib import Path as _P
+    db = _P(db)
+    if not (db / "predictions").exists():
+        return None
+    def load(c):
+        out = {}
+        for f in _g.glob(str(db / c / "*.json")):
+            d = _j.loads(_P(f).read_text())
+            out[_P(f).stem] = d["data"] if isinstance(d, dict) and "data" in d and "id" not in d else d
+        return out
+    fx, res, pr = load("fixtures"), load("results"), load("predictions")
+    n = bm = bk = 0
+    for fid, f in fx.items():
+        r, p = res.get(fid), pr.get(fid)
+        if f.get("league") != code or not r or "home_score" not in r or not p or f.get("status") == "postponed":
+            continue
+        if str(f.get("kickoff", ""))[:10] < LIVE_SINCE:
+            continue
+        x, m = p.get("x1x2") or {}, p.get("market_devig") or {}
+        if not all(k in x for k in ("home", "draw", "away")) or not all(m.get(k) for k in ("home", "draw", "away")):
+            continue
+        hs, as_ = int(r["home_score"]), int(r["away_score"])
+        y = {"home": float(hs > as_), "draw": float(hs == as_), "away": float(as_ > hs)}
+        bm += sum((float(x[k]) - y[k]) ** 2 for k in y); bk += sum((float(m[k]) - y[k]) ** 2 for k in y); n += 1
+    if not n:
+        return None
+    return {"n_evaluated": n, "model_brier_mean": bm / n, "market_brier_mean": bk / n,
+            "brier_source": f"live: locked dashboard predictions vs DraftKings de-vigged, settled since {LIVE_SINCE}"}
+
+
 def checks(df, r, k, prev_att, prev_def, upcoming):
     """Guard rails before anything is written to the dashboard. Returns (ok, list of (check, ok, detail))."""
     out = []
@@ -123,6 +161,9 @@ def refit(db: Path, asof: str) -> int:
         lg = dict(leagues[code])
         lg.update(home_adv=round(r["home_adv"], 6), rho=round(r["rho"], 6), ratings_as_of=asof, ratings_model=MODEL,
                   n_matches_fit=meta["n_matches"], blend_weight=0)
+        lv = live_validation(db, code)
+        if lv:
+            lg["validation"] = dict(lg.get("validation") or {}, **lv)
         leagues[code] = lg
     now = pd.Timestamp.now("UTC").isoformat(timespec="seconds")
     passed = [c for c in C.LEAGUES if report[c]["ok"]]
