@@ -1,7 +1,16 @@
-understat league page: ERROR URLError in 10.0s: <urlopen error [Errno -3] Temporary failure in name resolution>
-understat getLeagueData: ERROR URLError in 7.5s: <urlopen error [Errno -3] Temporary failure in name resolution>
-understat home: ERROR URLError in 10.0s: <urlopen error [Errno -3] Temporary failure in name resolution>
-fbref EPL schedule: HTTP 403 in 0.1s, b'<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal'
-fotmob api leagues: HTTP 404 in 0.2s, b'<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charSet="utf-8" data-next-head=""/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" data-next-head=""/><meta name="apple-itunes-app" content="app-id=488575683" data-next-head=""/><link rel="alternate" href="'
-sofascore api: HTTP 403 in 0.1s, b'{"error": {"code": 403, "reason": "Forbidden" }}'
-github raw (control): HTTP 200 in 0.1s, 3616 chars, datesData=False, starts: '# Match Engine — odds capture\n\nScheduled DraftKings odds capture from The Odds API (free tier, 500 credits a month) for the\nPremier League, La Liga, Bundesliga '
+resolv.conf: nameserver 127.0.0.53
+options edns0 trust-ad
+search g2xnvu14p3yupkciq4roi0ttka.qrox.internal.cloudapp.net
+dig understat.com : ;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+dig www.understat.com : ;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+dig understat.com @1.1.1.1: 
+dig www.understat.com @1.1.1.1: 
+dig understat.com @8.8.8.8: ;; communications error to 8.8.8.8#53: timed out
+dig www.understat.com @8.8.8.8: ;; communications error to 8.8.8.8#53: timed out
+;; communications error to 8.8.8.8#53: timed out
+;; communications error to 8.8.8.8#53: timed out
+;; no servers could be reached
+dns.google DoH: {"Status": 2, "TC": false, "RD": true, "RA": true, "AD": false, "CD": false, "Question": [{"name": "understat.com.", "type": 1}], "Comment": "Name servers did not respond [ns2.beget.pro.(185.50.27.12), ns1.beget.pro.(93.92.81.0), ns2.beget.ru.(185.50.27.12), ns2.beget.ru.(93.92.81.0), 185.50.27.12, 93.92.81.0, 5.101.159.11, 194.113.245.0, 5.101.159.11, 185.50.27.12, 93.92.81.0, 194.113.245.0, ns2.
+curl www: 000 0grep: /tmp/w.html: No such file or directory
