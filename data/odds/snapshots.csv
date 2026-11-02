@@ -3585,3 +3585,80 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,alternate_totals_corners,Under,11.5,1.26
 2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,btts,Yes,,1.45
 2026-11-01T16:26:14+00:00,late,Ligue1,df1e1589c51bbcac432125567d1f7c58,2026-11-01T19:45:00Z,Marseille,Toulouse,draftkings,,btts,No,,2.7
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,2026-11-02T13:12:38Z,h2h,Everton,,3.25
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,2026-11-02T13:12:38Z,h2h,Newcastle United,,2.15
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,2026-11-02T13:12:38Z,h2h,Draw,,3.6
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_spreads,Everton,0.75,1.51
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_spreads,Everton,0.5,1.69
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_spreads,Everton,0.25,1.91
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_spreads,Everton,0.0,2.3
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_spreads,Newcastle United,-0.75,2.4
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_spreads,Newcastle United,-0.5,2.05
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_spreads,Newcastle United,-0.25,1.8
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_spreads,Newcastle United,0.0,1.54
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_totals,Over,0.5,1.03
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_totals,Over,1.5,1.24
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_totals,Over,2.5,1.71
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_totals,Over,3.5,2.75
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_totals,Over,4.5,5.0
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_totals,Over,5.5,9.5
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_totals,Over,6.5,18.0
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_totals,Under,0.5,12.0
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_totals,Under,1.5,4.1
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_totals,Under,2.5,2.15
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_totals,Under,3.5,1.45
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_totals,Under,4.5,1.17
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_totals,Under,5.5,1.06
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,alternate_totals,Under,6.5,1.0
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,btts,Yes,,1.56
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,draftkings,,btts,No,,2.4
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,2026-11-02T13:12:46Z,h2h,CA Osasuna,,3.75
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,2026-11-02T13:12:46Z,h2h,Deportivo La Coruña,,2.1
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,2026-11-02T13:12:46Z,h2h,Draw,,3.25
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_spreads,CA Osasuna,0.75,1.51
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_spreads,CA Osasuna,0.5,1.71
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_spreads,CA Osasuna,0.25,1.95
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_spreads,CA Osasuna,0.0,2.5
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_spreads,Deportivo La Coruña,-0.75,2.4
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_spreads,Deportivo La Coruña,-0.5,2.0
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_spreads,Deportivo La Coruña,-0.25,1.74
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_spreads,Deportivo La Coruña,0.0,1.47
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_totals,Over,0.5,1.07
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_totals,Over,1.5,1.41
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_totals,Over,2.5,2.2
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_totals,Over,3.5,4.1
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_totals,Over,4.5,8.0
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_totals,Over,5.5,16.0
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_totals,Under,0.5,8.0
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_totals,Under,1.5,2.95
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_totals,Under,2.5,1.67
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_totals,Under,3.5,1.24
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_totals,Under,4.5,1.07
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,alternate_totals,Under,5.5,1.01
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,btts,Yes,,1.87
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,draftkings,,btts,No,,1.91
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,2026-11-02T13:12:43Z,h2h,Brest,,3.05
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,2026-11-02T13:12:43Z,h2h,Lorient,,2.45
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,2026-11-02T13:12:43Z,h2h,Draw,,3.25
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_spreads,Brest,0.5,1.56
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_spreads,Brest,0.25,1.74
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_spreads,Brest,0.0,2.05
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_spreads,Brest,-0.25,2.45
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_spreads,Lorient,-0.5,2.3
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_spreads,Lorient,-0.25,2.0
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_spreads,Lorient,0.0,1.67
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_spreads,Lorient,0.25,1.49
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_totals,Over,0.5,1.06
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_totals,Over,1.5,1.38
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_totals,Over,2.5,2.1
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_totals,Over,3.5,3.8
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_totals,Over,4.5,7.5
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_totals,Over,5.5,14.0
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_totals,Under,0.5,8.5
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_totals,Under,1.5,3.05
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_totals,Under,2.5,1.71
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_totals,Under,3.5,1.26
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_totals,Under,4.5,1.08
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,alternate_totals,Under,5.5,1.01
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,btts,Yes,,1.8
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,draftkings,,btts,No,,1.95

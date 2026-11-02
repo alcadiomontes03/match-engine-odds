@@ -71,6 +71,14 @@
   "side": "2026-10-24T09:43:47+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
+ "0f552d9c6990c69474f50ff2fb54e9a3": {
+  "away": "Everton",
+  "commence": "2026-11-02T20:00:00Z",
+  "comp": "PL",
+  "home": "Newcastle United",
+  "late": "2026-11-02T13:13:29+00:00",
+  "side": "2026-11-02T13:13:29+00:00"
+ },
  "0fbb2626ed9534b9dcf21d16925f9bd7": {
   "away": "Fulham",
   "commence": "2026-10-24T14:00:00Z",
@@ -252,6 +260,14 @@
   "side": "2026-10-24T09:43:47+00:00",
   "weekly": "2026-10-19T19:41:41+00:00"
  },
+ "5118966f484adf525196d196a61bc5d6": {
+  "away": "Brest",
+  "commence": "2026-11-02T19:45:00Z",
+  "comp": "Ligue1",
+  "home": "Lorient",
+  "late": "2026-11-02T13:13:29+00:00",
+  "side": "2026-11-02T13:13:29+00:00"
+ },
  "5262991e389930615bec34b642428c93": {
   "away": "Valencia",
   "commence": "2026-11-01T17:30:00Z",
@@ -390,6 +406,14 @@
   "side": "2026-10-30T16:15:19+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
+ "7a2cd2744fdf15ea675423a6c23df46b": {
+  "away": "CA Osasuna",
+  "commence": "2026-11-02T20:00:00Z",
+  "comp": "LaLiga",
+  "home": "Deportivo La Coru\u00f1a",
+  "late": "2026-11-02T13:13:29+00:00",
+  "side": "2026-11-02T13:13:29+00:00"
+ },
  "7df53f9af95d5a4e13b504882078dab8": {
   "away": "Brighton and Hove Albion",
   "commence": "2026-10-31T15:00:00Z",
@@ -524,11 +548,11 @@
   "empty:spreads:Bundesliga": 0,
   "empty:spreads:LaLiga": 0,
   "empty:spreads:Ligue1": 0,
-  "empty:spreads:PL": 1,
+  "empty:spreads:PL": 2,
   "empty:totals:Bundesliga": 0,
   "empty:totals:LaLiga": 0,
   "empty:totals:Ligue1": 0,
-  "empty:totals:PL": 1,
+  "empty:totals:PL": 2,
   "none:spreads:Bundesliga": "2026-W44",
   "none:spreads:LaLiga": "2026-W44",
   "none:spreads:Ligue1": "2026-W44",

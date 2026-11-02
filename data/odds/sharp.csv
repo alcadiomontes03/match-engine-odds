@@ -1,0 +1,10 @@
+pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,market,outcome,point,price
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,pinnacle,2026-11-02T13:13:26Z,h2h,Everton,,3.44
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,pinnacle,2026-11-02T13:13:26Z,h2h,Newcastle United,,2.17
+2026-11-02T13:13:29+00:00,late,PL,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Newcastle United,Everton,pinnacle,2026-11-02T13:13:26Z,h2h,Draw,,3.65
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,pinnacle,2026-11-02T13:13:08Z,h2h,CA Osasuna,,3.9
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,pinnacle,2026-11-02T13:13:08Z,h2h,Deportivo La Coruña,,2.15
+2026-11-02T13:13:29+00:00,late,LaLiga,7a2cd2744fdf15ea675423a6c23df46b,2026-11-02T20:00:00Z,Deportivo La Coruña,CA Osasuna,pinnacle,2026-11-02T13:13:08Z,h2h,Draw,,3.29
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,pinnacle,2026-11-02T13:13:29Z,h2h,Brest,,3.17
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,pinnacle,2026-11-02T13:13:29Z,h2h,Lorient,,2.48
+2026-11-02T13:13:29+00:00,late,Ligue1,5118966f484adf525196d196a61bc5d6,2026-11-02T19:45:00Z,Lorient,Brest,pinnacle,2026-11-02T13:13:29Z,h2h,Draw,,3.26
