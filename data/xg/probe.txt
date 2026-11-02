@@ -1,0 +1,7 @@
+understat league page: ERROR URLError in 10.0s: <urlopen error [Errno -3] Temporary failure in name resolution>
+understat getLeagueData: ERROR URLError in 7.5s: <urlopen error [Errno -3] Temporary failure in name resolution>
+understat home: ERROR URLError in 10.0s: <urlopen error [Errno -3] Temporary failure in name resolution>
+fbref EPL schedule: HTTP 403 in 0.1s, b'<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal'
+fotmob api leagues: HTTP 404 in 0.2s, b'<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charSet="utf-8" data-next-head=""/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" data-next-head=""/><meta name="apple-itunes-app" content="app-id=488575683" data-next-head=""/><link rel="alternate" href="'
+sofascore api: HTTP 403 in 0.1s, b'{"error": {"code": 403, "reason": "Forbidden" }}'
+github raw (control): HTTP 200 in 0.1s, 3616 chars, datesData=False, starts: '# Match Engine — odds capture\n\nScheduled DraftKings odds capture from The Odds API (free tier, 500 credits a month) for the\nPremier League, La Liga, Bundesliga '
