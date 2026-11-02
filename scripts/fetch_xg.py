@@ -82,7 +82,25 @@ def current_season(now):
     return now.year if now.month >= 7 else now.year - 1
 
 
+def _resolves(host="understat.com"):
+    import socket
+    try:
+        socket.setdefaulttimeout(10)
+        socket.getaddrinfo(host, 443)
+        return True
+    except OSError:
+        return False
+
+
 def main():
+    if not _resolves():
+        # 2026-11-01: understat.com's nameservers (beget) stopped answering; NXDOMAIN/SERVFAIL from GitHub,
+        # Google DNS and a home connection alike. Exit cleanly so the weekly run just retries next Monday.
+        msg = f"{datetime.now(timezone.utc).isoformat(timespec='seconds')}\nSKIP: understat.com does not resolve; will retry next run\n"
+        OUT.mkdir(parents=True, exist_ok=True)
+        (OUT / "last_fetch.txt").write_text(msg)
+        print(msg)
+        return
     ap = argparse.ArgumentParser()
     ap.add_argument("--seasons", default="2017-")
     ap.add_argument("--force", action="store_true")
