@@ -474,7 +474,23 @@ def diag():
     print(json.dumps(rep, indent=1))
 
 
+def soon():
+    """Exit 0 if a tracked match still needs a late pull within the next 10 minutes or more
+    (kicks off within LATE_MAX_MIN + 15 min and its team-news refresh hasn't happened), else 1.
+    The workflow keeps looping while this is true, so near-kickoff pulls no longer depend on
+    GitHub's unreliable cron (2026-11-01). Reads only the state file; free."""
+    now = datetime.now(timezone.utc)
+    for k, v in load_state().items():
+        if k.startswith("_") or not isinstance(v, dict) or not v.get("commence") or v.get("late_final"):
+            continue
+        if LATE_MIN_MIN < minutes_to(v["commence"], now) <= LATE_MAX_MIN + 15:
+            print(f"soon: {v.get('comp')} {v.get('home')} v {v.get('away')} at {v['commence']}")
+            sys.exit(0)
+    print("soon: nothing within the late window")
+    sys.exit(1)
+
+
 if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else "run"
     {"run": run, "weekly": lambda: run(force_weekly=True),
-     "check": check, "probe": probe, "diag": diag}[mode]()
+     "check": check, "probe": probe, "diag": diag, "soon": soon}[mode]()

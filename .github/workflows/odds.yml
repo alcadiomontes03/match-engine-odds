@@ -25,13 +25,13 @@ concurrency:
 jobs:
   capture:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Capture
+      - name: Capture (loops every 10 min while a match is inside its late window)
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_BOOKMAKERS: "draftkings"   # DraftKings only (decided 2026-09-25)
@@ -46,20 +46,30 @@ jobs:
           BTTS_RESERVE: "100"
           INCLUDE_CUPS: ${{ vars.INCLUDE_CUPS || 'false' }}
           ODDS_TEAM_FILTER: ${{ vars.ODDS_TEAM_FILTER || '' }}
-        run: python capture_odds.py ${{ github.event.inputs.mode || 'run' }}
-      - name: v5 paper picks (only when new odds arrived)
-        run: |
-          if ! git diff --quiet -- data/odds/snapshots.csv; then
-            pip install -q numpy scipy pandas
-            python pipeline/v5/paper_picks.py
-          fi
-      - name: Commit captured odds
+        # 2026-11-01: GitHub's cron fires every 3-7 hours instead of every 15 min, so most matches got one
+        # late pull and no near-kickoff refresh (10 of 70 had a second pull in weeks 8-9). A run now keeps
+        # going while any tracked match is within 8h15m of kickoff and still needs its refresh, pulling every
+        # 10 minutes, for at most 5h40m; the next scheduled run picks up from there. Waiting costs no credits.
         run: |
           git config user.name "odds-bot"
           git config user.email "odds-bot@users.noreply.github.com"
-          mkdir -p data state
-          git add -A data state
-          if ! git diff --cached --quiet; then
-            git commit -m "odds $(date -u +%Y-%m-%dT%H:%MZ)"
-            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
-          fi
+          MODE="${{ github.event.inputs.mode || 'run' }}"
+          end=$((SECONDS + 340*60)); deps=""
+          while :; do
+            python capture_odds.py "$MODE"
+            if ! git diff --quiet -- data/odds/snapshots.csv; then
+              [ -z "$deps" ] && pip install -q numpy scipy pandas && deps=1
+              python pipeline/v5/paper_picks.py
+            fi
+            mkdir -p data state
+            git add -A data state
+            if ! git diff --cached --quiet; then
+              git commit -q -m "odds $(date -u +%Y-%m-%dT%H:%MZ)"
+              for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
+            fi
+            [ "$MODE" != "run" ] && break
+            [ $SECONDS -ge $end ] && break
+            python capture_odds.py soon || break
+            sleep 600
+            git pull -q --rebase || true
+          done
