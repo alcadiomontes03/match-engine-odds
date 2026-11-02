@@ -35,6 +35,9 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_BOOKMAKERS: "draftkings"   # DraftKings only (decided 2026-09-25)
+          # 2026-11-01: Pinnacle added to the bulk moneyline calls as a sharp reference (same credit
+          # cost: up to 10 bookmakers bill as one). Its rows go to data/odds/sharp.csv, never snapshots.csv.
+          ODDS_SHARP_BOOKMAKERS: "pinnacle"
           # v6.1 (2026-10-12): moneyline only in the bulk call. DraftKings never returned spreads or
           # totals there for these leagues, yet each was billed. BTTS, totals and spreads come per match
           # from the event endpoint at the first late pull (see capture_odds.py event_markets()).

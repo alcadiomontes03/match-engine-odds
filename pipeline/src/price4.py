@@ -146,7 +146,7 @@ def american(p):
 
 def build(snapshots_csv, as_of):
     snaps = pd.read_csv(snapshots_csv)
-    snaps = snaps[snaps.market == "h2h"]
+    snaps = snaps[(snaps.market == "h2h") & (snaps.bookmaker == "draftkings")]
     latest = snaps.sort_values("pulled_at").groupby(["event_id", "outcome"]).tail(1)
     as_of = pd.Timestamp(as_of)
     rows, fit_info = [], {}

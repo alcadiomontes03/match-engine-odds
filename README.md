@@ -30,7 +30,8 @@ can mean missing closing prices. `data/odds/quota.csv` logs the balance after ea
 
 - `capture_odds.py` - the script (standard-library Python only)
 - `.github/workflows/odds.yml` - runs it every 15 minutes
-- `data/odds/snapshots.csv` - every captured price, one row per outcome (`kind` is weekly, late or slate)
+- `data/odds/snapshots.csv` - every captured DraftKings price, one row per outcome (`kind` is weekly, late or slate)
+- `data/odds/sharp.csv` - Pinnacle moneyline from the same bulk calls (since 2026-11-01), same columns; a sharp reference for CLV and value checks, kept apart so DraftKings consumers never see it
 - `data/odds/raw/` - raw API responses
 - `data/odds/quota.csv` - credits remaining after each paid call
 - `state/pulled.json` - which matches already had their late pull, and (under `_meta`) which weeks had their weekly pull

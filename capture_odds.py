@@ -61,6 +61,13 @@ INCLUDE_CUPS = os.environ.get("INCLUDE_CUPS", "false").lower() == "true"
 # Only these bookmakers are pulled. Up to 10 bookmakers bill as one region;
 # if BOOKMAKERS is empty, REGIONS is used instead.
 BOOKMAKERS = os.environ.get("ODDS_BOOKMAKERS", "draftkings").strip()
+# Sharp reference book(s), moneyline only (2026-11-01). Added to the bulk h2h calls, which bill
+# per group of up to 10 bookmakers, so this costs no extra credits there. The per-match side
+# calls stay DraftKings-only: there each market a book returns is billed, and Pinnacle returns
+# main totals/spreads that DraftKings doesn't. Sharp rows go to data/odds/sharp.csv, never to
+# snapshots.csv, so every existing DraftKings consumer (fixtures, odds sync, grading, pricer)
+# keeps reading DraftKings only.
+SHARP_BOOKMAKERS = os.environ.get("ODDS_SHARP_BOOKMAKERS", "pinnacle").strip()
 REGIONS = os.environ.get("ODDS_REGIONS", "us")
 MARKETS = os.environ.get("ODDS_MARKETS", "h2h")
 BTTS = os.environ.get("ODDS_BTTS", "true").lower() == "true"
@@ -176,14 +183,34 @@ def flatten(events, kind, pulled_at, sport_label):
     return rows
 
 
-def append_rows(rows):
-    f = OUT / "snapshots.csv"; new = not f.exists()
+SNAP_COLS = ["pulled_at", "kind", "comp", "event_id", "commence", "home", "away",
+             "bookmaker", "book_last_update", "market", "outcome", "point", "price"]
+
+
+def _primary_books():
+    return {b.strip() for b in BOOKMAKERS.split(",") if b.strip()}
+
+
+def _write_rows(f, rows):
+    if not rows:
+        return
+    new = not f.exists()
     with f.open("a", newline="") as fh:
         w = csv.writer(fh)
         if new:
-            w.writerow(["pulled_at", "kind", "comp", "event_id", "commence", "home", "away",
-                        "bookmaker", "book_last_update", "market", "outcome", "point", "price"])
+            w.writerow(SNAP_COLS)
         w.writerows(rows)
+
+
+def append_rows(rows):
+    """DraftKings (the primary books) -> snapshots.csv; any other book -> sharp.csv.
+    With BOOKMAKERS empty (regions mode) everything goes to snapshots.csv, as before."""
+    prim = _primary_books()
+    if not prim:
+        _write_rows(OUT / "snapshots.csv", rows)
+        return
+    _write_rows(OUT / "snapshots.csv", [r for r in rows if r[7] in prim])
+    _write_rows(OUT / "sharp.csv", [r for r in rows if r[7] not in prim])
 
 
 def minutes_to(ts, now):
@@ -225,28 +252,34 @@ def due_late(events, state, now):
     return out
 
 
-def book_params():
-    """Bookmakers take priority over regions in the API; send only one of them."""
-    return {"bookmakers": BOOKMAKERS} if BOOKMAKERS else {"regions": REGIONS}
+def book_params(sharp=False):
+    """Bookmakers take priority over regions in the API; send only one of them.
+    sharp=True adds the sharp reference book(s) (bulk moneyline calls only)."""
+    if not BOOKMAKERS:
+        return {"regions": REGIONS}
+    books = [b.strip() for b in BOOKMAKERS.split(",") if b.strip()]
+    if sharp:
+        books += [b.strip() for b in SHARP_BOOKMAKERS.split(",") if b.strip() and b.strip() not in books]
+    return {"bookmakers": ",".join(books)}
 
 
-def max_cost():
+def max_cost(sharp=False):
     n_markets = len(MARKETS.split(","))
     if BOOKMAKERS:
-        return n_markets * -(-len(BOOKMAKERS.split(",")) // 10)
+        return n_markets * -(-len(book_params(sharp)["bookmakers"].split(",")) // 10)
     return n_markets * len(REGIONS.split(","))
 
 
 def pull(sport, label, evs, kind, state, now, remaining):
     """Returns (remaining, pulled?)."""
-    cost = max_cost()   # billed per market requested, even if the book offers none
+    cost = max_cost(sharp=True)   # billed per market requested, even if the book offers none
     # unknown balance (first ever pull) -> allow; the response header sets it
     if remaining is not None and remaining - cost < CREDIT_RESERVE:
         print(f"SKIP {label} {kind}: {remaining} credits left, reserve {CREDIT_RESERVE}")
         return remaining, False
     ids = ",".join(e["id"] for e in evs)
     body, hdr = get(f"/sports/{sport}/odds", markets=MARKETS, oddsFormat="decimal",
-                    dateFormat="iso", eventIds=ids, **book_params())
+                    dateFormat="iso", eventIds=ids, **book_params(sharp=True))
     stamp = now.strftime("%Y%m%dT%H%M%SZ")
     d = OUT / "raw" / now.strftime("%Y/%m/%d"); d.mkdir(parents=True, exist_ok=True)
     (d / f"{label}_{kind}_{stamp}.json").write_text(json.dumps(body))
