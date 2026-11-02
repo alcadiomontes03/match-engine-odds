@@ -25,7 +25,7 @@ auto_picks/ (and optionally state/summary.json). Nothing here writes to the dash
 """
 from __future__ import annotations
 import argparse, csv, glob, json, math, sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from difflib import SequenceMatcher
 from pathlib import Path
 import numpy as np
@@ -36,7 +36,8 @@ sys.path.insert(0, str(ROOT / "pipeline"))
 from v5 import market as M  # noqa: E402
 
 OUT = ROOT / "data" / "research"
-CODE_VERSION = "research-3 (2026-11-01)"
+CODE_VERSION = "research-4 (2026-11-01)"
+COVERAGE_START = "2026-10-09"   # first week the dashboard tracked all four leagues
 V61_START = "2026-10-12T04:00:00Z"   # auto-picks logged after this use the v6.1 best-pick rule
 LINE_COLS = ["key", "fixture_id", "league", "kickoff", "home", "away", "market", "line", "sel_a", "sel_b",
              "dk_a", "dk_b", "dk_overround", "dk_shin_a", "side_pulled_at", "side_mins_to_ko",
@@ -633,6 +634,56 @@ def sanity(db: Path, snap: Path | None):
                 f"{sum(x <= 65 for x in v)} within 65 min, max {max(v):.0f}")
         else:
             add(f"{k} price timing", "ok", "no prices yet")
+    # 12. coverage against independent lists (research-4, 2026-11-01): a match that never became a dashboard
+    #     fixture can't show up in "missing results". (a) every football-data result in the four leagues since
+    #     tracking began needs a fixture with the same teams within 2 days; (b) every DraftKings event in the odds
+    #     file that has kicked off needs a fixture carrying its event id (or the same teams within 2 days).
+    by_teams = {}
+    for fid, f in fx.items():
+        by_teams.setdefault((f.get("league"), f.get("home"), f.get("away")), []).append(_ts(f.get("kickoff")))
+    def _has(lg, h, a, when):
+        return any(d is not None and abs((d - when).total_seconds()) <= 2 * 86400 for d in by_teams.get((lg, h, a), []))
+    nofx, fd_last = [], None
+    for lg in ("E0", "SP1", "D1", "F1"):
+        fp = ROOT / "data" / "fd" / f"{lg}_2627.csv"
+        if not fp.exists():
+            continue
+        d = pd.read_csv(fp)
+        d["Date"] = pd.to_datetime(d.Date, dayfirst=True, errors="coerce")
+        last = d.Date.max()
+        if pd.notna(last):
+            fd_last = str(last.date()) if fd_last is None else min(fd_last, str(last.date()))
+        for m in d[d.Date >= pd.Timestamp(COVERAGE_START)].itertuples():
+            when = m.Date.tz_localize(timezone.utc) + timedelta(hours=12)
+            if not _has(lg, m.HomeTeam, m.AwayTeam, when):
+                nofx.append(f"{lg} {m.HomeTeam} v {m.AwayTeam} {m.Date.date()}")
+    add("football-data results with no dashboard fixture", "warn" if nofx else "ok",
+        f"{len(nofx)} matches since {COVERAGE_START}; football-data runs about a week behind, so this covers "
+        f"results up to {fd_last or 'n/a'}", nofx)
+    if snap is not None and Path(snap).exists():
+        ev_ids = {f.get("odds_event_id") for f in fx.values() if f.get("odds_event_id")}
+        comp = {"PL": "E0", "LaLiga": "SP1", "Bundesliga": "D1", "Ligue1": "F1"}
+        sn = pd.read_csv(snap, usecols=["event_id", "comp", "commence", "home", "away", "market"])
+        sn = sn[(sn.market == "h2h") & sn.comp.isin(list(comp))].drop_duplicates("event_id")
+        sn["ko"] = pd.to_datetime(sn.commence, utc=True, errors="coerce")
+        sn = sn[(sn.ko >= pd.Timestamp(COVERAGE_START, tz="UTC")) & (sn.ko < pd.Timestamp(now))]
+        def _sim(a, b):
+            return SequenceMatcher(None, str(a).lower(), str(b).lower()).ratio()
+        def _near(lg, h, a, ko):   # a fixture written without this event id (no-price fixture, or a re-issued id)
+            for f in fx.values():
+                d = _ts(f.get("kickoff"))
+                if f.get("league") == lg and d and abs((d - ko).total_seconds()) <= 2 * 86400:
+                    hs = max(_sim(h, f.get("home")), _sim(h, f.get("odds_home_name") or ""))
+                    as_ = max(_sim(a, f.get("away")), _sim(a, f.get("odds_away_name") or ""))
+                    if hs >= 0.45 and as_ >= 0.45:
+                        return True
+            return False
+        noev = [f"{comp[r.comp]} {r.home} v {r.away} {r.ko.date()} ({r.event_id})"
+                for r in sn.itertuples() if r.event_id not in ev_ids
+                and not _near(comp[r.comp], r.home, r.away, r.ko.to_pydatetime())]
+        add("DraftKings events with no dashboard fixture", "warn" if noev else "ok",
+            f"{len(noev)} kicked-off events since {COVERAGE_START} (no fixture with this event id, nor one within 2 days "
+            "with similar team names)", noev)
     # 11. odds bot credits
     q = ROOT / "data" / "odds" / "quota.csv"
     if q.exists():
