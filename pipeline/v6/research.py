@@ -6,7 +6,7 @@ chose per market is a selected sample (the biggest disagreement with DraftKings)
 stored what the model knew at the time in a form that later code changes can't rewrite. This file:
 
   record   Append every DraftKings side line of every settled fixture to data/research/lines.csv,
-           and every auto-pick to data/research/picks.csv. Append-only by key: a row is never
+           and every dashboard-generated selection to data/research/picks.csv. Append-only by key: a row is never
            changed once written, and git history makes the record permanent. Re-running is safe.
   report   The pre-registered tests (docs/v6.md, "Research record"): model vs DraftKings' own
            de-vigged price on every line, scored by log loss, with 95% intervals from a bootstrap
@@ -36,7 +36,7 @@ sys.path.insert(0, str(ROOT / "pipeline"))
 from v5 import market as M  # noqa: E402
 
 OUT = ROOT / "data" / "research"
-CODE_VERSION = "research-2 (2026-10-20)"
+CODE_VERSION = "research-3 (2026-11-01)"
 V61_START = "2026-10-12T04:00:00Z"   # auto-picks logged after this use the v6.1 best-pick rule
 LINE_COLS = ["key", "fixture_id", "league", "kickoff", "home", "away", "market", "line", "sel_a", "sel_b",
              "dk_a", "dk_b", "dk_overround", "dk_shin_a", "side_pulled_at", "side_mins_to_ko",
@@ -163,7 +163,7 @@ def _append(path: Path, cols, rows):
     have = set(old["key"]) if len(old) else set()
     new = [r for r in rows if r["key"] not in have]
     if not new:
-        return 0
+        return []
     path.parent.mkdir(parents=True, exist_ok=True)
     write_header = not path.exists()
     with path.open("a", newline="") as fh:
@@ -172,7 +172,23 @@ def _append(path: Path, cols, rows):
             w.writeheader()
         for r in sorted(new, key=lambda r: (r.get("kickoff", ""), r["key"])):
             w.writerow({c: ("" if r.get(c) is None else r.get(c)) for c in cols})
-    return len(new)
+    return new
+
+
+def _kickoff_week(kickoff):
+    try:
+        dt = datetime.fromisoformat(str(kickoff).replace("Z", "+00:00"))
+        if dt.tzinfo is not None:
+            dt = dt.astimezone(timezone.utc)
+        year, week, _ = dt.date().isocalendar()
+        return f"{year}-W{week:02d}"
+    except (TypeError, ValueError):
+        return "unknown"
+
+
+def _is_test1_line(row):
+    return (row.get("market") != "corners" and str(row.get("used_in_fit")) != "1"
+            and row.get("model_p_a") not in (None, "") and row.get("outcome_a") in (0, 1))
 
 
 def build_lines(db: Path, now_iso: str):
@@ -298,9 +314,20 @@ def build_picks(db: Path, now_iso: str):
 
 def record(db: Path):
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    n1 = _append(OUT / "lines.csv", LINE_COLS, build_lines(db, now))
-    n2 = _append(OUT / "picks.csv", PICK_COLS, build_picks(db, now))
-    return {"lines_added": n1, "picks_added": n2}
+    new_lines = _append(OUT / "lines.csv", LINE_COLS, build_lines(db, now))
+    new_picks = _append(OUT / "picks.csv", PICK_COLS, build_picks(db, now))
+    by_week = {}
+    for row in new_lines:
+        week = _kickoff_week(row.get("kickoff"))
+        tally = by_week.setdefault(week, {"lines": 0, "test1_lines": 0, "fixtures": set()})
+        tally["lines"] += 1
+        tally["fixtures"].add(row.get("fixture_id"))
+        tally["test1_lines"] += int(_is_test1_line(row))
+    return {"lines_added": len(new_lines), "picks_added": len(new_picks),
+            "test1_lines_added": sum(v["test1_lines"] for v in by_week.values()),
+            "lines_by_week": {week: {"lines": v["lines"], "test1_lines": v["test1_lines"],
+                                      "matches": len(v["fixtures"])}
+                              for week, v in sorted(by_week.items())}}
 
 
 # ------------------------------------------------------------------ report (pre-registered tests)
@@ -366,20 +393,43 @@ def price_picks(P: pd.DataFrame, L: pd.DataFrame) -> pd.DataFrame:
     return q
 
 
-def report(today: str) -> str:
+def report(today: str, record_result: dict | None = None) -> str:
     L = _read_csv(OUT / "lines.csv", LINE_COLS)
     P = _read_csv(OUT / "picks.csv", PICK_COLS)
     out = [f"# Research report {today}", "",
            f"Code: {CODE_VERSION}. Every number has a 95% interval from a bootstrap that resamples whole matches.",
            "Primary tests are fixed in docs/v6.md (\"Research record\"); everything else here is exploratory.", ""]
+    if record_result is not None:
+        by_week = record_result.get("lines_by_week", {})
+        out += ["## New evidence recorded this run", "",
+                "Counts below are newly appended settled side-line rows, grouped by kickoff ISO week. "
+                "Test 1 lines exclude corners, lines used to fit the market-anchored grid, and unscored lines.", ""]
+        if not record_result.get("test1_lines_added", 0):
+            out.append("**FLAG — NO NEW EVIDENCE FOR TEST 1:** 0 eligible lines were added this run; "
+                       "the primary sample is unchanged.")
+        if by_week:
+            out += ["", "| Kickoff week | New lines | New Test 1 lines | Matches with new lines |",
+                    "|---|---:|---:|---:|"]
+            for week, counts in by_week.items():
+                out.append(f"| {week} | {counts['lines']} | {counts['test1_lines']} | {counts['matches']} |")
+        else:
+            out.append("No new settled side-line rows were appended in this run.")
+        out.append("")
     if len(L):
         d = L[L.outcome_a.isin(["0", "1"])].copy()
         d["y"] = d.outcome_a.astype(int)
-        out += ["## Test 1 (primary): model vs DraftKings on every line", "",
-                "Mean log-loss difference, model minus DraftKings' own de-vigged (Shin) price, on every scored line. "
-                "Negative means the model priced the line better. Lines used to fit the model are excluded.", "",
-                "| Market | League | Lines | Matches | Model − DK (log loss) | 95% interval |", "|---|---|---|---|---|---|"]
+        no_new_test1 = record_result is not None and not record_result.get("test1_lines_added", 0)
+        out += ["## Test 1 (primary): model vs DraftKings on every line", ""]
+        if no_new_test1:
+            out.append("**NO NEW EVIDENCE:** no eligible lines were added this run. The cumulative result is unchanged "
+                       "and is omitted here; see the prior report for the last estimate.")
+        else:
+            out += ["Mean log-loss difference, model minus DraftKings' own de-vigged (Shin) price, on every scored line. "
+                    "Negative means the model priced the line better. Lines used to fit the model are excluded.", "",
+                    "| Market | League | Lines | Matches | Model − DK (log loss) | 95% interval |", "|---|---|---|---|---|---|"]
         g = d[(d.used_in_fit != "1") & (d.model_p_a != "") & (d.market != "corners")]
+        if no_new_test1:
+            g = g.iloc[0:0]
         for (mk, lg), s in [(("ALL", "ALL"), g)] + list(g.groupby(["market", "league"])) + \
                 [((m, "ALL"), s) for m, s in g.groupby("market")]:
             if not len(s):
@@ -434,19 +484,21 @@ def report(today: str) -> str:
                         f"(range {m.min():.0f} to {m.max():.0f}, {len(m)} matches)."]
     else:
         out.append("No settled lines with DraftKings side prices yet.")
-    out += ["", "## Exploratory: auto-picks (flat 1-unit stakes, DraftKings-priced only)", "",
-            "| Rule | Market | Priced picks | Matches | ROI per bet | 95% interval |", "|---|---|---|---|---|---|"]
+    out += ["", "## Exploratory: dashboard-generated selections (diagnostic only)", "",
+            "These are generated suggestions, not validated picks or recommendations to wager. "
+            "Their realized returns are included only to diagnose the selection rule; they do not establish model edge.", "",
+            "| Rule | Market | Priced selections | Matches | ROI per selection | 95% interval |", "|---|---|---|---|---|---|"]
     if len(P):
         q = P[(P.flat_pnl != "") & (P.result.isin(["W", "L", "P"]))]
         for (rule, mk), s in q.groupby(["rule", "market"]):
             e, lo, hi = cluster_boot(s.flat_pnl.astype(float), s.fixture_id.values)
             out.append(f"| {rule} | {mk} | {len(s)} | {s.fixture_id.nunique()} | {e:+.3f} | {_ci(lo, hi, '+.3f')} |")
         sp = price_picks(P, L)
-        out += ["", "### Auto-picks priced at DraftKings' pre-kickoff side price (research-2)", "",
-                "The picks are logged before DraftKings posts side markets, so each one is priced at the side price "
+        out += ["", "### Generated selections priced at DraftKings' pre-kickoff side price (research-2)", "",
+                "Selections are logged before DraftKings posts side markets, so each one is priced at the side price "
                 "recorded for the same line in lines.csv (the first late pull, before kickoff). Shot-attempt picks "
                 "have no DraftKings price and are left out.", "",
-                "| Rule | Market | Priced picks | Matches | Hit rate | ROI per bet | 95% interval |",
+                "| Rule | Market | Priced selections | Matches | Hit rate | ROI per selection | 95% interval |",
                 "|---|---|---|---|---|---|---|"]
         if len(sp):
             for (rule, mk), s in sp.groupby(["rule", "market"]):
@@ -461,8 +513,8 @@ def report(today: str) -> str:
         else:
             out.append("| (none yet) | | | | | | |")
         h = P[P.result.isin(["W", "L"])]
-        out += ["", f"All graded auto-picks (priced or not): {len(h)}, hit rate {(h.result == 'W').mean():.1%}. "
-                    "Hit rate without a price says nothing about value."]
+        out += ["", f"All graded dashboard-generated selections (priced or not): {len(h)}, "
+                    f"hit rate {(h.result == 'W').mean():.1%}. Hit rate without a price says nothing about value."]
     return "\n".join(out) + "\n"
 
 
@@ -681,10 +733,12 @@ def main():
     r = record(db)
     (OUT / "sanity").mkdir(parents=True, exist_ok=True)
     (OUT / "sanity" / f"{today}.json").write_text(json.dumps(s, indent=1))
-    rep = report(today)
+    rep = report(today, record_result=r)
     (OUT / "reports").mkdir(parents=True, exist_ok=True)
     (OUT / "reports" / f"{today}.md").write_text(rep)
     flagged = [f"{c['level'].upper()} {c['check']}: {c['detail']}" for c in s["checks"] if c["level"] != "ok"]
+    if not r.get("test1_lines_added", 0):
+        flagged.insert(0, "WARN NO NEW EVIDENCE FOR TEST 1: 0 eligible goal lines added this run; primary sample unchanged")
     try:   # market benchmark (free, football-data only); a failure here must never block the weekly job
         import benchmark
         benchmark.OUT.mkdir(parents=True, exist_ok=True)

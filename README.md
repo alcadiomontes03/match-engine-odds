@@ -5,10 +5,12 @@ Premier League, La Liga, Bundesliga and Ligue 1. The model that uses these price
 [`docs/v6.md`](docs/v6.md) (current version: Alpha Lines v6.1; Dixon-Coles ratings for all four leagues refit 2026-10-12 with a centred defence ridge, goals-only) and [`pipeline/v5/README.md`](pipeline/v5/README.md).
 
 Markets (v6.1): moneyline in one call per league per pull (1 credit). DraftKings never returned
-spreads or totals in that bulk call for these leagues, though each was billed, so BTTS, totals and
-spreads, total corners (from 2026-10-13), plus alternate goal lines while more than 250 credits remain, are pulled per match from the event
-endpoint at its first late pull, billed one credit per market returned, and only while more than
-100 credits remain (totals and spreads only above 130).
+spreads or totals in that bulk call for these leagues, though each was billed, so BTTS, totals,
+spreads and alternate goal lines are pulled per match from the event endpoint at its first late
+pull, billed one credit per market returned, and only while more than 100 credits remain. Corners
+are no longer requested. Above 250 credits the bot also asks for plain totals and spreads; from
+131 to 250 it asks for BTTS plus alternate totals and alternate spreads; at 130 or below it asks
+for BTTS only.
 
 Cadence (the workflow runs every 15 minutes and spends credits only when a pull is due):
 - **Weekly** - first run after Monday 15:00 UTC (8am Pacific in summer, 7am in winter):
