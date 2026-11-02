@@ -17,6 +17,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # lets a run that hits its time limit start its successor (workflow_dispatch)
 
 concurrency:
   group: odds-capture
@@ -34,6 +35,7 @@ jobs:
       - name: Capture (loops every 10 min while a match is inside its late window)
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          GH_TOKEN: ${{ github.token }}   # for gh workflow run (successor run), see the end of the loop
           ODDS_BOOKMAKERS: "draftkings"   # DraftKings only (decided 2026-09-25)
           # 2026-11-01: Pinnacle added to the bulk moneyline calls as a sharp reference (same credit
           # cost: up to 10 bookmakers bill as one). Its rows go to data/odds/sharp.csv, never snapshots.csv.
@@ -54,7 +56,7 @@ jobs:
           git config user.name "odds-bot"
           git config user.email "odds-bot@users.noreply.github.com"
           MODE="${{ github.event.inputs.mode || 'run' }}"
-          end=$((SECONDS + 340*60)); deps=""
+          end=$((SECONDS + 330*60)); deps=""
           while :; do
             python capture_odds.py "$MODE"
             if ! git diff --quiet -- data/odds/snapshots.csv; then
@@ -73,3 +75,9 @@ jobs:
             sleep 600
             git pull -q --rebase || true
           done
+          # 2026-11-02: on Nov 2 the only run (13:13-18:54 UTC) hit the time limit before the 20:00 games'
+          # refresh and GitHub never started another. If a match still needs a pull, start the next run now
+          # (workflow_dispatch is the one event a GITHUB_TOKEN may trigger); it queues behind this one.
+          if [ "$MODE" = "run" ] && [ $SECONDS -ge $end ] && python capture_odds.py soon; then
+            gh workflow run odds.yml --ref main -f mode=run && echo "started the next capture run"
+          fi
