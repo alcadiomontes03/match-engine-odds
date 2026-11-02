@@ -30,6 +30,7 @@ jobs:
       - name: Probe sources (fast, always)
         run: python scripts/probe_xg.py
       - name: Fetch understat xG
+        if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[probe]') }}
         timeout-minutes: 10
         run: python scripts/fetch_xg.py
       - name: Commit
