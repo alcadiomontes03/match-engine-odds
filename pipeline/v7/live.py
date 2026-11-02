@@ -1,5 +1,6 @@
 """
 Alpha Lines v7 - live ratings (went live 2026-10-20, Alcadio's decision).
+Renamed "Alpha Lines v8" from week 9 (Alcadio, 2026-11-01): same rating method, written as model_version "Alpha Lines v8".
 
 v7 replaced the v6.1 Dixon-Coles ratings in the dashboard state (state/summary, state/detail_<code>). Prices are
 unchanged: blend weight is 0 in every league, so every bet price is still DraftKings' own; the ratings drive the
@@ -127,7 +128,7 @@ def refit(db: Path, asof: str) -> int:
     passed = [c for c in C.LEAGUES if report[c]["ok"]]
     if passed:
         (od / "summary.json").write_text(json.dumps({
-            "leagues": leagues, "model_version": "Alpha Lines v7", "generated_at": now,
+            "leagues": leagues, "model_version": "Alpha Lines v8", "generated_at": now,
             "refit_source": f"weekly v7 refit (pipeline/v7/live.py) as of {asof}; leagues refit: {', '.join(passed)}; "
                             f"prices unchanged (blend weight 0)"}))
     (od / "checks.json").write_text(json.dumps(report, indent=1))
