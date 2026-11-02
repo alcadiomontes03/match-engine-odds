@@ -1,0 +1,41 @@
+name: xg-history
+
+# 2026-11-01: per-match xG from understat.com for E0, SP1, D1, F1 (2017-18 on) into data/xg/.
+# Finished seasons are fetched once; the current season refreshes every Monday. Display and
+# research only: nothing live reads it until a pre-registered shadow test says so.
+on:
+  push:
+    branches: [main]
+    paths: ["scripts/fetch_xg.py", ".github/workflows/xg-history.yml"]
+  schedule:
+    - cron: "47 13 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-commit
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch understat xG
+        run: python scripts/fetch_xg.py
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "xg-bot"
+          git config user.email "xg-bot@users.noreply.github.com"
+          git add -A data/xg
+          if ! git diff --cached --quiet; then
+            git commit -m "understat xG $(date -u +%Y-%m-%dT%H:%MZ)"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          fi
