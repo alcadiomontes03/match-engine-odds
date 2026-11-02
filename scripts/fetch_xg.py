@@ -31,7 +31,7 @@ def _get(url, ajax=False):
         h.update({"X-Requested-With": "XMLHttpRequest", "Accept": "application/json, text/javascript, */*",
                   "Referer": url.replace("/getLeagueData/", "/league/")})
     req = urllib.request.Request(url, headers=h)
-    with urllib.request.urlopen(req, timeout=40) as r:
+    with urllib.request.urlopen(req, timeout=15) as r:
         return r.read().decode("utf-8", "replace")
 
 
