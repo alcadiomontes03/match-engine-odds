@@ -1,0 +1,163 @@
+{
+ "run_at": "2026-11-02T16:20:22+00:00",
+ "code_version": "research-4 (2026-11-01)",
+ "status": "warn",
+ "checks": [
+  {
+   "check": "goal level D1 (ratings)",
+   "level": "ok",
+   "detail": "27 matches: predicted 3.22, actual 3.22 goals/game (diff -0.00, z -0.0)",
+   "items": []
+  },
+  {
+   "check": "goal level D1 (market grid)",
+   "level": "ok",
+   "detail": "24 matches: predicted 3.56, actual 3.08 goals/game (diff -0.48, z -1.1)",
+   "items": []
+  },
+  {
+   "check": "goal level E0 (ratings)",
+   "level": "ok",
+   "detail": "40 matches: predicted 2.73, actual 2.70 goals/game (diff -0.03, z -0.1)",
+   "items": []
+  },
+  {
+   "check": "goal level E0 (market grid)",
+   "level": "ok",
+   "detail": "40 matches: predicted 3.01, actual 2.70 goals/game (diff -0.31, z -1.2)",
+   "items": []
+  },
+  {
+   "check": "goal level F1 (ratings)",
+   "level": "ok",
+   "detail": "26 matches: predicted 2.90, actual 3.23 goals/game (diff +0.33, z +0.9)",
+   "items": []
+  },
+  {
+   "check": "goal level F1 (market grid)",
+   "level": "ok",
+   "detail": "26 matches: predicted 3.09, actual 3.23 goals/game (diff +0.14, z +0.4)",
+   "items": []
+  },
+  {
+   "check": "goal level SP1 (ratings)",
+   "level": "ok",
+   "detail": "41 matches: predicted 2.79, actual 2.95 goals/game (diff +0.16, z +0.5)",
+   "items": []
+  },
+  {
+   "check": "goal level SP1 (market grid)",
+   "level": "ok",
+   "detail": "41 matches: predicted 2.92, actual 2.95 goals/game (diff +0.03, z +0.1)",
+   "items": []
+  },
+  {
+   "check": "missing results (kicked off 6h+ ago)",
+   "level": "warn",
+   "detail": "35 fixtures",
+   "items": [
+    "E0 Coventry v Sunderland 2026-10-31",
+    "E0 Tottenham v Crystal Palace 2026-10-31",
+    "E0 Bournemouth v Leeds 2026-10-31",
+    "E0 Hull v Ipswich 2026-10-31",
+    "SP1 Villarreal v Espanol 2026-10-30",
+    "E0 Man City v Brighton 2026-10-31",
+    "E0 Aston Villa v Fulham 2026-10-31",
+    "F1 Marseille v Toulouse 2026-11-01",
+    "F1 Paris FC v Monaco 2026-11-01",
+    "D1 Augsburg v Freiburg 2026-10-31",
+    "F1 Lille v Lens 2026-10-30",
+    "SP1 Betis v Malaga 2026-10-31",
+    "F1 Troyes v Le Mans 2026-10-31",
+    "SP1 Barcelona v Alaves 2026-10-31",
+    "D1 Leverkusen v Stuttgart 2026-10-31",
+    "SP1 Elche v Valencia 2026-11-01",
+    "SP1 Levante v Ath Madrid 2026-10-31",
+    "F1 Strasbourg v Auxerre 2026-11-01",
+    "D1 Schalke 04 v RB Leipzig 2026-10-31",
+    "D1 Elversberg v Mainz 2026-10-30"
+   ]
+  },
+  {
+   "check": "results without match stats (last 10 days)",
+   "level": "warn",
+   "detail": "2 results",
+   "items": [
+    "85e464708d03287f24590e1478aeca31",
+    "60eaeb599578cd5c951f917c4fef06ff"
+   ]
+  },
+  {
+   "check": "duplicate fixtures",
+   "level": "ok",
+   "detail": "0 pairs",
+   "items": []
+  },
+  {
+   "check": "result letter matches the score",
+   "level": "ok",
+   "detail": "0 mismatches",
+   "items": []
+  },
+  {
+   "check": "prediction probabilities",
+   "level": "ok",
+   "detail": "0 problems",
+   "items": []
+  },
+  {
+   "check": "predictions carrying gate_open: true",
+   "level": "ok",
+   "detail": "0 predictions copy the league's old blend-validation flag from state/summary; blend weight is 0, so no price is affected, but the flag reads as if the CLV gate were open",
+   "items": []
+  },
+  {
+   "check": "odds overrounds in a sane range",
+   "level": "ok",
+   "detail": "0 prices",
+   "items": []
+  },
+  {
+   "check": "odds-feed names close to fixture names",
+   "level": "ok",
+   "detail": "0 weak matches (check by eye; abbreviations can be fine)",
+   "items": []
+  },
+  {
+   "check": "auto-picks with no fixture",
+   "level": "ok",
+   "detail": "0",
+   "items": []
+  },
+  {
+   "check": "close price timing",
+   "level": "warn",
+   "detail": "120 matches, median 226 min before kickoff, 18 within 65 min, max 1440",
+   "items": []
+  },
+  {
+   "check": "side price timing",
+   "level": "warn",
+   "detail": "122 matches, median 259 min before kickoff, 1 within 65 min, max 1440",
+   "items": []
+  },
+  {
+   "check": "football-data results with no dashboard fixture",
+   "level": "ok",
+   "detail": "0 matches since 2026-10-09; football-data runs about a week behind, so this covers results up to 2026-10-18",
+   "items": []
+  },
+  {
+   "check": "DraftKings events with no dashboard fixture",
+   "level": "ok",
+   "detail": "0 kicked-off events since 2026-10-09 (no fixture with this event id, nor one within 2 days with similar team names)",
+   "items": []
+  },
+  {
+   "check": "odds API credits",
+   "level": "ok",
+   "detail": "434 left (side markets drop to BTTS only below 130)",
+   "items": []
+  }
+ ]
+}
