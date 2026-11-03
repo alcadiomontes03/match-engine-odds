@@ -1,0 +1,144 @@
+{
+ "run_at": "2026-11-03T12:49:03+00:00",
+ "code_version": "research-4 (2026-11-01)",
+ "status": "warn",
+ "checks": [
+  {
+   "check": "goal level D1 (ratings)",
+   "level": "ok",
+   "detail": "35 matches: predicted 3.25, actual 3.23 goals/game (diff -0.02, z -0.1)",
+   "items": []
+  },
+  {
+   "check": "goal level D1 (market grid)",
+   "level": "ok",
+   "detail": "32 matches: predicted 3.56, actual 3.12 goals/game (diff -0.43, z -1.2)",
+   "items": []
+  },
+  {
+   "check": "goal level E0 (ratings)",
+   "level": "ok",
+   "detail": "49 matches: predicted 2.73, actual 2.61 goals/game (diff -0.12, z -0.5)",
+   "items": []
+  },
+  {
+   "check": "goal level E0 (market grid)",
+   "level": "ok",
+   "detail": "49 matches: predicted 2.99, actual 2.61 goals/game (diff -0.38, z -1.7)",
+   "items": []
+  },
+  {
+   "check": "goal level F1 (ratings)",
+   "level": "ok",
+   "detail": "35 matches: predicted 2.91, actual 3.31 goals/game (diff +0.41, z +1.2)",
+   "items": []
+  },
+  {
+   "check": "goal level F1 (market grid)",
+   "level": "ok",
+   "detail": "35 matches: predicted 3.08, actual 3.31 goals/game (diff +0.24, z +0.7)",
+   "items": []
+  },
+  {
+   "check": "goal level SP1 (ratings)",
+   "level": "ok",
+   "detail": "50 matches: predicted 2.84, actual 2.96 goals/game (diff +0.12, z +0.4)",
+   "items": []
+  },
+  {
+   "check": "goal level SP1 (market grid)",
+   "level": "ok",
+   "detail": "50 matches: predicted 2.97, actual 2.96 goals/game (diff -0.01, z -0.0)",
+   "items": []
+  },
+  {
+   "check": "missing results (kicked off 6h+ ago)",
+   "level": "ok",
+   "detail": "0 fixtures",
+   "items": []
+  },
+  {
+   "check": "results without match stats (last 10 days)",
+   "level": "warn",
+   "detail": "1 results",
+   "items": [
+    "c1a1e850def721bbfc43ff80c133a5e6"
+   ]
+  },
+  {
+   "check": "duplicate fixtures",
+   "level": "ok",
+   "detail": "0 pairs",
+   "items": []
+  },
+  {
+   "check": "result letter matches the score",
+   "level": "ok",
+   "detail": "0 mismatches",
+   "items": []
+  },
+  {
+   "check": "prediction probabilities",
+   "level": "ok",
+   "detail": "0 problems",
+   "items": []
+  },
+  {
+   "check": "predictions carrying gate_open: true",
+   "level": "ok",
+   "detail": "0 predictions copy the league's old blend-validation flag from state/summary; blend weight is 0, so no price is affected, but the flag reads as if the CLV gate were open",
+   "items": []
+  },
+  {
+   "check": "odds overrounds in a sane range",
+   "level": "ok",
+   "detail": "0 prices",
+   "items": []
+  },
+  {
+   "check": "odds-feed names close to fixture names",
+   "level": "ok",
+   "detail": "0 weak matches (check by eye; abbreviations can be fine)",
+   "items": []
+  },
+  {
+   "check": "auto-picks with no fixture",
+   "level": "ok",
+   "detail": "0",
+   "items": []
+  },
+  {
+   "check": "close price timing",
+   "level": "warn",
+   "detail": "120 matches, median 226 min before kickoff, 18 within 65 min, max 1440",
+   "items": []
+  },
+  {
+   "check": "side price timing",
+   "level": "warn",
+   "detail": "122 matches, median 259 min before kickoff, 1 within 65 min, max 1440",
+   "items": []
+  },
+  {
+   "check": "football-data results with no dashboard fixture",
+   "level": "ok",
+   "detail": "0 matches since 2026-10-09; football-data runs about a week behind, so this covers results up to 2026-11-01",
+   "items": []
+  },
+  {
+   "check": "DraftKings events with no dashboard fixture",
+   "level": "warn",
+   "detail": "2 kicked-off events since 2026-10-09 (no fixture with this event id, nor one within 2 days with similar team names)",
+   "items": [
+    "E0 Newcastle United v Everton 2026-11-02 (0f552d9c6990c69474f50ff2fb54e9a3)",
+    "SP1 Deportivo La Coru\u00f1a v CA Osasuna 2026-11-02 (7a2cd2744fdf15ea675423a6c23df46b)"
+   ]
+  },
+  {
+   "check": "odds API credits",
+   "level": "ok",
+   "detail": "433 left (side markets drop to BTTS only below 130)",
+   "items": []
+  }
+ ]
+}
