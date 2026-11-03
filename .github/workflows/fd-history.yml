@@ -8,6 +8,10 @@ on:
     branches: [main]
     paths: ["fetch_fd.py", ".github/workflows/fd-history.yml"]
   schedule:
+    # Mon 06:17 and 14:17 UTC plus Tue 06:17 UTC (Monday-night games). GitHub often starts scheduled runs hours
+    # late (Nov 2: 22:47 UTC), so the Monday jobs also call scripts/ensure_fd.py, which starts this workflow
+    # and waits for it when no successful run exists yet that day.
+    - cron: "17 6 * * 1,2"
     - cron: "17 14 * * 1"
   workflow_dispatch:
 

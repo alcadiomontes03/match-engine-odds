@@ -21,7 +21,9 @@ KEEP = ["Div", "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "HS", "AS", "HST"
         "P>2.5", "P<2.5", "PC>2.5", "PC<2.5",
         "Avg>2.5", "Avg<2.5", "AvgC>2.5", "AvgC<2.5",
         "AHh", "AHCh", "PAHH", "PAHA", "PCAHH", "PCAHA",
-        "HC", "AC"]                                   # corners (v6.1 corners model)
+        "HC", "AC",                                   # corners (v6.1 corners model)
+        "HY", "AY", "HR", "AR"]                       # cards (2026-11-03: results stats for the grading jobs)
+OPTIONAL = {"HY", "AY", "HR", "AR"}                   # not worth re-downloading completed seasons for
 OUT = Path(__file__).resolve().parent / "data" / "fd"
 
 
@@ -56,7 +58,7 @@ def main(only_current: bool = False):
             if path.exists() and not is_current and not only_current:
                 with path.open(newline="") as fh:
                     have = next(csv.reader(fh), [])
-                if all(k in have for k in KEEP):
+                if all(k in have for k in KEEP if k not in OPTIONAL):
                     continue  # completed seasons never change
                 # an older trim is missing a column added since (v6.1: corners) -> fetch again
             if only_current and not is_current:
