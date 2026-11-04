@@ -742,15 +742,6 @@
   "weekly:Ligue1": "2026-W45",
   "weekly:PL": "2026-W45"
  },
- "a362cccad837f1ffae61ff43a3536688": {
-  "away": "Athletic Bilbao",
-  "commence": "2026-10-21T18:00:00Z",
-  "comp": "LaLiga",
-  "home": "Levante",
-  "late": "2026-10-21T13:05:04+00:00",
-  "side": "2026-10-21T13:05:04+00:00",
-  "weekly": "2026-10-19T19:41:41+00:00"
- },
  "a529e5762f18d97981194ec3668dc3d3": {
   "away": "AS Monaco",
   "commence": "2026-11-08T16:15:00Z",
