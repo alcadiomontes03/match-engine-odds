@@ -152,3 +152,9 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-06T18:45:21+00:00,late,Ligue1,5e7d141f719835de18877ed95bedcb32,2026-11-06T19:45:00Z,Toulouse,Strasbourg,pinnacle,2026-11-06T18:45:21Z,h2h,Strasbourg,,3.43
 2026-11-06T18:45:21+00:00,late,Ligue1,5e7d141f719835de18877ed95bedcb32,2026-11-06T19:45:00Z,Toulouse,Strasbourg,pinnacle,2026-11-06T18:45:21Z,h2h,Toulouse,,2.09
 2026-11-06T18:45:21+00:00,late,Ligue1,5e7d141f719835de18877ed95bedcb32,2026-11-06T19:45:00Z,Toulouse,Strasbourg,pinnacle,2026-11-06T18:45:21Z,h2h,Draw,,3.9
+2026-11-06T18:55:25+00:00,late,PL,586bec023ee8ac2f0645d963bd2c9d25,2026-11-06T20:00:00Z,Everton,Coventry City,pinnacle,2026-11-06T18:55:19Z,h2h,Coventry City,,5.26
+2026-11-06T18:55:25+00:00,late,PL,586bec023ee8ac2f0645d963bd2c9d25,2026-11-06T20:00:00Z,Everton,Coventry City,pinnacle,2026-11-06T18:55:19Z,h2h,Everton,,1.68
+2026-11-06T18:55:25+00:00,late,PL,586bec023ee8ac2f0645d963bd2c9d25,2026-11-06T20:00:00Z,Everton,Coventry City,pinnacle,2026-11-06T18:55:19Z,h2h,Draw,,4.08
+2026-11-06T18:55:25+00:00,late,LaLiga,9dd0014685fd62d9b2890d7c33a8c9ab,2026-11-06T20:00:00Z,Sevilla,Alavés,pinnacle,2026-11-06T18:55:24Z,h2h,Alavés,,4.76
+2026-11-06T18:55:25+00:00,late,LaLiga,9dd0014685fd62d9b2890d7c33a8c9ab,2026-11-06T20:00:00Z,Sevilla,Alavés,pinnacle,2026-11-06T18:55:24Z,h2h,Sevilla,,1.93
+2026-11-06T18:55:25+00:00,late,LaLiga,9dd0014685fd62d9b2890d7c33a8c9ab,2026-11-06T20:00:00Z,Sevilla,Alavés,pinnacle,2026-11-06T18:55:24Z,h2h,Draw,,3.33
