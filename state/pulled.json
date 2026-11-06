@@ -178,6 +178,8 @@
   "commence": "2026-11-06T19:30:00Z",
   "comp": "Bundesliga",
   "home": "Hamburger SV",
+  "late": "2026-11-06T15:44:42+00:00",
+  "side": "2026-11-06T15:44:42+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
  "2db2b55e71574a19ff0557898d3e9933": {
@@ -368,6 +370,8 @@
   "commence": "2026-11-06T20:00:00Z",
   "comp": "PL",
   "home": "Everton",
+  "late": "2026-11-06T15:44:42+00:00",
+  "side": "2026-11-06T15:44:42+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
  "5960b1b6c20acfd78e78764fed47d505": {
@@ -406,6 +410,8 @@
   "commence": "2026-11-06T19:45:00Z",
   "comp": "Ligue1",
   "home": "Toulouse",
+  "late": "2026-11-06T15:44:42+00:00",
+  "side": "2026-11-06T15:44:42+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
  "60eaeb599578cd5c951f917c4fef06ff": {
@@ -697,6 +703,8 @@
   "commence": "2026-11-06T20:00:00Z",
   "comp": "LaLiga",
   "home": "Sevilla",
+  "late": "2026-11-06T15:44:42+00:00",
+  "side": "2026-11-06T15:44:42+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
  "_meta": {
@@ -720,22 +728,22 @@
   "empty:btts:LaLiga": 0,
   "empty:btts:Ligue1": 0,
   "empty:btts:PL": 0,
-  "empty:spreads:Bundesliga": 0,
-  "empty:spreads:LaLiga": 0,
-  "empty:spreads:Ligue1": 0,
-  "empty:spreads:PL": 2,
-  "empty:totals:Bundesliga": 0,
-  "empty:totals:LaLiga": 0,
-  "empty:totals:Ligue1": 0,
-  "empty:totals:PL": 2,
+  "empty:spreads:Bundesliga": 1,
+  "empty:spreads:LaLiga": 1,
+  "empty:spreads:Ligue1": 1,
+  "empty:spreads:PL": 0,
+  "empty:totals:Bundesliga": 1,
+  "empty:totals:LaLiga": 1,
+  "empty:totals:Ligue1": 1,
+  "empty:totals:PL": 0,
   "none:spreads:Bundesliga": "2026-W44",
   "none:spreads:LaLiga": "2026-W44",
   "none:spreads:Ligue1": "2026-W44",
-  "none:spreads:PL": "2026-W43",
+  "none:spreads:PL": "2026-W45",
   "none:totals:Bundesliga": "2026-W44",
   "none:totals:LaLiga": "2026-W44",
   "none:totals:Ligue1": "2026-W44",
-  "none:totals:PL": "2026-W43",
+  "none:totals:PL": "2026-W45",
   "weekly:Bundesliga": "2026-W45",
   "weekly:Championship": "2026-W39",
   "weekly:LaLiga": "2026-W45",
