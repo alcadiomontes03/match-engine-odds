@@ -3895,3 +3895,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-06T18:25:14+00:00,late,Bundesliga,295076c39e49863cb54db085ac3cd340,2026-11-06T19:30:00Z,Hamburger SV,Borussia Monchengladbach,draftkings,2026-11-06T18:25:10Z,h2h,Borussia Monchengladbach,,2.85
 2026-11-06T18:25:14+00:00,late,Bundesliga,295076c39e49863cb54db085ac3cd340,2026-11-06T19:30:00Z,Hamburger SV,Borussia Monchengladbach,draftkings,2026-11-06T18:25:10Z,h2h,Hamburger SV,,2.3
 2026-11-06T18:25:14+00:00,late,Bundesliga,295076c39e49863cb54db085ac3cd340,2026-11-06T19:30:00Z,Hamburger SV,Borussia Monchengladbach,draftkings,2026-11-06T18:25:10Z,h2h,Draw,,3.35
+2026-11-06T18:45:21+00:00,late,Ligue1,5e7d141f719835de18877ed95bedcb32,2026-11-06T19:45:00Z,Toulouse,Strasbourg,draftkings,2026-11-06T18:44:54Z,h2h,Strasbourg,,3.3
+2026-11-06T18:45:21+00:00,late,Ligue1,5e7d141f719835de18877ed95bedcb32,2026-11-06T19:45:00Z,Toulouse,Strasbourg,draftkings,2026-11-06T18:44:54Z,h2h,Toulouse,,2.05
+2026-11-06T18:45:21+00:00,late,Ligue1,5e7d141f719835de18877ed95bedcb32,2026-11-06T19:45:00Z,Toulouse,Strasbourg,draftkings,2026-11-06T18:44:54Z,h2h,Draw,,3.8

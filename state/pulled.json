@@ -411,7 +411,8 @@
   "commence": "2026-11-06T19:45:00Z",
   "comp": "Ligue1",
   "home": "Toulouse",
-  "late": "2026-11-06T15:44:42+00:00",
+  "late": "2026-11-06T18:45:21+00:00",
+  "late_final": true,
   "side": "2026-11-06T15:44:42+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
@@ -617,15 +618,6 @@
   "comp": "Bundesliga",
   "home": "TSG Hoffenheim",
   "weekly": "2026-11-02T15:03:58+00:00"
- },
- "8aa36b30d655d6c81ed98bf9ec1b4039": {
-  "away": "Nice",
-  "commence": "2026-10-23T18:45:00Z",
-  "comp": "Ligue1",
-  "home": "Brest",
-  "late": "2026-10-23T15:22:31+00:00",
-  "side": "2026-10-23T15:22:31+00:00",
-  "weekly": "2026-10-19T19:41:41+00:00"
  },
  "8e3ca98e29be84dd4a882ed05f50fa79": {
   "away": "Brentford",
