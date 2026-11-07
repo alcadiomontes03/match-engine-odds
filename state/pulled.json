@@ -28,15 +28,6 @@
   "side": "2026-10-31T12:32:17+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
- "0382a9faef0bb8df1bcc436536cffb05": {
-  "away": "Tottenham Hotspur",
-  "commence": "2026-10-24T16:30:00Z",
-  "comp": "PL",
-  "home": "Chelsea",
-  "late": "2026-10-24T09:43:47+00:00",
-  "side": "2026-10-24T09:43:47+00:00",
-  "weekly": "2026-10-19T19:41:41+00:00"
- },
  "0cfbab01e152f81e34f9014e02c7eb79": {
   "away": "Liverpool",
   "commence": "2026-11-08T14:00:00Z",
@@ -50,15 +41,6 @@
   "comp": "LaLiga",
   "home": "Celta Vigo",
   "weekly": "2026-11-02T15:03:58+00:00"
- },
- "0dae715cc56fe201f9e667917c126691": {
-  "away": "Villarreal",
-  "commence": "2026-10-24T16:30:00Z",
-  "comp": "LaLiga",
-  "home": "Valencia",
-  "late": "2026-10-24T09:43:47+00:00",
-  "side": "2026-10-24T09:43:47+00:00",
-  "weekly": "2026-10-19T19:41:41+00:00"
  },
  "0f552d9c6990c69474f50ff2fb54e9a3": {
   "away": "Everton",
@@ -255,15 +237,6 @@
   "home": "Le Havre",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
- "3ed4d1e775910625c50518a384e9c547": {
-  "away": "Eintracht Frankfurt",
-  "commence": "2026-10-24T16:30:00Z",
-  "comp": "Bundesliga",
-  "home": "Borussia Dortmund",
-  "late": "2026-10-24T09:43:47+00:00",
-  "side": "2026-10-24T09:43:47+00:00",
-  "weekly": "2026-10-19T19:41:41+00:00"
- },
  "3ef62ef56758041178c5280225fe5db7": {
   "away": "Elversberg",
   "commence": "2026-11-07T14:30:00Z",
@@ -349,7 +322,8 @@
   "commence": "2026-11-07T17:30:00Z",
   "comp": "PL",
   "home": "Nottingham Forest",
-  "late": "2026-11-07T09:33:03+00:00",
+  "late": "2026-11-07T16:34:44+00:00",
+  "late_final": true,
   "side": "2026-11-07T09:33:03+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
@@ -450,7 +424,8 @@
   "commence": "2026-11-07T17:30:00Z",
   "comp": "Bundesliga",
   "home": "VfB Stuttgart",
-  "late": "2026-11-07T09:33:03+00:00",
+  "late": "2026-11-07T16:34:44+00:00",
+  "late_final": true,
   "side": "2026-11-07T09:33:03+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
@@ -459,7 +434,8 @@
   "commence": "2026-11-07T17:30:00Z",
   "comp": "LaLiga",
   "home": "CA Osasuna",
-  "late": "2026-11-07T09:33:03+00:00",
+  "late": "2026-11-07T16:34:44+00:00",
+  "late_final": true,
   "side": "2026-11-07T09:33:03+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },

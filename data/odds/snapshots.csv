@@ -4328,3 +4328,12 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-07T14:14:20+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,2026-11-07T14:14:00Z,h2h,Deportivo La Coruña,,2.95
 2026-11-07T14:14:20+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,2026-11-07T14:14:00Z,h2h,Espanyol,,2.5
 2026-11-07T14:14:20+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,2026-11-07T14:14:00Z,h2h,Draw,,3.25
+2026-11-07T16:34:44+00:00,late,PL,59c5f635cfe11613c07e9a5520ced5c1,2026-11-07T17:30:00Z,Nottingham Forest,Manchester City,draftkings,2026-11-07T16:34:02Z,h2h,Manchester City,,1.69
+2026-11-07T16:34:44+00:00,late,PL,59c5f635cfe11613c07e9a5520ced5c1,2026-11-07T17:30:00Z,Nottingham Forest,Manchester City,draftkings,2026-11-07T16:34:02Z,h2h,Nottingham Forest,,4.8
+2026-11-07T16:34:44+00:00,late,PL,59c5f635cfe11613c07e9a5520ced5c1,2026-11-07T17:30:00Z,Nottingham Forest,Manchester City,draftkings,2026-11-07T16:34:02Z,h2h,Draw,,4.1
+2026-11-07T16:34:44+00:00,late,LaLiga,71ca5141a1c532e390c6fa14e080d8bd,2026-11-07T17:30:00Z,CA Osasuna,Athletic Bilbao,draftkings,2026-11-07T16:34:34Z,h2h,Athletic Bilbao,,2.0
+2026-11-07T16:34:44+00:00,late,LaLiga,71ca5141a1c532e390c6fa14e080d8bd,2026-11-07T17:30:00Z,CA Osasuna,Athletic Bilbao,draftkings,2026-11-07T16:34:34Z,h2h,CA Osasuna,,3.85
+2026-11-07T16:34:44+00:00,late,LaLiga,71ca5141a1c532e390c6fa14e080d8bd,2026-11-07T17:30:00Z,CA Osasuna,Athletic Bilbao,draftkings,2026-11-07T16:34:34Z,h2h,Draw,,3.4
+2026-11-07T16:34:44+00:00,late,Bundesliga,716d6e3f3e91c47a6efaa2e93d570533,2026-11-07T17:30:00Z,VfB Stuttgart,Werder Bremen,draftkings,2026-11-07T16:34:28Z,h2h,VfB Stuttgart,,1.8
+2026-11-07T16:34:44+00:00,late,Bundesliga,716d6e3f3e91c47a6efaa2e93d570533,2026-11-07T17:30:00Z,VfB Stuttgart,Werder Bremen,draftkings,2026-11-07T16:34:28Z,h2h,Werder Bremen,,3.65
+2026-11-07T16:34:44+00:00,late,Bundesliga,716d6e3f3e91c47a6efaa2e93d570533,2026-11-07T17:30:00Z,VfB Stuttgart,Werder Bremen,draftkings,2026-11-07T16:34:28Z,h2h,Draw,,4.0
