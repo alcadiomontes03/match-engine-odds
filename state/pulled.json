@@ -611,6 +611,8 @@
   "commence": "2026-11-07T16:15:00Z",
   "comp": "Ligue1",
   "home": "Auxerre",
+  "late": "2026-11-07T10:03:11+00:00",
+  "side": "2026-11-07T10:03:11+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
  "85e464708d03287f24590e1478aeca31": {
@@ -734,11 +736,11 @@
   "empty:btts:PL": 0,
   "empty:spreads:Bundesliga": 0,
   "empty:spreads:LaLiga": 0,
-  "empty:spreads:Ligue1": 1,
+  "empty:spreads:Ligue1": 2,
   "empty:spreads:PL": 0,
   "empty:totals:Bundesliga": 0,
   "empty:totals:LaLiga": 0,
-  "empty:totals:Ligue1": 1,
+  "empty:totals:Ligue1": 2,
   "empty:totals:PL": 0,
   "none:spreads:Bundesliga": "2026-W45",
   "none:spreads:LaLiga": "2026-W45",
