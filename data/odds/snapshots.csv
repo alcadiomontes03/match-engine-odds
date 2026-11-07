@@ -4340,3 +4340,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-07T17:04:51+00:00,late,Ligue1,8553a80cf1ae5cbe3e7a69b76ce8167f,2026-11-07T18:00:00Z,Auxerre,Paris FC,draftkings,2026-11-07T17:04:35Z,h2h,Auxerre,,5.25
 2026-11-07T17:04:51+00:00,late,Ligue1,8553a80cf1ae5cbe3e7a69b76ce8167f,2026-11-07T18:00:00Z,Auxerre,Paris FC,draftkings,2026-11-07T17:04:35Z,h2h,Paris FC,,1.62
 2026-11-07T17:04:51+00:00,late,Ligue1,8553a80cf1ae5cbe3e7a69b76ce8167f,2026-11-07T18:00:00Z,Auxerre,Paris FC,draftkings,2026-11-07T17:04:35Z,h2h,Draw,,4.1
+2026-11-07T18:55:22+00:00,late,LaLiga,5b386dfdf6f76705116fbb4120ee8493,2026-11-07T20:00:00Z,Valencia,Real Madrid,draftkings,2026-11-07T18:55:15Z,h2h,Real Madrid,,1.25
+2026-11-07T18:55:22+00:00,late,LaLiga,5b386dfdf6f76705116fbb4120ee8493,2026-11-07T20:00:00Z,Valencia,Real Madrid,draftkings,2026-11-07T18:55:15Z,h2h,Valencia,,11.0
+2026-11-07T18:55:22+00:00,late,LaLiga,5b386dfdf6f76705116fbb4120ee8493,2026-11-07T20:00:00Z,Valencia,Real Madrid,draftkings,2026-11-07T18:55:15Z,h2h,Draw,,6.0
