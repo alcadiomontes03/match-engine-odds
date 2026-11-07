@@ -206,3 +206,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-07T12:03:29+00:00,late,LaLiga,5b386dfdf6f76705116fbb4120ee8493,2026-11-07T20:00:00Z,Valencia,Real Madrid,pinnacle,2026-11-07T12:03:09Z,h2h,Real Madrid,,1.26
 2026-11-07T12:03:29+00:00,late,LaLiga,5b386dfdf6f76705116fbb4120ee8493,2026-11-07T20:00:00Z,Valencia,Real Madrid,pinnacle,2026-11-07T12:03:09Z,h2h,Valencia,,11.47
 2026-11-07T12:03:29+00:00,late,LaLiga,5b386dfdf6f76705116fbb4120ee8493,2026-11-07T20:00:00Z,Valencia,Real Madrid,pinnacle,2026-11-07T12:03:09Z,h2h,Draw,,6.38
+2026-11-07T12:13:34+00:00,late,Ligue1,f7b240389fa5ec055c58a48ab153dcdd,2026-11-07T20:05:00Z,Paris Saint Germain,Troyes,pinnacle,2026-11-07T12:13:17Z,h2h,Paris Saint Germain,,1.18
+2026-11-07T12:13:34+00:00,late,Ligue1,f7b240389fa5ec055c58a48ab153dcdd,2026-11-07T20:05:00Z,Paris Saint Germain,Troyes,pinnacle,2026-11-07T12:13:17Z,h2h,Troyes,,15.66
+2026-11-07T12:13:34+00:00,late,Ligue1,f7b240389fa5ec055c58a48ab153dcdd,2026-11-07T20:05:00Z,Paris Saint Germain,Troyes,pinnacle,2026-11-07T12:13:17Z,h2h,Draw,,8.42
