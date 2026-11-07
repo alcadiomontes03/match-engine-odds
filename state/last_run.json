@@ -1,5 +1,5 @@
 {
- "utc": "2026-11-07T17:14:55+00:00",
+ "utc": "2026-11-07T17:24:57+00:00",
  "markets": "h2h",
  "bookmakers": "draftkings",
  "leagues": {
@@ -12,8 +12,8 @@
    "due_late": 0
   },
   "LaLiga": {
-   "events_from_api": 18,
-   "after_team_filter": 18,
+   "events_from_api": 17,
+   "after_team_filter": 17,
    "team_filter": [],
    "due_weekly": 7,
    "weekly_done": true,
