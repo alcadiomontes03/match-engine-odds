@@ -227,3 +227,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-07T14:04:16+00:00,late,PL,3903e98a54db0f2cc23095407fe9dad8,2026-11-07T15:00:00Z,Fulham,Newcastle United,pinnacle,2026-11-07T14:04:08Z,h2h,Fulham,,2.07
 2026-11-07T14:04:16+00:00,late,PL,3903e98a54db0f2cc23095407fe9dad8,2026-11-07T15:00:00Z,Fulham,Newcastle United,pinnacle,2026-11-07T14:04:08Z,h2h,Newcastle United,,3.58
 2026-11-07T14:04:16+00:00,late,PL,3903e98a54db0f2cc23095407fe9dad8,2026-11-07T15:00:00Z,Fulham,Newcastle United,pinnacle,2026-11-07T14:04:08Z,h2h,Draw,,3.79
+2026-11-07T14:14:20+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,pinnacle,2026-11-07T14:13:58Z,h2h,Deportivo La Coruña,,3.09
+2026-11-07T14:14:20+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,pinnacle,2026-11-07T14:13:58Z,h2h,Espanyol,,2.53
+2026-11-07T14:14:20+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,pinnacle,2026-11-07T14:13:58Z,h2h,Draw,,3.27
