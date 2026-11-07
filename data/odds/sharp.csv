@@ -185,3 +185,12 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,pinnacle,2026-11-07T07:22:43Z,h2h,Deportivo La Coruña,,3.09
 2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,pinnacle,2026-11-07T07:22:43Z,h2h,Espanyol,,2.51
 2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,pinnacle,2026-11-07T07:22:43Z,h2h,Draw,,3.25
+2026-11-07T09:33:03+00:00,late,PL,59c5f635cfe11613c07e9a5520ced5c1,2026-11-07T17:30:00Z,Nottingham Forest,Manchester City,pinnacle,2026-11-07T09:32:51Z,h2h,Manchester City,,1.79
+2026-11-07T09:33:03+00:00,late,PL,59c5f635cfe11613c07e9a5520ced5c1,2026-11-07T17:30:00Z,Nottingham Forest,Manchester City,pinnacle,2026-11-07T09:32:51Z,h2h,Nottingham Forest,,4.65
+2026-11-07T09:33:03+00:00,late,PL,59c5f635cfe11613c07e9a5520ced5c1,2026-11-07T17:30:00Z,Nottingham Forest,Manchester City,pinnacle,2026-11-07T09:32:51Z,h2h,Draw,,3.95
+2026-11-07T09:33:03+00:00,late,LaLiga,71ca5141a1c532e390c6fa14e080d8bd,2026-11-07T17:30:00Z,CA Osasuna,Athletic Bilbao,pinnacle,2026-11-07T09:32:56Z,h2h,Athletic Bilbao,,2.08
+2026-11-07T09:33:03+00:00,late,LaLiga,71ca5141a1c532e390c6fa14e080d8bd,2026-11-07T17:30:00Z,CA Osasuna,Athletic Bilbao,pinnacle,2026-11-07T09:32:56Z,h2h,CA Osasuna,,3.91
+2026-11-07T09:33:03+00:00,late,LaLiga,71ca5141a1c532e390c6fa14e080d8bd,2026-11-07T17:30:00Z,CA Osasuna,Athletic Bilbao,pinnacle,2026-11-07T09:32:56Z,h2h,Draw,,3.45
+2026-11-07T09:33:03+00:00,late,Bundesliga,716d6e3f3e91c47a6efaa2e93d570533,2026-11-07T17:30:00Z,VfB Stuttgart,Werder Bremen,pinnacle,2026-11-07T09:32:52Z,h2h,VfB Stuttgart,,1.87
+2026-11-07T09:33:03+00:00,late,Bundesliga,716d6e3f3e91c47a6efaa2e93d570533,2026-11-07T17:30:00Z,VfB Stuttgart,Werder Bremen,pinnacle,2026-11-07T09:32:52Z,h2h,Werder Bremen,,3.87
+2026-11-07T09:33:03+00:00,late,Bundesliga,716d6e3f3e91c47a6efaa2e93d570533,2026-11-07T17:30:00Z,VfB Stuttgart,Werder Bremen,pinnacle,2026-11-07T09:32:52Z,h2h,Draw,,4.29
