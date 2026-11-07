@@ -411,15 +411,6 @@
   "side": "2026-11-01T09:45:27+00:00",
   "weekly": "2026-10-26T16:16:04+00:00"
  },
- "70df1835c3b5ddff1c99e0189532136b": {
-  "away": "Deportivo La Coru\u00f1a",
-  "commence": "2026-10-24T19:00:00Z",
-  "comp": "LaLiga",
-  "home": "Atl\u00e9tico Madrid",
-  "late": "2026-10-24T13:36:48+00:00",
-  "side": "2026-10-24T13:36:48+00:00",
-  "weekly": "2026-10-19T19:41:41+00:00"
- },
  "716d6e3f3e91c47a6efaa2e93d570533": {
   "away": "Werder Bremen",
   "commence": "2026-11-07T17:30:00Z",
@@ -869,7 +860,8 @@
   "commence": "2026-11-07T19:45:00Z",
   "comp": "Ligue1",
   "home": "Paris Saint Germain",
-  "late": "2026-11-07T12:13:34+00:00",
+  "late": "2026-11-07T19:05:41+00:00",
+  "late_final": true,
   "side": "2026-11-07T12:13:34+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
