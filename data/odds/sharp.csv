@@ -239,3 +239,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-07T16:34:44+00:00,late,Bundesliga,716d6e3f3e91c47a6efaa2e93d570533,2026-11-07T17:30:00Z,VfB Stuttgart,Werder Bremen,pinnacle,2026-11-07T16:34:28Z,h2h,VfB Stuttgart,,1.89
 2026-11-07T16:34:44+00:00,late,Bundesliga,716d6e3f3e91c47a6efaa2e93d570533,2026-11-07T17:30:00Z,VfB Stuttgart,Werder Bremen,pinnacle,2026-11-07T16:34:28Z,h2h,Werder Bremen,,3.87
 2026-11-07T16:34:44+00:00,late,Bundesliga,716d6e3f3e91c47a6efaa2e93d570533,2026-11-07T17:30:00Z,VfB Stuttgart,Werder Bremen,pinnacle,2026-11-07T16:34:28Z,h2h,Draw,,4.18
+2026-11-07T17:04:51+00:00,late,Ligue1,8553a80cf1ae5cbe3e7a69b76ce8167f,2026-11-07T18:00:00Z,Auxerre,Paris FC,pinnacle,2026-11-07T17:04:38Z,h2h,Auxerre,,5.2
+2026-11-07T17:04:51+00:00,late,Ligue1,8553a80cf1ae5cbe3e7a69b76ce8167f,2026-11-07T18:00:00Z,Auxerre,Paris FC,pinnacle,2026-11-07T17:04:38Z,h2h,Paris FC,,1.68
+2026-11-07T17:04:51+00:00,late,Ligue1,8553a80cf1ae5cbe3e7a69b76ce8167f,2026-11-07T18:00:00Z,Auxerre,Paris FC,pinnacle,2026-11-07T17:04:38Z,h2h,Draw,,4.14
