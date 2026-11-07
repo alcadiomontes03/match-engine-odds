@@ -200,3 +200,9 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-07T11:33:22+00:00,late,PL,5c87852253fd11eea5d34ad723356607,2026-11-07T12:30:00Z,Leeds United,Tottenham Hotspur,pinnacle,2026-11-07T11:33:19Z,h2h,Leeds United,,2.85
 2026-11-07T11:33:22+00:00,late,PL,5c87852253fd11eea5d34ad723356607,2026-11-07T12:30:00Z,Leeds United,Tottenham Hotspur,pinnacle,2026-11-07T11:33:19Z,h2h,Tottenham Hotspur,,2.66
 2026-11-07T11:33:22+00:00,late,PL,5c87852253fd11eea5d34ad723356607,2026-11-07T12:30:00Z,Leeds United,Tottenham Hotspur,pinnacle,2026-11-07T11:33:19Z,h2h,Draw,,3.35
+2026-11-07T12:03:29+00:00,late,LaLiga,de935794b7d93f3607ac9ad54d18f4c7,2026-11-07T13:00:00Z,Málaga,Real Racing Club de Santander,pinnacle,2026-11-07T12:03:09Z,h2h,Málaga,,2.46
+2026-11-07T12:03:29+00:00,late,LaLiga,de935794b7d93f3607ac9ad54d18f4c7,2026-11-07T13:00:00Z,Málaga,Real Racing Club de Santander,pinnacle,2026-11-07T12:03:09Z,h2h,Real Racing Club de Santander,,2.98
+2026-11-07T12:03:29+00:00,late,LaLiga,de935794b7d93f3607ac9ad54d18f4c7,2026-11-07T13:00:00Z,Málaga,Real Racing Club de Santander,pinnacle,2026-11-07T12:03:09Z,h2h,Draw,,3.55
+2026-11-07T12:03:29+00:00,late,LaLiga,5b386dfdf6f76705116fbb4120ee8493,2026-11-07T20:00:00Z,Valencia,Real Madrid,pinnacle,2026-11-07T12:03:09Z,h2h,Real Madrid,,1.26
+2026-11-07T12:03:29+00:00,late,LaLiga,5b386dfdf6f76705116fbb4120ee8493,2026-11-07T20:00:00Z,Valencia,Real Madrid,pinnacle,2026-11-07T12:03:09Z,h2h,Valencia,,11.47
+2026-11-07T12:03:29+00:00,late,LaLiga,5b386dfdf6f76705116fbb4120ee8493,2026-11-07T20:00:00Z,Valencia,Real Madrid,pinnacle,2026-11-07T12:03:09Z,h2h,Draw,,6.38
