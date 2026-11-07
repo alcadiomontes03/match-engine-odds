@@ -4319,3 +4319,9 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-07T13:34:01+00:00,late,Bundesliga,4ca4c7a2a1c15e9121f9a7eaa7f42ddb,2026-11-07T14:30:00Z,SC Paderborn,Eintracht Frankfurt,draftkings,2026-11-07T13:32:04Z,h2h,Eintracht Frankfurt,,2.25
 2026-11-07T13:34:01+00:00,late,Bundesliga,4ca4c7a2a1c15e9121f9a7eaa7f42ddb,2026-11-07T14:30:00Z,SC Paderborn,Eintracht Frankfurt,draftkings,2026-11-07T13:32:04Z,h2h,SC Paderborn,,2.75
 2026-11-07T13:34:01+00:00,late,Bundesliga,4ca4c7a2a1c15e9121f9a7eaa7f42ddb,2026-11-07T14:30:00Z,SC Paderborn,Eintracht Frankfurt,draftkings,2026-11-07T13:32:04Z,h2h,Draw,,3.65
+2026-11-07T14:04:16+00:00,late,PL,842fcc5b9feb8c63054a661ad1fc8926,2026-11-07T15:00:00Z,Arsenal,Hull City,draftkings,2026-11-07T14:04:05Z,h2h,Arsenal,,1.14
+2026-11-07T14:04:16+00:00,late,PL,842fcc5b9feb8c63054a661ad1fc8926,2026-11-07T15:00:00Z,Arsenal,Hull City,draftkings,2026-11-07T14:04:05Z,h2h,Hull City,,20.0
+2026-11-07T14:04:16+00:00,late,PL,842fcc5b9feb8c63054a661ad1fc8926,2026-11-07T15:00:00Z,Arsenal,Hull City,draftkings,2026-11-07T14:04:05Z,h2h,Draw,,8.0
+2026-11-07T14:04:16+00:00,late,PL,3903e98a54db0f2cc23095407fe9dad8,2026-11-07T15:00:00Z,Fulham,Newcastle United,draftkings,2026-11-07T14:04:05Z,h2h,Fulham,,2.05
+2026-11-07T14:04:16+00:00,late,PL,3903e98a54db0f2cc23095407fe9dad8,2026-11-07T15:00:00Z,Fulham,Newcastle United,draftkings,2026-11-07T14:04:05Z,h2h,Newcastle United,,3.45
+2026-11-07T14:04:16+00:00,late,PL,3903e98a54db0f2cc23095407fe9dad8,2026-11-07T15:00:00Z,Fulham,Newcastle United,draftkings,2026-11-07T14:04:05Z,h2h,Draw,,3.65
