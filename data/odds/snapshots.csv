@@ -4118,3 +4118,28 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-07T07:02:43+00:00,late,PL,3903e98a54db0f2cc23095407fe9dad8,2026-11-07T15:00:00Z,Fulham,Newcastle United,draftkings,,alternate_totals,Under,6.5,1.01
 2026-11-07T07:02:43+00:00,late,PL,3903e98a54db0f2cc23095407fe9dad8,2026-11-07T15:00:00Z,Fulham,Newcastle United,draftkings,,btts,Yes,,1.57
 2026-11-07T07:02:43+00:00,late,PL,3903e98a54db0f2cc23095407fe9dad8,2026-11-07T15:00:00Z,Fulham,Newcastle United,draftkings,,btts,No,,2.4
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,2026-11-07T07:21:55Z,h2h,Deportivo La Coruña,,3.0
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,2026-11-07T07:21:55Z,h2h,Espanyol,,2.45
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,2026-11-07T07:21:55Z,h2h,Draw,,3.3
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_spreads,Deportivo La Coruña,0.5,1.54
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_spreads,Deportivo La Coruña,0.25,1.71
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_spreads,Deportivo La Coruña,0.0,2.05
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_spreads,Deportivo La Coruña,-0.25,2.4
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_spreads,Espanyol,-0.5,2.3
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_spreads,Espanyol,-0.25,2.0
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_spreads,Espanyol,0.0,1.69
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_spreads,Espanyol,0.25,1.5
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_totals,Over,0.5,1.06
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_totals,Over,1.5,1.36
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_totals,Over,2.5,2.05
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_totals,Over,3.5,3.65
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_totals,Over,4.5,7.0
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_totals,Over,5.5,14.0
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_totals,Under,0.5,9.0
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_totals,Under,1.5,3.2
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_totals,Under,2.5,1.77
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_totals,Under,3.5,1.29
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_totals,Under,4.5,1.1
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,alternate_totals,Under,5.5,1.02
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,btts,Yes,,1.77
+2026-11-07T07:22:49+00:00,late,LaLiga,262c2c99c38456b8a70cb9daa32f2f6d,2026-11-07T15:15:00Z,Espanyol,Deportivo La Coruña,draftkings,,btts,No,,2.0
