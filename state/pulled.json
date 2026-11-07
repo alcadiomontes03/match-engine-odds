@@ -298,6 +298,8 @@
   "commence": "2026-11-07T14:30:00Z",
   "comp": "Bundesliga",
   "home": "Borussia Dortmund",
+  "late": "2026-11-07T06:52:23+00:00",
+  "side": "2026-11-07T06:52:23+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
  "4288fbe018e6e6fb223e389bcf3e57dd": {
@@ -321,6 +323,8 @@
   "commence": "2026-11-07T14:30:00Z",
   "comp": "Bundesliga",
   "home": "SC Paderborn",
+  "late": "2026-11-07T06:52:23+00:00",
+  "side": "2026-11-07T06:52:23+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
  "4e5820453145833132980b8d190998c7": {
@@ -405,6 +409,8 @@
   "commence": "2026-11-07T12:30:00Z",
   "comp": "PL",
   "home": "Leeds United",
+  "late": "2026-11-07T06:52:23+00:00",
+  "side": "2026-11-07T06:52:23+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
  "5e7d141f719835de18877ed95bedcb32": {
@@ -714,19 +720,19 @@
   "empty:btts:LaLiga": 0,
   "empty:btts:Ligue1": 0,
   "empty:btts:PL": 0,
-  "empty:spreads:Bundesliga": 1,
-  "empty:spreads:LaLiga": 1,
+  "empty:spreads:Bundesliga": 0,
+  "empty:spreads:LaLiga": 2,
   "empty:spreads:Ligue1": 1,
   "empty:spreads:PL": 0,
-  "empty:totals:Bundesliga": 1,
-  "empty:totals:LaLiga": 1,
+  "empty:totals:Bundesliga": 0,
+  "empty:totals:LaLiga": 2,
   "empty:totals:Ligue1": 1,
   "empty:totals:PL": 0,
-  "none:spreads:Bundesliga": "2026-W44",
+  "none:spreads:Bundesliga": "2026-W45",
   "none:spreads:LaLiga": "2026-W44",
   "none:spreads:Ligue1": "2026-W44",
   "none:spreads:PL": "2026-W45",
-  "none:totals:Bundesliga": "2026-W44",
+  "none:totals:Bundesliga": "2026-W45",
   "none:totals:LaLiga": "2026-W44",
   "none:totals:Ligue1": "2026-W44",
   "none:totals:PL": "2026-W45",
@@ -872,6 +878,8 @@
   "commence": "2026-11-07T14:30:00Z",
   "comp": "Bundesliga",
   "home": "RB Leipzig",
+  "late": "2026-11-07T06:52:23+00:00",
+  "side": "2026-11-07T06:52:23+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
  "cf3a2e2b4a4e9815d1d0be8dcef916da": {
@@ -913,6 +921,8 @@
   "commence": "2026-11-07T13:00:00Z",
   "comp": "LaLiga",
   "home": "M\u00e1laga",
+  "late": "2026-11-07T06:52:23+00:00",
+  "side": "2026-11-07T06:52:23+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
  "df1e1589c51bbcac432125567d1f7c58": {
@@ -991,6 +1001,8 @@
   "commence": "2026-11-07T14:30:00Z",
   "comp": "Bundesliga",
   "home": "FSV Mainz 05",
+  "late": "2026-11-07T06:52:23+00:00",
+  "side": "2026-11-07T06:52:23+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  }
 }

@@ -158,3 +158,21 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-06T18:55:25+00:00,late,LaLiga,9dd0014685fd62d9b2890d7c33a8c9ab,2026-11-06T20:00:00Z,Sevilla,Alavés,pinnacle,2026-11-06T18:55:24Z,h2h,Alavés,,4.76
 2026-11-06T18:55:25+00:00,late,LaLiga,9dd0014685fd62d9b2890d7c33a8c9ab,2026-11-06T20:00:00Z,Sevilla,Alavés,pinnacle,2026-11-06T18:55:24Z,h2h,Sevilla,,1.93
 2026-11-06T18:55:25+00:00,late,LaLiga,9dd0014685fd62d9b2890d7c33a8c9ab,2026-11-06T20:00:00Z,Sevilla,Alavés,pinnacle,2026-11-06T18:55:24Z,h2h,Draw,,3.33
+2026-11-07T06:52:23+00:00,late,PL,5c87852253fd11eea5d34ad723356607,2026-11-07T12:30:00Z,Leeds United,Tottenham Hotspur,pinnacle,2026-11-07T06:52:22Z,h2h,Leeds United,,2.85
+2026-11-07T06:52:23+00:00,late,PL,5c87852253fd11eea5d34ad723356607,2026-11-07T12:30:00Z,Leeds United,Tottenham Hotspur,pinnacle,2026-11-07T06:52:22Z,h2h,Tottenham Hotspur,,2.66
+2026-11-07T06:52:23+00:00,late,PL,5c87852253fd11eea5d34ad723356607,2026-11-07T12:30:00Z,Leeds United,Tottenham Hotspur,pinnacle,2026-11-07T06:52:22Z,h2h,Draw,,3.3
+2026-11-07T06:52:23+00:00,late,LaLiga,de935794b7d93f3607ac9ad54d18f4c7,2026-11-07T13:00:00Z,Málaga,Real Racing Club de Santander,pinnacle,2026-11-07T06:51:45Z,h2h,Málaga,,2.46
+2026-11-07T06:52:23+00:00,late,LaLiga,de935794b7d93f3607ac9ad54d18f4c7,2026-11-07T13:00:00Z,Málaga,Real Racing Club de Santander,pinnacle,2026-11-07T06:51:45Z,h2h,Real Racing Club de Santander,,2.99
+2026-11-07T06:52:23+00:00,late,LaLiga,de935794b7d93f3607ac9ad54d18f4c7,2026-11-07T13:00:00Z,Málaga,Real Racing Club de Santander,pinnacle,2026-11-07T06:51:45Z,h2h,Draw,,3.46
+2026-11-07T06:52:23+00:00,late,Bundesliga,cdb5f9dd39e79db69659c76cd96d0bbe,2026-11-07T14:30:00Z,RB Leipzig,Augsburg,pinnacle,2026-11-07T06:52:21Z,h2h,Augsburg,,6.07
+2026-11-07T06:52:23+00:00,late,Bundesliga,cdb5f9dd39e79db69659c76cd96d0bbe,2026-11-07T14:30:00Z,RB Leipzig,Augsburg,pinnacle,2026-11-07T06:52:21Z,h2h,RB Leipzig,,1.46
+2026-11-07T06:52:23+00:00,late,Bundesliga,cdb5f9dd39e79db69659c76cd96d0bbe,2026-11-07T14:30:00Z,RB Leipzig,Augsburg,pinnacle,2026-11-07T06:52:21Z,h2h,Draw,,5.37
+2026-11-07T06:52:23+00:00,late,Bundesliga,fe97f5adf397dd6b0a8a9e0a5272f307,2026-11-07T14:30:00Z,FSV Mainz 05,Bayern Munich,pinnacle,2026-11-07T06:52:21Z,h2h,Bayern Munich,,1.3
+2026-11-07T06:52:23+00:00,late,Bundesliga,fe97f5adf397dd6b0a8a9e0a5272f307,2026-11-07T14:30:00Z,FSV Mainz 05,Bayern Munich,pinnacle,2026-11-07T06:52:21Z,h2h,FSV Mainz 05,,8.27
+2026-11-07T06:52:23+00:00,late,Bundesliga,fe97f5adf397dd6b0a8a9e0a5272f307,2026-11-07T14:30:00Z,FSV Mainz 05,Bayern Munich,pinnacle,2026-11-07T06:52:21Z,h2h,Draw,,6.55
+2026-11-07T06:52:23+00:00,late,Bundesliga,3ef62ef56758041178c5280225fe5db7,2026-11-07T14:30:00Z,Borussia Dortmund,Elversberg,pinnacle,2026-11-07T06:52:21Z,h2h,Borussia Dortmund,,1.35
+2026-11-07T06:52:23+00:00,late,Bundesliga,3ef62ef56758041178c5280225fe5db7,2026-11-07T14:30:00Z,Borussia Dortmund,Elversberg,pinnacle,2026-11-07T06:52:21Z,h2h,Elversberg,,8.22
+2026-11-07T06:52:23+00:00,late,Bundesliga,3ef62ef56758041178c5280225fe5db7,2026-11-07T14:30:00Z,Borussia Dortmund,Elversberg,pinnacle,2026-11-07T06:52:21Z,h2h,Draw,,5.82
+2026-11-07T06:52:23+00:00,late,Bundesliga,4ca4c7a2a1c15e9121f9a7eaa7f42ddb,2026-11-07T14:30:00Z,SC Paderborn,Eintracht Frankfurt,pinnacle,2026-11-07T06:52:21Z,h2h,Eintracht Frankfurt,,2.18
+2026-11-07T06:52:23+00:00,late,Bundesliga,4ca4c7a2a1c15e9121f9a7eaa7f42ddb,2026-11-07T14:30:00Z,SC Paderborn,Eintracht Frankfurt,pinnacle,2026-11-07T06:52:21Z,h2h,SC Paderborn,,3.15
+2026-11-07T06:52:23+00:00,late,Bundesliga,4ca4c7a2a1c15e9121f9a7eaa7f42ddb,2026-11-07T14:30:00Z,SC Paderborn,Eintracht Frankfurt,pinnacle,2026-11-07T06:52:21Z,h2h,Draw,,3.91
