@@ -323,3 +323,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-08T12:58:24+00:00,late,Ligue1,4288fbe018e6e6fb223e389bcf3e57dd,2026-11-08T14:00:00Z,Rennes,Lille,pinnacle,2026-11-08T12:58:22Z,h2h,Lille,,2.92
 2026-11-08T12:58:24+00:00,late,Ligue1,4288fbe018e6e6fb223e389bcf3e57dd,2026-11-08T14:00:00Z,Rennes,Lille,pinnacle,2026-11-08T12:58:22Z,h2h,Rennes,,2.49
 2026-11-08T12:58:24+00:00,late,Ligue1,4288fbe018e6e6fb223e389bcf3e57dd,2026-11-08T14:00:00Z,Rennes,Lille,pinnacle,2026-11-08T12:58:22Z,h2h,Draw,,3.56
+2026-11-08T13:28:44+00:00,late,Bundesliga,c70f9f21f48464daa93973147502e183,2026-11-08T14:30:00Z,1. FC Köln,Bayer Leverkusen,pinnacle,2026-11-08T13:28:41Z,h2h,1. FC Köln,,4.52
+2026-11-08T13:28:44+00:00,late,Bundesliga,c70f9f21f48464daa93973147502e183,2026-11-08T14:30:00Z,1. FC Köln,Bayer Leverkusen,pinnacle,2026-11-08T13:28:41Z,h2h,Bayer Leverkusen,,1.79
+2026-11-08T13:28:44+00:00,late,Bundesliga,c70f9f21f48464daa93973147502e183,2026-11-08T14:30:00Z,1. FC Köln,Bayer Leverkusen,pinnacle,2026-11-08T13:28:41Z,h2h,Draw,,4.02
