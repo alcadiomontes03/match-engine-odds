@@ -290,3 +290,9 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-08T08:37:23+00:00,late,Bundesliga,c1b9696d88719cb8832d794b986cdd68,2026-11-08T16:30:00Z,SC Freiburg,Union Berlin,pinnacle,2026-11-08T08:37:07Z,h2h,SC Freiburg,,1.49
 2026-11-08T08:37:23+00:00,late,Bundesliga,c1b9696d88719cb8832d794b986cdd68,2026-11-08T16:30:00Z,SC Freiburg,Union Berlin,pinnacle,2026-11-08T08:37:07Z,h2h,Union Berlin,,6.77
 2026-11-08T08:37:23+00:00,late,Bundesliga,c1b9696d88719cb8832d794b986cdd68,2026-11-08T16:30:00Z,SC Freiburg,Union Berlin,pinnacle,2026-11-08T08:37:07Z,h2h,Draw,,4.65
+2026-11-08T09:37:36+00:00,late,LaLiga,0d2e199bfba0db42871696c10037bad3,2026-11-08T17:30:00Z,Celta Vigo,Levante,pinnacle,2026-11-08T09:37:16Z,h2h,Celta Vigo,,1.82
+2026-11-08T09:37:36+00:00,late,LaLiga,0d2e199bfba0db42871696c10037bad3,2026-11-08T17:30:00Z,Celta Vigo,Levante,pinnacle,2026-11-08T09:37:16Z,h2h,Levante,,4.76
+2026-11-08T09:37:36+00:00,late,LaLiga,0d2e199bfba0db42871696c10037bad3,2026-11-08T17:30:00Z,Celta Vigo,Levante,pinnacle,2026-11-08T09:37:16Z,h2h,Draw,,3.74
+2026-11-08T09:37:36+00:00,late,LaLiga,81ad04996f63fb60b494d243b13ac586,2026-11-08T17:30:00Z,Villarreal,Getafe,pinnacle,2026-11-08T09:37:16Z,h2h,Getafe,,6.98
+2026-11-08T09:37:36+00:00,late,LaLiga,81ad04996f63fb60b494d243b13ac586,2026-11-08T17:30:00Z,Villarreal,Getafe,pinnacle,2026-11-08T09:37:16Z,h2h,Villarreal,,1.51
+2026-11-08T09:37:36+00:00,late,LaLiga,81ad04996f63fb60b494d243b13ac586,2026-11-08T17:30:00Z,Villarreal,Getafe,pinnacle,2026-11-08T09:37:16Z,h2h,Draw,,4.46
