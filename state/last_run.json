@@ -1,5 +1,5 @@
 {
- "utc": "2026-11-08T18:29:57+00:00",
+ "utc": "2026-11-08T18:39:58+00:00",
  "markets": "h2h",
  "bookmakers": "draftkings",
  "leagues": {
@@ -20,8 +20,8 @@
    "due_late": 0
   },
   "Bundesliga": {
-   "events_from_api": 11,
-   "after_team_filter": 11,
+   "events_from_api": 10,
+   "after_team_filter": 10,
    "team_filter": [],
    "due_weekly": 0,
    "weekly_done": true,
