@@ -4896,3 +4896,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-08T17:29:46+00:00,late,Bundesliga,8963081c3457212ee238b498bbc33a03,2026-11-08T18:30:00Z,TSG Hoffenheim,FC Schalke 04,draftkings,2026-11-08T17:28:56Z,h2h,FC Schalke 04,,4.9
 2026-11-08T17:29:46+00:00,late,Bundesliga,8963081c3457212ee238b498bbc33a03,2026-11-08T18:30:00Z,TSG Hoffenheim,FC Schalke 04,draftkings,2026-11-08T17:28:56Z,h2h,TSG Hoffenheim,,1.59
 2026-11-08T17:29:46+00:00,late,Bundesliga,8963081c3457212ee238b498bbc33a03,2026-11-08T18:30:00Z,TSG Hoffenheim,FC Schalke 04,draftkings,2026-11-08T17:28:56Z,h2h,Draw,,4.1
+2026-11-08T18:50:00+00:00,late,Ligue1,4e917e19b59093a02a0e12bcf9a5ecc4,2026-11-08T19:45:00Z,RC Lens,Marseille,draftkings,2026-11-08T18:49:14Z,h2h,Marseille,,2.95
+2026-11-08T18:50:00+00:00,late,Ligue1,4e917e19b59093a02a0e12bcf9a5ecc4,2026-11-08T19:45:00Z,RC Lens,Marseille,draftkings,2026-11-08T18:49:14Z,h2h,RC Lens,,2.3
+2026-11-08T18:50:00+00:00,late,Ligue1,4e917e19b59093a02a0e12bcf9a5ecc4,2026-11-08T19:45:00Z,RC Lens,Marseille,draftkings,2026-11-08T18:49:14Z,h2h,Draw,,3.6
