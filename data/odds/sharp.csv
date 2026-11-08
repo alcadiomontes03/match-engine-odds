@@ -305,3 +305,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-08T11:58:08+00:00,late,LaLiga,c35673eb1e889309d6985c091a43a3f5,2026-11-08T13:00:00Z,Elche CF,Real Betis,pinnacle,2026-11-08T11:58:01Z,h2h,Elche CF,,3.98
 2026-11-08T11:58:08+00:00,late,LaLiga,c35673eb1e889309d6985c091a43a3f5,2026-11-08T13:00:00Z,Elche CF,Real Betis,pinnacle,2026-11-08T11:58:01Z,h2h,Real Betis,,1.93
 2026-11-08T11:58:08+00:00,late,LaLiga,c35673eb1e889309d6985c091a43a3f5,2026-11-08T13:00:00Z,Elche CF,Real Betis,pinnacle,2026-11-08T11:58:01Z,h2h,Draw,,3.92
+2026-11-08T12:08:13+00:00,late,LaLiga,dd247b356d8fc53e4b4f9bfcfe09c924,2026-11-08T20:00:00Z,Atlético Madrid,Barcelona,pinnacle,2026-11-08T12:07:59Z,h2h,Atlético Madrid,,3.24
+2026-11-08T12:08:13+00:00,late,LaLiga,dd247b356d8fc53e4b4f9bfcfe09c924,2026-11-08T20:00:00Z,Atlético Madrid,Barcelona,pinnacle,2026-11-08T12:07:59Z,h2h,Barcelona,,2.04
+2026-11-08T12:08:13+00:00,late,LaLiga,dd247b356d8fc53e4b4f9bfcfe09c924,2026-11-08T20:00:00Z,Atlético Madrid,Barcelona,pinnacle,2026-11-08T12:07:59Z,h2h,Draw,,4.41
