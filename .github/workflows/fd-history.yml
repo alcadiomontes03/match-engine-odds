@@ -42,3 +42,17 @@ jobs:
             git commit -m "football-data history $(date -u +%Y-%m-%dT%H:%MZ)"
             for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
           fi
+      # 2026-11-09: weekly forward-test report (docs/prereg-forward-2026-11.md). Descriptive only. Needs git
+      # history back to the registration so it can time each model file by the commit that added it.
+      - name: Forward test report
+        if: github.event.schedule == '17 14 * * 1' || github.event_name == 'workflow_dispatch'
+        run: |
+          git fetch -q --shallow-since=2026-10-15 origin main || git fetch -q --unshallow origin main || true
+          git pull -q --rebase || true
+          pip install -q numpy scipy pandas
+          python pipeline/picks/report.py || { echo "WARN forward-test report failed"; exit 0; }
+          git add -A data/picks/reports
+          if ! git diff --cached --quiet; then
+            git commit -m "forward test report $(date -u +%Y-%m-%d)"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          fi
