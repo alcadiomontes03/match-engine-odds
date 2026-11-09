@@ -55,6 +55,10 @@ def proportional(odds) -> np.ndarray:
 
 # ---------------------------------------------------------------- goals grid
 def grid(lam: float, mu: float, rho: float = RHO_MKT) -> np.ndarray:
+    # 2026-11-09: clamp rho so no cell can go negative (src/guards.py). Rates are not range-checked here:
+    # implied_lambdas() searches over them and must be free to try extreme values.
+    lo, hi = max(-1.0 / lam, -1.0 / mu), min(1.0 / (lam * mu), 1.0)
+    rho = min(max(rho, lo), hi)
     g = np.arange(MAXG + 1)
     G = np.outer(poisson.pmf(g, lam), poisson.pmf(g, mu))
     G[0, 0] *= 1 - lam * mu * rho

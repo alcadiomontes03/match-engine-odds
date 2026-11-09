@@ -49,3 +49,9 @@ Dixon-Coles-vs-DraftKings comparison starts a new period on 2026-10-20.
   v6.1 file is the locked v6.1 dashboard predictions (Oct 12 ratings), not a refit.
 - Week 7 retro (fit before Oct 13): 1X2 v7 0.913, v6.1 0.935, DraftKings 0.885; over 2.5 and BTTS were worse for
   v7 that week (0.720 vs 0.694, 0.748 vs 0.727). One week; the 2023-26 walk-forward favours v7 on all three.
+
+## Guards (2026-11-09, after the prediction-record audit)
+`pipeline/src/guards.py`, tested in `pipeline/test_guards.py` (`python3 -m pytest -q pipeline/test_guards.py`):
+- **Valid probabilities.** Every Dixon-Coles grid (`src/dixon_coles.scoreline_matrix`, `v6/refit.grid`, `v5/market.grid`) clamps ρ into the range where all four low-score cells stay ≥ 0, and the finished grid is checked. `markets.build_prediction` refuses a grid with a negative, NaN or non-normalised cell. No live prediction from weeks 6–10 changes (tested); only five week-3 (v4) predictions would have.
+- **Unrated teams.** A grid refuses an expected-goals rate outside 0.05–8 (the week-3 Forest–Coventry μ = 0). `guards.match_rates` builds λ/μ and refuses a team with no rating; `v6/refit.lambdas` still falls back to the league mean for backtests and must not be used to write live predictions.
+- **Complete results before a refit.** `live.py refit` fails a league (it keeps last week's ratings) when a league fixture from the last 21 days has kicked off (3-hour grace) and has no result. It also warns about fixtures marked postponed that football-data shows were played.

@@ -50,6 +50,10 @@ from scipy.optimize import minimize
 from scipy.stats import poisson
 from dataclasses import dataclass, field
 from datetime import datetime
+try:
+    from .guards import check_rates, safe_rho, check_grid, check_probs  # imported as src.<module>
+except ImportError:
+    from guards import check_rates, safe_rho, check_grid, check_probs   # imported with pipeline/src on sys.path
 
 
 @dataclass
@@ -209,7 +213,11 @@ def match_lambdas(ratings: Ratings, home: str, away: str):
 
 
 def scoreline_matrix(lam: float, mu: float, rho: float, max_goals: int = 10) -> np.ndarray:
-    """P(home=i, away=j) grid with the DC low-score correction applied."""
+    """P(home=i, away=j) grid with the DC low-score correction applied.
+    Guards (2026-11-09): refuses a broken rate (unrated team), clamps rho so no cell can go negative,
+    and checks the finished grid. See pipeline/src/guards.py."""
+    check_rates(lam, mu)
+    rho = safe_rho(lam, mu, rho)
     i = np.arange(max_goals + 1)
     ph = poisson.pmf(i, lam)
     pa = poisson.pmf(i, mu)
@@ -218,6 +226,7 @@ def scoreline_matrix(lam: float, mu: float, rho: float, max_goals: int = 10) -> 
         for y in range(2):
             grid[x, y] *= _tau(x, y, lam, mu, rho)
     grid = grid / grid.sum()
+    check_grid(grid)
     return grid
 
 

@@ -33,6 +33,9 @@ import numpy as np
 import pandas as pd
 from scipy.optimize import minimize
 from scipy.special import gammaln
+_PIPE = str(Path(__file__).resolve().parents[1])
+if _PIPE not in sys.path:
+    sys.path.insert(0, _PIPE)          # so src.guards resolves however this module is imported
 
 ROOT = Path(__file__).resolve().parents[2]
 FD = ROOT / "data" / "fd"
@@ -133,11 +136,19 @@ def lambdas(r: dict, home: str, away: str):
 
 
 def grid(lam, mu, rho):
+    """Dixon-Coles grid. 2026-11-09: rho clamped so every cell is >= 0 and the grid checked (src/guards.py).
+    lambdas() above still falls back to the league mean for an unknown team (backtests need that); live
+    predictions must use guards.match_rates instead."""
+    from src.guards import check_rates, safe_rho, check_grid
+    check_rates(lam, mu)
+    rho = safe_rho(lam, mu, rho)
     g = np.arange(MAXG + 1)
     from scipy.stats import poisson
     G = np.outer(poisson.pmf(g, lam), poisson.pmf(g, mu))
     G[0, 0] *= 1 - lam * mu * rho; G[0, 1] *= 1 + lam * rho; G[1, 0] *= 1 + mu * rho; G[1, 1] *= 1 - rho
-    return G / G.sum()
+    G = G / G.sum()
+    check_grid(G)
+    return G
 
 
 def probs(r, home, away):
