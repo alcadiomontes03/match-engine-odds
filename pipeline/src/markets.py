@@ -1,6 +1,10 @@
 """De-vig market odds and score model markets against them."""
 from __future__ import annotations
 import numpy as np
+try:
+    from .guards import check_rates, safe_rho, check_grid, check_probs  # imported as src.<module>
+except ImportError:
+    from guards import check_rates, safe_rho, check_grid, check_probs   # imported with pipeline/src on sys.path
 
 
 def devig_1x2(oh, od, oa):
@@ -105,6 +109,7 @@ def build_prediction(grid, x1x2, price=None, blend_weight=0.0, shots=None):
     shots (v4.7): the dict from shots.predict(); written as the prediction's `shots`
     field, which the dashboard's Goal attempts card reads. Left out entirely (not
     null) when there is no shot model, so the card keeps its placeholder."""
+    _guard_inputs(grid, x1x2)   # 2026-11-09: never write a prediction from a negative or broken grid
     result = {
         "totals": totals(grid),
         "spread": spread(grid),
@@ -125,3 +130,8 @@ def build_prediction(grid, x1x2, price=None, blend_weight=0.0, shots=None):
     if shots:
         result["shots"] = shots
     return result
+
+
+def _guard_inputs(grid, x1x2):
+    check_grid(np.asarray(grid, float), "build_prediction: ")
+    check_probs(x1x2, where="build_prediction x1x2: ")

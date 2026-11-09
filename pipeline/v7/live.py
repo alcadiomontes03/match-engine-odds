@@ -35,6 +35,7 @@ sys.path.insert(0, str(ROOT / "pipeline" / "v6"))
 sys.path.insert(0, str(ROOT / "pipeline"))
 import candidate as C  # noqa: E402
 import refit as R  # noqa: E402
+from src import guards as G  # noqa: E402
 
 OUT = HERE / "out"
 MODEL = "alpha-lines-v7-shots30-ridge1-level"
@@ -95,9 +96,16 @@ def live_validation(db, code):
             "brier_source": f"live: locked dashboard predictions vs DraftKings de-vigged, settled since {LIVE_SINCE}"}
 
 
-def checks(df, r, k, prev_att, prev_def, upcoming):
-    """Guard rails before anything is written to the dashboard. Returns (ok, list of (check, ok, detail))."""
+def checks(df, r, k, prev_att, prev_def, upcoming, missing=None):
+    """Guard rails before anything is written to the dashboard. Returns (ok, list of (check, ok, detail)).
+    missing (2026-11-09): league fixtures from the last 21 days that have kicked off but have no result in the
+    dashboard. A refit on incomplete results is what forced the Nov 3 hand rebuild of week 10, so it now fails
+    the league (it keeps last week's ratings) until the results are in."""
     out = []
+    if missing is not None:
+        out.append(("results complete for played matches (last 21 days)", not missing,
+                    f"{len(missing)} missing: " + "; ".join(missing[:6]) + (" ..." if len(missing) > 6 else "")
+                    if missing else "all played matches have results"))
     out.append(("converged", bool(r["converged"]), str(r["converged"])))
     out.append(("home advantage 0 to 0.5", 0 <= r["home_adv"] <= 0.5, f"{r['home_adv']:.3f}"))
     out.append(("rho inside bounds", -0.25 < r["rho"] < 0.25, f"{r['rho']:.3f}"))
@@ -141,8 +149,11 @@ def refit(db: Path, asof: str) -> int:
     for code in C.LEAGUES:
         det = json.loads((db / "state" / f"detail_{code}.json").read_text()); det = det.get("data", det)
         df, r, k, meta = fit_league(db, code, asof, CONFIGS["v7"])
-        ok, ck = checks(df, r, k, det.get("attack"), det.get("defense"), _upcoming(db, code, asof))
+        ok, ck = checks(df, r, k, det.get("attack"), det.get("defense"), _upcoming(db, code, asof),
+                        missing=G.missing_results(db, code, asof))
+        pbp = G.postponed_but_played(db, code, ROOT / "data" / "fd")   # warning only, does not fail the league
         report[code] = {"ok": bool(ok), "checks": [{"check": c, "ok": bool(o), "detail": d} for c, o, d in ck],
+                        "postponed_but_played": pbp,
                         "level_factor": float(k), "home_adv": r["home_adv"], "rho": r["rho"], **meta}
         if not ok:
             status = 2
@@ -178,6 +189,8 @@ def refit(db: Path, asof: str) -> int:
         print(f"{c}: {'PASS' if report[c]['ok'] else 'FAIL'}  level {report[c]['level_factor']:.3f}  "
               f"home_adv {report[c]['home_adv']:.3f}" + ("" if not bad else "  failed: " +
               "; ".join(f"{x['check']} ({x['detail']})" for x in bad)))
+        for w in report[c].get("postponed_but_played") or []:
+            print(f"{c}: WARNING {w} - clear the postponed status so its result can be recorded")
     return status
 
 
