@@ -36,14 +36,17 @@ sys.path.insert(0, str(ROOT / "pipeline"))
 from v5 import market as M  # noqa: E402
 
 OUT = ROOT / "data" / "research"
-CODE_VERSION = "research-4 (2026-11-01)"
+CODE_VERSION = "research-5 (2026-11-09)"
 COVERAGE_START = "2026-10-09"   # first week the dashboard tracked all four leagues
 V61_START = "2026-10-12T04:00:00Z"   # auto-picks logged after this use the v6.1 best-pick rule
 LINE_COLS = ["key", "fixture_id", "league", "kickoff", "home", "away", "market", "line", "sel_a", "sel_b",
              "dk_a", "dk_b", "dk_overround", "dk_shin_a", "side_pulled_at", "side_mins_to_ko",
              "ml_home", "ml_draw", "ml_away", "ml_pulled_at", "fit_anchor", "fit_line", "used_in_fit",
              "model_p_a", "dc_p_a", "corners_p_a", "home_goals", "away_goals", "corners_total",
-             "outcome_a", "recorded_at", "code_version"]
+             "outcome_a", "recorded_at", "code_version",
+             # research-5 (2026-11-09): the fitted grid itself, so model_p_a can be rebuilt from the row alone.
+             # Blank on rows recorded before research-5 (the fit was not stored anywhere).
+             "fit_lam", "fit_mu", "fit_rho", "fit_resid"]
 PICK_COLS = ["key", "fixture_id", "league", "kickoff", "market", "line", "side", "label", "rule", "logged_at",
              "mins_to_ko", "model_prob", "dk_price", "ev", "result", "flat_pnl", "recorded_at", "code_version"]
 
@@ -75,13 +78,26 @@ def _is_half_or_whole(x: float) -> bool:
 
 
 # ------------------------------------------------------------------ the market-anchored grid (same as the dashboard)
-def anchored_grid(od: dict, pred: dict | None):
+def _eff_rho(lam: float, mu: float, rho: float = M.RHO_MKT) -> float:
+    """The rho M.grid() actually uses for these rates (it clamps rho so no cell can go negative)."""
+    return min(max(rho, max(-1.0 / lam, -1.0 / mu)), min(1.0 / (lam * mu), 1.0))
+
+
+def anchored_fit(od: dict, pred: dict | None):
     """Mirror of the dashboard's mktPred(): Shin 1X2 from DraftKings' latest pre-kickoff moneyline,
     plus its main total (the half/whole line whose Shin over-probability is closest to 0.5); with
-    no total, its BTTS price; with neither, a weak prior on total goals. Returns (G, anchor, line)."""
+    no total, its BTTS price; with neither, a weak prior on total goals.
+    Returns None when there is no complete moneyline, else a dict:
+      G       the score grid
+      anchor  "total" | "btts" | "1x2"
+      line    the main total line (anchor "total" only)
+      lam, mu the fitted expected goals (home, away)
+      rho     the low-score correction the grid used
+      resid   largest absolute gap between the grid and the de-vigged prices it was fitted to
+              (1X2, plus the main total or BTTS when that was the anchor)."""
     px = od.get("latest") or od.get("open") or {}
     if not all((px.get(k) or 0) > 1 for k in ("home", "draw", "away")):
-        return None, None, None
+        return None
     pH, pD, pA = M.shin([px["home"], px["draw"], px["away"]])
     side = od.get("side") or {}
     main = None
@@ -93,16 +109,32 @@ def anchored_grid(od: dict, pred: dict | None):
         if main is None or abs(po - 0.5) < abs(main[1] - 0.5):
             main = (l, po)
     prior = ((pred or {}).get("xg_home") or 1.35) + ((pred or {}).get("xg_away") or 1.35)
-    if main:
-        lam, mu = M.implied_lambdas(pH, pD, pA, main[1], line=main[0], tot_prior=prior)
-        return M.grid(lam, mu), "total", main[0]
     b = side.get("btts") or {}
-    if (b.get("yes") or 0) > 1 and (b.get("no") or 0) > 1:
+    if main:
+        anchor, line = "total", main[0]
+        lam, mu = M.implied_lambdas(pH, pD, pA, main[1], line=main[0], tot_prior=prior)
+    elif (b.get("yes") or 0) > 1 and (b.get("no") or 0) > 1:
+        anchor, line = "btts", None
         pB = M.shin([b["yes"], b["no"]])[0]
         lam, mu = _lambdas_btts(pH, pD, pA, pB, prior)
-        return M.grid(lam, mu), "btts", None
-    lam, mu = M.implied_lambdas(pH, pD, pA, None, tot_prior=prior)
-    return M.grid(lam, mu), "1x2", None
+    else:
+        anchor, line = "1x2", None
+        lam, mu = M.implied_lambdas(pH, pD, pA, None, tot_prior=prior)
+    G = M.grid(lam, mu)
+    p = M.grid_probs(G)
+    gaps = [p["H"] - pH, p["D"] - pD, p["A"] - pA]
+    if anchor == "total":
+        gaps.append(M.p_over_line(G, line) - main[1])
+    elif anchor == "btts":
+        gaps.append(float(G[1:, 1:].sum()) - pB)
+    return {"G": G, "anchor": anchor, "line": line, "lam": float(lam), "mu": float(mu),
+            "rho": float(_eff_rho(lam, mu)), "resid": float(max(abs(g) for g in gaps))}
+
+
+def anchored_grid(od: dict, pred: dict | None):
+    """(G, anchor, line) from anchored_fit(); (None, None, None) with no complete moneyline."""
+    f = anchored_fit(od, pred)
+    return (None, None, None) if f is None else (f["G"], f["anchor"], f["line"])
 
 
 def _lambdas_btts(pH, pD, pA, pB, prior):
@@ -159,7 +191,30 @@ def _read_csv(path: Path, cols):
     return pd.read_csv(path, dtype=str, keep_default_na=False)
 
 
+def _widen(path: Path, cols):
+    """A file written before columns were added to the end of `cols` gets the new header and blank cells
+    in the new columns. Existing values are not touched. Refuses anything but an added-at-the-end change."""
+    if not path.exists():
+        return
+    with path.open(newline="") as fh:
+        rows = list(csv.reader(fh))
+    if not rows or rows[0] == list(cols):
+        return
+    head = rows[0]
+    if head != list(cols[:len(head)]):
+        raise ValueError(f"{path.name}: header does not match the start of the expected columns")
+    pad = [""] * (len(cols) - len(head))
+    with path.open("w", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(cols)
+        for r in rows[1:]:
+            if len(r) != len(head):
+                raise ValueError(f"{path.name}: a row has {len(r)} cells, expected {len(head)}")
+            w.writerow(r + pad)
+
+
 def _append(path: Path, cols, rows):
+    _widen(path, cols)
     old = _read_csv(path, cols)
     have = set(old["key"]) if len(old) else set()
     new = [r for r in rows if r["key"] not in have]
@@ -209,7 +264,8 @@ def build_lines(db: Path, now_iso: str):
         if (st.get("h") or {}).get("corners") is not None and (st.get("a") or {}).get("corners") is not None:
             ctot = int(st["h"]["corners"]) + int(st["a"]["corners"])
         pred = preds.get(fid) or {}
-        G, anchor, fit_line = anchored_grid(od, pred)
+        fit = anchored_fit(od, pred) or {}
+        G, anchor, fit_line = fit.get("G"), fit.get("anchor"), fit.get("line")
         ml = od.get("latest") or od.get("open") or {}
         base = dict(fixture_id=fid, league=f.get("league"), kickoff=f.get("kickoff"), home=f.get("home"),
                     away=f.get("away"), side_pulled_at=side.get("pulled_at"),
@@ -218,6 +274,9 @@ def build_lines(db: Path, now_iso: str):
                     ml_pulled_at=ml.get("pulled_at"), fit_anchor=anchor, fit_line=fit_line,
                     home_goals=hg, away_goals=ag, corners_total=ctot, recorded_at=now_iso,
                     code_version=CODE_VERSION)
+        if G is not None:
+            base.update(fit_lam=round(fit["lam"], 6), fit_mu=round(fit["mu"], 6), fit_rho=round(fit["rho"], 6),
+                        fit_resid=round(fit["resid"], 6))
         items = []
         if (side.get("btts") or {}).get("yes"):
             items.append(("btts", "", "yes", "no", side["btts"]["yes"], side["btts"]["no"]))
