@@ -82,6 +82,12 @@ EVENT_MARKETS_CORE = os.environ.get("EVENT_MARKETS_CORE", "btts,alternate_totals
 FULL_RESERVE = int(os.environ.get("FULL_RESERVE", "250"))     # plain totals/spreads only above this
 CORE_RESERVE = int(os.environ.get("CORE_RESERVE", "130"))     # alternate totals/spreads only above this
 CREDIT_RESERVE = int(os.environ.get("CREDIT_RESERVE", "40"))  # never go below
+# 2026-11-09 (docs/prereg-forward-2026-11.md, rule S1): for each S1 pick only, re-pull that one market inside
+# the last TEAM_NEWS_MIN minutes before kickoff, for CLV against DraftKings' own near-close price. Billed one
+# credit per market returned. Hard cap per odds-bot week; rows go to data/odds/clv.csv, never snapshots.csv, so
+# no existing consumer (fixtures, odds sync, research record) ever sees them.
+CLV_WEEKLY_CAP = int(os.environ.get("CLV_WEEKLY_CAP", "15"))
+S1_PICKS = ROOT / "data" / "picks" / "s1.csv"
 WEEKLY_WEEKDAY = 0               # Monday
 WEEKLY_HOUR_UTC = 15             # 15:00 UTC = 8am PDT / 7am PST
 WEEKLY_WINDOW_MIN = 7 * 24 * 60  # the weekly pull covers the next 7 days
@@ -358,6 +364,60 @@ def pull_btts(sport, label, evs, state, now, remaining):
     return remaining
 
 
+def s1_picks(label=None):
+    """S1 picks from data/picks/s1.csv: {event_id: (dk_market, kickoff)}. Standard library only."""
+    if not S1_PICKS.exists():
+        return {}
+    league = {"PL": "E0", "LaLiga": "SP1", "Bundesliga": "D1", "Ligue1": "F1"}.get(label)
+    out = {}
+    with S1_PICKS.open(newline="") as fh:
+        for r in csv.DictReader(fh):
+            if r.get("decision") == "pick" and r.get("dk_market") and (league is None or r.get("league") == league):
+                out[r["event_id"]] = (r["dk_market"], r["kickoff"])
+    return out
+
+
+def pull_clv(sport, label, state, now, remaining):
+    """Near-kickoff re-pull of each S1 pick's market (CLV). Once per pick, inside the last TEAM_NEWS_MIN
+    minutes, at most CLV_WEEKLY_CAP per odds-bot week. Over the cap the pick is marked and has no CLV."""
+    meta = state.setdefault("_meta", {})
+    wk = f"clv:{week_key(now)}"
+    for eid, (mk, ko) in s1_picks(label).items():
+        s = state.setdefault(eid, {})
+        if s.get("clv") or s.get("clv_skipped"):
+            continue
+        m = minutes_to(ko, now)
+        if not (LATE_MIN_MIN < m <= TEAM_NEWS_MIN):
+            continue
+        if meta.get(wk, 0) >= CLV_WEEKLY_CAP:
+            s["clv_skipped"] = f"weekly cap {CLV_WEEKLY_CAP} reached"
+            print(f"SKIP {label} CLV re-pull {eid}: weekly cap {CLV_WEEKLY_CAP} reached")
+            continue
+        if remaining is not None and remaining - 1 < CREDIT_RESERVE:
+            print(f"SKIP {label} CLV re-pull {eid}: {remaining} credits left, reserve {CREDIT_RESERVE}")
+            return remaining
+        try:
+            body, hdr = get(f"/sports/{sport}/events/{eid}/odds", markets=mk,
+                            oddsFormat="decimal", dateFormat="iso", **book_params())
+        except RuntimeError as err:
+            print(f"WARN {label} CLV re-pull {eid}: {err}")
+            continue
+        stamp = now.strftime("%Y%m%dT%H%M%SZ")
+        d = OUT / "raw" / now.strftime("%Y/%m/%d"); d.mkdir(parents=True, exist_ok=True)
+        (d / f"{label}_clv_{eid}_{stamp}.json").write_text(json.dumps(body))
+        evs_body = body if isinstance(body, list) else [body] if isinstance(body, dict) else []
+        evs_body = [b for b in evs_body if isinstance(b, dict) and "id" in b]
+        rows = flatten(evs_body, "clv", now.isoformat(timespec="seconds"), label)
+        _write_rows(OUT / "clv.csv", [r for r in rows if r[7] in _primary_books()] if _primary_books() else rows)
+        s["clv"] = now.isoformat(timespec="seconds")
+        meta[wk] = meta.get(wk, 0) + 1
+        log_quota(hdr, f"{label} clv x1 {mk}")
+        print(f"PULLED {label} CLV re-pull {eid} {mk}: {len(rows)} rows, {int(m)} min before kickoff")
+        rem = hdr.get("x-requests-remaining")
+        remaining = int(float(rem)) if rem is not None else remaining
+    return remaining
+
+
 def run(force_weekly=False):
     now = datetime.now(timezone.utc)
     comps = dict(SPORTS, **(CUPS if INCLUDE_CUPS else {}))
@@ -401,6 +461,7 @@ def run(force_weekly=False):
             if ok:
                 remaining = pull_btts(sport, label, late, state, now, remaining)
             did = True
+        remaining = pull_clv(sport, label, state, now, remaining)
         if not did:
             print(f"{label}: nothing due ({n_api} listed by the API, {len(events)} after team filter)")
     save_state(state)
@@ -485,6 +546,12 @@ def soon():
             continue
         if LATE_MIN_MIN < minutes_to(v["commence"], now) <= LATE_MAX_MIN + 15:
             print(f"soon: {v.get('comp')} {v.get('home')} v {v.get('away')} at {v['commence']}")
+            sys.exit(0)
+    st = load_state()
+    for eid, (_mk, ko) in s1_picks().items():          # an S1 pick still waiting for its CLV re-pull
+        v = st.get(eid, {})
+        if not v.get("clv") and not v.get("clv_skipped") and LATE_MIN_MIN < minutes_to(ko, now) <= TEAM_NEWS_MIN + 15:
+            print(f"soon: S1 pick {eid} needs its CLV re-pull before {ko}")
             sys.exit(0)
     print("soon: nothing within the late window")
     sys.exit(1)

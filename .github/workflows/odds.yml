@@ -62,6 +62,9 @@ jobs:
             if ! git diff --quiet -- data/odds/snapshots.csv; then
               [ -z "$deps" ] && pip install -q numpy scipy pandas && deps=1
               python pipeline/v5/paper_picks.py
+              # 2026-11-09: rule S1 (docs/prereg-forward-2026-11.md), one decision row per match into
+              # data/picks/s1.csv right after its side pull; committed with the odds below.
+              python pipeline/picks/s1.py || echo "WARN S1 failed"
             fi
             mkdir -p data state
             git add -A data state
