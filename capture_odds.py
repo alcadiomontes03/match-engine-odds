@@ -80,7 +80,11 @@ BTTS_RESERVE = int(os.environ.get("BTTS_RESERVE", "100"))    # stop BTTS below t
 EVENT_MARKETS_FULL = os.environ.get("EVENT_MARKETS_FULL", "btts,totals,spreads,alternate_totals,alternate_spreads")
 EVENT_MARKETS_CORE = os.environ.get("EVENT_MARKETS_CORE", "btts,alternate_totals,alternate_spreads")
 FULL_RESERVE = int(os.environ.get("FULL_RESERVE", "250"))     # plain totals/spreads only above this
-CORE_RESERVE = int(os.environ.get("CORE_RESERVE", "130"))     # alternate totals/spreads only above this
+# 2026-11-11: the alternate totals/spreads are the only lines rule S1 can test (DraftKings never returns plain
+# totals/spreads for these leagues, and BTTS alone is just the anchor). They used to stop at 130 credits, leaving
+# 7-10 days a month with BTTS only. They now run until the side-market reserve itself: BTTS_RESERVE plus the
+# three markets of one core call. Same rule, same markets, same reserve; only the cut-over point moved.
+CORE_RESERVE = int(os.environ.get("CORE_RESERVE", str(BTTS_RESERVE + 3)))   # alternate totals/spreads only above this
 CREDIT_RESERVE = int(os.environ.get("CREDIT_RESERVE", "40"))  # never go below
 # 2026-11-09 (docs/prereg-forward-2026-11.md, rule S1): for each S1 pick only, re-pull that one market inside
 # the last TEAM_NEWS_MIN minutes before kickoff, for CLV against DraftKings' own near-close price. Billed one
