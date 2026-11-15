@@ -126,15 +126,6 @@
   "side": "2026-11-08T07:46:52+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
- "448a1083448ea9dff55bfebf15ff20b4": {
-  "away": "Auxerre",
-  "commence": "2026-11-01T14:00:00Z",
-  "comp": "Ligue1",
-  "home": "Strasbourg",
-  "late": "2026-11-01T09:45:27+00:00",
-  "side": "2026-11-01T09:45:27+00:00",
-  "weekly": "2026-10-26T16:16:04+00:00"
- },
  "4ca4c7a2a1c15e9121f9a7eaa7f42ddb": {
   "away": "Eintracht Frankfurt",
   "commence": "2026-11-07T14:30:00Z",
@@ -234,15 +225,6 @@
   "late_final": true,
   "side": "2026-11-06T15:44:42+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
- },
- "60eaeb599578cd5c951f917c4fef06ff": {
-  "away": "1. FC K\u00f6ln",
-  "commence": "2026-11-01T14:30:00Z",
-  "comp": "Bundesliga",
-  "home": "Union Berlin",
-  "late": "2026-11-01T09:45:27+00:00",
-  "side": "2026-11-01T09:45:27+00:00",
-  "weekly": "2026-10-26T16:16:04+00:00"
  },
  "6a3819cdbe2ba2fe5a3d8f9b4b459965": {
   "away": "Arsenal",
@@ -492,15 +474,6 @@
   "late_final": true,
   "side": "2026-11-08T12:08:13+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
- },
- "ddcc9a51a2d7368e055d1abefacdb74e": {
-  "away": "Sevilla",
-  "commence": "2026-11-01T13:00:00Z",
-  "comp": "LaLiga",
-  "home": "Getafe",
-  "late": "2026-11-01T09:45:27+00:00",
-  "side": "2026-11-01T09:45:27+00:00",
-  "weekly": "2026-10-26T16:16:04+00:00"
  },
  "de935794b7d93f3607ac9ad54d18f4c7": {
   "away": "Real Racing Club de Santander",
