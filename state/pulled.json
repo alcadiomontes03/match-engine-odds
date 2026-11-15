@@ -28,15 +28,6 @@
   "side": "2026-11-02T13:13:29+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
- "1eb5e1a69ae9dd9edd92fde344308a4e": {
-  "away": "Hamburger SV",
-  "commence": "2026-11-01T16:30:00Z",
-  "comp": "Bundesliga",
-  "home": "Eintracht Frankfurt",
-  "late": "2026-11-01T09:45:27+00:00",
-  "side": "2026-11-01T09:45:27+00:00",
-  "weekly": "2026-10-26T16:16:04+00:00"
- },
  "262c2c99c38456b8a70cb9daa32f2f6d": {
   "away": "Deportivo La Coru\u00f1a",
   "commence": "2026-11-07T15:15:00Z",
@@ -66,15 +57,6 @@
   "late_final": true,
   "side": "2026-11-08T07:46:52+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
- },
- "3757bcd765c7da1538cdf2785e784038": {
-  "away": "Real Sociedad",
-  "commence": "2026-11-01T20:00:00Z",
-  "comp": "LaLiga",
-  "home": "Athletic Bilbao",
-  "late": "2026-11-01T16:26:14+00:00",
-  "side": "2026-11-01T16:26:14+00:00",
-  "weekly": "2026-10-26T16:16:04+00:00"
  },
  "3903e98a54db0f2cc23095407fe9dad8": {
   "away": "Newcastle United",
@@ -156,16 +138,6 @@
   "side": "2026-11-02T13:13:29+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
- "5262991e389930615bec34b642428c93": {
-  "away": "Valencia",
-  "commence": "2026-11-01T17:30:00Z",
-  "comp": "LaLiga",
-  "home": "Elche CF",
-  "late": "2026-11-01T16:26:14+00:00",
-  "late_final": true,
-  "side": "2026-11-01T09:45:27+00:00",
-  "weekly": "2026-10-26T16:16:04+00:00"
- },
  "54fae64b1421d836e07a17cad0536c73": {
   "away": "Nice",
   "commence": "2026-11-08T16:15:00Z",
@@ -225,24 +197,6 @@
   "late_final": true,
   "side": "2026-11-06T15:44:42+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
- },
- "6a3819cdbe2ba2fe5a3d8f9b4b459965": {
-  "away": "Arsenal",
-  "commence": "2026-11-01T16:30:00Z",
-  "comp": "PL",
-  "home": "Liverpool",
-  "late": "2026-11-01T09:45:27+00:00",
-  "side": "2026-11-01T09:45:27+00:00",
-  "weekly": "2026-10-26T16:16:04+00:00"
- },
- "6c520ed959578ca3aebe351ee3765d53": {
-  "away": "Real Madrid",
-  "commence": "2026-11-01T15:15:00Z",
-  "comp": "LaLiga",
-  "home": "Real Racing Club de Santander",
-  "late": "2026-11-01T09:45:27+00:00",
-  "side": "2026-11-01T09:45:27+00:00",
-  "weekly": "2026-10-26T16:16:04+00:00"
  },
  "716d6e3f3e91c47a6efaa2e93d570533": {
   "away": "Werder Bremen",
@@ -456,15 +410,6 @@
   "side": "2026-11-07T06:52:23+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
- "cf3a2e2b4a4e9815d1d0be8dcef916da": {
-  "away": "AS Monaco",
-  "commence": "2026-11-01T16:15:00Z",
-  "comp": "Ligue1",
-  "home": "Paris FC",
-  "late": "2026-11-01T09:45:27+00:00",
-  "side": "2026-11-01T09:45:27+00:00",
-  "weekly": "2026-10-26T16:16:04+00:00"
- },
  "dd247b356d8fc53e4b4f9bfcfe09c924": {
   "away": "Barcelona",
   "commence": "2026-11-08T20:00:00Z",
@@ -484,15 +429,6 @@
   "late_final": true,
   "side": "2026-11-07T06:52:23+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
- },
- "df1e1589c51bbcac432125567d1f7c58": {
-  "away": "Toulouse",
-  "commence": "2026-11-01T19:45:00Z",
-  "comp": "Ligue1",
-  "home": "Marseille",
-  "late": "2026-11-01T16:26:14+00:00",
-  "side": "2026-11-01T16:26:14+00:00",
-  "weekly": "2026-10-26T16:16:04+00:00"
  },
  "f7b240389fa5ec055c58a48ab153dcdd": {
   "away": "Troyes",
