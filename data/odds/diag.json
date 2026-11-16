@@ -1,5 +1,5 @@
 {
- "utc": "2026-11-09T20:09:08+00:00",
+ "utc": "2026-11-16T00:39:14+00:00",
  "week_key": "2026-W46",
  "team_filter_set": false,
  "team_filter_leagues": [],
@@ -9,7 +9,7 @@
   "PL": {
    "events_returned": 20,
    "after_team_filter": 20,
-   "due_weekly_now": 0,
+   "due_weekly_now": 9,
    "due_late_now": 0,
    "weekly_done_mark": "2026-W46",
    "next_kickoffs": [
@@ -24,7 +24,7 @@
   "LaLiga": {
    "events_returned": 20,
    "after_team_filter": 20,
-   "due_weekly_now": 0,
+   "due_weekly_now": 9,
    "due_late_now": 0,
    "weekly_done_mark": "2026-W46",
    "next_kickoffs": [
@@ -39,7 +39,7 @@
   "Bundesliga": {
    "events_returned": 18,
    "after_team_filter": 18,
-   "due_weekly_now": 0,
+   "due_weekly_now": 9,
    "due_late_now": 0,
    "weekly_done_mark": "2026-W46",
    "next_kickoffs": [
@@ -54,7 +54,7 @@
   "Ligue1": {
    "events_returned": 18,
    "after_team_filter": 18,
-   "due_weekly_now": 0,
+   "due_weekly_now": 9,
    "due_late_now": 0,
    "weekly_done_mark": "2026-W46",
    "next_kickoffs": [
