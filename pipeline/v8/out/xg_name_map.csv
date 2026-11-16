@@ -1,0 +1,541 @@
+lg,season,understat,football_data,us_home,fd_home,matched
+E0,2019,Arsenal,Arsenal,19,15,15
+E0,2019,Aston_Villa,Aston Villa,19,16,16
+E0,2019,Bournemouth,Bournemouth,19,15,15
+E0,2019,Brighton,Brighton,19,16,16
+E0,2019,Burnley,Burnley,19,16,16
+E0,2019,Chelsea,Chelsea,19,16,16
+E0,2019,Crystal_Palace,Crystal Palace,19,16,16
+E0,2019,Everton,Everton,19,15,15
+E0,2019,Leicester,Leicester,19,16,16
+E0,2019,Liverpool,Liverpool,19,16,16
+E0,2019,Manchester_City,Man City,19,15,15
+E0,2019,Manchester_United,Man United,19,16,16
+E0,2019,Newcastle_United,Newcastle,19,16,16
+E0,2019,Norwich,Norwich,19,16,16
+E0,2019,Sheffield_United,Sheffield United,19,15,15
+E0,2019,Southampton,Southampton,19,16,16
+E0,2019,Tottenham,Tottenham,19,16,16
+E0,2019,Watford,Watford,19,16,16
+E0,2019,West_Ham,West Ham,19,15,15
+E0,2019,Wolverhampton_Wanderers,Wolves,19,16,16
+E0,2020,Arsenal,Arsenal,19,23,19
+E0,2020,Aston_Villa,Aston Villa,19,22,19
+E0,2020,Brighton,Brighton,19,22,19
+E0,2020,Burnley,Burnley,19,22,19
+E0,2020,Chelsea,Chelsea,19,22,19
+E0,2020,Crystal_Palace,Crystal Palace,19,22,19
+E0,2020,Everton,Everton,19,23,19
+E0,2020,Fulham,Fulham,19,19,19
+E0,2020,Leeds,Leeds,19,19,19
+E0,2020,Leicester,Leicester,19,22,19
+E0,2020,Liverpool,Liverpool,19,22,19
+E0,2020,Manchester_City,Man City,19,23,19
+E0,2020,Manchester_United,Man United,19,22,19
+E0,2020,Newcastle_United,Newcastle,19,22,19
+E0,2020,Sheffield_United,Sheffield United,19,23,19
+E0,2020,Southampton,Southampton,19,22,19
+E0,2020,Tottenham,Tottenham,19,22,19
+E0,2020,West_Bromwich_Albion,West Brom,19,19,19
+E0,2020,West_Ham,West Ham,19,23,19
+E0,2020,Wolverhampton_Wanderers,Wolves,19,22,19
+E0,2021,Arsenal,Arsenal,19,19,19
+E0,2021,Aston_Villa,Aston Villa,19,19,19
+E0,2021,Brentford,Brentford,19,19,19
+E0,2021,Brighton,Brighton,19,19,19
+E0,2021,Burnley,Burnley,19,19,19
+E0,2021,Chelsea,Chelsea,19,19,19
+E0,2021,Crystal_Palace,Crystal Palace,19,19,19
+E0,2021,Everton,Everton,19,19,19
+E0,2021,Leeds,Leeds,19,19,19
+E0,2021,Leicester,Leicester,19,19,19
+E0,2021,Liverpool,Liverpool,19,19,19
+E0,2021,Manchester_City,Man City,19,19,19
+E0,2021,Manchester_United,Man United,19,19,19
+E0,2021,Newcastle_United,Newcastle,19,19,19
+E0,2021,Norwich,Norwich,19,19,19
+E0,2021,Southampton,Southampton,19,19,19
+E0,2021,Tottenham,Tottenham,19,19,19
+E0,2021,Watford,Watford,19,19,19
+E0,2021,West_Ham,West Ham,19,19,19
+E0,2021,Wolverhampton_Wanderers,Wolves,19,19,19
+E0,2022,Arsenal,Arsenal,19,19,19
+E0,2022,Aston_Villa,Aston Villa,19,19,19
+E0,2022,Bournemouth,Bournemouth,19,19,19
+E0,2022,Brentford,Brentford,19,19,19
+E0,2022,Brighton,Brighton,19,19,19
+E0,2022,Chelsea,Chelsea,19,19,19
+E0,2022,Crystal_Palace,Crystal Palace,19,19,19
+E0,2022,Everton,Everton,19,19,19
+E0,2022,Fulham,Fulham,19,19,19
+E0,2022,Leeds,Leeds,19,19,19
+E0,2022,Leicester,Leicester,19,19,19
+E0,2022,Liverpool,Liverpool,19,19,19
+E0,2022,Manchester_City,Man City,19,19,19
+E0,2022,Manchester_United,Man United,19,19,19
+E0,2022,Newcastle_United,Newcastle,19,19,19
+E0,2022,Nottingham_Forest,Nott'm Forest,19,19,19
+E0,2022,Southampton,Southampton,19,19,19
+E0,2022,Tottenham,Tottenham,19,19,19
+E0,2022,West_Ham,West Ham,19,19,19
+E0,2022,Wolverhampton_Wanderers,Wolves,19,19,19
+E0,2023,Arsenal,Arsenal,19,19,19
+E0,2023,Aston_Villa,Aston Villa,19,19,19
+E0,2023,Bournemouth,Bournemouth,19,19,19
+E0,2023,Brentford,Brentford,19,19,19
+E0,2023,Brighton,Brighton,19,19,19
+E0,2023,Burnley,Burnley,19,19,19
+E0,2023,Chelsea,Chelsea,19,19,19
+E0,2023,Crystal_Palace,Crystal Palace,19,19,19
+E0,2023,Everton,Everton,19,19,19
+E0,2023,Fulham,Fulham,19,19,19
+E0,2023,Liverpool,Liverpool,19,19,19
+E0,2023,Luton,Luton,19,19,19
+E0,2023,Manchester_City,Man City,19,19,19
+E0,2023,Manchester_United,Man United,19,19,19
+E0,2023,Newcastle_United,Newcastle,19,19,19
+E0,2023,Nottingham_Forest,Nott'm Forest,19,19,19
+E0,2023,Sheffield_United,Sheffield United,19,19,19
+E0,2023,Tottenham,Tottenham,19,19,19
+E0,2023,West_Ham,West Ham,19,19,19
+E0,2023,Wolverhampton_Wanderers,Wolves,19,19,19
+E0,2024,Arsenal,Arsenal,19,19,19
+E0,2024,Aston_Villa,Aston Villa,19,19,19
+E0,2024,Bournemouth,Bournemouth,19,19,19
+E0,2024,Brentford,Brentford,19,19,19
+E0,2024,Brighton,Brighton,19,19,19
+E0,2024,Chelsea,Chelsea,19,19,19
+E0,2024,Crystal_Palace,Crystal Palace,19,19,19
+E0,2024,Everton,Everton,19,19,19
+E0,2024,Fulham,Fulham,19,19,19
+E0,2024,Ipswich,Ipswich,19,19,19
+E0,2024,Leicester,Leicester,19,19,19
+E0,2024,Liverpool,Liverpool,19,19,19
+E0,2024,Manchester_City,Man City,19,19,19
+E0,2024,Manchester_United,Man United,19,19,19
+E0,2024,Newcastle_United,Newcastle,19,19,19
+E0,2024,Nottingham_Forest,Nott'm Forest,19,19,19
+E0,2024,Southampton,Southampton,19,19,19
+E0,2024,Tottenham,Tottenham,19,19,19
+E0,2024,West_Ham,West Ham,19,19,19
+E0,2024,Wolverhampton_Wanderers,Wolves,19,19,19
+E0,2025,Arsenal,Arsenal,18,19,18
+E0,2025,Aston_Villa,Aston Villa,19,19,19
+E0,2025,Bournemouth,Bournemouth,18,19,18
+E0,2025,Brentford,Brentford,18,19,18
+E0,2025,Brighton,Brighton,18,19,18
+E0,2025,Burnley,Burnley,18,19,18
+E0,2025,Chelsea,Chelsea,18,19,18
+E0,2025,Crystal_Palace,Crystal Palace,18,19,18
+E0,2025,Everton,Everton,18,19,18
+E0,2025,Fulham,Fulham,18,19,18
+E0,2025,Leeds,Leeds,18,19,18
+E0,2025,Liverpool,Liverpool,18,19,18
+E0,2025,Manchester_City,Man City,18,19,18
+E0,2025,Manchester_United,Man United,18,19,18
+E0,2025,Newcastle_United,Newcastle,18,19,18
+E0,2025,Nottingham_Forest,Nott'm Forest,18,19,18
+E0,2025,Sunderland,Sunderland,18,19,18
+E0,2025,Tottenham,Tottenham,18,19,18
+E0,2025,West_Ham,West Ham,18,19,18
+E0,2025,Wolverhampton_Wanderers,Wolves,18,19,18
+SP1,2019,Alaves,Alaves,19,16,16
+SP1,2019,Athletic_Club,Ath Bilbao,19,16,16
+SP1,2019,Atletico_Madrid,Ath Madrid,19,16,16
+SP1,2019,Barcelona,Barcelona,19,17,17
+SP1,2019,Celta_Vigo,Celta,19,16,16
+SP1,2019,Eibar,Eibar,19,16,16
+SP1,2019,Espanyol,Espanol,19,16,16
+SP1,2019,Getafe,Getafe,19,17,17
+SP1,2019,Granada,Granada,19,16,16
+SP1,2019,Leganes,Leganes,19,17,17
+SP1,2019,Levante,Levante,19,16,16
+SP1,2019,Mallorca,Mallorca,19,17,17
+SP1,2019,Osasuna,Osasuna,19,16,16
+SP1,2019,Real_Betis,Betis,19,16,16
+SP1,2019,Real_Madrid,Real Madrid,19,16,16
+SP1,2019,Real_Sociedad,Sociedad,19,16,16
+SP1,2019,Real_Valladolid,Valladolid,19,15,15
+SP1,2019,Sevilla,Sevilla,19,16,16
+SP1,2019,Valencia,Valencia,19,16,16
+SP1,2019,Villarreal,Villarreal,19,16,16
+SP1,2020,Alaves,Alaves,19,22,19
+SP1,2020,Athletic_Club,Ath Bilbao,19,22,19
+SP1,2020,Atletico_Madrid,Ath Madrid,19,22,19
+SP1,2020,Barcelona,Barcelona,19,21,19
+SP1,2020,Cadiz,Cadiz,19,19,19
+SP1,2020,Celta_Vigo,Celta,19,22,19
+SP1,2020,Eibar,Eibar,19,22,19
+SP1,2020,Elche,Elche,19,19,19
+SP1,2020,Getafe,Getafe,19,21,19
+SP1,2020,Granada,Granada,19,22,19
+SP1,2020,Levante,Levante,19,22,19
+SP1,2020,Osasuna,Osasuna,19,22,19
+SP1,2020,Real_Betis,Betis,19,22,19
+SP1,2020,Real_Madrid,Real Madrid,19,22,19
+SP1,2020,Real_Sociedad,Sociedad,19,22,19
+SP1,2020,Real_Valladolid,Valladolid,19,23,19
+SP1,2020,SD_Huesca,Huesca,19,19,19
+SP1,2020,Sevilla,Sevilla,19,22,19
+SP1,2020,Valencia,Valencia,19,22,19
+SP1,2020,Villarreal,Villarreal,19,22,19
+SP1,2021,Alaves,Alaves,19,19,19
+SP1,2021,Athletic_Club,Ath Bilbao,19,19,19
+SP1,2021,Atletico_Madrid,Ath Madrid,19,19,19
+SP1,2021,Barcelona,Barcelona,19,19,19
+SP1,2021,Cadiz,Cadiz,19,19,19
+SP1,2021,Celta_Vigo,Celta,19,19,19
+SP1,2021,Elche,Elche,19,19,19
+SP1,2021,Espanyol,Espanol,19,19,19
+SP1,2021,Getafe,Getafe,19,19,19
+SP1,2021,Granada,Granada,19,19,19
+SP1,2021,Levante,Levante,19,19,19
+SP1,2021,Mallorca,Mallorca,19,19,19
+SP1,2021,Osasuna,Osasuna,19,19,19
+SP1,2021,Rayo_Vallecano,Vallecano,19,19,19
+SP1,2021,Real_Betis,Betis,19,19,19
+SP1,2021,Real_Madrid,Real Madrid,19,19,19
+SP1,2021,Real_Sociedad,Sociedad,19,19,19
+SP1,2021,Sevilla,Sevilla,19,19,19
+SP1,2021,Valencia,Valencia,19,19,19
+SP1,2021,Villarreal,Villarreal,19,19,19
+SP1,2022,Almeria,Almeria,19,19,19
+SP1,2022,Athletic_Club,Ath Bilbao,19,19,19
+SP1,2022,Atletico_Madrid,Ath Madrid,19,19,19
+SP1,2022,Barcelona,Barcelona,19,19,19
+SP1,2022,Cadiz,Cadiz,19,19,19
+SP1,2022,Celta_Vigo,Celta,19,19,19
+SP1,2022,Elche,Elche,19,19,19
+SP1,2022,Espanyol,Espanol,19,19,19
+SP1,2022,Getafe,Getafe,19,19,19
+SP1,2022,Girona,Girona,19,19,19
+SP1,2022,Mallorca,Mallorca,19,19,19
+SP1,2022,Osasuna,Osasuna,19,19,19
+SP1,2022,Rayo_Vallecano,Vallecano,19,19,19
+SP1,2022,Real_Betis,Betis,19,19,19
+SP1,2022,Real_Madrid,Real Madrid,19,19,19
+SP1,2022,Real_Sociedad,Sociedad,19,19,19
+SP1,2022,Real_Valladolid,Valladolid,19,19,19
+SP1,2022,Sevilla,Sevilla,19,19,19
+SP1,2022,Valencia,Valencia,19,19,19
+SP1,2022,Villarreal,Villarreal,19,19,19
+SP1,2023,Alaves,Alaves,19,19,19
+SP1,2023,Almeria,Almeria,19,19,19
+SP1,2023,Athletic_Club,Ath Bilbao,19,19,19
+SP1,2023,Atletico_Madrid,Ath Madrid,19,19,19
+SP1,2023,Barcelona,Barcelona,19,19,19
+SP1,2023,Cadiz,Cadiz,19,19,19
+SP1,2023,Celta_Vigo,Celta,19,19,19
+SP1,2023,Getafe,Getafe,19,19,19
+SP1,2023,Girona,Girona,19,19,19
+SP1,2023,Granada,Granada,19,19,19
+SP1,2023,Las_Palmas,Las Palmas,19,19,19
+SP1,2023,Mallorca,Mallorca,19,19,19
+SP1,2023,Osasuna,Osasuna,19,19,19
+SP1,2023,Rayo_Vallecano,Vallecano,19,19,19
+SP1,2023,Real_Betis,Betis,19,19,19
+SP1,2023,Real_Madrid,Real Madrid,19,19,19
+SP1,2023,Real_Sociedad,Sociedad,19,19,19
+SP1,2023,Sevilla,Sevilla,19,19,19
+SP1,2023,Valencia,Valencia,19,19,19
+SP1,2023,Villarreal,Villarreal,19,19,19
+SP1,2024,Alaves,Alaves,19,19,19
+SP1,2024,Athletic_Club,Ath Bilbao,19,19,19
+SP1,2024,Atletico_Madrid,Ath Madrid,19,19,19
+SP1,2024,Barcelona,Barcelona,19,19,19
+SP1,2024,Celta_Vigo,Celta,19,19,19
+SP1,2024,Espanyol,Espanol,19,19,19
+SP1,2024,Getafe,Getafe,19,19,19
+SP1,2024,Girona,Girona,19,19,19
+SP1,2024,Las_Palmas,Las Palmas,19,19,19
+SP1,2024,Leganes,Leganes,19,19,19
+SP1,2024,Mallorca,Mallorca,19,19,19
+SP1,2024,Osasuna,Osasuna,19,19,19
+SP1,2024,Rayo_Vallecano,Vallecano,19,19,19
+SP1,2024,Real_Betis,Betis,19,19,19
+SP1,2024,Real_Madrid,Real Madrid,19,19,19
+SP1,2024,Real_Sociedad,Sociedad,19,19,19
+SP1,2024,Real_Valladolid,Valladolid,19,19,19
+SP1,2024,Sevilla,Sevilla,19,19,19
+SP1,2024,Valencia,Valencia,19,19,19
+SP1,2024,Villarreal,Villarreal,19,19,19
+SP1,2025,Alaves,Alaves,18,19,18
+SP1,2025,Athletic_Club,Ath Bilbao,18,19,18
+SP1,2025,Atletico_Madrid,Ath Madrid,18,19,18
+SP1,2025,Barcelona,Barcelona,18,19,18
+SP1,2025,Celta_Vigo,Celta,18,19,18
+SP1,2025,Elche,Elche,18,19,18
+SP1,2025,Espanyol,Espanol,18,19,18
+SP1,2025,Getafe,Getafe,18,19,18
+SP1,2025,Girona,Girona,18,19,18
+SP1,2025,Levante,Levante,18,19,18
+SP1,2025,Mallorca,Mallorca,18,19,18
+SP1,2025,Osasuna,Osasuna,18,19,18
+SP1,2025,Rayo_Vallecano,Vallecano,18,19,18
+SP1,2025,Real_Betis,Betis,18,19,18
+SP1,2025,Real_Madrid,Real Madrid,18,19,18
+SP1,2025,Real_Oviedo,Oviedo,18,19,18
+SP1,2025,Real_Sociedad,Sociedad,18,19,18
+SP1,2025,Sevilla,Sevilla,18,19,18
+SP1,2025,Valencia,Valencia,18,19,18
+SP1,2025,Villarreal,Villarreal,18,19,18
+D1,2019,Augsburg,Augsburg,17,17,17
+D1,2019,Bayer_Leverkusen,Leverkusen,17,17,17
+D1,2019,Bayern_Munich,Bayern Munich,17,17,17
+D1,2019,Borussia_Dortmund,Dortmund,17,17,17
+D1,2019,Borussia_M.Gladbach,M'gladbach,17,17,17
+D1,2019,Eintracht_Frankfurt,Ein Frankfurt,17,17,17
+D1,2019,FC_Cologne,FC Koln,17,17,17
+D1,2019,Fortuna_Duesseldorf,Fortuna Dusseldorf,17,17,17
+D1,2019,Freiburg,Freiburg,17,17,17
+D1,2019,Hertha_Berlin,Hertha,17,17,17
+D1,2019,Hoffenheim,Hoffenheim,17,17,17
+D1,2019,Mainz_05,Mainz,17,17,17
+D1,2019,Paderborn,Paderborn,17,17,17
+D1,2019,RasenBallsport_Leipzig,RB Leipzig,17,17,17
+D1,2019,Schalke_04,Schalke 04,17,17,17
+D1,2019,Union_Berlin,Union Berlin,17,17,17
+D1,2019,Werder_Bremen,Werder Bremen,17,17,17
+D1,2019,Wolfsburg,Wolfsburg,17,17,17
+D1,2020,Arminia_Bielefeld,Bielefeld,17,17,17
+D1,2020,Augsburg,Augsburg,17,17,17
+D1,2020,Bayer_Leverkusen,Leverkusen,17,17,17
+D1,2020,Bayern_Munich,Bayern Munich,17,17,17
+D1,2020,Borussia_Dortmund,Dortmund,17,17,17
+D1,2020,Borussia_M.Gladbach,M'gladbach,17,17,17
+D1,2020,Eintracht_Frankfurt,Ein Frankfurt,17,17,17
+D1,2020,FC_Cologne,FC Koln,17,17,17
+D1,2020,Freiburg,Freiburg,17,17,17
+D1,2020,Hertha_Berlin,Hertha,17,17,17
+D1,2020,Hoffenheim,Hoffenheim,17,17,17
+D1,2020,Mainz_05,Mainz,17,17,17
+D1,2020,RasenBallsport_Leipzig,RB Leipzig,17,17,17
+D1,2020,Schalke_04,Schalke 04,17,17,17
+D1,2020,Union_Berlin,Union Berlin,17,17,17
+D1,2020,VfB_Stuttgart,Stuttgart,17,17,17
+D1,2020,Werder_Bremen,Werder Bremen,17,17,17
+D1,2020,Wolfsburg,Wolfsburg,17,17,17
+D1,2021,Arminia_Bielefeld,Bielefeld,17,17,17
+D1,2021,Augsburg,Augsburg,17,17,17
+D1,2021,Bayer_Leverkusen,Leverkusen,17,17,17
+D1,2021,Bayern_Munich,Bayern Munich,17,17,17
+D1,2021,Bochum,Bochum,17,17,17
+D1,2021,Borussia_Dortmund,Dortmund,17,17,17
+D1,2021,Borussia_M.Gladbach,M'gladbach,17,17,17
+D1,2021,Eintracht_Frankfurt,Ein Frankfurt,17,17,17
+D1,2021,FC_Cologne,FC Koln,17,17,17
+D1,2021,Freiburg,Freiburg,17,17,17
+D1,2021,Greuther_Fuerth,Greuther Furth,17,17,17
+D1,2021,Hertha_Berlin,Hertha,17,17,17
+D1,2021,Hoffenheim,Hoffenheim,17,17,17
+D1,2021,Mainz_05,Mainz,17,17,17
+D1,2021,RasenBallsport_Leipzig,RB Leipzig,17,17,17
+D1,2021,Union_Berlin,Union Berlin,17,17,17
+D1,2021,VfB_Stuttgart,Stuttgart,17,17,17
+D1,2021,Wolfsburg,Wolfsburg,17,17,17
+D1,2022,Augsburg,Augsburg,17,17,17
+D1,2022,Bayer_Leverkusen,Leverkusen,17,17,17
+D1,2022,Bayern_Munich,Bayern Munich,17,17,17
+D1,2022,Bochum,Bochum,17,17,17
+D1,2022,Borussia_Dortmund,Dortmund,17,17,17
+D1,2022,Borussia_M.Gladbach,M'gladbach,17,17,17
+D1,2022,Eintracht_Frankfurt,Ein Frankfurt,17,17,17
+D1,2022,FC_Cologne,FC Koln,17,17,17
+D1,2022,Freiburg,Freiburg,17,17,17
+D1,2022,Hertha_Berlin,Hertha,17,17,17
+D1,2022,Hoffenheim,Hoffenheim,17,17,17
+D1,2022,Mainz_05,Mainz,17,17,17
+D1,2022,RasenBallsport_Leipzig,RB Leipzig,17,17,17
+D1,2022,Schalke_04,Schalke 04,17,17,17
+D1,2022,Union_Berlin,Union Berlin,17,17,17
+D1,2022,VfB_Stuttgart,Stuttgart,17,17,17
+D1,2022,Werder_Bremen,Werder Bremen,17,17,17
+D1,2022,Wolfsburg,Wolfsburg,17,17,17
+D1,2023,Augsburg,Augsburg,17,17,17
+D1,2023,Bayer_Leverkusen,Leverkusen,17,17,17
+D1,2023,Bayern_Munich,Bayern Munich,17,17,17
+D1,2023,Bochum,Bochum,17,17,17
+D1,2023,Borussia_Dortmund,Dortmund,17,17,17
+D1,2023,Borussia_M.Gladbach,M'gladbach,17,17,17
+D1,2023,Darmstadt,Darmstadt,17,17,17
+D1,2023,Eintracht_Frankfurt,Ein Frankfurt,17,17,17
+D1,2023,FC_Cologne,FC Koln,17,17,17
+D1,2023,FC_Heidenheim,Heidenheim,17,17,17
+D1,2023,Freiburg,Freiburg,17,17,17
+D1,2023,Hoffenheim,Hoffenheim,17,17,17
+D1,2023,Mainz_05,Mainz,17,17,17
+D1,2023,RasenBallsport_Leipzig,RB Leipzig,17,17,17
+D1,2023,Union_Berlin,Union Berlin,17,17,17
+D1,2023,VfB_Stuttgart,Stuttgart,17,17,17
+D1,2023,Werder_Bremen,Werder Bremen,17,17,17
+D1,2023,Wolfsburg,Wolfsburg,17,17,17
+D1,2024,Augsburg,Augsburg,17,17,17
+D1,2024,Bayer_Leverkusen,Leverkusen,17,17,17
+D1,2024,Bayern_Munich,Bayern Munich,17,17,17
+D1,2024,Bochum,Bochum,17,17,17
+D1,2024,Borussia_Dortmund,Dortmund,17,17,17
+D1,2024,Borussia_M.Gladbach,M'gladbach,17,17,17
+D1,2024,Eintracht_Frankfurt,Ein Frankfurt,17,17,17
+D1,2024,FC_Heidenheim,Heidenheim,17,17,17
+D1,2024,Freiburg,Freiburg,17,17,17
+D1,2024,Hoffenheim,Hoffenheim,17,17,17
+D1,2024,Holstein_Kiel,Holstein Kiel,17,17,17
+D1,2024,Mainz_05,Mainz,17,17,17
+D1,2024,RasenBallsport_Leipzig,RB Leipzig,17,17,17
+D1,2024,St._Pauli,St Pauli,17,17,17
+D1,2024,Union_Berlin,Union Berlin,17,17,16
+D1,2024,VfB_Stuttgart,Stuttgart,17,17,17
+D1,2024,Werder_Bremen,Werder Bremen,17,17,17
+D1,2024,Wolfsburg,Wolfsburg,17,17,17
+D1,2025,Augsburg,Augsburg,17,17,17
+D1,2025,Bayer_Leverkusen,Leverkusen,16,17,16
+D1,2025,Bayern_Munich,Bayern Munich,16,17,16
+D1,2025,Borussia_Dortmund,Dortmund,17,17,17
+D1,2025,Borussia_M.Gladbach,M'gladbach,16,17,16
+D1,2025,Eintracht_Frankfurt,Ein Frankfurt,16,17,16
+D1,2025,FC_Cologne,FC Koln,17,17,17
+D1,2025,FC_Heidenheim,Heidenheim,16,17,16
+D1,2025,Freiburg,Freiburg,16,17,16
+D1,2025,Hamburger_SV,Hamburg,17,17,17
+D1,2025,Hoffenheim,Hoffenheim,17,17,17
+D1,2025,Mainz_05,Mainz,17,17,17
+D1,2025,RasenBallsport_Leipzig,RB Leipzig,17,17,17
+D1,2025,St._Pauli,St Pauli,16,17,16
+D1,2025,Union_Berlin,Union Berlin,16,17,16
+D1,2025,VfB_Stuttgart,Stuttgart,17,17,17
+D1,2025,Werder_Bremen,Werder Bremen,16,17,16
+D1,2025,Wolfsburg,Wolfsburg,17,17,17
+F1,2019,Amiens,Amiens,14,14,14
+F1,2019,Angers,Angers,15,15,15
+F1,2019,Bordeaux,Bordeaux,13,13,13
+F1,2019,Brest,Brest,14,14,14
+F1,2019,Dijon,Dijon,14,14,14
+F1,2019,Lille,Lille,15,15,15
+F1,2019,Lyon,Lyon,13,13,13
+F1,2019,Marseille,Marseille,14,14,14
+F1,2019,Metz,Metz,14,14,14
+F1,2019,Monaco,Monaco,14,14,14
+F1,2019,Montpellier,Montpellier,14,14,14
+F1,2019,Nantes,Nantes,14,14,14
+F1,2019,Nice,Nice,15,15,15
+F1,2019,Nimes,Nimes,14,14,14
+F1,2019,Paris_Saint_Germain,Paris SG,14,14,14
+F1,2019,Reims,Reims,14,14,14
+F1,2019,Rennes,Rennes,14,14,14
+F1,2019,Saint-Etienne,St Etienne,14,14,14
+F1,2019,Strasbourg,Strasbourg,13,13,13
+F1,2019,Toulouse,Toulouse,13,13,13
+F1,2020,Angers,Angers,19,19,19
+F1,2020,Bordeaux,Bordeaux,19,19,19
+F1,2020,Brest,Brest,19,19,19
+F1,2020,Dijon,Dijon,19,19,19
+F1,2020,Lens,Lens,19,19,19
+F1,2020,Lille,Lille,19,19,19
+F1,2020,Lorient,Lorient,19,19,19
+F1,2020,Lyon,Lyon,19,19,19
+F1,2020,Marseille,Marseille,19,19,19
+F1,2020,Metz,Metz,19,19,19
+F1,2020,Monaco,Monaco,19,19,19
+F1,2020,Montpellier,Montpellier,19,19,19
+F1,2020,Nantes,Nantes,19,19,19
+F1,2020,Nice,Nice,19,19,19
+F1,2020,Nimes,Nimes,19,19,19
+F1,2020,Paris_Saint_Germain,Paris SG,19,19,19
+F1,2020,Reims,Reims,19,19,19
+F1,2020,Rennes,Rennes,19,19,19
+F1,2020,Saint-Etienne,St Etienne,19,19,19
+F1,2020,Strasbourg,Strasbourg,19,19,19
+F1,2021,Angers,Angers,19,19,19
+F1,2021,Bordeaux,Bordeaux,19,19,19
+F1,2021,Brest,Brest,19,19,19
+F1,2021,Clermont_Foot,Clermont,19,19,19
+F1,2021,Lens,Lens,19,19,19
+F1,2021,Lille,Lille,19,19,19
+F1,2021,Lorient,Lorient,19,19,19
+F1,2021,Lyon,Lyon,19,19,19
+F1,2021,Marseille,Marseille,19,19,19
+F1,2021,Metz,Metz,19,19,19
+F1,2021,Monaco,Monaco,19,19,19
+F1,2021,Montpellier,Montpellier,19,19,19
+F1,2021,Nantes,Nantes,19,19,19
+F1,2021,Nice,Nice,19,19,19
+F1,2021,Paris_Saint_Germain,Paris SG,19,19,19
+F1,2021,Reims,Reims,19,19,19
+F1,2021,Rennes,Rennes,19,19,19
+F1,2021,Saint-Etienne,St Etienne,19,19,19
+F1,2021,Strasbourg,Strasbourg,19,19,19
+F1,2021,Troyes,Troyes,19,19,19
+F1,2022,Ajaccio,Ajaccio,19,19,19
+F1,2022,Angers,Angers,19,19,19
+F1,2022,Auxerre,Auxerre,19,19,19
+F1,2022,Brest,Brest,19,19,19
+F1,2022,Clermont_Foot,Clermont,19,19,19
+F1,2022,Lens,Lens,19,19,19
+F1,2022,Lille,Lille,19,19,19
+F1,2022,Lorient,Lorient,19,19,19
+F1,2022,Lyon,Lyon,19,19,19
+F1,2022,Marseille,Marseille,19,19,19
+F1,2022,Monaco,Monaco,19,19,19
+F1,2022,Montpellier,Montpellier,19,19,19
+F1,2022,Nantes,Nantes,19,19,19
+F1,2022,Nice,Nice,19,19,19
+F1,2022,Paris_Saint_Germain,Paris SG,19,19,19
+F1,2022,Reims,Reims,19,19,19
+F1,2022,Rennes,Rennes,19,19,19
+F1,2022,Strasbourg,Strasbourg,19,19,18
+F1,2022,Toulouse,Toulouse,19,19,19
+F1,2022,Troyes,Troyes,19,19,19
+F1,2023,Brest,Brest,17,17,17
+F1,2023,Clermont_Foot,Clermont,17,17,17
+F1,2023,Le_Havre,Le Havre,17,17,17
+F1,2023,Lens,Lens,17,17,17
+F1,2023,Lille,Lille,17,17,17
+F1,2023,Lorient,Lorient,17,17,17
+F1,2023,Lyon,Lyon,17,17,17
+F1,2023,Marseille,Marseille,17,17,17
+F1,2023,Metz,Metz,17,17,17
+F1,2023,Monaco,Monaco,17,17,17
+F1,2023,Montpellier,Montpellier,17,17,17
+F1,2023,Nantes,Nantes,17,17,17
+F1,2023,Nice,Nice,17,17,17
+F1,2023,Paris_Saint_Germain,Paris SG,17,17,17
+F1,2023,Reims,Reims,17,17,17
+F1,2023,Rennes,Rennes,17,17,17
+F1,2023,Strasbourg,Strasbourg,17,17,17
+F1,2023,Toulouse,Toulouse,17,17,17
+F1,2024,Angers,Angers,17,17,17
+F1,2024,Auxerre,Auxerre,17,17,17
+F1,2024,Brest,Brest,17,17,17
+F1,2024,Le_Havre,Le Havre,17,17,17
+F1,2024,Lens,Lens,17,17,17
+F1,2024,Lille,Lille,17,17,17
+F1,2024,Lyon,Lyon,17,17,17
+F1,2024,Marseille,Marseille,17,17,17
+F1,2024,Monaco,Monaco,17,17,17
+F1,2024,Montpellier,Montpellier,17,17,17
+F1,2024,Nantes,Nantes,17,17,17
+F1,2024,Nice,Nice,17,17,17
+F1,2024,Paris_Saint_Germain,Paris SG,17,17,17
+F1,2024,Reims,Reims,17,17,17
+F1,2024,Rennes,Rennes,17,17,17
+F1,2024,Saint-Etienne,St Etienne,17,17,17
+F1,2024,Strasbourg,Strasbourg,17,17,17
+F1,2024,Toulouse,Toulouse,17,17,17
+F1,2025,Angers,Angers,17,17,17
+F1,2025,Auxerre,Auxerre,17,17,17
+F1,2025,Brest,Brest,16,17,16
+F1,2025,Le_Havre,Le Havre,17,17,17
+F1,2025,Lens,Lens,17,17,17
+F1,2025,Lille,Lille,16,17,16
+F1,2025,Lorient,Lorient,16,17,16
+F1,2025,Lyon,Lyon,16,17,16
+F1,2025,Marseille,Marseille,16,17,16
+F1,2025,Metz,Metz,17,17,16
+F1,2025,Monaco,Monaco,17,17,17
+F1,2025,Nantes,Nantes,16,17,16
+F1,2025,Nice,Nice,16,17,16
+F1,2025,Paris_FC,Paris FC,16,17,16
+F1,2025,Paris_Saint_Germain,Paris SG,17,17,17
+F1,2025,Rennes,Rennes,17,17,17
+F1,2025,Strasbourg,Strasbourg,16,17,16
+F1,2025,Toulouse,Toulouse,17,17,17

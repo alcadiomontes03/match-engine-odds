@@ -110,7 +110,7 @@ def market_goals(m):
 
 
 # ---------------------------------------------------------------- fit
-def fit(df, asof, wg=0.7, ws=0.3, wm=0.0, xi=R.XI, ridge=1.0, use_nnls=True, P=0.0, code=None):
+def fit(df, asof, wg=0.7, ws=0.3, wm=0.0, xi=R.XI, ridge=1.0, use_nnls=True, P=0.0, code=None, xg=False):
     """fixes.fit generalised: three targets (goals / shot proxy / market-implied goals) and a decay rate."""
     asof = pd.Timestamp(asof)
     d = df[(df.Date < asof) & (df.Date >= asof - pd.Timedelta(days=R.WINDOW))]
@@ -127,6 +127,9 @@ def fit(df, asof, wg=0.7, ws=0.3, wm=0.0, xi=R.XI, ridge=1.0, use_nnls=True, P=0
     xh = coef[0] * d.HST.to_numpy(float) + coef[1] * np.clip((d.HS - d.HST).to_numpy(float), 0, None)
     xa = coef[0] * d.AST.to_numpy(float) + coef[1] * np.clip((d.AS - d.AST).to_numpy(float), 0, None)
     miss = ~(np.isfinite(xh) & np.isfinite(xa)); xh[miss], xa[miss] = hg[miss], ag[miss]
+    if xg and "xgh" in d:   # xg.py: real xG (Understat archive) replaces the shot proxy where the archive has the match
+        gh, ga = d.xgh.to_numpy(float), d.xga.to_numpy(float); has = np.isfinite(gh) & np.isfinite(ga)
+        xh, xa = xh.copy(), xa.copy(); xh[has], xa[has] = gh[has], ga[has]
     if wm > 0:
         mh = d.mlam.to_numpy(float).copy(); ma = d.mmu.to_numpy(float).copy()
         nm = ~(np.isfinite(mh) & np.isfinite(ma)); mh[nm], ma[nm] = xh[nm], xa[nm]
