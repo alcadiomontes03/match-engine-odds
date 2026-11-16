@@ -1,0 +1,257 @@
+{
+ "E0": {
+  "ok": true,
+  "checks": [
+   {
+    "check": "results complete for played matches (last 21 days)",
+    "ok": true,
+    "detail": "all played matches have results"
+   },
+   {
+    "check": "converged",
+    "ok": true,
+    "detail": "True"
+   },
+   {
+    "check": "home advantage 0 to 0.5",
+    "ok": true,
+    "detail": "0.197"
+   },
+   {
+    "check": "rho inside bounds",
+    "ok": true,
+    "detail": "-0.050"
+   },
+   {
+    "check": "goal-level factor 0.85 to 1.20",
+    "ok": true,
+    "detail": "0.959"
+   },
+   {
+    "check": "ratings magnitude below 1.5",
+    "ok": true,
+    "detail": "0.551"
+   },
+   {
+    "check": "every upcoming team rated",
+    "ok": true,
+    "detail": "all rated"
+   },
+   {
+    "check": "largest weekly change in team strength below 0.35",
+    "ok": true,
+    "detail": "skipped once: the previous ratings were fitted by a different method"
+   },
+   {
+    "check": "recent goals: predicted within 0.6 of actual",
+    "ok": true,
+    "detail": "predicted 2.74, actual 2.69 over 70 matches (in-sample)"
+   }
+  ],
+  "postponed_but_played": [],
+  "level_factor": 0.9585523458748536,
+  "home_adv": 0.19650082991904075,
+  "rho": -0.05,
+  "n_matches": 1120,
+  "n_extra": 0,
+  "fd_last": "2026-11-08",
+  "n_market_target": 1120,
+  "n_extra_with_dk_price": 0,
+  "promoted": [
+   "Coventry",
+   "Hull",
+   "Ipswich"
+  ]
+ },
+ "SP1": {
+  "ok": true,
+  "checks": [
+   {
+    "check": "results complete for played matches (last 21 days)",
+    "ok": true,
+    "detail": "all played matches have results"
+   },
+   {
+    "check": "converged",
+    "ok": true,
+    "detail": "True"
+   },
+   {
+    "check": "home advantage 0 to 0.5",
+    "ok": true,
+    "detail": "0.274"
+   },
+   {
+    "check": "rho inside bounds",
+    "ok": true,
+    "detail": "-0.050"
+   },
+   {
+    "check": "goal-level factor 0.85 to 1.20",
+    "ok": true,
+    "detail": "1.025"
+   },
+   {
+    "check": "ratings magnitude below 1.5",
+    "ok": true,
+    "detail": "0.833"
+   },
+   {
+    "check": "every upcoming team rated",
+    "ok": true,
+    "detail": "all rated"
+   },
+   {
+    "check": "largest weekly change in team strength below 0.35",
+    "ok": true,
+    "detail": "skipped once: the previous ratings were fitted by a different method"
+   },
+   {
+    "check": "recent goals: predicted within 0.6 of actual",
+    "ok": true,
+    "detail": "predicted 2.86, actual 2.83 over 78 matches (in-sample)"
+   }
+  ],
+  "postponed_but_played": [],
+  "level_factor": 1.0252351579705037,
+  "home_adv": 0.2736753442602138,
+  "rho": -0.05,
+  "n_matches": 1131,
+  "n_extra": 0,
+  "fd_last": "2026-11-08",
+  "n_market_target": 1131,
+  "n_extra_with_dk_price": 0,
+  "promoted": [
+   "La Coruna",
+   "Malaga",
+   "Santander"
+  ]
+ },
+ "D1": {
+  "ok": true,
+  "checks": [
+   {
+    "check": "results complete for played matches (last 21 days)",
+    "ok": true,
+    "detail": "all played matches have results"
+   },
+   {
+    "check": "converged",
+    "ok": true,
+    "detail": "True"
+   },
+   {
+    "check": "home advantage 0 to 0.5",
+    "ok": true,
+    "detail": "0.232"
+   },
+   {
+    "check": "rho inside bounds",
+    "ok": true,
+    "detail": "-0.050"
+   },
+   {
+    "check": "goal-level factor 0.85 to 1.20",
+    "ok": true,
+    "detail": "1.055"
+   },
+   {
+    "check": "ratings magnitude below 1.5",
+    "ok": true,
+    "detail": "0.836"
+   },
+   {
+    "check": "every upcoming team rated",
+    "ok": true,
+    "detail": "all rated"
+   },
+   {
+    "check": "largest weekly change in team strength below 0.35",
+    "ok": true,
+    "detail": "skipped once: the previous ratings were fitted by a different method"
+   },
+   {
+    "check": "recent goals: predicted within 0.6 of actual",
+    "ok": true,
+    "detail": "predicted 3.42, actual 3.35 over 63 matches (in-sample)"
+   }
+  ],
+  "postponed_but_played": [],
+  "level_factor": 1.0554299030063008,
+  "home_adv": 0.23222046050055284,
+  "rho": -0.05,
+  "n_matches": 900,
+  "n_extra": 0,
+  "fd_last": "2026-11-08",
+  "n_market_target": 900,
+  "n_extra_with_dk_price": 0,
+  "promoted": [
+   "Elversberg",
+   "Paderborn",
+   "Schalke 04"
+  ]
+ },
+ "F1": {
+  "ok": true,
+  "checks": [
+   {
+    "check": "results complete for played matches (last 21 days)",
+    "ok": true,
+    "detail": "all played matches have results"
+   },
+   {
+    "check": "converged",
+    "ok": true,
+    "detail": "True"
+   },
+   {
+    "check": "home advantage 0 to 0.5",
+    "ok": true,
+    "detail": "0.187"
+   },
+   {
+    "check": "rho inside bounds",
+    "ok": true,
+    "detail": "-0.050"
+   },
+   {
+    "check": "goal-level factor 0.85 to 1.20",
+    "ok": true,
+    "detail": "1.022"
+   },
+   {
+    "check": "ratings magnitude below 1.5",
+    "ok": true,
+    "detail": "0.740"
+   },
+   {
+    "check": "every upcoming team rated",
+    "ok": true,
+    "detail": "all rated"
+   },
+   {
+    "check": "largest weekly change in team strength below 0.35",
+    "ok": true,
+    "detail": "skipped once: the previous ratings were fitted by a different method"
+   },
+   {
+    "check": "recent goals: predicted within 0.6 of actual",
+    "ok": true,
+    "detail": "predicted 2.94, actual 2.89 over 63 matches (in-sample)"
+   }
+  ],
+  "postponed_but_played": [],
+  "level_factor": 1.02185728832941,
+  "home_adv": 0.1871332579766255,
+  "rho": -0.05,
+  "n_matches": 903,
+  "n_extra": 0,
+  "fd_last": "2026-11-08",
+  "n_market_target": 903,
+  "n_extra_with_dk_price": 0,
+  "promoted": [
+   "Le Mans",
+   "Troyes"
+  ]
+ }
+}
