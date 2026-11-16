@@ -1,4 +1,11 @@
 """
+Alpha Lines live ratings. v7 went live 2026-10-20 and was renamed v8 on 2026-11-01 (same method). On 2026-11-15
+the live method became **v9** (pipeline/v9/method.py: market-implied goals as the fit target, 69-day half-life,
+promoted-team prior, stretch 1.13), chosen from the walk-forward in pipeline/v8/gap.py and registered in
+docs/prereg-forward-2026-11b.md. This file keeps its name and commands so the scheduled jobs need no change:
+`refit` writes v9 ratings, `shadow` writes v9 predictions (shadow_<date>.csv) and v8 shadow predictions
+(shadow_v8_<date>.csv), `score` compares them. Everything below this paragraph describes v7/v8, kept for history.
+
 Alpha Lines v7 - live ratings (went live 2026-10-20, Alcadio's decision).
 Renamed "Alpha Lines v8" from week 9 (Alcadio, 2026-11-01): same rating method, written as model_version "Alpha Lines v8".
 
@@ -33,21 +40,38 @@ ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(ROOT / "pipeline" / "v6"))
 sys.path.insert(0, str(ROOT / "pipeline"))
+sys.path.insert(0, str(ROOT / "pipeline" / "v9"))
 import candidate as C  # noqa: E402
+import method as V9  # noqa: E402
 import refit as R  # noqa: E402
 from src import guards as G  # noqa: E402
 
 OUT = HERE / "out"
-MODEL = "alpha-lines-v7-shots30-ridge1-level"
-CONFIGS = {"v7": dict(C.CHOSEN), "v61": dict(ridge=5.0, shots=0.0, level=False)}
-PREFIX = {"v7": "shadow_", "v61": "shadow_v61_"}
-LABEL = {"v7": "v7 (shots30, ridge 1, goal level)", "v61": "v6.1 method (ridge 5, goals only)"}
+MODEL = V9.MODEL
+MODEL_VERSION = "Alpha Lines v9"
+V9_SINCE = "2026-11-15"     # shadow_<date>.csv files dated before this are the v7/v8 method
+CONFIGS = {"v9": "v9", "v8": dict(C.CHOSEN), "v61": dict(ridge=5.0, shots=0.0, level=False)}
+SHADOW_FAMILIES = ["v9", "v8"]     # v6.1 shadow files stopped 2026-11-15; the old ones are still scored
+PREFIX = {"v9": "shadow_", "v8": "shadow_v8_", "v61": "shadow_v61_"}
+LABEL = {"v9": "v9 (market-implied goals, 69-day half-life, promoted prior, stretch 1.13)",
+         "v8": "v8 method (shots30, ridge 1, goal level)", "v61": "v6.1 method (ridge 5, goals only)"}
 
 
-def fit_league(db: Path, code: str, asof: str, cfg: dict):
+def family_of(name: str) -> str:
+    """Which method wrote a shadow file."""
+    if name.startswith(PREFIX["v61"]):
+        return "v61"
+    if name.startswith(PREFIX["v8"]):
+        return "v8"
+    return "v9" if name[len("shadow_"):len("shadow_") + 10] >= V9_SINCE else "v8"
+
+
+def fit_league(db: Path, code: str, asof: str, cfg):
+    if cfg == "v9":
+        return V9.fit_league(db, code, asof)
     df = C.load(code)
     fd_last = df.Date.max()
-    ex = C.extras_from_db(db, code, fd_last)
+    ex = V9.new_extras(df, C.extras_from_db(db, code, fd_last))   # 2026-11-15: no double-counting of fd's last day
     if len(ex):
         df = pd.concat([df, ex], ignore_index=True).sort_values("Date").reset_index(drop=True)
     kw = dict(cfg); lvl = kw.pop("level")
@@ -96,7 +120,7 @@ def live_validation(db, code):
             "brier_source": f"live: locked dashboard predictions vs DraftKings de-vigged, settled since {LIVE_SINCE}"}
 
 
-def checks(df, r, k, prev_att, prev_def, upcoming, missing=None):
+def checks(df, r, k, prev_att, prev_def, upcoming, missing=None, method_changed=False):
     """Guard rails before anything is written to the dashboard. Returns (ok, list of (check, ok, detail)).
     missing (2026-11-09): league fixtures from the last 21 days that have kicked off but have no result in the
     dashboard. A refit on incomplete results is what forced the Nov 3 hand rebuild of week 10, so it now fails
@@ -114,7 +138,10 @@ def checks(df, r, k, prev_att, prev_def, upcoming, missing=None):
     out.append(("ratings magnitude below 1.5", mx < 1.5, f"{mx:.3f}"))
     missing = sorted({t for h, a in upcoming for t in (h, a)} - set(r["att"]))
     out.append(("every upcoming team rated", not missing, ", ".join(missing) or "all rated"))
-    if prev_att:
+    if prev_att and method_changed:
+        out.append(("largest weekly change in team strength below 0.35", True,
+                    "skipped once: the previous ratings were fitted by a different method"))
+    elif prev_att:
         common = [t for t in r["att"] if t in prev_att and t in prev_def]
         lk = math.log(k)
         moves = [abs((r["att"][t] + lk + r["def"][t]) - (prev_att[t] + prev_def[t])) for t in common]
@@ -148,9 +175,10 @@ def refit(db: Path, asof: str) -> int:
     report, status = {}, 0
     for code in C.LEAGUES:
         det = json.loads((db / "state" / f"detail_{code}.json").read_text()); det = det.get("data", det)
-        df, r, k, meta = fit_league(db, code, asof, CONFIGS["v7"])
+        df, r, k, meta = fit_league(db, code, asof, CONFIGS["v9"])
+        prev_model = (det.get("ratings_refit") or {}).get("model")
         ok, ck = checks(df, r, k, det.get("attack"), det.get("defense"), _upcoming(db, code, asof),
-                        missing=G.missing_results(db, code, asof))
+                        missing=G.missing_results(db, code, asof), method_changed=prev_model != MODEL)
         pbp = G.postponed_but_played(db, code, ROOT / "data" / "fd")   # warning only, does not fail the league
         report[code] = {"ok": bool(ok), "checks": [{"check": c, "ok": bool(o), "detail": d} for c, o, d in ck],
                         "postponed_but_played": pbp,
@@ -159,19 +187,26 @@ def refit(db: Path, asof: str) -> int:
             status = 2
             continue
         lk = math.log(k)
-        rr = {"as_of": asof, "model": MODEL, "ridge": CONFIGS["v7"]["ridge"], "shots_weight": CONFIGS["v7"]["shots"],
-              "shot_proxy_coef": [round(x, 4) for x in r["shot_coef"]], "xi": R.XI, "window_days": R.WINDOW,
-              "target": "70% goals (Dixon-Coles) + 30% shot proxy (Poisson)", "centre_defence": True,
+        rr = {"as_of": asof, "model": MODEL, "ridge": 1.0, "xi": V9.CHOSEN["xi"], "half_life_days": 69,
+              "window_days": R.WINDOW,
+              "target": "goals the closing market implied for each past match (Shin 1X2 + fair over 2.5), Poisson",
+              "n_market_target": meta["n_market_target"], "stretch": V9.S,
+              "stretch_note": "strength differences multiplied by this; folded into attack and defense",
+              "promoted_prior": {"P": V9.CHOSEN["P"], "fade_k": 10, "teams": meta["promoted"]},
+              "rho_note": "fixed at the market value", "centre_defence": True,
               "level_factor": round(k, 4), "level_factor_note": "folded into attack: attack = fitted attack + ln(level_factor)",
               "n_matches": meta["n_matches"],
-              "extra_results": f"{meta['n_extra']} dashboard results newer than the football-data CSV (last {meta['fd_last']})",
-              "code": "pipeline/v7/live.py refit", "note": "matches[] below is still the v6.1 walk-forward"}
+              "extra_results": f"{meta['n_extra']} dashboard results newer than the football-data CSV (last {meta['fd_last']}); "
+                               f"{meta['n_extra_with_dk_price']} of them priced from DraftKings' last moneyline",
+              "previous": "v8: 70% goals + 30% shot proxy, xi 0.002 (until the 2026-11-03 refit)",
+              "code": "pipeline/v7/live.py refit (method: pipeline/v9/method.py)",
+              "note": "matches[] below is still the v6.1 walk-forward"}
         (od / f"detail_{code}.json").write_text(json.dumps({
             "attack": {t: round(a + lk, 6) for t, a in r["att"].items()},
             "defense": {t: round(v, 6) for t, v in r["def"].items()}, "ratings_refit": rr}))
         lg = dict(leagues[code])
         lg.update(home_adv=round(r["home_adv"], 6), rho=round(r["rho"], 6), ratings_as_of=asof, ratings_model=MODEL,
-                  n_matches_fit=meta["n_matches"], blend_weight=0)
+                  n_matches_fit=meta["n_matches"], blend_weight=0, xi=V9.CHOSEN["xi"])
         lv = live_validation(db, code)
         if lv:
             lg["validation"] = dict(lg.get("validation") or {}, **lv)
@@ -180,8 +215,8 @@ def refit(db: Path, asof: str) -> int:
     passed = [c for c in C.LEAGUES if report[c]["ok"]]
     if passed:
         (od / "summary.json").write_text(json.dumps({
-            "leagues": leagues, "model_version": "Alpha Lines v8", "generated_at": now,
-            "refit_source": f"weekly v7 refit (pipeline/v7/live.py) as of {asof}; leagues refit: {', '.join(passed)}; "
+            "leagues": leagues, "model_version": MODEL_VERSION, "generated_at": now,
+            "refit_source": f"weekly v9 refit (pipeline/v7/live.py, method pipeline/v9/method.py) as of {asof}; leagues refit: {', '.join(passed)}; "
                             f"prices unchanged (blend weight 0)"}))
     (od / "checks.json").write_text(json.dumps(report, indent=1))
     for c in C.LEAGUES:
@@ -196,12 +231,11 @@ def refit(db: Path, asof: str) -> int:
 
 def shadow(db: Path, asof: str):
     n = {}
-    for fam, cfg in CONFIGS.items():
-        done = set()
-        for prev in OUT.glob(PREFIX[fam] + "*.csv"):
-            if fam == "v7" and prev.name.startswith(PREFIX["v61"]):
-                continue
-            if prev.name != f"{PREFIX[fam]}{asof}.csv":
+    for fam in SHADOW_FAMILIES:
+        cfg = CONFIGS[fam]
+        done = set()   # a fixture is predicted once per method: the first file of that method that saw it
+        for prev in OUT.glob("shadow_*.csv"):
+            if family_of(prev.name) == fam and prev.name != f"{PREFIX[fam]}{asof}.csv":
                 done |= set(pd.read_csv(prev).fixture_id)
         recs = []
         t = pd.Timestamp(asof).tz_localize("UTC")
@@ -233,7 +267,7 @@ def score(db: Path) -> str:
     from v5 import market as M
     rows = []
     for f in sorted(OUT.glob("shadow_*.csv")):
-        fam = "v61" if f.name.startswith(PREFIX["v61"]) else "v7"
+        fam = family_of(f.name)
         for r in pd.read_csv(f).to_dict("records"):
             rp, op = db / "results" / f"{r['fixture_id']}.json", db / "odds" / f"{r['fixture_id']}.json"
             if not rp.exists():
@@ -254,26 +288,41 @@ def score(db: Path) -> str:
                          "ll": -math.log(max(r[f"p_{y}"], 1e-9)), "ll_dk": None if dk is None else -math.log(dk[y]),
                          "ll_o25": float(R._ll(np.array([r["p_o25"]]), np.array([o25]))[0]),
                          "ll_btts": float(R._ll(np.array([r["p_btts"]]), np.array([bt]))[0])})
-    lines = ["# v7 scorecard (v7 live from 2026-10-20)", "",
-             "Log loss on the same settled matches; lower is better. v7 = the live dashboard ratings; v6.1 = the old "
-             "method refit the same way, kept as a shadow; DraftKings = Shin de-vig of the latest pre-kickoff moneyline.", "",
-             "| Week file | Matches | 1X2 v7 | 1X2 v6.1 | 1X2 DraftKings | Over 2.5 v7 | Over 2.5 v6.1 | BTTS v7 | BTTS v6.1 |",
-             "|---|---|---|---|---|---|---|---|---|"]
     d = pd.DataFrame(rows)
-    if len(d):
-        v7, v6 = d[d.fam == "v7"].set_index("fixture_id"), d[d.fam == "v61"].set_index("fixture_id")
-        both = v7.join(v6, lsuffix="_7", rsuffix="_6", how="inner").dropna(subset=["ll_dk_7"])
-        for wk, g in list(both.groupby("week_7")) + [("all", both)]:
-            lines.append(f"| {wk} | {len(g)} | {g.ll_7.mean():.4f} | {g.ll_6.mean():.4f} | {g.ll_dk_7.mean():.4f} | "
-                         f"{g.ll_o25_7.mean():.4f} | {g.ll_o25_6.mean():.4f} | {g.ll_btts_7.mean():.4f} | {g.ll_btts_6.mean():.4f} |")
+    lines = ["# Ratings scorecard", "",
+             "Log loss on the same settled matches; lower is better. Every prediction file was written before kickoff. "
+             "DraftKings = Shin de-vig of the latest pre-kickoff moneyline.", ""]
+
+    nm = {"v9": "v9", "v8": "v8", "v61": "v6.1"}
+
+    def section(title, new, old, note):
+        out = [f"## {title}", "", note, "",
+               f"| Week file | Matches | 1X2 {nm[new]} | 1X2 {nm[old]} | 1X2 DraftKings | Over 2.5 {nm[new]} | Over 2.5 {nm[old]} | "
+               f"BTTS {nm[new]} | BTTS {nm[old]} |", "|---|---|---|---|---|---|---|---|---|"]
+        if not len(d):
+            return out + ["| (nothing settled yet) | | | | | | | | |", ""]
+        a = d[d.fam == new].drop_duplicates("fixture_id").set_index("fixture_id")
+        b = d[d.fam == old].drop_duplicates("fixture_id").set_index("fixture_id")
+        both = a.join(b, lsuffix="_n", rsuffix="_o", how="inner").dropna(subset=["ll_dk_n"])
+        if not len(both):
+            return out + ["| (nothing settled yet) | | | | | | | | |", ""]
+        for wk, g in list(both.groupby("week_n")) + [("all", both)]:
+            out.append(f"| {wk} | {len(g)} | {g.ll_n.mean():.4f} | {g.ll_o.mean():.4f} | {g.ll_dk_n.mean():.4f} | "
+                       f"{g.ll_o25_n.mean():.4f} | {g.ll_o25_o.mean():.4f} | {g.ll_btts_n.mean():.4f} | {g.ll_btts_o.mean():.4f} |")
         if len(both) >= 20:
-            dd = (both.ll_7 - both.ll_6).values
+            dd = (both.ll_n - both.ll_o).values
             rng = np.random.default_rng(7)
             bs = [dd[rng.integers(0, len(dd), len(dd))].mean() for _ in range(2000)]
-            lines += ["", f"v7 minus v6.1, 1X2: {dd.mean():+.4f} (95% {np.percentile(bs, 2.5):+.4f} to "
-                          f"{np.percentile(bs, 97.5):+.4f}) on {len(dd)} matches. Negative = v7 better."]
-    else:
-        lines.append("| (nothing settled yet) | | | | | | | | |")
+            out += ["", f"{nm[new]} minus {nm[old]}, 1X2: {dd.mean():+.4f} (95% {np.percentile(bs, 2.5):+.4f} to "
+                        f"{np.percentile(bs, 97.5):+.4f}) on {len(dd)} matches. Negative = {nm[new]} better."]
+        return out + [""]
+
+    lines += section(f"v9 (live from {V9_SINCE}) against the v8 method", "v9", "v8",
+                     "v9 = the live dashboard ratings (market-implied goals, 69-day half-life, promoted prior, stretch); "
+                     "v8 = the previous method refit the same way, kept as a shadow.")
+    lines += section("v8 (live 2026-10-20 to 2026-11-15) against v6.1 - history", "v8", "v61",
+                     "v8 = the v7/v8 method (70% goals + 30% shot proxy); v6.1 = ridge 5, goals only. Closed: no new "
+                     "v6.1 files are written.")
     txt = "\n".join(lines) + "\n"
     (OUT / "scorecard.md").write_text(txt)
     return txt

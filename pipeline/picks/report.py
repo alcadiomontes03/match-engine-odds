@@ -1,11 +1,13 @@
 """
-Weekly report for docs/prereg-forward-2026-11.md (Test A and Test B). Descriptive only: a weekly look never
+Weekly report for docs/prereg-forward-2026-11.md (Test B) and docs/prereg-forward-2026-11b.md (Test A, re-registered
+2026-11-15 when the frozen rating method changed from v8 to v9; Test B is unchanged). Descriptive only: a weekly look never
 triggers a decision. Decision looks are defined in the registration and are flagged here when reached.
 
   python pipeline/picks/report.py [--date YYYY-MM-DD] [--out data/picks/reports]
 
 Everything comes from this repo, so anyone can re-run it:
-  Test A  model = v7/v8 prediction files pipeline/v7/out/shadow_<date>.csv (not shadow_v61_*), timed by the git
+  Test A  model = the live method's prediction files pipeline/v7/out/shadow_<date>.csv (not shadow_v61_* or
+          shadow_v8_*; v9 from 2026-11-16), timed by the git
           commit that added the file; DraftKings = the latest complete h2h pull in data/odds/snapshots.csv at or
           before that commit, Shin de-vigged; results = data/fd (football-data.co.uk).
   Test B  picks = data/picks/s1.csv; closing price = data/odds/clv.csv; results = data/fd.
@@ -30,7 +32,8 @@ sys.path.insert(0, str(ROOT / "pipeline" / "picks"))
 from v5 import market as M  # noqa: E402
 import s1 as S1  # noqa: E402
 
-SAMPLE_START = pd.Timestamp(S1.SAMPLE_START)
+SAMPLE_START = pd.Timestamp(S1.SAMPLE_START)                    # Test B (rule S1), docs/prereg-forward-2026-11.md
+TEST_A_START = pd.Timestamp("2026-11-16T00:00:00+00:00")        # Test A, docs/prereg-forward-2026-11b.md (v9 method)
 SHADOW = ROOT / "pipeline" / "v7" / "out"
 SNAP = ROOT / "data" / "odds" / "snapshots.csv"
 CLV = ROOT / "data" / "odds" / "clv.csv"
@@ -130,7 +133,7 @@ def test_a(snap: pd.DataFrame, res: pd.DataFrame):
             pd_ = M.shin([quote[1]["home"], quote[1]["draw"], quote[1]["away"]])
             pool = pd_ ** 0.9 * pm ** 0.1; pool = pool / pool.sum()
             rows.append(dict(fixture_id=r.fixture_id, league=r.league, kickoff=r.kickoff, week=week_key(pd.Timestamp(r.kickoff)),
-                             in_sample=pd.Timestamp(r.kickoff) > SAMPLE_START and t_commit > SAMPLE_START,
+                             in_sample=pd.Timestamp(r.kickoff) > TEST_A_START and t_commit > TEST_A_START,
                              ll_model=-math.log(max(pm[y], 1e-12)), ll_dk=-math.log(pd_[y]), ll_pool=-math.log(pool[y]),
                              br_model=float(((pm - np.eye(3)[y]) ** 2).sum()), br_dk=float(((pd_ - np.eye(3)[y]) ** 2).sum()),
                              mins_gap=(pd.Timestamp(t_commit) - quote[0]).total_seconds() / 60))
@@ -239,12 +242,12 @@ def main():
     allrows, B = test_b(name_map, res)
     ins = A[A.in_sample] if len(A) else A
     pre = A[~A.in_sample] if len(A) else A
-    doc = [f"# Forward test report {a.date} (docs/prereg-forward-2026-11.md)", "",
+    doc = [f"# Forward test report {a.date} (Test A: docs/prereg-forward-2026-11b.md; Test B: docs/prereg-forward-2026-11.md)", "",
            "Descriptive only. Weekly looks never trigger a decision.", "",
-           "## Test A: model vs DraftKings at the same moment (registered sample)", ""] + summarise_a(ins) + \
+           "## Test A: v9 model vs DraftKings at the same moment (registered sample, from 2026-11-16)", ""] + summarise_a(ins) + \
           ["", f"Excluded and counted: " + ", ".join(f"{k} {v}" for k, v in excl.items()), "",
            "## Test B: rule S1 on DraftKings side markets", ""] + summarise_b(allrows, B) + \
-          ["", "## Exploration only: Test A before the sample start (never used for a decision)", ""] + summarise_a(pre)
+          ["", "## Exploration only: Test A before the sample start (the v8 method; never used for a decision)", ""] + summarise_a(pre)
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
     (out / f"{a.date}.md").write_text("\n".join(doc) + "\n")
     print("\n".join(doc))
