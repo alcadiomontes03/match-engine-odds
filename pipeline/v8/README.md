@@ -33,3 +33,27 @@ just clears zero, so treat the size with caution. None of this moves the model n
 changes a price (blend weight 0). Adopting it changes the frozen method in `docs/prereg-forward-2026-11.md`, so it
 needs a new registration with a new sample start; no sample match has been played yet (international break), so
 doing it before the first match after the break loses nothing.
+
+---
+
+# Remaining-gap research (2026-11-15)
+
+Code: `gap.py` (rounds 1 and 2); results: `out/gap_summary.md`, `out/gap_summary_round2.md`. Same folds and
+scoring as `fixes.py`. Exploration only. It led to the v9 method (`pipeline/v9/method.py`,
+`docs/prereg-forward-2026-11b.md`).
+
+| Idea | Change vs live v8 | 95% | Verdict |
+|---|---|---|---|
+| Fit on the goals the closing market implied for each past match, 69-day half-life, promoted prior, stretch | −0.0093 | −0.0136 to −0.0052 | **Adopted (v9)** |
+| Same with a 116-day half-life | −0.0081 | −0.0123 to −0.0041 | Same family |
+| 70% market target + 15% goals + 15% shots, 116-day half-life | −0.0075 | −0.0108 to −0.0042 | Same family, no better |
+| Faster decay on goals and shots (no market target) | +0.0027 | −0.0005 to +0.0059 | Worse |
+| Rest days between league matches | −0.0002 on top of any ratings | −0.0012 to +0.0008 | Nothing |
+| Club Elo blended in (to Jan 2026, 3,790 matches) | −0.0020 on v8; +0.0001 on the market-target ratings | | Nothing on top of v9 |
+
+Gap to the closing market: v8 +0.0221, v9 +0.0127. By season v9: 2023-24 +0.0148, 2024-25 +0.0190, 2025-26 +0.0070,
+2026-27 +0.0037 (390 matches). No variant adds information on top of the closing price (best pool +0.0006), and
+sides the ratings rate 5+ points above the market still lose at a fair price (−5% for v9-like ratings, −12% for v8).
+
+Not tested, no free data: line-ups and injuries, European midweek fixtures, real xG (Understat still down).
+Club Elo history came from a public mirror (github.com/tonyelhabr/club-rankings) that stops on 2026-01-14.
