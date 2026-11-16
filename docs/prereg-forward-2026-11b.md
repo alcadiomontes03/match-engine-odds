@@ -31,7 +31,7 @@ Walk-forward on 4,506 matches, Aug 2023 – Nov 2026 (`pipeline/v8/gap.py`, `pip
 gap to the closing market **+0.0221 (v8) → +0.0127 (v9)**, change −0.0093, 95% −0.0136 to −0.0052. About 15
 variants were tried over two rounds, so the size is optimistic; every market-target variant with a 69- to 116-day
 half-life gained between −0.0070 and −0.0093. Rest days (league matches) and Club Elo added nothing on top of v9.
-The ratings still add nothing on top of the price (pool with the closing market: +0.0006, 95% −0.0004 to +0.0017),
+The ratings still add nothing on top of the price (pool with the closing market: +0.0006, 95% −0.0002 to +0.0015),
 and v9 is built from market prices, so Test A is expected to say "no" again; it now measures a better model.
 
 ## Test A (unchanged except for the model and the sample start)

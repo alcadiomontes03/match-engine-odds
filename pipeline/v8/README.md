@@ -53,7 +53,7 @@ scoring as `fixes.py`. Exploration only. It led to the v9 method (`pipeline/v9/m
 
 Gap to the closing market: v8 +0.0221, v9 +0.0127. By season v9: 2023-24 +0.0148, 2024-25 +0.0190, 2025-26 +0.0070,
 2026-27 +0.0037 (390 matches). No variant adds information on top of the closing price (best pool +0.0006), and
-sides the ratings rate 5+ points above the market still lose at a fair price (−5% for v9-like ratings, −12% for v8).
+sides the ratings rate 5+ points above the market still lose at a fair, margin-free price (−1.6% for v9, −12% for v8).
 
 Not tested, no free data: line-ups and injuries, European midweek fixtures, real xG (Understat still down).
 Club Elo history came from a public mirror (github.com/tonyelhabr/club-rankings) that stops on 2026-01-14.
