@@ -1,0 +1,141 @@
+{
+ "run_at": "2026-11-17T12:52:34+00:00",
+ "code_version": "research-5 (2026-11-09)",
+ "status": "fail",
+ "checks": [
+  {
+   "check": "goal level D1 (ratings)",
+   "level": "ok",
+   "detail": "44 matches: predicted 3.27, actual 3.25 goals/game (diff -0.02, z -0.1)",
+   "items": []
+  },
+  {
+   "check": "goal level D1 (market grid)",
+   "level": "ok",
+   "detail": "41 matches: predicted 3.54, actual 3.17 goals/game (diff -0.37, z -1.3)",
+   "items": []
+  },
+  {
+   "check": "goal level E0 (ratings)",
+   "level": "ok",
+   "detail": "59 matches: predicted 2.72, actual 2.68 goals/game (diff -0.05, z -0.2)",
+   "items": []
+  },
+  {
+   "check": "goal level E0 (market grid)",
+   "level": "ok",
+   "detail": "59 matches: predicted 3.00, actual 2.68 goals/game (diff -0.32, z -1.5)",
+   "items": []
+  },
+  {
+   "check": "goal level F1 (ratings)",
+   "level": "ok",
+   "detail": "45 matches: predicted 2.94, actual 3.07 goals/game (diff +0.13, z +0.5)",
+   "items": []
+  },
+  {
+   "check": "goal level F1 (market grid)",
+   "level": "ok",
+   "detail": "45 matches: predicted 3.06, actual 3.07 goals/game (diff +0.00, z +0.0)",
+   "items": []
+  },
+  {
+   "check": "goal level SP1 (ratings)",
+   "level": "ok",
+   "detail": "60 matches: predicted 2.84, actual 2.73 goals/game (diff -0.11, z -0.5)",
+   "items": []
+  },
+  {
+   "check": "goal level SP1 (market grid)",
+   "level": "ok",
+   "detail": "60 matches: predicted 2.96, actual 2.73 goals/game (diff -0.22, z -1.0)",
+   "items": []
+  },
+  {
+   "check": "missing results (kicked off 6h+ ago)",
+   "level": "ok",
+   "detail": "0 fixtures",
+   "items": []
+  },
+  {
+   "check": "results without match stats (last 10 days)",
+   "level": "ok",
+   "detail": "0 results",
+   "items": []
+  },
+  {
+   "check": "duplicate fixtures",
+   "level": "fail",
+   "detail": "1 pairs",
+   "items": [
+    "('F1', 'Lorient', 'Brest') c1a1e850def721bbfc43ff80c133a5e6 / 5118966f484adf525196d196a61bc5d6"
+   ]
+  },
+  {
+   "check": "result letter matches the score",
+   "level": "ok",
+   "detail": "0 mismatches",
+   "items": []
+  },
+  {
+   "check": "prediction probabilities",
+   "level": "ok",
+   "detail": "0 problems",
+   "items": []
+  },
+  {
+   "check": "predictions carrying gate_open: true",
+   "level": "ok",
+   "detail": "0 predictions copy the league's old blend-validation flag from state/summary; blend weight is 0, so no price is affected, but the flag reads as if the CLV gate were open",
+   "items": []
+  },
+  {
+   "check": "odds overrounds in a sane range",
+   "level": "ok",
+   "detail": "0 prices",
+   "items": []
+  },
+  {
+   "check": "odds-feed names close to fixture names",
+   "level": "ok",
+   "detail": "0 weak matches (check by eye; abbreviations can be fine)",
+   "items": []
+  },
+  {
+   "check": "auto-picks with no fixture",
+   "level": "ok",
+   "detail": "0",
+   "items": []
+  },
+  {
+   "check": "close price timing",
+   "level": "warn",
+   "detail": "161 matches, median 148 min before kickoff, 56 within 65 min, max 1440",
+   "items": []
+  },
+  {
+   "check": "side price timing",
+   "level": "warn",
+   "detail": "160 matches, median 325 min before kickoff, 1 within 65 min, max 1440",
+   "items": []
+  },
+  {
+   "check": "football-data results with no dashboard fixture",
+   "level": "ok",
+   "detail": "0 matches since 2026-10-09; football-data runs about a week behind, so this covers results up to 2026-11-08",
+   "items": []
+  },
+  {
+   "check": "DraftKings events with no dashboard fixture",
+   "level": "ok",
+   "detail": "0 kicked-off events since 2026-10-09 (no fixture with this event id, nor one within 2 days with similar team names)",
+   "items": []
+  },
+  {
+   "check": "odds API credits",
+   "level": "ok",
+   "detail": "261 left (side markets drop to BTTS only below 130)",
+   "items": []
+  }
+ ]
+}
