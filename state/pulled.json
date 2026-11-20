@@ -57,16 +57,6 @@
   "side": "2026-11-07T07:22:49+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
- "295076c39e49863cb54db085ac3cd340": {
-  "away": "Borussia Monchengladbach",
-  "commence": "2026-11-06T19:30:00Z",
-  "comp": "Bundesliga",
-  "home": "Hamburger SV",
-  "late": "2026-11-06T18:25:14+00:00",
-  "late_final": true,
-  "side": "2026-11-06T15:44:42+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "339a6465fa5153fd8f31e487cf557cf0": {
   "away": "Rayo Vallecano",
   "commence": "2026-11-08T15:15:00Z",
@@ -185,16 +175,6 @@
   "home": "Borussia Monchengladbach",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
- "586bec023ee8ac2f0645d963bd2c9d25": {
-  "away": "Coventry City",
-  "commence": "2026-11-06T20:00:00Z",
-  "comp": "PL",
-  "home": "Everton",
-  "late": "2026-11-06T18:55:25+00:00",
-  "late_final": true,
-  "side": "2026-11-06T15:44:42+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "59c5f635cfe11613c07e9a5520ced5c1": {
   "away": "Manchester City",
   "commence": "2026-11-07T17:30:00Z",
@@ -234,16 +214,6 @@
   "late_final": true,
   "side": "2026-11-20T17:18:41+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
- },
- "5e7d141f719835de18877ed95bedcb32": {
-  "away": "Strasbourg",
-  "commence": "2026-11-06T19:45:00Z",
-  "comp": "Ligue1",
-  "home": "Toulouse",
-  "late": "2026-11-06T18:45:21+00:00",
-  "late_final": true,
-  "side": "2026-11-06T15:44:42+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
  },
  "651c1847b5cdcc85e60a140edd2282c4": {
   "away": "Paris Saint Germain",
@@ -415,16 +385,6 @@
   "comp": "Bundesliga",
   "home": "Werder Bremen",
   "weekly": "2026-11-16T23:14:42+00:00"
- },
- "9dd0014685fd62d9b2890d7c33a8c9ab": {
-  "away": "Alav\u00e9s",
-  "commence": "2026-11-06T20:00:00Z",
-  "comp": "LaLiga",
-  "home": "Sevilla",
-  "late": "2026-11-06T18:55:25+00:00",
-  "late_final": true,
-  "side": "2026-11-06T15:44:42+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
  },
  "9e5d4a91e379ddffa179b02bf9e09530": {
   "away": "Angers",
