@@ -230,6 +230,8 @@
   "commence": "2026-11-20T19:45:00Z",
   "comp": "Ligue1",
   "home": "Troyes",
+  "late": "2026-11-20T17:18:41+00:00",
+  "side": "2026-11-20T17:18:41+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
  "5e7d141f719835de18877ed95bedcb32": {
@@ -458,13 +460,13 @@
   "empty:btts:LaLiga": 0,
   "empty:btts:Ligue1": 0,
   "empty:btts:PL": 0,
-  "empty:spreads:Bundesliga": 0,
-  "empty:spreads:LaLiga": 0,
-  "empty:spreads:Ligue1": 0,
+  "empty:spreads:Bundesliga": 1,
+  "empty:spreads:LaLiga": 1,
+  "empty:spreads:Ligue1": 1,
   "empty:spreads:PL": 0,
-  "empty:totals:Bundesliga": 0,
-  "empty:totals:LaLiga": 0,
-  "empty:totals:Ligue1": 0,
+  "empty:totals:Bundesliga": 1,
+  "empty:totals:LaLiga": 1,
+  "empty:totals:Ligue1": 1,
   "empty:totals:PL": 0,
   "none:spreads:Bundesliga": "2026-W45",
   "none:spreads:LaLiga": "2026-W45",
@@ -584,6 +586,8 @@
   "commence": "2026-11-20T19:30:00Z",
   "comp": "Bundesliga",
   "home": "Bayern Munich",
+  "late": "2026-11-20T17:18:41+00:00",
+  "side": "2026-11-20T17:18:41+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
  "cc9731ee7796fe0d532f11ca2aa522c9": {
@@ -632,6 +636,8 @@
   "commence": "2026-11-20T20:00:00Z",
   "comp": "LaLiga",
   "home": "Athletic Bilbao",
+  "late": "2026-11-20T17:18:41+00:00",
+  "side": "2026-11-20T17:18:41+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
  "dd247b356d8fc53e4b4f9bfcfe09c924": {

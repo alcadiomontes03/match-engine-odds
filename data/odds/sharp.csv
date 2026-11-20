@@ -476,3 +476,12 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-16T23:14:42+00:00,weekly,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,pinnacle,2026-11-16T23:14:29Z,h2h,Le Mans FC,,6.25
 2026-11-16T23:14:42+00:00,weekly,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,pinnacle,2026-11-16T23:14:29Z,h2h,Marseille,,1.49
 2026-11-16T23:14:42+00:00,weekly,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,pinnacle,2026-11-16T23:14:29Z,h2h,Draw,,4.94
+2026-11-20T17:18:41+00:00,late,LaLiga,dcee36f9b8a9989972b6d4ddde76c4c7,2026-11-20T20:00:00Z,Athletic Bilbao,Espanyol,pinnacle,2026-11-20T17:18:37Z,h2h,Athletic Bilbao,,1.5
+2026-11-20T17:18:41+00:00,late,LaLiga,dcee36f9b8a9989972b6d4ddde76c4c7,2026-11-20T20:00:00Z,Athletic Bilbao,Espanyol,pinnacle,2026-11-20T17:18:37Z,h2h,Espanyol,,6.67
+2026-11-20T17:18:41+00:00,late,LaLiga,dcee36f9b8a9989972b6d4ddde76c4c7,2026-11-20T20:00:00Z,Athletic Bilbao,Espanyol,pinnacle,2026-11-20T17:18:37Z,h2h,Draw,,4.71
+2026-11-20T17:18:41+00:00,late,Bundesliga,cae480fb1195f0032554a268cb80eb44,2026-11-20T19:30:00Z,Bayern Munich,1. FC Köln,pinnacle,2026-11-20T17:18:34Z,h2h,1. FC Köln,,22.86
+2026-11-20T17:18:41+00:00,late,Bundesliga,cae480fb1195f0032554a268cb80eb44,2026-11-20T19:30:00Z,Bayern Munich,1. FC Köln,pinnacle,2026-11-20T17:18:34Z,h2h,Bayern Munich,,1.09
+2026-11-20T17:18:41+00:00,late,Bundesliga,cae480fb1195f0032554a268cb80eb44,2026-11-20T19:30:00Z,Bayern Munich,1. FC Köln,pinnacle,2026-11-20T17:18:34Z,h2h,Draw,,13.08
+2026-11-20T17:18:41+00:00,late,Ligue1,5dcc9d2b0da87770a4f49e924275be39,2026-11-20T19:45:00Z,Troyes,Le Havre,pinnacle,2026-11-20T17:18:20Z,h2h,Le Havre,,3.37
+2026-11-20T17:18:41+00:00,late,Ligue1,5dcc9d2b0da87770a4f49e924275be39,2026-11-20T19:45:00Z,Troyes,Le Havre,pinnacle,2026-11-20T17:18:20Z,h2h,Troyes,,2.32
+2026-11-20T17:18:41+00:00,late,Ligue1,5dcc9d2b0da87770a4f49e924275be39,2026-11-20T19:45:00Z,Troyes,Le Havre,pinnacle,2026-11-20T17:18:20Z,h2h,Draw,,3.37
