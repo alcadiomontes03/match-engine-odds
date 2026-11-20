@@ -5101,3 +5101,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-20T18:49:18+00:00,late,Ligue1,5dcc9d2b0da87770a4f49e924275be39,2026-11-20T19:45:00Z,Troyes,Le Havre,draftkings,2026-11-20T18:49:11Z,h2h,Le Havre,,3.25
 2026-11-20T18:49:18+00:00,late,Ligue1,5dcc9d2b0da87770a4f49e924275be39,2026-11-20T19:45:00Z,Troyes,Le Havre,draftkings,2026-11-20T18:49:11Z,h2h,Troyes,,2.25
 2026-11-20T18:49:18+00:00,late,Ligue1,5dcc9d2b0da87770a4f49e924275be39,2026-11-20T19:45:00Z,Troyes,Le Havre,draftkings,2026-11-20T18:49:11Z,h2h,Draw,,3.35
+2026-11-20T18:59:24+00:00,late,LaLiga,dcee36f9b8a9989972b6d4ddde76c4c7,2026-11-20T20:00:00Z,Athletic Bilbao,Espanyol,draftkings,2026-11-20T18:59:01Z,h2h,Athletic Bilbao,,1.44
+2026-11-20T18:59:24+00:00,late,LaLiga,dcee36f9b8a9989972b6d4ddde76c4c7,2026-11-20T20:00:00Z,Athletic Bilbao,Espanyol,draftkings,2026-11-20T18:59:01Z,h2h,Espanyol,,7.0
+2026-11-20T18:59:24+00:00,late,LaLiga,dcee36f9b8a9989972b6d4ddde76c4c7,2026-11-20T20:00:00Z,Athletic Bilbao,Espanyol,draftkings,2026-11-20T18:59:01Z,h2h,Draw,,4.6
