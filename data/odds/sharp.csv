@@ -485,3 +485,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-20T17:18:41+00:00,late,Ligue1,5dcc9d2b0da87770a4f49e924275be39,2026-11-20T19:45:00Z,Troyes,Le Havre,pinnacle,2026-11-20T17:18:20Z,h2h,Le Havre,,3.37
 2026-11-20T17:18:41+00:00,late,Ligue1,5dcc9d2b0da87770a4f49e924275be39,2026-11-20T19:45:00Z,Troyes,Le Havre,pinnacle,2026-11-20T17:18:20Z,h2h,Troyes,,2.32
 2026-11-20T17:18:41+00:00,late,Ligue1,5dcc9d2b0da87770a4f49e924275be39,2026-11-20T19:45:00Z,Troyes,Le Havre,pinnacle,2026-11-20T17:18:20Z,h2h,Draw,,3.37
+2026-11-20T18:29:10+00:00,late,Bundesliga,cae480fb1195f0032554a268cb80eb44,2026-11-20T19:30:00Z,Bayern Munich,1. FC Köln,pinnacle,2026-11-20T18:29:05Z,h2h,1. FC Köln,,25.69
+2026-11-20T18:29:10+00:00,late,Bundesliga,cae480fb1195f0032554a268cb80eb44,2026-11-20T19:30:00Z,Bayern Munich,1. FC Köln,pinnacle,2026-11-20T18:29:05Z,h2h,Bayern Munich,,1.08
+2026-11-20T18:29:10+00:00,late,Bundesliga,cae480fb1195f0032554a268cb80eb44,2026-11-20T19:30:00Z,Bayern Munich,1. FC Köln,pinnacle,2026-11-20T18:29:05Z,h2h,Draw,,14.18
