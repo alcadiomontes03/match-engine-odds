@@ -5712,3 +5712,12 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-21T15:15:48+00:00,late,Ligue1,651c1847b5cdcc85e60a140edd2282c4,2026-11-21T16:15:00Z,Nice,Paris Saint Germain,draftkings,2026-11-21T15:14:17Z,h2h,Nice,,5.75
 2026-11-21T15:15:48+00:00,late,Ligue1,651c1847b5cdcc85e60a140edd2282c4,2026-11-21T16:15:00Z,Nice,Paris Saint Germain,draftkings,2026-11-21T15:14:17Z,h2h,Paris Saint Germain,,1.48
 2026-11-21T15:15:48+00:00,late,Ligue1,651c1847b5cdcc85e60a140edd2282c4,2026-11-21T16:15:00Z,Nice,Paris Saint Germain,draftkings,2026-11-21T15:14:17Z,h2h,Draw,,5.0
+2026-11-21T16:26:02+00:00,late,PL,71bf9fe98c3e3be39cd1d059f8d71ae8,2026-11-21T17:30:00Z,Newcastle United,Arsenal,draftkings,2026-11-21T16:25:41Z,h2h,Arsenal,,1.53
+2026-11-21T16:26:02+00:00,late,PL,71bf9fe98c3e3be39cd1d059f8d71ae8,2026-11-21T17:30:00Z,Newcastle United,Arsenal,draftkings,2026-11-21T16:25:41Z,h2h,Newcastle United,,6.5
+2026-11-21T16:26:02+00:00,late,PL,71bf9fe98c3e3be39cd1d059f8d71ae8,2026-11-21T17:30:00Z,Newcastle United,Arsenal,draftkings,2026-11-21T16:25:41Z,h2h,Draw,,4.3
+2026-11-21T16:26:02+00:00,late,LaLiga,1bb4951d418dcb641c608e085b87a1c3,2026-11-21T17:30:00Z,Sevilla,Real Betis,draftkings,2026-11-21T16:25:47Z,h2h,Real Betis,,2.55
+2026-11-21T16:26:02+00:00,late,LaLiga,1bb4951d418dcb641c608e085b87a1c3,2026-11-21T17:30:00Z,Sevilla,Real Betis,draftkings,2026-11-21T16:25:47Z,h2h,Sevilla,,2.85
+2026-11-21T16:26:02+00:00,late,LaLiga,1bb4951d418dcb641c608e085b87a1c3,2026-11-21T17:30:00Z,Sevilla,Real Betis,draftkings,2026-11-21T16:25:47Z,h2h,Draw,,3.3
+2026-11-21T16:26:02+00:00,late,Bundesliga,67846fc0359aeff2d0b6f3f8a2a674f4,2026-11-21T17:30:00Z,FC Schalke 04,VfB Stuttgart,draftkings,2026-11-21T16:25:22Z,h2h,FC Schalke 04,,3.7
+2026-11-21T16:26:02+00:00,late,Bundesliga,67846fc0359aeff2d0b6f3f8a2a674f4,2026-11-21T17:30:00Z,FC Schalke 04,VfB Stuttgart,draftkings,2026-11-21T16:25:22Z,h2h,VfB Stuttgart,,1.8
+2026-11-21T16:26:02+00:00,late,Bundesliga,67846fc0359aeff2d0b6f3f8a2a674f4,2026-11-21T17:30:00Z,FC Schalke 04,VfB Stuttgart,draftkings,2026-11-21T16:25:22Z,h2h,Draw,,3.85
