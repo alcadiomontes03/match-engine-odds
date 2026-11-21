@@ -147,16 +147,6 @@
   "side": "2026-11-21T12:14:37+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
- "5b386dfdf6f76705116fbb4120ee8493": {
-  "away": "Real Madrid",
-  "commence": "2026-11-07T20:00:00Z",
-  "comp": "LaLiga",
-  "home": "Valencia",
-  "late": "2026-11-07T18:55:22+00:00",
-  "late_final": true,
-  "side": "2026-11-07T12:03:29+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "5dcc9d2b0da87770a4f49e924275be39": {
   "away": "Le Havre",
   "commence": "2026-11-20T19:45:00Z",
@@ -582,15 +572,5 @@
   "late_final": true,
   "side": "2026-11-21T12:14:37+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
- },
- "f7b240389fa5ec055c58a48ab153dcdd": {
-  "away": "Troyes",
-  "commence": "2026-11-07T19:45:00Z",
-  "comp": "Ligue1",
-  "home": "Paris Saint Germain",
-  "late": "2026-11-07T19:05:41+00:00",
-  "late_final": true,
-  "side": "2026-11-07T12:13:34+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
  }
 }
