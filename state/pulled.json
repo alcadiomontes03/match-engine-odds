@@ -145,16 +145,6 @@
   "side": "2026-11-21T12:14:37+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
- "59c5f635cfe11613c07e9a5520ced5c1": {
-  "away": "Manchester City",
-  "commence": "2026-11-07T17:30:00Z",
-  "comp": "PL",
-  "home": "Nottingham Forest",
-  "late": "2026-11-07T16:34:44+00:00",
-  "late_final": true,
-  "side": "2026-11-07T09:33:03+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "5b386dfdf6f76705116fbb4120ee8493": {
   "away": "Real Madrid",
   "commence": "2026-11-07T20:00:00Z",
@@ -205,16 +195,6 @@
   "side": "2026-11-21T12:14:37+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
- "716d6e3f3e91c47a6efaa2e93d570533": {
-  "away": "Werder Bremen",
-  "commence": "2026-11-07T17:30:00Z",
-  "comp": "Bundesliga",
-  "home": "VfB Stuttgart",
-  "late": "2026-11-07T16:34:44+00:00",
-  "late_final": true,
-  "side": "2026-11-07T09:33:03+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "71bf9fe98c3e3be39cd1d059f8d71ae8": {
   "away": "Arsenal",
   "commence": "2026-11-21T17:30:00Z",
@@ -224,16 +204,6 @@
   "late_final": true,
   "side": "2026-11-21T12:14:37+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
- },
- "71ca5141a1c532e390c6fa14e080d8bd": {
-  "away": "Athletic Bilbao",
-  "commence": "2026-11-07T17:30:00Z",
-  "comp": "LaLiga",
-  "home": "CA Osasuna",
-  "late": "2026-11-07T16:34:44+00:00",
-  "late_final": true,
-  "side": "2026-11-07T09:33:03+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
  },
  "79ed3df594d7b352ef027128b1ba5d0a": {
   "away": "Bournemouth",
