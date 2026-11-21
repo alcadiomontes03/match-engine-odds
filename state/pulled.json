@@ -51,16 +51,6 @@
   "home": "Hull City",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
- "262c2c99c38456b8a70cb9daa32f2f6d": {
-  "away": "Deportivo La Coru\u00f1a",
-  "commence": "2026-11-07T15:15:00Z",
-  "comp": "LaLiga",
-  "home": "Espanyol",
-  "late": "2026-11-07T14:14:20+00:00",
-  "late_final": true,
-  "side": "2026-11-07T07:22:49+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "339a6465fa5153fd8f31e487cf557cf0": {
   "away": "Rayo Vallecano",
   "commence": "2026-11-08T15:15:00Z",
@@ -189,7 +179,8 @@
   "commence": "2026-11-21T16:15:00Z",
   "comp": "Ligue1",
   "home": "Nice",
-  "late": "2026-11-21T12:14:37+00:00",
+  "late": "2026-11-21T15:15:48+00:00",
+  "late_final": true,
   "side": "2026-11-21T12:14:37+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },

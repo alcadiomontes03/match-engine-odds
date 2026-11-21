@@ -5709,3 +5709,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-21T14:15:30+00:00,late,LaLiga,ebe638278f4d70eaf211ad5be9795fa0,2026-11-21T15:15:00Z,Rayo Vallecano,Valencia,draftkings,2026-11-21T14:14:02Z,h2h,Rayo Vallecano,,1.95
 2026-11-21T14:15:30+00:00,late,LaLiga,ebe638278f4d70eaf211ad5be9795fa0,2026-11-21T15:15:00Z,Rayo Vallecano,Valencia,draftkings,2026-11-21T14:14:02Z,h2h,Valencia,,4.1
 2026-11-21T14:15:30+00:00,late,LaLiga,ebe638278f4d70eaf211ad5be9795fa0,2026-11-21T15:15:00Z,Rayo Vallecano,Valencia,draftkings,2026-11-21T14:14:02Z,h2h,Draw,,3.45
+2026-11-21T15:15:48+00:00,late,Ligue1,651c1847b5cdcc85e60a140edd2282c4,2026-11-21T16:15:00Z,Nice,Paris Saint Germain,draftkings,2026-11-21T15:14:17Z,h2h,Nice,,5.75
+2026-11-21T15:15:48+00:00,late,Ligue1,651c1847b5cdcc85e60a140edd2282c4,2026-11-21T16:15:00Z,Nice,Paris Saint Germain,draftkings,2026-11-21T15:14:17Z,h2h,Paris Saint Germain,,1.48
+2026-11-21T15:15:48+00:00,late,Ligue1,651c1847b5cdcc85e60a140edd2282c4,2026-11-21T16:15:00Z,Nice,Paris Saint Germain,draftkings,2026-11-21T15:14:17Z,h2h,Draw,,5.0
