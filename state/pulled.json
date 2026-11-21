@@ -179,7 +179,8 @@
   "commence": "2026-11-21T14:30:00Z",
   "comp": "Bundesliga",
   "home": "Borussia Monchengladbach",
-  "late": "2026-11-21T12:14:37+00:00",
+  "late": "2026-11-21T13:25:14+00:00",
+  "late_final": true,
   "side": "2026-11-21T12:14:37+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
@@ -526,7 +527,8 @@
   "commence": "2026-11-21T14:30:00Z",
   "comp": "Bundesliga",
   "home": "Bayer Leverkusen",
-  "late": "2026-11-21T12:14:37+00:00",
+  "late": "2026-11-21T13:25:14+00:00",
+  "late_final": true,
   "side": "2026-11-21T12:14:37+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
@@ -555,7 +557,8 @@
   "commence": "2026-11-21T14:30:00Z",
   "comp": "Bundesliga",
   "home": "Elversberg",
-  "late": "2026-11-21T12:14:37+00:00",
+  "late": "2026-11-21T13:25:14+00:00",
+  "late_final": true,
   "side": "2026-11-21T12:14:37+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
@@ -564,7 +567,8 @@
   "commence": "2026-11-21T14:30:00Z",
   "comp": "Bundesliga",
   "home": "Union Berlin",
-  "late": "2026-11-21T12:14:37+00:00",
+  "late": "2026-11-21T13:25:14+00:00",
+  "late_final": true,
   "side": "2026-11-21T12:14:37+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
@@ -612,7 +616,8 @@
   "commence": "2026-11-21T14:30:00Z",
   "comp": "Bundesliga",
   "home": "Eintracht Frankfurt",
-  "late": "2026-11-21T12:14:37+00:00",
+  "late": "2026-11-21T13:25:14+00:00",
+  "late_final": true,
   "side": "2026-11-21T12:14:37+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },

@@ -5676,3 +5676,18 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-21T12:14:37+00:00,late,Ligue1,13ac2151b9f6893cedb7f509e64eb070,2026-11-21T19:45:00Z,RC Lens,Toulouse,draftkings,,alternate_totals,Under,5.5,1.04
 2026-11-21T12:14:37+00:00,late,Ligue1,13ac2151b9f6893cedb7f509e64eb070,2026-11-21T19:45:00Z,RC Lens,Toulouse,draftkings,,btts,Yes,,1.67
 2026-11-21T12:14:37+00:00,late,Ligue1,13ac2151b9f6893cedb7f509e64eb070,2026-11-21T19:45:00Z,RC Lens,Toulouse,draftkings,,btts,No,,2.2
+2026-11-21T13:25:14+00:00,late,Bundesliga,c24cf629b4eaf0ebc4ca2c5beb73747c,2026-11-21T14:30:00Z,Bayer Leverkusen,SC Paderborn,draftkings,2026-11-21T13:24:11Z,h2h,Bayer Leverkusen,,1.29
+2026-11-21T13:25:14+00:00,late,Bundesliga,c24cf629b4eaf0ebc4ca2c5beb73747c,2026-11-21T14:30:00Z,Bayer Leverkusen,SC Paderborn,draftkings,2026-11-21T13:24:11Z,h2h,SC Paderborn,,7.0
+2026-11-21T13:25:14+00:00,late,Bundesliga,c24cf629b4eaf0ebc4ca2c5beb73747c,2026-11-21T14:30:00Z,Bayer Leverkusen,SC Paderborn,draftkings,2026-11-21T13:24:11Z,h2h,Draw,,6.0
+2026-11-21T13:25:14+00:00,late,Bundesliga,577976c4b042018534e14db9ce579cf6,2026-11-21T14:30:00Z,Borussia Monchengladbach,Borussia Dortmund,draftkings,2026-11-21T13:24:11Z,h2h,Borussia Dortmund,,1.53
+2026-11-21T13:25:14+00:00,late,Bundesliga,577976c4b042018534e14db9ce579cf6,2026-11-21T14:30:00Z,Borussia Monchengladbach,Borussia Dortmund,draftkings,2026-11-21T13:24:11Z,h2h,Borussia Monchengladbach,,5.0
+2026-11-21T13:25:14+00:00,late,Bundesliga,577976c4b042018534e14db9ce579cf6,2026-11-21T14:30:00Z,Borussia Monchengladbach,Borussia Dortmund,draftkings,2026-11-21T13:24:11Z,h2h,Draw,,4.4
+2026-11-21T13:25:14+00:00,late,Bundesliga,d0128b7d64e40ca3f1ae1b288b47117a,2026-11-21T14:30:00Z,Eintracht Frankfurt,TSG Hoffenheim,draftkings,2026-11-21T13:24:11Z,h2h,Eintracht Frankfurt,,2.4
+2026-11-21T13:25:14+00:00,late,Bundesliga,d0128b7d64e40ca3f1ae1b288b47117a,2026-11-21T14:30:00Z,Eintracht Frankfurt,TSG Hoffenheim,draftkings,2026-11-21T13:24:11Z,h2h,TSG Hoffenheim,,2.45
+2026-11-21T13:25:14+00:00,late,Bundesliga,d0128b7d64e40ca3f1ae1b288b47117a,2026-11-21T14:30:00Z,Eintracht Frankfurt,TSG Hoffenheim,draftkings,2026-11-21T13:24:11Z,h2h,Draw,,3.85
+2026-11-21T13:25:14+00:00,late,Bundesliga,c8bcd407a7b987234c72c62ec37246ef,2026-11-21T14:30:00Z,Elversberg,SC Freiburg,draftkings,2026-11-21T13:24:11Z,h2h,Elversberg,,3.45
+2026-11-21T13:25:14+00:00,late,Bundesliga,c8bcd407a7b987234c72c62ec37246ef,2026-11-21T14:30:00Z,Elversberg,SC Freiburg,draftkings,2026-11-21T13:24:11Z,h2h,SC Freiburg,,1.95
+2026-11-21T13:25:14+00:00,late,Bundesliga,c8bcd407a7b987234c72c62ec37246ef,2026-11-21T14:30:00Z,Elversberg,SC Freiburg,draftkings,2026-11-21T13:24:11Z,h2h,Draw,,3.5
+2026-11-21T13:25:14+00:00,late,Bundesliga,ca93df81e976fbe345a6175bb24e3f19,2026-11-21T14:30:00Z,Union Berlin,RB Leipzig,draftkings,2026-11-21T13:24:11Z,h2h,RB Leipzig,,1.45
+2026-11-21T13:25:14+00:00,late,Bundesliga,ca93df81e976fbe345a6175bb24e3f19,2026-11-21T14:30:00Z,Union Berlin,RB Leipzig,draftkings,2026-11-21T13:24:11Z,h2h,Union Berlin,,5.75
+2026-11-21T13:25:14+00:00,late,Bundesliga,ca93df81e976fbe345a6175bb24e3f19,2026-11-21T14:30:00Z,Union Berlin,RB Leipzig,draftkings,2026-11-21T13:24:11Z,h2h,Draw,,4.6
