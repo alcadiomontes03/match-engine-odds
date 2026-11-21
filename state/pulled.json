@@ -101,16 +101,6 @@
   "side": "2026-11-08T08:17:15+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
- "3ef62ef56758041178c5280225fe5db7": {
-  "away": "Elversberg",
-  "commence": "2026-11-07T14:30:00Z",
-  "comp": "Bundesliga",
-  "home": "Borussia Dortmund",
-  "late": "2026-11-07T13:34:01+00:00",
-  "late_final": true,
-  "side": "2026-11-07T06:52:23+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "4288fbe018e6e6fb223e389bcf3e57dd": {
   "away": "Lille",
   "commence": "2026-11-08T14:00:00Z",
@@ -134,16 +124,6 @@
   "comp": "Bundesliga",
   "home": "Augsburg",
   "weekly": "2026-11-16T23:14:42+00:00"
- },
- "4ca4c7a2a1c15e9121f9a7eaa7f42ddb": {
-  "away": "Eintracht Frankfurt",
-  "commence": "2026-11-07T14:30:00Z",
-  "comp": "Bundesliga",
-  "home": "SC Paderborn",
-  "late": "2026-11-07T13:34:01+00:00",
-  "late_final": true,
-  "side": "2026-11-07T06:52:23+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
  },
  "4d6dd3defbbe20fa24b719f9fcdbf280": {
   "away": "Brest",
@@ -595,16 +575,6 @@
   "side": "2026-11-08T08:17:15+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
- "cdb5f9dd39e79db69659c76cd96d0bbe": {
-  "away": "Augsburg",
-  "commence": "2026-11-07T14:30:00Z",
-  "comp": "Bundesliga",
-  "home": "RB Leipzig",
-  "late": "2026-11-07T13:34:01+00:00",
-  "late_final": true,
-  "side": "2026-11-07T06:52:23+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "cf68da11fa604c13fc9ef3219fad0314": {
   "away": "Nottingham Forest",
   "commence": "2026-11-21T15:00:00Z",
@@ -682,16 +652,6 @@
   "late": "2026-11-07T19:05:41+00:00",
   "late_final": true,
   "side": "2026-11-07T12:13:34+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
- "fe97f5adf397dd6b0a8a9e0a5272f307": {
-  "away": "Bayern Munich",
-  "commence": "2026-11-07T14:30:00Z",
-  "comp": "Bundesliga",
-  "home": "FSV Mainz 05",
-  "late": "2026-11-07T13:34:01+00:00",
-  "late_final": true,
-  "side": "2026-11-07T06:52:23+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  }
 }
