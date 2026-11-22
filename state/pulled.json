@@ -174,7 +174,8 @@
   "commence": "2026-11-22T17:30:00Z",
   "comp": "LaLiga",
   "home": "CA Osasuna",
-  "late": "2026-11-22T09:39:55+00:00",
+  "late": "2026-11-22T16:31:53+00:00",
+  "late_final": true,
   "side": "2026-11-22T09:39:55+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
@@ -346,16 +347,6 @@
   "home": "Levante",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
- "b0a4b5448a7e02d9ad1eaa817599fff0": {
-  "away": "Aston Villa",
-  "commence": "2026-11-08T16:30:00Z",
-  "comp": "PL",
-  "home": "Manchester United",
-  "late": "2026-11-08T15:29:25+00:00",
-  "late_final": true,
-  "side": "2026-11-08T08:37:23+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "b8d6ab6ecc8bb356c6335d3f417d0ecf": {
   "away": "Sunderland",
   "commence": "2026-11-21T15:00:00Z",
@@ -365,16 +356,6 @@
   "late_final": true,
   "side": "2026-11-21T12:14:37+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
- },
- "c1b9696d88719cb8832d794b986cdd68": {
-  "away": "Union Berlin",
-  "commence": "2026-11-08T16:30:00Z",
-  "comp": "Bundesliga",
-  "home": "SC Freiburg",
-  "late": "2026-11-08T15:29:25+00:00",
-  "late_final": true,
-  "side": "2026-11-08T08:37:23+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
  },
  "c24cf629b4eaf0ebc4ca2c5beb73747c": {
   "away": "SC Paderborn",
