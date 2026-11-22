@@ -70,16 +70,6 @@
   "side": "2026-11-21T12:14:37+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
- "4e917e19b59093a02a0e12bcf9a5ecc4": {
-  "away": "Marseille",
-  "commence": "2026-11-08T19:45:00Z",
-  "comp": "Ligue1",
-  "home": "RC Lens",
-  "late": "2026-11-08T18:50:00+00:00",
-  "late_final": true,
-  "side": "2026-11-08T11:48:03+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "577976c4b042018534e14db9ce579cf6": {
   "away": "Borussia Dortmund",
   "commence": "2026-11-21T14:30:00Z",
@@ -408,16 +398,6 @@
   "late_final": true,
   "side": "2026-11-20T17:18:41+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
- },
- "dd247b356d8fc53e4b4f9bfcfe09c924": {
-  "away": "Barcelona",
-  "commence": "2026-11-08T20:00:00Z",
-  "comp": "LaLiga",
-  "home": "Atl\u00e9tico Madrid",
-  "late": "2026-11-08T19:00:16+00:00",
-  "late_final": true,
-  "side": "2026-11-08T12:08:13+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
  },
  "e67ee3a6f93bb90b8aefcf3dd204477c": {
   "away": "Ipswich Town",
