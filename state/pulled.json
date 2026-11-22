@@ -49,16 +49,6 @@
   "side": "2026-11-22T06:09:05+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
- "3e9954446f26494c04c4967db523d375": {
-  "away": "Lorient",
-  "commence": "2026-11-08T16:15:00Z",
-  "comp": "Ligue1",
-  "home": "Le Havre",
-  "late": "2026-11-08T15:19:20+00:00",
-  "late_final": true,
-  "side": "2026-11-08T08:17:15+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "4c08b213ed416e8f41e038f42a42b962": {
   "away": "Manchester United",
   "commence": "2026-11-22T16:30:00Z",
@@ -98,16 +88,6 @@
   "late": "2026-11-08T18:50:00+00:00",
   "late_final": true,
   "side": "2026-11-08T11:48:03+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
- "54fae64b1421d836e07a17cad0536c73": {
-  "away": "Nice",
-  "commence": "2026-11-08T16:15:00Z",
-  "comp": "Ligue1",
-  "home": "Angers",
-  "late": "2026-11-08T15:19:20+00:00",
-  "late_final": true,
-  "side": "2026-11-08T08:17:15+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
  "577976c4b042018534e14db9ce579cf6": {
@@ -342,16 +322,6 @@
   "weekly:Ligue1": "2026-W47",
   "weekly:PL": "2026-W47"
  },
- "a529e5762f18d97981194ec3668dc3d3": {
-  "away": "AS Monaco",
-  "commence": "2026-11-08T16:15:00Z",
-  "comp": "Ligue1",
-  "home": "Le Mans FC",
-  "late": "2026-11-08T15:19:20+00:00",
-  "late_final": true,
-  "side": "2026-11-08T08:17:15+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "aa77e2a08a1a003b0bbb62a5f8e8ae42": {
   "away": "Everton",
   "commence": "2026-11-23T20:00:00Z",
@@ -445,16 +415,6 @@
   "late_final": true,
   "side": "2026-11-20T17:18:41+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
- },
- "cc9731ee7796fe0d532f11ca2aa522c9": {
-  "away": "Lyon",
-  "commence": "2026-11-08T16:15:00Z",
-  "comp": "Ligue1",
-  "home": "Brest",
-  "late": "2026-11-08T15:19:20+00:00",
-  "late_final": true,
-  "side": "2026-11-08T08:17:15+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
  },
  "cf68da11fa604c13fc9ef3219fad0314": {
   "away": "Nottingham Forest",
