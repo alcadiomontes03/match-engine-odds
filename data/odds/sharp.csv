@@ -644,3 +644,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,pinnacle,2026-11-22T08:39:36Z,h2h,Hamburger SV,,5.62
 2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,pinnacle,2026-11-22T08:39:36Z,h2h,Werder Bremen,,1.57
 2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,pinnacle,2026-11-22T08:39:36Z,h2h,Draw,,4.56
+2026-11-22T09:39:55+00:00,late,LaLiga,893268e5503c4e58fbf137e4b5db7e93,2026-11-22T17:30:00Z,CA Osasuna,Málaga,pinnacle,2026-11-22T09:39:25Z,h2h,CA Osasuna,,1.87
+2026-11-22T09:39:55+00:00,late,LaLiga,893268e5503c4e58fbf137e4b5db7e93,2026-11-22T17:30:00Z,CA Osasuna,Málaga,pinnacle,2026-11-22T09:39:25Z,h2h,Málaga,,4.59
+2026-11-22T09:39:55+00:00,late,LaLiga,893268e5503c4e58fbf137e4b5db7e93,2026-11-22T17:30:00Z,CA Osasuna,Málaga,pinnacle,2026-11-22T09:39:25Z,h2h,Draw,,3.64
