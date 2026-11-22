@@ -632,3 +632,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,pinnacle,2026-11-22T06:39:08Z,h2h,Augsburg,,2.76
 2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,pinnacle,2026-11-22T06:39:08Z,h2h,FSV Mainz 05,,2.4
 2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,pinnacle,2026-11-22T06:39:08Z,h2h,Draw,,3.97
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,pinnacle,2026-11-22T07:19:02Z,h2h,Real Racing Club de Santander,,3.33
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,pinnacle,2026-11-22T07:19:02Z,h2h,Real Sociedad,,2.06
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,pinnacle,2026-11-22T07:19:02Z,h2h,Draw,,4.07

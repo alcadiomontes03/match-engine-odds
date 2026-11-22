@@ -5844,3 +5844,32 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Under,6.5,1.04
 2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,btts,Yes,,1.36
 2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,btts,No,,3.15
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,2026-11-22T07:19:02Z,h2h,Real Racing Club de Santander,,3.2
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,2026-11-22T07:19:02Z,h2h,Real Sociedad,,2.0
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,2026-11-22T07:19:02Z,h2h,Draw,,4.1
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_spreads,Real Racing Club de Santander,0.0,2.35
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_spreads,Real Racing Club de Santander,0.25,1.95
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_spreads,Real Racing Club de Santander,0.5,1.77
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_spreads,Real Racing Club de Santander,0.75,1.59
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_spreads,Real Sociedad,0.0,1.53
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_spreads,Real Sociedad,-0.25,1.74
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_spreads,Real Sociedad,-0.5,1.95
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_spreads,Real Sociedad,-0.75,2.2
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Over,0.5,1.0
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Over,1.5,1.11
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Over,2.5,1.39
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Over,3.5,1.95
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Over,4.5,3.15
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Over,5.5,5.5
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Over,6.5,10.5
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Over,7.5,18.0
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Under,0.5,18.0
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Under,1.5,6.5
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Under,2.5,3.0
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Under,3.5,1.83
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Under,4.5,1.36
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Under,5.5,1.14
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Under,6.5,1.05
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,alternate_totals,Under,7.5,1.0
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,btts,Yes,,1.35
+2026-11-22T07:19:24+00:00,late,LaLiga,9718f9ea901236855faf57f77a0bd5b3,2026-11-22T15:15:00Z,Real Racing Club de Santander,Real Sociedad,draftkings,,btts,No,,3.15
