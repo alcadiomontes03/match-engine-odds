@@ -5817,3 +5817,30 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-22T06:09:05+00:00,late,Ligue1,9e5d4a91e379ddffa179b02bf9e09530,2026-11-22T14:00:00Z,Paris FC,Angers,draftkings,,alternate_totals,Under,6.5,1.03
 2026-11-22T06:09:05+00:00,late,Ligue1,9e5d4a91e379ddffa179b02bf9e09530,2026-11-22T14:00:00Z,Paris FC,Angers,draftkings,,btts,Yes,,1.83
 2026-11-22T06:09:05+00:00,late,Ligue1,9e5d4a91e379ddffa179b02bf9e09530,2026-11-22T14:00:00Z,Paris FC,Angers,draftkings,,btts,No,,1.95
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,2026-11-22T06:38:38Z,h2h,Augsburg,,2.55
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,2026-11-22T06:38:38Z,h2h,FSV Mainz 05,,2.35
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,2026-11-22T06:38:38Z,h2h,Draw,,3.75
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_spreads,Augsburg,-0.25,2.3
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_spreads,Augsburg,0.0,2.0
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_spreads,Augsburg,0.25,1.77
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_spreads,Augsburg,0.5,1.61
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_spreads,FSV Mainz 05,0.25,1.62
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_spreads,FSV Mainz 05,0.0,1.8
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_spreads,FSV Mainz 05,-0.25,2.1
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_spreads,FSV Mainz 05,-0.5,2.35
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Over,0.5,1.0
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Over,1.5,1.12
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Over,2.5,1.42
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Over,3.5,2.0
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Over,4.5,3.3
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Over,5.5,5.75
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Over,6.5,10.5
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Under,0.5,16.0
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Under,1.5,6.0
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Under,2.5,2.9
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Under,3.5,1.77
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Under,4.5,1.33
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Under,5.5,1.13
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,alternate_totals,Under,6.5,1.04
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,btts,Yes,,1.36
+2026-11-22T06:39:14+00:00,late,Bundesliga,4c2262eccc903b9b1792325d09451c0a,2026-11-22T14:30:00Z,Augsburg,FSV Mainz 05,draftkings,,btts,No,,3.15
