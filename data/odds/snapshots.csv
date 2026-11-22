@@ -6059,3 +6059,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-22T18:42:23+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,2026-11-22T18:41:45Z,h2h,Le Mans FC,,7.5
 2026-11-22T18:42:23+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,2026-11-22T18:41:45Z,h2h,Marseille,,1.4
 2026-11-22T18:42:23+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,2026-11-22T18:41:45Z,h2h,Draw,,5.0
+2026-11-22T19:02:47+00:00,late,LaLiga,7a62fe738bd20cfff6027c52fec05d51,2026-11-22T20:00:00Z,Getafe,Atlético Madrid,draftkings,2026-11-22T19:02:43Z,h2h,Atlético Madrid,,1.51
+2026-11-22T19:02:47+00:00,late,LaLiga,7a62fe738bd20cfff6027c52fec05d51,2026-11-22T20:00:00Z,Getafe,Atlético Madrid,draftkings,2026-11-22T19:02:43Z,h2h,Getafe,,7.0
+2026-11-22T19:02:47+00:00,late,LaLiga,7a62fe738bd20cfff6027c52fec05d51,2026-11-22T20:00:00Z,Getafe,Atlético Madrid,draftkings,2026-11-22T19:02:43Z,h2h,Draw,,4.0
