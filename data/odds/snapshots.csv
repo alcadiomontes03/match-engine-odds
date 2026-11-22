@@ -5977,3 +5977,30 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-22T09:39:55+00:00,late,LaLiga,893268e5503c4e58fbf137e4b5db7e93,2026-11-22T17:30:00Z,CA Osasuna,Málaga,draftkings,,alternate_totals,Under,5.5,1.02
 2026-11-22T09:39:55+00:00,late,LaLiga,893268e5503c4e58fbf137e4b5db7e93,2026-11-22T17:30:00Z,CA Osasuna,Málaga,draftkings,,btts,Yes,,1.83
 2026-11-22T09:39:55+00:00,late,LaLiga,893268e5503c4e58fbf137e4b5db7e93,2026-11-22T17:30:00Z,CA Osasuna,Málaga,draftkings,,btts,No,,1.95
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,2026-11-22T11:49:51Z,h2h,Le Mans FC,,6.5
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,2026-11-22T11:49:51Z,h2h,Marseille,,1.45
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,2026-11-22T11:49:51Z,h2h,Draw,,4.9
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_spreads,Le Mans FC,1.5,1.65
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_spreads,Le Mans FC,1.25,1.8
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_spreads,Le Mans FC,1.0,2.1
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_spreads,Le Mans FC,0.75,2.4
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_spreads,Marseille,-1.5,2.1
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_spreads,Marseille,-1.25,1.91
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_spreads,Marseille,-1.0,1.65
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_spreads,Marseille,-0.75,1.51
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_totals,Over,0.5,1.01
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_totals,Over,1.5,1.15
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_totals,Over,2.5,1.54
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_totals,Over,3.5,2.35
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_totals,Over,4.5,4.0
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_totals,Over,5.5,7.0
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_totals,Over,6.5,13.0
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_totals,Under,0.5,15.0
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_totals,Under,1.5,5.0
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_totals,Under,2.5,2.45
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_totals,Under,3.5,1.59
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_totals,Under,4.5,1.24
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_totals,Under,5.5,1.09
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,alternate_totals,Under,6.5,1.02
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,btts,Yes,,1.69
+2026-11-22T11:50:24+00:00,late,Ligue1,98fae24771271c96d5dd364e535405d2,2026-11-22T19:45:00Z,Marseille,Le Mans FC,draftkings,,btts,No,,2.15
