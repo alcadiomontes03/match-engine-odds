@@ -5898,3 +5898,57 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-22T08:19:35+00:00,late,Ligue1,8e6ee05b6ac28dc2357f72b9f5a0643e,2026-11-22T16:15:00Z,Lorient,Rennes,draftkings,,alternate_totals,Under,5.5,1.02
 2026-11-22T08:19:35+00:00,late,Ligue1,8e6ee05b6ac28dc2357f72b9f5a0643e,2026-11-22T16:15:00Z,Lorient,Rennes,draftkings,,btts,Yes,,1.8
 2026-11-22T08:19:35+00:00,late,Ligue1,8e6ee05b6ac28dc2357f72b9f5a0643e,2026-11-22T16:15:00Z,Lorient,Rennes,draftkings,,btts,No,,2.0
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,2026-11-22T08:39:20Z,h2h,Liverpool,,1.69
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,2026-11-22T08:39:20Z,h2h,Manchester United,,4.5
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,2026-11-22T08:39:20Z,h2h,Draw,,4.2
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_spreads,Liverpool,-1.25,2.4
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_spreads,Liverpool,-1.0,2.1
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_spreads,Liverpool,-0.75,1.8
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_spreads,Liverpool,-0.5,1.65
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_spreads,Manchester United,1.25,1.51
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_spreads,Manchester United,1.0,1.67
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_spreads,Manchester United,0.75,1.91
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_spreads,Manchester United,0.5,2.1
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_totals,Over,0.5,1.01
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_totals,Over,1.5,1.15
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_totals,Over,2.5,1.51
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_totals,Over,3.5,2.25
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_totals,Over,4.5,3.85
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_totals,Over,5.5,7.0
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_totals,Over,6.5,13.0
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_totals,Under,0.5,16.0
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_totals,Under,1.5,5.25
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_totals,Under,2.5,2.55
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_totals,Under,3.5,1.65
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_totals,Under,4.5,1.27
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_totals,Under,5.5,1.1
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,alternate_totals,Under,6.5,1.02
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,btts,Yes,,1.51
+2026-11-22T08:39:43+00:00,late,PL,4c08b213ed416e8f41e038f42a42b962,2026-11-22T16:30:00Z,Liverpool,Manchester United,draftkings,,btts,No,,2.55
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,2026-11-22T08:39:05Z,h2h,Hamburger SV,,5.0
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,2026-11-22T08:39:05Z,h2h,Werder Bremen,,1.56
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,2026-11-22T08:39:05Z,h2h,Draw,,4.2
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_spreads,Hamburger SV,1.25,1.69
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_spreads,Hamburger SV,1.0,1.91
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_spreads,Hamburger SV,0.75,2.15
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_spreads,Hamburger SV,0.5,2.45
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_spreads,Werder Bremen,-1.25,2.2
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_spreads,Werder Bremen,-1.0,1.91
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_spreads,Werder Bremen,-0.75,1.71
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_spreads,Werder Bremen,-0.5,1.57
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_totals,Over,0.5,1.02
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_totals,Over,1.5,1.17
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_totals,Over,2.5,1.57
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_totals,Over,3.5,2.45
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_totals,Over,4.5,4.3
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_totals,Over,5.5,8.0
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_totals,Over,6.5,14.0
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_totals,Under,0.5,14.0
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_totals,Under,1.5,4.9
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_totals,Under,2.5,2.35
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_totals,Under,3.5,1.56
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_totals,Under,4.5,1.21
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_totals,Under,5.5,1.07
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,alternate_totals,Under,6.5,1.02
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,btts,Yes,,1.67
+2026-11-22T08:39:43+00:00,late,Bundesliga,9a214142c9b31ad8233dccad53f75d6d,2026-11-22T16:30:00Z,Werder Bremen,Hamburger SV,draftkings,,btts,No,,2.2
