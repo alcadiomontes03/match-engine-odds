@@ -110,10 +110,12 @@
  },
  "4c2262eccc903b9b1792325d09451c0a": {
   "away": "FSV Mainz 05",
+  "clv": "2026-11-22T13:31:04+00:00",
   "commence": "2026-11-22T14:30:00Z",
   "comp": "Bundesliga",
   "home": "Augsburg",
-  "late": "2026-11-22T06:39:14+00:00",
+  "late": "2026-11-22T13:31:04+00:00",
+  "late_final": true,
   "side": "2026-11-22T06:39:14+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
@@ -356,6 +358,7 @@
   "btts_empty:LaLiga": 0,
   "btts_empty:Ligue1": 0,
   "btts_empty:PL": 0,
+  "clv:2026-W47": 1,
   "empty:alternate_spreads:Bundesliga": 0,
   "empty:alternate_spreads:LaLiga": 0,
   "empty:alternate_spreads:Ligue1": 0,
