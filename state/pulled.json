@@ -248,10 +248,12 @@
  },
  "9718f9ea901236855faf57f77a0bd5b3": {
   "away": "Real Sociedad",
+  "clv": "2026-11-22T14:11:16+00:00",
   "commence": "2026-11-22T15:15:00Z",
   "comp": "LaLiga",
   "home": "Real Racing Club de Santander",
-  "late": "2026-11-22T07:19:24+00:00",
+  "late": "2026-11-22T14:11:16+00:00",
+  "late_final": true,
   "side": "2026-11-22T07:19:24+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
@@ -308,7 +310,7 @@
   "btts_empty:LaLiga": 0,
   "btts_empty:Ligue1": 0,
   "btts_empty:PL": 0,
-  "clv:2026-W47": 1,
+  "clv:2026-W47": 2,
   "empty:alternate_spreads:Bundesliga": 0,
   "empty:alternate_spreads:LaLiga": 0,
   "empty:alternate_spreads:Ligue1": 0,
