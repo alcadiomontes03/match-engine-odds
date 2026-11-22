@@ -656,3 +656,9 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-22T12:00:42+00:00,late,LaLiga,7a62fe738bd20cfff6027c52fec05d51,2026-11-22T20:00:00Z,Getafe,Atlético Madrid,pinnacle,2026-11-22T12:00:31Z,h2h,Atlético Madrid,,1.56
 2026-11-22T12:00:42+00:00,late,LaLiga,7a62fe738bd20cfff6027c52fec05d51,2026-11-22T20:00:00Z,Getafe,Atlético Madrid,pinnacle,2026-11-22T12:00:31Z,h2h,Getafe,,7.14
 2026-11-22T12:00:42+00:00,late,LaLiga,7a62fe738bd20cfff6027c52fec05d51,2026-11-22T20:00:00Z,Getafe,Atlético Madrid,pinnacle,2026-11-22T12:00:31Z,h2h,Draw,,4.04
+2026-11-22T13:00:54+00:00,late,PL,230a356290e1a358e9dd2f7fa23de3b9,2026-11-22T14:00:00Z,Hull City,Brighton and Hove Albion,pinnacle,2026-11-22T13:00:27Z,h2h,Brighton and Hove Albion,,1.53
+2026-11-22T13:00:54+00:00,late,PL,230a356290e1a358e9dd2f7fa23de3b9,2026-11-22T14:00:00Z,Hull City,Brighton and Hove Albion,pinnacle,2026-11-22T13:00:27Z,h2h,Hull City,,6.8
+2026-11-22T13:00:54+00:00,late,PL,230a356290e1a358e9dd2f7fa23de3b9,2026-11-22T14:00:00Z,Hull City,Brighton and Hove Albion,pinnacle,2026-11-22T13:00:27Z,h2h,Draw,,4.3
+2026-11-22T13:00:54+00:00,late,Ligue1,9e5d4a91e379ddffa179b02bf9e09530,2026-11-22T14:00:00Z,Paris FC,Angers,pinnacle,2026-11-22T13:00:45Z,h2h,Angers,,10.3
+2026-11-22T13:00:54+00:00,late,Ligue1,9e5d4a91e379ddffa179b02bf9e09530,2026-11-22T14:00:00Z,Paris FC,Angers,pinnacle,2026-11-22T13:00:45Z,h2h,Paris FC,,1.29
+2026-11-22T13:00:54+00:00,late,Ligue1,9e5d4a91e379ddffa179b02bf9e09530,2026-11-22T14:00:00Z,Paris FC,Angers,pinnacle,2026-11-22T13:00:45Z,h2h,Draw,,6.37
