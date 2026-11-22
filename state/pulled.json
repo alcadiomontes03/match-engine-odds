@@ -1,14 +1,4 @@
 {
- "0cfbab01e152f81e34f9014e02c7eb79": {
-  "away": "Liverpool",
-  "commence": "2026-11-08T14:00:00Z",
-  "comp": "PL",
-  "home": "Crystal Palace",
-  "late": "2026-11-08T12:58:24+00:00",
-  "late_final": true,
-  "side": "2026-11-08T07:46:52+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "0d2e199bfba0db42871696c10037bad3": {
   "away": "Levante",
   "commence": "2026-11-08T17:30:00Z",
@@ -69,16 +59,6 @@
   "side": "2026-11-08T07:46:52+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
- "3a4608abdf257d2a0024b944757d9dc9": {
-  "away": "Chelsea",
-  "commence": "2026-11-08T14:00:00Z",
-  "comp": "PL",
-  "home": "Sunderland",
-  "late": "2026-11-08T12:58:24+00:00",
-  "late_final": true,
-  "side": "2026-11-08T07:46:52+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "3e9954446f26494c04c4967db523d375": {
   "away": "Lorient",
   "commence": "2026-11-08T16:15:00Z",
@@ -87,16 +67,6 @@
   "late": "2026-11-08T15:19:20+00:00",
   "late_final": true,
   "side": "2026-11-08T08:17:15+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
- "4288fbe018e6e6fb223e389bcf3e57dd": {
-  "away": "Lille",
-  "commence": "2026-11-08T14:00:00Z",
-  "comp": "Ligue1",
-  "home": "Rennes",
-  "late": "2026-11-08T12:58:24+00:00",
-  "late_final": true,
-  "side": "2026-11-08T07:46:52+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
  "4c08b213ed416e8f41e038f42a42b962": {
@@ -209,16 +179,6 @@
   "side": "2026-11-21T12:14:37+00:00",
   "weekly": "2026-11-16T23:14:42+00:00"
  },
- "79ed3df594d7b352ef027128b1ba5d0a": {
-  "away": "Bournemouth",
-  "commence": "2026-11-08T14:00:00Z",
-  "comp": "PL",
-  "home": "Ipswich Town",
-  "late": "2026-11-08T12:58:24+00:00",
-  "late_final": true,
-  "side": "2026-11-08T07:46:52+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
  "7a62fe738bd20cfff6027c52fec05d51": {
   "away": "Atl\u00e9tico Madrid",
   "commence": "2026-11-22T20:00:00Z",
@@ -255,16 +215,6 @@
   "late": "2026-11-08T17:29:46+00:00",
   "late_final": true,
   "side": "2026-11-08T10:37:50+00:00",
-  "weekly": "2026-11-02T15:03:58+00:00"
- },
- "8e3ca98e29be84dd4a882ed05f50fa79": {
-  "away": "Brentford",
-  "commence": "2026-11-08T14:00:00Z",
-  "comp": "PL",
-  "home": "Brighton and Hove Albion",
-  "late": "2026-11-08T12:58:24+00:00",
-  "late_final": true,
-  "side": "2026-11-08T07:46:52+00:00",
   "weekly": "2026-11-02T15:03:58+00:00"
  },
  "8e6ee05b6ac28dc2357f72b9f5a0643e": {
