@@ -8,7 +8,10 @@ v9 = the live dashboard ratings (market-implied goals, 69-day half-life, promote
 
 | Week file | Matches | 1X2 v9 | 1X2 v8 | 1X2 DraftKings | Over 2.5 v9 | Over 2.5 v8 | BTTS v9 | BTTS v8 |
 |---|---|---|---|---|---|---|---|---|
-| (nothing settled yet) | | | | | | | | |
+| 2026-11-16 | 36 | 1.0604 | 1.0544 | 1.0590 | 0.7140 | 0.7421 | 0.7110 | 0.6870 |
+| all | 36 | 1.0604 | 1.0544 | 1.0590 | 0.7140 | 0.7421 | 0.7110 | 0.6870 |
+
+v9 minus v8, 1X2: +0.0060 (95% -0.0385 to +0.0526) on 36 matches. Negative = v9 better.
 
 ## v8 (live 2026-10-20 to 2026-11-15) against v6.1 - history
 
