@@ -1,88 +1,88 @@
 {
- "run_at": "2026-11-23T16:21:30+00:00",
+ "run_at": "2026-11-23T16:29:13+00:00",
  "code_version": "research-5 (2026-11-09)",
  "status": "fail",
  "checks": [
   {
    "check": "goal level D1 (ratings)",
    "level": "ok",
-   "detail": "44 matches: predicted 3.27, actual 3.25 goals/game (diff -0.02, z -0.1)",
+   "detail": "53 matches: predicted 3.30, actual 3.13 goals/game (diff -0.17, z -0.7)",
    "items": []
   },
   {
    "check": "goal level D1 (market grid)",
    "level": "ok",
-   "detail": "41 matches: predicted 3.54, actual 3.17 goals/game (diff -0.37, z -1.3)",
+   "detail": "50 matches: predicted 3.55, actual 3.06 goals/game (diff -0.49, z -1.8)",
    "items": []
   },
   {
    "check": "goal level E0 (ratings)",
    "level": "ok",
-   "detail": "59 matches: predicted 2.72, actual 2.68 goals/game (diff -0.05, z -0.2)",
+   "detail": "68 matches: predicted 2.73, actual 2.71 goals/game (diff -0.02, z -0.1)",
    "items": []
   },
   {
    "check": "goal level E0 (market grid)",
    "level": "ok",
-   "detail": "59 matches: predicted 3.00, actual 2.68 goals/game (diff -0.32, z -1.5)",
+   "detail": "68 matches: predicted 2.99, actual 2.71 goals/game (diff -0.28, z -1.4)",
    "items": []
   },
   {
    "check": "goal level F1 (ratings)",
    "level": "ok",
-   "detail": "45 matches: predicted 2.94, actual 3.07 goals/game (diff +0.13, z +0.5)",
+   "detail": "54 matches: predicted 2.94, actual 3.04 goals/game (diff +0.09, z +0.4)",
    "items": []
   },
   {
    "check": "goal level F1 (market grid)",
    "level": "ok",
-   "detail": "45 matches: predicted 3.06, actual 3.07 goals/game (diff +0.00, z +0.0)",
+   "detail": "54 matches: predicted 3.04, actual 3.04 goals/game (diff -0.00, z -0.0)",
    "items": []
   },
   {
    "check": "goal level SP1 (ratings)",
    "level": "ok",
-   "detail": "60 matches: predicted 2.84, actual 2.73 goals/game (diff -0.11, z -0.5)",
+   "detail": "69 matches: predicted 2.85, actual 2.74 goals/game (diff -0.11, z -0.5)",
    "items": []
   },
   {
    "check": "goal level SP1 (market grid)",
    "level": "ok",
-   "detail": "60 matches: predicted 2.96, actual 2.73 goals/game (diff -0.22, z -1.0)",
+   "detail": "69 matches: predicted 2.97, actual 2.74 goals/game (diff -0.23, z -1.1)",
    "items": []
   },
   {
    "check": "missing results (kicked off 6h+ ago)",
-   "level": "warn",
-   "detail": "36 fixtures",
-   "items": [
-    "F1 Nice v Paris SG 2026-11-21",
-    "D1 Schalke 04 v Stuttgart 2026-11-21",
-    "SP1 Getafe v Ath Madrid 2026-11-22",
-    "F1 Strasbourg v Brest 2026-11-21",
-    "E0 Aston Villa v Sunderland 2026-11-21",
-    "F1 Paris FC v Angers 2026-11-22",
-    "F1 Lille v Lyon 2026-11-21",
-    "D1 M'gladbach v Dortmund 2026-11-21",
-    "F1 Marseille v Le Mans 2026-11-22",
-    "D1 Augsburg v Mainz 2026-11-22",
-    "E0 Chelsea v Leeds 2026-11-21",
-    "D1 Ein Frankfurt v Hoffenheim 2026-11-21",
-    "E0 Newcastle v Arsenal 2026-11-21",
-    "F1 Monaco v Auxerre 2026-11-21",
-    "E0 Bournemouth v Nott'm Forest 2026-11-21",
-    "F1 Troyes v Le Havre 2026-11-20",
-    "SP1 Real Madrid v Celta 2026-11-21",
-    "SP1 Osasuna v Malaga 2026-11-22",
-    "SP1 Vallecano v Valencia 2026-11-21",
-    "SP1 Sevilla v Betis 2026-11-21"
-   ]
+   "level": "ok",
+   "detail": "0 fixtures",
+   "items": []
   },
   {
    "check": "results without match stats (last 10 days)",
-   "level": "ok",
-   "detail": "0 results",
-   "items": []
+   "level": "warn",
+   "detail": "36 results",
+   "items": [
+    "651c1847b5cdcc85e60a140edd2282c4",
+    "67846fc0359aeff2d0b6f3f8a2a674f4",
+    "7a62fe738bd20cfff6027c52fec05d51",
+    "4d6dd3defbbe20fa24b719f9fcdbf280",
+    "b8d6ab6ecc8bb356c6335d3f417d0ecf",
+    "9e5d4a91e379ddffa179b02bf9e09530",
+    "d2113ca19873218496f8b2fe6c7e7c41",
+    "577976c4b042018534e14db9ce579cf6",
+    "98fae24771271c96d5dd364e535405d2",
+    "4c2262eccc903b9b1792325d09451c0a",
+    "ac6cf70520a83c0949b4003bde53c709",
+    "d0128b7d64e40ca3f1ae1b288b47117a",
+    "71bf9fe98c3e3be39cd1d059f8d71ae8",
+    "9130b46991ab991f808daf307f004469",
+    "cf68da11fa604c13fc9ef3219fad0314",
+    "5dcc9d2b0da87770a4f49e924275be39",
+    "90af957b2f622a5cf805e60b151c54b9",
+    "893268e5503c4e58fbf137e4b5db7e93",
+    "ebe638278f4d70eaf211ad5be9795fa0",
+    "1bb4951d418dcb641c608e085b87a1c3"
+   ]
   },
   {
    "check": "duplicate fixtures",
