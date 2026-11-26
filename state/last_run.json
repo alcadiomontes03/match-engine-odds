@@ -1,15 +1,10 @@
 {
- "utc": "2026-11-26T02:05:51+00:00",
+ "utc": "2026-11-26T20:00:03+00:00",
  "markets": "h2h",
  "bookmakers": "draftkings",
  "leagues": {
   "PL": {
-   "events_from_api": 20,
-   "after_team_filter": 20,
-   "team_filter": [],
-   "due_weekly": 19,
-   "weekly_done": true,
-   "due_late": 0
+   "error": "HTTP 429 on /sports/soccer_epl/events: {\"Reason\":\"CallerRateLimitExceeded\",\"Type\":\"User\",\"message\":\"Rate Exceeded.\"}"
   },
   "LaLiga": {
    "events_from_api": 22,
