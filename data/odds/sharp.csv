@@ -812,3 +812,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-27T12:06:55+00:00,late,LaLiga,80c92a163a81b69fef76530221e2edd0,2026-11-27T20:00:00Z,Levante,Real Racing Club de Santander,pinnacle,2026-11-27T12:06:27Z,h2h,Levante,,2.11
 2026-11-27T12:06:55+00:00,late,LaLiga,80c92a163a81b69fef76530221e2edd0,2026-11-27T20:00:00Z,Levante,Real Racing Club de Santander,pinnacle,2026-11-27T12:06:27Z,h2h,Real Racing Club de Santander,,3.32
 2026-11-27T12:06:55+00:00,late,LaLiga,80c92a163a81b69fef76530221e2edd0,2026-11-27T20:00:00Z,Levante,Real Racing Club de Santander,pinnacle,2026-11-27T12:06:27Z,h2h,Draw,,4.0
+2026-11-27T18:27:46+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,pinnacle,2026-11-27T18:27:21Z,h2h,Borussia Monchengladbach,,4.9
+2026-11-27T18:27:46+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,pinnacle,2026-11-27T18:27:21Z,h2h,Werder Bremen,,1.67
+2026-11-27T18:27:46+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,pinnacle,2026-11-27T18:27:21Z,h2h,Draw,,4.4
