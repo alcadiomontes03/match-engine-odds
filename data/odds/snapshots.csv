@@ -6173,3 +6173,30 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-23T20:56:16+00:00,weekly,Ligue1,ca8aa566e27e1d05b47e8151b2066f9a,2026-11-29T19:45:00Z,Lyon,AS Monaco,draftkings,2026-11-23T20:55:55Z,h2h,AS Monaco,,2.85
 2026-11-23T20:56:16+00:00,weekly,Ligue1,ca8aa566e27e1d05b47e8151b2066f9a,2026-11-29T19:45:00Z,Lyon,AS Monaco,draftkings,2026-11-23T20:55:55Z,h2h,Lyon,,2.4
 2026-11-23T20:56:16+00:00,weekly,Ligue1,ca8aa566e27e1d05b47e8151b2066f9a,2026-11-29T19:45:00Z,Lyon,AS Monaco,draftkings,2026-11-23T20:55:55Z,h2h,Draw,,3.3
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,2026-11-27T11:35:35Z,h2h,Borussia Monchengladbach,,4.4
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,2026-11-27T11:35:35Z,h2h,Werder Bremen,,1.62
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,2026-11-27T11:35:35Z,h2h,Draw,,4.1
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_spreads,Borussia Monchengladbach,1.25,1.59
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_spreads,Borussia Monchengladbach,1.0,1.74
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_spreads,Borussia Monchengladbach,0.75,2.0
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_spreads,Borussia Monchengladbach,0.5,2.3
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_spreads,Werder Bremen,-1.25,2.4
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_spreads,Werder Bremen,-1.0,2.1
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_spreads,Werder Bremen,-0.75,1.8
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_spreads,Werder Bremen,-0.5,1.65
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_totals,Over,0.5,1.01
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_totals,Over,1.5,1.17
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_totals,Over,2.5,1.53
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_totals,Over,3.5,2.35
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_totals,Over,4.5,4.0
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_totals,Over,5.5,7.0
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_totals,Over,6.5,13.0
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_totals,Under,0.5,15.0
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_totals,Under,1.5,5.0
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_totals,Under,2.5,2.5
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_totals,Under,3.5,1.59
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_totals,Under,4.5,1.24
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_totals,Under,5.5,1.09
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,alternate_totals,Under,6.5,1.02
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,btts,Yes,,1.54
+2026-11-27T11:36:28+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,draftkings,,btts,No,,2.45
