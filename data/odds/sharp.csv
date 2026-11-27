@@ -815,3 +815,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-27T18:27:46+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,pinnacle,2026-11-27T18:27:21Z,h2h,Borussia Monchengladbach,,4.9
 2026-11-27T18:27:46+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,pinnacle,2026-11-27T18:27:21Z,h2h,Werder Bremen,,1.67
 2026-11-27T18:27:46+00:00,late,Bundesliga,698f4a7967ead89e10205a68ceb4bda4,2026-11-27T19:30:00Z,Werder Bremen,Borussia Monchengladbach,pinnacle,2026-11-27T18:27:21Z,h2h,Draw,,4.4
+2026-11-27T18:48:12+00:00,late,Ligue1,02ff879cf54f6d1fec2664efee0431db,2026-11-27T19:45:00Z,Brest,Paris FC,pinnacle,2026-11-27T18:47:59Z,h2h,Brest,,3.59
+2026-11-27T18:48:12+00:00,late,Ligue1,02ff879cf54f6d1fec2664efee0431db,2026-11-27T19:45:00Z,Brest,Paris FC,pinnacle,2026-11-27T18:47:59Z,h2h,Paris FC,,2.17
+2026-11-27T18:48:12+00:00,late,Ligue1,02ff879cf54f6d1fec2664efee0431db,2026-11-27T19:45:00Z,Brest,Paris FC,pinnacle,2026-11-27T18:47:59Z,h2h,Draw,,3.5
