@@ -818,3 +818,9 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-27T18:48:12+00:00,late,Ligue1,02ff879cf54f6d1fec2664efee0431db,2026-11-27T19:45:00Z,Brest,Paris FC,pinnacle,2026-11-27T18:47:59Z,h2h,Brest,,3.59
 2026-11-27T18:48:12+00:00,late,Ligue1,02ff879cf54f6d1fec2664efee0431db,2026-11-27T19:45:00Z,Brest,Paris FC,pinnacle,2026-11-27T18:47:59Z,h2h,Paris FC,,2.17
 2026-11-27T18:48:12+00:00,late,Ligue1,02ff879cf54f6d1fec2664efee0431db,2026-11-27T19:45:00Z,Brest,Paris FC,pinnacle,2026-11-27T18:47:59Z,h2h,Draw,,3.5
+2026-11-27T18:58:20+00:00,late,PL,40d95e660c301c2d8a5a7a6317017b65,2026-11-27T20:00:00Z,Nottingham Forest,Chelsea,pinnacle,2026-11-27T18:58:16Z,h2h,Chelsea,,2.89
+2026-11-27T18:58:20+00:00,late,PL,40d95e660c301c2d8a5a7a6317017b65,2026-11-27T20:00:00Z,Nottingham Forest,Chelsea,pinnacle,2026-11-27T18:58:16Z,h2h,Nottingham Forest,,2.47
+2026-11-27T18:58:20+00:00,late,PL,40d95e660c301c2d8a5a7a6317017b65,2026-11-27T20:00:00Z,Nottingham Forest,Chelsea,pinnacle,2026-11-27T18:58:16Z,h2h,Draw,,3.61
+2026-11-27T18:58:20+00:00,late,LaLiga,80c92a163a81b69fef76530221e2edd0,2026-11-27T20:00:00Z,Levante,Real Racing Club de Santander,pinnacle,2026-11-27T18:58:18Z,h2h,Levante,,2.02
+2026-11-27T18:58:20+00:00,late,LaLiga,80c92a163a81b69fef76530221e2edd0,2026-11-27T20:00:00Z,Levante,Real Racing Club de Santander,pinnacle,2026-11-27T18:58:18Z,h2h,Real Racing Club de Santander,,3.49
+2026-11-27T18:58:20+00:00,late,LaLiga,80c92a163a81b69fef76530221e2edd0,2026-11-27T20:00:00Z,Levante,Real Racing Club de Santander,pinnacle,2026-11-27T18:58:18Z,h2h,Draw,,4.06
