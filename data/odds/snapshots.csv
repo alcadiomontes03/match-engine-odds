@@ -6301,3 +6301,12 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-28T15:16:07+00:00,late,Ligue1,24b99950496c624f7124922fc1bda8bd,2026-11-28T16:15:00Z,Angers,RC Lens,draftkings,2026-11-28T15:15:36Z,h2h,Angers,,4.8
 2026-11-28T15:16:07+00:00,late,Ligue1,24b99950496c624f7124922fc1bda8bd,2026-11-28T16:15:00Z,Angers,RC Lens,draftkings,2026-11-28T15:15:36Z,h2h,RC Lens,,1.69
 2026-11-28T15:16:07+00:00,late,Ligue1,24b99950496c624f7124922fc1bda8bd,2026-11-28T16:15:00Z,Angers,RC Lens,draftkings,2026-11-28T15:15:36Z,h2h,Draw,,4.0
+2026-11-28T16:26:20+00:00,late,PL,9d23f6ad21946dd258869ebc22236cf0,2026-11-28T17:30:00Z,Ipswich Town,Aston Villa,draftkings,2026-11-28T16:26:01Z,h2h,Aston Villa,,2.05
+2026-11-28T16:26:20+00:00,late,PL,9d23f6ad21946dd258869ebc22236cf0,2026-11-28T17:30:00Z,Ipswich Town,Aston Villa,draftkings,2026-11-28T16:26:01Z,h2h,Ipswich Town,,3.4
+2026-11-28T16:26:20+00:00,late,PL,9d23f6ad21946dd258869ebc22236cf0,2026-11-28T17:30:00Z,Ipswich Town,Aston Villa,draftkings,2026-11-28T16:26:01Z,h2h,Draw,,3.75
+2026-11-28T16:26:20+00:00,late,LaLiga,40236ab976955345ebd1edb72abf6b22,2026-11-28T17:30:00Z,Elche CF,Atlético Madrid,draftkings,2026-11-28T16:25:36Z,h2h,Atlético Madrid,,1.5
+2026-11-28T16:26:20+00:00,late,LaLiga,40236ab976955345ebd1edb72abf6b22,2026-11-28T17:30:00Z,Elche CF,Atlético Madrid,draftkings,2026-11-28T16:25:36Z,h2h,Elche CF,,6.5
+2026-11-28T16:26:20+00:00,late,LaLiga,40236ab976955345ebd1edb72abf6b22,2026-11-28T17:30:00Z,Elche CF,Atlético Madrid,draftkings,2026-11-28T16:25:36Z,h2h,Draw,,4.4
+2026-11-28T16:26:20+00:00,late,Bundesliga,5d838190a8f5932d7fcfbcc26bacdd9c,2026-11-28T17:30:00Z,VfB Stuttgart,Eintracht Frankfurt,draftkings,2026-11-28T16:26:09Z,h2h,Eintracht Frankfurt,,3.55
+2026-11-28T16:26:20+00:00,late,Bundesliga,5d838190a8f5932d7fcfbcc26bacdd9c,2026-11-28T17:30:00Z,VfB Stuttgart,Eintracht Frankfurt,draftkings,2026-11-28T16:26:09Z,h2h,VfB Stuttgart,,1.77
+2026-11-28T16:26:20+00:00,late,Bundesliga,5d838190a8f5932d7fcfbcc26bacdd9c,2026-11-28T17:30:00Z,VfB Stuttgart,Eintracht Frankfurt,draftkings,2026-11-28T16:26:09Z,h2h,Draw,,4.3
