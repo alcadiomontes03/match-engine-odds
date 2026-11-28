@@ -6289,3 +6289,9 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-28T13:25:33+00:00,late,Bundesliga,365e1a00908ab1cd5a51a53ede2b86b2,2026-11-28T14:30:00Z,FSV Mainz 05,Union Berlin,draftkings,2026-11-28T13:25:00Z,h2h,FSV Mainz 05,,1.45
 2026-11-28T13:25:33+00:00,late,Bundesliga,365e1a00908ab1cd5a51a53ede2b86b2,2026-11-28T14:30:00Z,FSV Mainz 05,Union Berlin,draftkings,2026-11-28T13:25:00Z,h2h,Union Berlin,,5.75
 2026-11-28T13:25:33+00:00,late,Bundesliga,365e1a00908ab1cd5a51a53ede2b86b2,2026-11-28T14:30:00Z,FSV Mainz 05,Union Berlin,draftkings,2026-11-28T13:25:00Z,h2h,Draw,,4.5
+2026-11-28T13:55:42+00:00,late,PL,ab87184803a63f7b679f1d12b01c3271,2026-11-28T15:00:00Z,Manchester United,Brentford,draftkings,2026-11-28T13:55:33Z,h2h,Brentford,,2.9
+2026-11-28T13:55:42+00:00,late,PL,ab87184803a63f7b679f1d12b01c3271,2026-11-28T15:00:00Z,Manchester United,Brentford,draftkings,2026-11-28T13:55:33Z,h2h,Manchester United,,2.3
+2026-11-28T13:55:42+00:00,late,PL,ab87184803a63f7b679f1d12b01c3271,2026-11-28T15:00:00Z,Manchester United,Brentford,draftkings,2026-11-28T13:55:33Z,h2h,Draw,,3.75
+2026-11-28T13:55:42+00:00,late,PL,0bc17a3c7d8153e72b94688960cc603a,2026-11-28T15:00:00Z,Leeds United,Coventry City,draftkings,2026-11-28T13:55:33Z,h2h,Coventry City,,7.0
+2026-11-28T13:55:42+00:00,late,PL,0bc17a3c7d8153e72b94688960cc603a,2026-11-28T15:00:00Z,Leeds United,Coventry City,draftkings,2026-11-28T13:55:33Z,h2h,Leeds United,,1.49
+2026-11-28T13:55:42+00:00,late,PL,0bc17a3c7d8153e72b94688960cc603a,2026-11-28T15:00:00Z,Leeds United,Coventry City,draftkings,2026-11-28T13:55:33Z,h2h,Draw,,4.4
