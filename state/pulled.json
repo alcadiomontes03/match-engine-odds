@@ -106,7 +106,8 @@
   "commence": "2026-11-28T14:30:00Z",
   "comp": "Bundesliga",
   "home": "1. FC K\u00f6ln",
-  "late": "2026-11-28T10:54:41+00:00",
+  "late": "2026-11-28T13:25:33+00:00",
+  "late_final": true,
   "weekly": "2026-11-23T20:56:16+00:00"
  },
  "33d92dabbd2606dfe9d31058f7b20cc8": {
@@ -122,7 +123,8 @@
   "commence": "2026-11-28T14:30:00Z",
   "comp": "Bundesliga",
   "home": "FSV Mainz 05",
-  "late": "2026-11-28T10:54:41+00:00",
+  "late": "2026-11-28T13:25:33+00:00",
+  "late_final": true,
   "weekly": "2026-11-23T20:56:16+00:00"
  },
  "3b025a029f51fbeb9580a178d0612f50": {
@@ -130,7 +132,8 @@
   "commence": "2026-11-28T14:30:00Z",
   "comp": "Bundesliga",
   "home": "Hamburger SV",
-  "late": "2026-11-28T10:54:41+00:00",
+  "late": "2026-11-28T13:25:33+00:00",
+  "late_final": true,
   "weekly": "2026-11-23T20:56:16+00:00"
  },
  "40236ab976955345ebd1edb72abf6b22": {
@@ -695,7 +698,8 @@
   "commence": "2026-11-28T14:30:00Z",
   "comp": "Bundesliga",
   "home": "SC Paderborn",
-  "late": "2026-11-28T10:54:41+00:00",
+  "late": "2026-11-28T13:25:33+00:00",
+  "late_final": true,
   "weekly": "2026-11-23T20:56:16+00:00"
  },
  "f892ea6d5eca105c36ca9468b12857f2": {
