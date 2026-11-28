@@ -911,3 +911,15 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-28T16:26:20+00:00,late,Bundesliga,5d838190a8f5932d7fcfbcc26bacdd9c,2026-11-28T17:30:00Z,VfB Stuttgart,Eintracht Frankfurt,pinnacle,2026-11-28T16:26:07Z,h2h,Eintracht Frankfurt,,3.83
 2026-11-28T16:26:20+00:00,late,Bundesliga,5d838190a8f5932d7fcfbcc26bacdd9c,2026-11-28T17:30:00Z,VfB Stuttgart,Eintracht Frankfurt,pinnacle,2026-11-28T16:26:07Z,h2h,VfB Stuttgart,,1.84
 2026-11-28T16:26:20+00:00,late,Bundesliga,5d838190a8f5932d7fcfbcc26bacdd9c,2026-11-28T17:30:00Z,VfB Stuttgart,Eintracht Frankfurt,pinnacle,2026-11-28T16:26:07Z,h2h,Draw,,4.44
+2026-11-28T18:46:56+00:00,late,Ligue1,f96c1137c9d3f7e2e691275a2988fa1d,2026-11-28T19:45:00Z,Le Havre,Strasbourg,pinnacle,2026-11-28T18:46:48Z,h2h,Le Havre,,3.45
+2026-11-28T18:46:56+00:00,late,Ligue1,f96c1137c9d3f7e2e691275a2988fa1d,2026-11-28T19:45:00Z,Le Havre,Strasbourg,pinnacle,2026-11-28T18:46:48Z,h2h,Strasbourg,,2.2
+2026-11-28T18:46:56+00:00,late,Ligue1,f96c1137c9d3f7e2e691275a2988fa1d,2026-11-28T19:45:00Z,Le Havre,Strasbourg,pinnacle,2026-11-28T18:46:48Z,h2h,Draw,,3.55
+2026-11-28T18:46:56+00:00,late,Ligue1,aaa86a483888836242da663a46957894,2026-11-28T19:45:00Z,Le Mans FC,Lille,pinnacle,2026-11-28T18:46:48Z,h2h,Le Mans FC,,3.99
+2026-11-28T18:46:56+00:00,late,Ligue1,aaa86a483888836242da663a46957894,2026-11-28T19:45:00Z,Le Mans FC,Lille,pinnacle,2026-11-28T18:46:48Z,h2h,Lille,,2.03
+2026-11-28T18:46:56+00:00,late,Ligue1,aaa86a483888836242da663a46957894,2026-11-28T19:45:00Z,Le Mans FC,Lille,pinnacle,2026-11-28T18:46:48Z,h2h,Draw,,3.54
+2026-11-28T18:46:56+00:00,late,Ligue1,12002f6f804a122db48271ff05be03c0,2026-11-28T19:45:00Z,Paris Saint Germain,Lorient,pinnacle,2026-11-28T18:46:48Z,h2h,Lorient,,14.35
+2026-11-28T18:46:56+00:00,late,Ligue1,12002f6f804a122db48271ff05be03c0,2026-11-28T19:45:00Z,Paris Saint Germain,Lorient,pinnacle,2026-11-28T18:46:48Z,h2h,Paris Saint Germain,,1.2
+2026-11-28T18:46:56+00:00,late,Ligue1,12002f6f804a122db48271ff05be03c0,2026-11-28T19:45:00Z,Paris Saint Germain,Lorient,pinnacle,2026-11-28T18:46:48Z,h2h,Draw,,7.75
+2026-11-28T18:46:56+00:00,late,Ligue1,e9a1243fbfbc6f58d0e0522eb07ea9a1,2026-11-28T19:45:00Z,Nice,Troyes,pinnacle,2026-11-28T18:46:48Z,h2h,Nice,,1.76
+2026-11-28T18:46:56+00:00,late,Ligue1,e9a1243fbfbc6f58d0e0522eb07ea9a1,2026-11-28T19:45:00Z,Nice,Troyes,pinnacle,2026-11-28T18:46:48Z,h2h,Troyes,,4.84
+2026-11-28T18:46:56+00:00,late,Ligue1,e9a1243fbfbc6f58d0e0522eb07ea9a1,2026-11-28T19:45:00Z,Nice,Troyes,pinnacle,2026-11-28T18:46:48Z,h2h,Draw,,3.91
