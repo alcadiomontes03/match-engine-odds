@@ -6259,3 +6259,15 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-28T10:54:41+00:00,late,Ligue1,24b99950496c624f7124922fc1bda8bd,2026-11-28T16:15:00Z,Angers,RC Lens,draftkings,2026-11-28T10:52:17Z,h2h,Angers,,4.7
 2026-11-28T10:54:41+00:00,late,Ligue1,24b99950496c624f7124922fc1bda8bd,2026-11-28T16:15:00Z,Angers,RC Lens,draftkings,2026-11-28T10:52:17Z,h2h,RC Lens,,1.69
 2026-11-28T10:54:41+00:00,late,Ligue1,24b99950496c624f7124922fc1bda8bd,2026-11-28T16:15:00Z,Angers,RC Lens,draftkings,2026-11-28T10:52:17Z,h2h,Draw,,4.1
+2026-11-28T11:45:05+00:00,late,Ligue1,f96c1137c9d3f7e2e691275a2988fa1d,2026-11-28T19:45:00Z,Le Havre,Strasbourg,draftkings,2026-11-28T11:44:47Z,h2h,Le Havre,,3.25
+2026-11-28T11:45:05+00:00,late,Ligue1,f96c1137c9d3f7e2e691275a2988fa1d,2026-11-28T19:45:00Z,Le Havre,Strasbourg,draftkings,2026-11-28T11:44:47Z,h2h,Strasbourg,,2.2
+2026-11-28T11:45:05+00:00,late,Ligue1,f96c1137c9d3f7e2e691275a2988fa1d,2026-11-28T19:45:00Z,Le Havre,Strasbourg,draftkings,2026-11-28T11:44:47Z,h2h,Draw,,3.5
+2026-11-28T11:45:05+00:00,late,Ligue1,aaa86a483888836242da663a46957894,2026-11-28T19:45:00Z,Le Mans FC,Lille,draftkings,2026-11-28T11:44:47Z,h2h,Le Mans FC,,4.0
+2026-11-28T11:45:05+00:00,late,Ligue1,aaa86a483888836242da663a46957894,2026-11-28T19:45:00Z,Le Mans FC,Lille,draftkings,2026-11-28T11:44:47Z,h2h,Lille,,1.95
+2026-11-28T11:45:05+00:00,late,Ligue1,aaa86a483888836242da663a46957894,2026-11-28T19:45:00Z,Le Mans FC,Lille,draftkings,2026-11-28T11:44:47Z,h2h,Draw,,3.55
+2026-11-28T11:45:05+00:00,late,Ligue1,12002f6f804a122db48271ff05be03c0,2026-11-28T19:45:00Z,Paris Saint Germain,Lorient,draftkings,2026-11-28T11:44:47Z,h2h,Lorient,,13.0
+2026-11-28T11:45:05+00:00,late,Ligue1,12002f6f804a122db48271ff05be03c0,2026-11-28T19:45:00Z,Paris Saint Germain,Lorient,draftkings,2026-11-28T11:44:47Z,h2h,Paris Saint Germain,,1.19
+2026-11-28T11:45:05+00:00,late,Ligue1,12002f6f804a122db48271ff05be03c0,2026-11-28T19:45:00Z,Paris Saint Germain,Lorient,draftkings,2026-11-28T11:44:47Z,h2h,Draw,,7.5
+2026-11-28T11:45:05+00:00,late,Ligue1,e9a1243fbfbc6f58d0e0522eb07ea9a1,2026-11-28T19:45:00Z,Nice,Troyes,draftkings,2026-11-28T11:44:47Z,h2h,Nice,,1.74
+2026-11-28T11:45:05+00:00,late,Ligue1,e9a1243fbfbc6f58d0e0522eb07ea9a1,2026-11-28T19:45:00Z,Nice,Troyes,draftkings,2026-11-28T11:44:47Z,h2h,Troyes,,4.6
+2026-11-28T11:45:05+00:00,late,Ligue1,e9a1243fbfbc6f58d0e0522eb07ea9a1,2026-11-28T19:45:00Z,Nice,Troyes,draftkings,2026-11-28T11:44:47Z,h2h,Draw,,3.9
