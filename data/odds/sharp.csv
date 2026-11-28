@@ -875,3 +875,6 @@ pulled_at,kind,comp,event_id,commence,home,away,bookmaker,book_last_update,marke
 2026-11-28T11:55:10+00:00,late,LaLiga,c81520b9a9794749cfdab57f89bdeb16,2026-11-28T13:00:00Z,Real Betis,Rayo Vallecano,pinnacle,2026-11-28T11:55:02Z,h2h,Rayo Vallecano,,5.45
 2026-11-28T11:55:10+00:00,late,LaLiga,c81520b9a9794749cfdab57f89bdeb16,2026-11-28T13:00:00Z,Real Betis,Rayo Vallecano,pinnacle,2026-11-28T11:55:02Z,h2h,Real Betis,,1.63
 2026-11-28T11:55:10+00:00,late,LaLiga,c81520b9a9794749cfdab57f89bdeb16,2026-11-28T13:00:00Z,Real Betis,Rayo Vallecano,pinnacle,2026-11-28T11:55:02Z,h2h,Draw,,4.28
+2026-11-28T12:05:16+00:00,late,LaLiga,c99772cba1418e72f2eded26e4afeb59,2026-11-28T20:00:00Z,Real Madrid,Alavés,pinnacle,2026-11-28T12:04:47Z,h2h,Alavés,,17.82
+2026-11-28T12:05:16+00:00,late,LaLiga,c99772cba1418e72f2eded26e4afeb59,2026-11-28T20:00:00Z,Real Madrid,Alavés,pinnacle,2026-11-28T12:04:47Z,h2h,Real Madrid,,1.15
+2026-11-28T12:05:16+00:00,late,LaLiga,c99772cba1418e72f2eded26e4afeb59,2026-11-28T20:00:00Z,Real Madrid,Alavés,pinnacle,2026-11-28T12:04:47Z,h2h,Draw,,9.3
